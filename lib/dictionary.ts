@@ -180,7 +180,7 @@ pl:{
   "compare.mine.1":"Tylko Twoja grupa — do 4 osób w komforcie","compare.mine.2":"Wyjazd, gdy jesteś gotowy, postój pod wpływem chwili","compare.mine.3":"Ukryte miejsca, do których autokar nie dojedzie","compare.mine.4":"Domowy poczęstunek od Kasi","compare.mine.5":"Jeden przewodnik, który zna Twoje imię",
   "compare.bus.1":"40+ obcych osób i sztywny harmonogram","compare.bus.2":"15 minut na zdjęcie i jedziemy dalej","compare.bus.3":"Tylko zatłoczone, najbardziej znane punkty","compare.bus.4":"Kanapka ze stacji benzynowej","compare.bus.5":"Mikrofon i liczenie głów",
 
-  "about.eyebrow":"O mnie","about.h2":"Cześć, jestem John.","about.lead":"Polak, który lata temu zakochał się w Islandii — i już został.","about.p1":"Przyjechałem na jeden sezon, a zostałem dla światła. Po latach na tych drogach wiem, gdzie nie jeżdżą autobusy: wodospad bez parkingu, gorące źródło, które miejscowi zostawiają dla siebie, miejsce, gdzie zachód słońca pada dokładnie tak, jak trzeba.","about.p2":"Moja żona Kasia jest szefową kuchni, więc nigdy nie wyjedziesz głodny. Każdego gościa traktujemy tak, jak sami chcielibyśmy być traktowani za granicą — jak rodzinę. O to właśnie chodzi w Journey Iceland.","about.sign":"— John i Kasia","about.badge.num":"600+","about.badge.t":"zadowolonych gości od 2014",
+  "about.eyebrow":"O mnie","about.h2":"Cześć, jestem Sylwiusz.","about.lead":"Polak, który lata temu zakochał się w Islandii — i już został.","about.p1":"Przyjechałem na jeden sezon, a zostałem dla światła. Po latach na tych drogach wiem, gdzie nie jeżdżą autobusy: wodospad bez parkingu, gorące źródło, które miejscowi zostawiają dla siebie, miejsce, gdzie zachód słońca pada dokładnie tak, jak trzeba.","about.p2":"Moja żona Kasia jest szefową kuchni, więc nigdy nie wyjedziesz głodny. Każdego gościa traktujemy tak, jak sami chcielibyśmy być traktowani za granicą — jak rodzinę. O to właśnie chodzi w Journey Iceland.","about.sign":"— Sylwiusz i Kasia","about.badge.num":"600+","about.badge.t":"zadowolonych gości od 2014",
 
   "exp.eyebrow":"Przeżycie","exp.h2":"Więcej niż przejazd — przeżycie.","exp.lead":"Drobiazgi, które zamieniają transfer w historię opowiadaną po powrocie.",
   "exp.1.t":"Domowy zestaw powitalny","exp.1.d":"Kasia jest szefową kuchni. Każda wycieczka zaczyna się od ciepłego pudełka — skyr, świeże owoce, coś upieczonego tego ranka.",
@@ -191,10 +191,10 @@ pl:{
   "gallery.eyebrow":"Galeria","gallery.h2":"Chwile z trasy.","gallery.lead":"Złote światło, ciche drogi, ciepłe jedzenie i czasem zielone niebo. Przesuwaj.",
 
   "reviews.eyebrow":"Opinie","reviews.h2":"Przyjechali jako goście, wyjechali jak znajomi.","reviews.lead":"Kilka słów od ostatnich podróżnych. Więcej w Google.",
-  "rev.1.q":"John znalazł nam wodospad, przy którym nie było nikogo innego. Najlepszy dzień całej wyprawy — i nigdzie się nie spieszyliśmy.","rev.1.name":"Sarah i Mike","rev.1.loc":"Austin, USA",
+  "rev.1.q":"Sylwiusz znalazł nam wodospad, przy którym nie było nikogo innego. Najlepszy dzień całej wyprawy — i nigdzie się nie spieszyliśmy.","rev.1.name":"Sarah i Mike","rev.1.loc":"Austin, USA",
   "rev.2.q":"Profesjonalnie, ciepło i po polsku. Czuliśmy się zaopiekowani od lotniska po ostatni przystanek.","rev.2.name":"Tomasz K.","rev.2.loc":"Warszawa, PL",
   "rev.3.q":"Szczerze o pogodzie, elastycznie z planem, a przekąski Kasi były nierealne. Zarezerwowaliśmy go dwa razy w tydzień.","rev.3.name":"Emma L.","rev.3.loc":"Londyn, UK",
-  "rev.4.q":"Bardzo osobiście i na luzie. John zna miejsca, których nie ma w żadnym przewodniku. Gorąco polecam!","rev.4.name":"Rodzina Berger","rev.4.loc":"Monachium, DE",
+  "rev.4.q":"Bardzo osobiście i na luzie. Sylwiusz zna miejsca, których nie ma w żadnym przewodniku. Gorąco polecam!","rev.4.name":"Rodzina Berger","rev.4.loc":"Monachium, DE",
   "rev.5.q":"Nasz lot spóźnił się do północy, a on dalej tam był, uśmiechnięty, z włączonym ogrzewaniem. Cała firma w jednym momencie.","rev.5.name":"Dana R.","rev.5.loc":"Toronto, CA",
   "rev.6.q":"Stawaliśmy na zdjęcia, gdzie tylko chcieliśmy. Spróbuj tak w 50-osobowym autokarze. Warte każdej korony.","rev.6.name":"Priya i Sam","rev.6.loc":"Manchester, UK",
 
