@@ -44,7 +44,7 @@ export default function GoldenCircle({ params }: { params: { lang: string } }) {
       {/* HERO */}
       <section className="hero tour-hero" id="top" data-screen-label="Hero">
         <div className="ph ph-wash has-photo">
-          <img className="ph-img loaded" alt="Golden Circle, Iceland" src={IMG.falls} />
+          <img className="ph-img loaded" alt="Golden Circle, Iceland" src={IMG.gcHero} />
         </div>
         <div className="hero-scrim"></div>
         <div className="hero-content">
@@ -213,11 +213,11 @@ export default function GoldenCircle({ params }: { params: { lang: string } }) {
             <h2>{t('tp.gal.h2')}</h2>
           </div>
           <div className="gallery">
-            <div className="g-item"><div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="" src={IMG.falls} /></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
+            <div className="g-item"><div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="" src={IMG.gallery[0]} /></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
             <div className="g-item"><div className="ph" data-label="Þingvellir rift"></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
             <div className="g-item"><div className="ph" data-label="Strokkur geyser erupting"></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
             <div className="g-item"><div className="ph" data-label="Gullfoss waterfall"></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
-            <div className="g-item"><div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="" src={IMG.field} /></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
+            <div className="g-item"><div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="" src={IMG.gallery[4]} /></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
             <div className="g-item"><div className="ph" data-label="Kerið crater"></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
           </div>
         </div>
@@ -277,7 +277,7 @@ export default function GoldenCircle({ params }: { params: { lang: string } }) {
           </div>
           <div className="also-grid">
             <article className="tour-card reveal">
-              <div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="" src={IMG.falls} /></div>
+              <div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="" src={IMG.sc} /></div>
               <div className="tour-card-scrim"></div>
               <div className="tour-card-body">
                 <h3>{t('tour.sc.name')}</h3>
@@ -287,7 +287,7 @@ export default function GoldenCircle({ params }: { params: { lang: string } }) {
               <Link className="tour-card-link" href={L('#contact')} aria-label="South Coast"></Link>
             </article>
             <article className="tour-card reveal d1">
-              <div className="ph" data-label="Jökulsárlón glacier lagoon"></div>
+              <div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="Jökulsárlón" src={IMG.jk} /></div>
               <div className="tour-card-scrim"></div>
               <div className="tour-card-body">
                 <h3>{t('tour.jk.name')}</h3>

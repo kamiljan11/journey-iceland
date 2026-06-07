@@ -12,7 +12,7 @@ export default function Home({ params }: { params: { lang: string } }) {
       {/* HERO */}
       <section className="hero" id="top" data-screen-label="Hero">
         <div className="ph ph-wash has-photo">
-          <img className="ph-img loaded" alt="Iceland in the golden hour" src={IMG.falls} />
+          <img className="ph-img loaded" alt="Iceland in the golden hour" src={IMG.hero} />
         </div>
         <div className="hero-scrim"></div>
         <div className="hero-content">
@@ -56,7 +56,7 @@ export default function Home({ params }: { params: { lang: string } }) {
           <div className="grid-tours">
             {/* Golden Circle */}
             <article className="tour-card reveal">
-              <div className="ph" data-label="Strokkur geyser / Gullfoss at golden hour"></div>
+              <div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="Golden Circle, Iceland" src={IMG.gc} /></div>
               <div className="tour-card-scrim"></div>
               <div className="tour-card-body">
                 <h3>{t('tour.gc.name')}</h3>
@@ -73,7 +73,7 @@ export default function Home({ params }: { params: { lang: string } }) {
 
             {/* South Coast */}
             <article className="tour-card reveal d1">
-              <div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="South Coast" src={IMG.falls} /></div>
+              <div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="South Coast" src={IMG.sc} /></div>
               <div className="tour-card-scrim"></div>
               <div className="tour-card-body">
                 <h3>{t('tour.sc.name')}</h3>
@@ -90,7 +90,7 @@ export default function Home({ params }: { params: { lang: string } }) {
 
             {/* Jökulsárlón */}
             <article className="tour-card reveal d2">
-              <div className="ph" data-label="Jökulsárlón glacier lagoon / Diamond Beach at sunset"></div>
+              <div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="Jökulsárlón Glacier Lagoon" src={IMG.jk} /></div>
               <div className="tour-card-scrim"></div>
               <div className="tour-card-body">
                 <h3>{t('tour.jk.name')}</h3>
@@ -194,7 +194,7 @@ export default function Home({ params }: { params: { lang: string } }) {
         <div className="wrap about-grid">
           <div className="about-media reveal">
             <div className="about-photo">
-              <div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="John, your local guide" src={IMG.field} /></div>
+              <div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="John & Kate, your local hosts" src={IMG.about} /></div>
             </div>
             <div className="about-badge">
               <div className="num">{t('about.badge.num')}</div>
@@ -247,14 +247,12 @@ export default function Home({ params }: { params: { lang: string } }) {
             <p className="lead" style={{ color: '#bdae9d' }}>{t('gallery.lead')}</p>
           </div>
           <div className="gallery">
-            <div className="g-item"><div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="" src={IMG.falls} /></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
-            <div className="g-item"><div className="ph" data-label="Welcome snack / food on the road"></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
-            <div className="g-item"><div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="" src={IMG.field} /></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
-            <div className="g-item"><div className="ph" data-label="Waterfall close-up"></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
-            <div className="g-item"><div className="ph" data-label="Black sand beach"></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
-            <div className="g-item"><div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="" src={IMG.aurora} /></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
-            <div className="g-item"><div className="ph" data-label="The 4×4 on an empty road"></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
-            <div className="g-item"><div className="ph" data-label="Glacier lagoon icebergs"></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
+            {IMG.gallery.map((src, i) => (
+              <div className="g-item" key={i}>
+                <div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="" src={src} /></div>
+                <span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span>
+              </div>
+            ))}
           </div>
         </div>
       </section>

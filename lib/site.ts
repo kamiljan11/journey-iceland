@@ -12,9 +12,20 @@ export const SITE = {
   google: '#',
 };
 
-// real golden-hour photos we already have locally (the rest are gradient placeholders)
+// Optimised golden-hour photography (WebP). Gradient placeholders remain only
+// where we still need real shots (food/grill/restaurant, true Golden Circle).
 export const IMG = {
-  falls: '/img/photoFalls.jpeg',
-  field: '/img/photoField.jpeg',
-  aurora: '/img/photoAurora.jpeg',
+  hero: '/img/hero.webp',
+  gc: '/img/tour-gc.webp',
+  sc: '/img/tour-sc.webp',
+  jk: '/img/tour-jk.webp',
+  about: '/img/about.webp',
+  aurora: '/img/aurora.webp',
+  gcHero: '/img/gc-hero.webp',
+  logo: '/img/logo.webp',
+  badge: '/img/badge.webp',
+  gallery: [
+    '/img/g1.webp', '/img/g2.webp', '/img/g3.webp', '/img/g4.webp',
+    '/img/g5.webp', '/img/g6.webp', '/img/g7.webp', '/img/g8.webp',
+  ],
 };

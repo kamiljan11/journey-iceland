@@ -28,7 +28,7 @@ export function generateMetadata({ params }: { params: { lang: string } }): Meta
       description: t('hero.sub'),
       url: `${base}/${lang}`,
       siteName: 'Journey Iceland',
-      images: [{ url: '/img/photoFalls.jpeg', width: 1200, height: 630 }],
+      images: [{ url: '/img/hero.webp', width: 1200, height: 630 }],
       locale: lang,
       type: 'website',
     },

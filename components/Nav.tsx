@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import LangSwitch from './LangSwitch';
-import { SITE } from '@/lib/site';
+import { SITE, IMG } from '@/lib/site';
 
 type T = (k: string) => string;
 
@@ -21,7 +21,7 @@ export default function Nav({ lang, t }: { lang: string; t: T }) {
       <header className="nav" id="nav">
         <div className="nav-inner">
           <Link className="brand" href={`/${lang}`} aria-label="Journey Iceland — home">
-            <span className="brand-mark"><svg><use href="#i-compass" /></svg></span>
+            <img className="brand-badge" src={IMG.badge} alt="" width={40} height={40} />
             <span className="brand-name">Journey Iceland<small>{t('brand.tag')}</small></span>
           </Link>
           <nav className="nav-links" aria-label="Primary">
@@ -47,7 +47,7 @@ export default function Nav({ lang, t }: { lang: string; t: T }) {
         <div className="drawer-panel">
           <div className="drawer-top">
             <Link className="brand" href={`/${lang}`}>
-              <span className="brand-mark"><svg><use href="#i-compass" /></svg></span>
+              <img className="brand-badge" src={IMG.badge} alt="" width={40} height={40} />
               <span className="brand-name">Journey Iceland</span>
             </Link>
             <button className="icon-btn drawer-close" aria-label="Close menu"><svg><use href="#i-x" /></svg></button>

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { SITE } from '@/lib/site';
+import { SITE, IMG } from '@/lib/site';
 
 type T = (k: string) => string;
 
@@ -9,9 +9,8 @@ export default function Footer({ lang, t }: { lang: string; t: T }) {
     <footer className="footer">
       <div className="wrap footer-grid">
         <div>
-          <Link className="brand" href={`/${lang}`}>
-            <span className="brand-mark"><svg><use href="#i-compass" /></svg></span>
-            <span className="brand-name">Journey Iceland</span>
+          <Link className="brand" href={`/${lang}`} aria-label="Journey Iceland — home">
+            <img src={IMG.logo} alt="Journey Iceland" style={{ height: 54, width: 'auto', maxWidth: '100%' }} />
           </Link>
           <p className="footer-about">{t('footer.tagline')}</p>
           <div className="footer-social">
