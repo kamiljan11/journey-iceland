@@ -1,0 +1,57 @@
+import Link from 'next/link';
+import { SITE } from '@/lib/site';
+
+type T = (k: string) => string;
+
+export default function Footer({ lang, t }: { lang: string; t: T }) {
+  const L = (h: string) => `/${lang}${h}`;
+  return (
+    <footer className="footer">
+      <div className="wrap footer-grid">
+        <div>
+          <Link className="brand" href={`/${lang}`}>
+            <span className="brand-mark"><svg><use href="#i-compass" /></svg></span>
+            <span className="brand-name">Journey Iceland</span>
+          </Link>
+          <p className="footer-about">{t('footer.tagline')}</p>
+          <div className="footer-social">
+            <a href={SITE.facebook} aria-label="Facebook"><svg><use href="#i-facebook" /></svg></a>
+            <a href={SITE.instagram} aria-label="Instagram"><svg><use href="#i-instagram" /></svg></a>
+            <a href={SITE.google} aria-label="Google reviews"><svg><use href="#i-google" /></svg></a>
+          </div>
+        </div>
+        <div className="footer-col">
+          <h5>{t('footer.explore')}</h5>
+          <ul>
+            <li><Link href={L('#tours')}>{t('nav.tours')}</Link></li>
+            <li><Link href={L('#why')}>{t('nav.why')}</Link></li>
+            <li><Link href={L('#about')}>{t('nav.about')}</Link></li>
+            <li><Link href={L('#gallery')}>{t('nav.gallery')}</Link></li>
+          </ul>
+        </div>
+        <div className="footer-col">
+          <h5>{t('footer.tours')}</h5>
+          <ul>
+            <li><Link href={`/${lang}/golden-circle`}>{t('tour.gc.name')}</Link></li>
+            <li><Link href={L('#tours')}>{t('tour.sc.name')}</Link></li>
+            <li><Link href={L('#tours')}>{t('tour.jk.name')}</Link></li>
+            <li><Link href={L('#aurora')}>{t('aurora.eyebrow')}</Link></li>
+          </ul>
+        </div>
+        <div className="footer-col">
+          <h5>{t('footer.contact')}</h5>
+          <ul>
+            <li><a href={SITE.waHref} target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href={SITE.phoneHref}>{SITE.phoneDisplay}</a></li>
+            <li><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
+          </ul>
+        </div>
+      </div>
+      <div className="wrap footer-bottom">
+        <span>{t('footer.rights')}</span>
+        <span style={{ maxWidth: '48ch' }}>{t('footer.disclaimer')}</span>
+        <span className="legal-links"><a href="#">{t('footer.privacy')}</a><a href="#">{t('footer.terms')}</a></span>
+      </div>
+    </footer>
+  );
+}
