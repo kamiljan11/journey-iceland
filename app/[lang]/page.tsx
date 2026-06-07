@@ -37,8 +37,6 @@ export default function Home({ params }: { params: { lang: string } }) {
           <span className="trust-sep"></span>
           <div className="trust-item"><svg><use href="#i-users" /></svg><span>{t('trust.private')}</span></div>
           <span className="trust-sep"></span>
-          <div className="trust-item"><svg><use href="#i-globe" /></svg><span>{t('trust.langs')}</span></div>
-          <span className="trust-sep"></span>
           <div className="trust-item"><svg><use href="#i-bed" /></svg><span>{t('trust.pickup')}</span></div>
         </div>
       </section>
