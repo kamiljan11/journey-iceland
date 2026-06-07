@@ -22,7 +22,7 @@ export default function Nav({ lang, t }: { lang: string; t: T }) {
         <div className="nav-inner">
           <Link className="brand" href={`/${lang}`} aria-label="Journey Iceland — home">
             <img className="brand-badge" src={IMG.badge} alt="" width={40} height={40} />
-            <span className="brand-name">Journey Iceland<small>{t('brand.tag')}</small></span>
+            <span className="brand-name">Journey Iceland</span>
           </Link>
           <nav className="nav-links" aria-label="Primary">
             {links.map(([h, k]) => (
