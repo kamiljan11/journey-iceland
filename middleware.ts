@@ -5,6 +5,8 @@ const DEFAULT = 'en';
 
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
+  if (pathname.startsWith('/api')) return NextResponse.next();
+
   const hasLocale = LOCALES.some((l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`));
   if (hasLocale) return NextResponse.next();
 
@@ -15,5 +17,5 @@ export function middleware(req: NextRequest) {
 
 export const config = {
   // skip next internals, static files, and anything with a dot (assets)
-  matcher: ['/((?!_next|img|fonts|favicon.ico|.*\\..*).*)'],
+  matcher: ['/((?!_next|api|img|fonts|favicon.ico|.*\\..*).*)'],
 };
