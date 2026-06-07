@@ -1,0 +1,12 @@
+import { createClient } from '@supabase/supabase-js';
+
+/**
+ * Server-only Supabase client (uses the service-role key — never expose to the browser).
+ * Returns null if env vars are missing, so the app degrades gracefully before setup.
+ */
+export function supabaseAdmin() {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!url || !key) return null;
+  return createClient(url, key, { auth: { persistSession: false } });
+}

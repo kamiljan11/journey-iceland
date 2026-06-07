@@ -139,12 +139,24 @@ export default function Enhancements() {
       }, sig);
     }
 
-    // 10. availability form (demo: show success). TODO: wire real endpoint.
+    // 10. availability form → POST /api/lead (Supabase), then show success.
     document.querySelectorAll<HTMLFormElement>('form.ji-form').forEach((form) => {
       form.addEventListener('submit', (e) => {
         e.preventDefault();
+        const fd = new FormData(form);
+        const payload: Record<string, string> = {
+          lang: document.documentElement.lang || 'en',
+          source: form.dataset.preselect || 'website',
+        };
+        fd.forEach((v, k) => { payload[k] = String(v); });
+        // optimistic UX: show success immediately; send in the background
         form.querySelector('.form-fields')?.classList.add('hide');
         form.querySelector('.form-sent')?.classList.add('show');
+        fetch('/api/lead', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        }).catch(() => { /* ignore — request still reaches host via WhatsApp/phone */ });
       }, sig);
       const sel = form.querySelector<HTMLSelectElement>('select[name="tour"]');
       if (sel) {
