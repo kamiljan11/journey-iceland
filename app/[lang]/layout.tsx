@@ -32,7 +32,6 @@ export function generateMetadata({ params }: { params: { lang: string } }): Meta
       locale: lang,
       type: 'website',
     },
-    icons: { icon: '/img/photoAurora.jpeg' },
   };
 }
 
