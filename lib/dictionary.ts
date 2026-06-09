@@ -56,7 +56,7 @@ en:{
   "compare.mine.1":"Your group only — up to 4 in comfort","compare.mine.2":"Leave when you're ready, stop on a whim","compare.mine.3":"Hidden spots the buses can't reach","compare.mine.4":"Home-cooked snacks from Kate","compare.mine.5":"One guide who knows your name",
   "compare.bus.1":"40+ strangers on a fixed schedule","compare.bus.2":"15 minutes per photo stop, then go","compare.bus.3":"Only the crowded headline sights","compare.bus.4":"A petrol-station sandwich","compare.bus.5":"A microphone and a headcount",
 
-  "about.eyebrow":"About","about.h2":"Hi, I'm John.","about.lead":"A Pole who fell for Iceland years ago — and never left.","about.p1":"I came for a season and stayed for the light. After years of driving these roads I know where the buses don't go: the waterfall with no car park, the hot spring locals keep to themselves, the spot where the sunset lands just right.","about.p2":"My wife Kate is a chef, so you'll never leave hungry. We treat every guest the way we'd want to be treated abroad — like family. That's the whole idea behind Journey Iceland.","about.sign":"— John & Kate","about.badge.num":"600+","about.badge.t":"happy guests since 2014",
+  "about.eyebrow":"About","about.h2":"Hi, I'm Sylwiusz “Syl”.","about.lead":"A Pole who fell for Iceland years ago — and never left.","about.p1":"I came for a season and stayed for the light. After years of driving these roads I know where the buses don't go: the waterfall with no car park, the hot spring locals keep to themselves, the spot where the sunset lands just right.","about.p2":"My wife Kate is a chef, so you'll never leave hungry. We treat every guest the way we'd want to be treated abroad — like family. That's the whole idea behind Journey Iceland.","about.sign":"— Sylwiusz & Kate","about.badge.num":"600+","about.badge.t":"happy guests since 2014",
 
   "exp.eyebrow":"The experience","exp.h2":"More than a drive — an experience.","exp.lead":"The little things that turn a transfer into a story you'll tell back home.",
   "exp.1.t":"Home-cooked welcome set","exp.1.d":"Kate is a chef. Every tour starts with a warm welcome box — skyr, fresh fruit, something baked that morning.",
@@ -67,10 +67,10 @@ en:{
   "gallery.eyebrow":"Gallery","gallery.h2":"Moments from the road.","gallery.lead":"Golden light, quiet roads, warm food, and the odd green sky. Swipe through.",
 
   "reviews.eyebrow":"Reviews","reviews.h2":"They came as guests, left as friends.","reviews.lead":"A few words from recent travellers. More on Google.",
-  "rev.1.q":"John found us a waterfall with not one other person there. Best day of our whole Iceland trip — and we never felt rushed.","rev.1.name":"Sarah & Mike","rev.1.loc":"Austin, USA",
+  "rev.1.q":"Syl found us a waterfall with not one other person there. Best day of our whole Iceland trip — and we never felt rushed.","rev.1.name":"Sarah & Mike","rev.1.loc":"Austin, USA",
   "rev.2.q":"Profesjonalnie, ciepło i po polsku. Czuliśmy się zaopiekowani od lotniska po ostatni przystanek.","rev.2.name":"Tomasz K.","rev.2.loc":"Warszawa, PL",
   "rev.3.q":"Honest about the weather, flexible with the plan, and Kate's snacks were unreal. Booked him twice in one week.","rev.3.name":"Emma L.","rev.3.loc":"London, UK",
-  "rev.4.q":"Sehr persönlich und entspannt. John kennt Orte, die in keinem Reiseführer stehen. Absolute Empfehlung!","rev.4.name":"Familie Berger","rev.4.loc":"München, DE",
+  "rev.4.q":"Sehr persönlich und entspannt. Syl kennt Orte, die in keinem Reiseführer stehen. Absolute Empfehlung!","rev.4.name":"Familie Berger","rev.4.loc":"München, DE",
   "rev.5.q":"Our flight was delayed at midnight and he was still there, smiling, with the heater on. That's the whole company in one moment.","rev.5.name":"Dana R.","rev.5.loc":"Toronto, CA",
   "rev.6.q":"We stopped wherever we wanted for photos. Try doing that on a 50-seat bus. Worth every króna.","rev.6.name":"Priya & Sam","rev.6.loc":"Manchester, UK",
 
@@ -302,7 +302,7 @@ de:{
   "compare.mine.1":"Nur deine Gruppe — bis zu 4 bequem","compare.mine.2":"Losfahren, wenn du bereit bist, spontan halten","compare.mine.3":"Versteckte Orte, die Busse nicht erreichen","compare.mine.4":"Hausgemachte Snacks von Kate","compare.mine.5":"Ein Guide, der deinen Namen kennt",
   "compare.bus.1":"40+ Fremde nach festem Fahrplan","compare.bus.2":"15 Minuten pro Fotostopp, dann weiter","compare.bus.3":"Nur die überfüllten Hauptsehenswürdigkeiten","compare.bus.4":"Ein Sandwich von der Tankstelle","compare.bus.5":"Ein Mikrofon und das Durchzählen",
 
-  "about.eyebrow":"Über mich","about.h2":"Hallo, ich bin John.","about.lead":"Ein Pole, der sich vor Jahren in Island verliebt hat — und nie wieder ging.","about.p1":"Ich kam für eine Saison und blieb wegen des Lichts. Nach Jahren auf diesen Straßen weiß ich, wo die Busse nicht hinfahren: der Wasserfall ohne Parkplatz, die heiße Quelle, die Einheimische für sich behalten, der Ort, an dem der Sonnenuntergang genau richtig fällt.","about.p2":"Meine Frau Kate ist Köchin, du gehst also nie hungrig nach Hause. Wir behandeln jeden Gast so, wie wir selbst im Ausland behandelt werden möchten — wie Familie. Genau darum geht es bei Journey Iceland.","about.sign":"— John & Kate","about.badge.num":"600+","about.badge.t":"zufriedene Gäste seit 2014",
+  "about.eyebrow":"Über mich","about.h2":"Hallo, ich bin Sylwiusz „Syl“.","about.lead":"Ein Pole, der sich vor Jahren in Island verliebt hat — und nie wieder ging.","about.p1":"Ich kam für eine Saison und blieb wegen des Lichts. Nach Jahren auf diesen Straßen weiß ich, wo die Busse nicht hinfahren: der Wasserfall ohne Parkplatz, die heiße Quelle, die Einheimische für sich behalten, der Ort, an dem der Sonnenuntergang genau richtig fällt.","about.p2":"Meine Frau Kate ist Köchin, du gehst also nie hungrig nach Hause. Wir behandeln jeden Gast so, wie wir selbst im Ausland behandelt werden möchten — wie Familie. Genau darum geht es bei Journey Iceland.","about.sign":"— Sylwiusz & Kate","about.badge.num":"600+","about.badge.t":"zufriedene Gäste seit 2014",
 
   "exp.eyebrow":"Das Erlebnis","exp.h2":"Mehr als eine Fahrt — ein Erlebnis.","exp.lead":"Die kleinen Dinge, die aus einem Transfer eine Geschichte machen, die du zu Hause erzählst.",
   "exp.1.t":"Hausgemachtes Willkommens-Set","exp.1.d":"Kate ist Köchin. Jede Tour beginnt mit einer warmen Willkommensbox — Skyr, frisches Obst, etwas am Morgen Gebackenes.",
@@ -313,10 +313,10 @@ de:{
   "gallery.eyebrow":"Galerie","gallery.h2":"Momente von unterwegs.","gallery.lead":"Goldenes Licht, stille Straßen, warmes Essen und ab und zu ein grüner Himmel. Wischen.",
 
   "reviews.eyebrow":"Bewertungen","reviews.h2":"Sie kamen als Gäste und gingen als Freunde.","reviews.lead":"Ein paar Worte von Reisenden der letzten Zeit. Mehr auf Google.",
-  "rev.1.q":"John fand uns einen Wasserfall, an dem kein einziger anderer Mensch war. Bester Tag unserer ganzen Islandreise — und nie gehetzt.","rev.1.name":"Sarah & Mike","rev.1.loc":"Austin, USA",
+  "rev.1.q":"Syl fand uns einen Wasserfall, an dem kein einziger anderer Mensch war. Bester Tag unserer ganzen Islandreise — und nie gehetzt.","rev.1.name":"Sarah & Mike","rev.1.loc":"Austin, USA",
   "rev.2.q":"Professionell, herzlich und auf Polnisch. Vom Flughafen bis zum letzten Stopp fühlten wir uns umsorgt.","rev.2.name":"Tomasz K.","rev.2.loc":"Warschau, PL",
   "rev.3.q":"Ehrlich beim Wetter, flexibel beim Plan, und Kates Snacks waren unglaublich. Wir haben ihn zweimal in einer Woche gebucht.","rev.3.name":"Emma L.","rev.3.loc":"London, UK",
-  "rev.4.q":"Sehr persönlich und entspannt. John kennt Orte, die in keinem Reiseführer stehen. Absolute Empfehlung!","rev.4.name":"Familie Berger","rev.4.loc":"München, DE",
+  "rev.4.q":"Sehr persönlich und entspannt. Syl kennt Orte, die in keinem Reiseführer stehen. Absolute Empfehlung!","rev.4.name":"Familie Berger","rev.4.loc":"München, DE",
   "rev.5.q":"Unser Flug verspätete sich bis Mitternacht, und er war immer noch da, lächelnd, mit eingeschalteter Heizung. Das ist die ganze Firma in einem Moment.","rev.5.name":"Dana R.","rev.5.loc":"Toronto, CA",
   "rev.6.q":"Wir hielten zum Fotografieren, wo wir wollten. Versuch das mal in einem 50-Sitzer-Bus. Jede Krone wert.","rev.6.name":"Priya & Sam","rev.6.loc":"Manchester, UK",
 

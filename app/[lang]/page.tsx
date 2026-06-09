@@ -192,7 +192,7 @@ export default function Home({ params }: { params: { lang: string } }) {
         <div className="wrap about-grid">
           <div className="about-media reveal">
             <div className="about-photo">
-              <div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="John & Kate, your local hosts" src={IMG.about} /></div>
+              <div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="Sylwiusz & Kate, your local hosts" src={IMG.about} /></div>
             </div>
             <div className="about-badge">
               <div className="num">{t('about.badge.num')}</div>
