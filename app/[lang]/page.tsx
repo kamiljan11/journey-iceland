@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { isLang, makeT } from '@/lib/dictionary';
-import { SITE, IMG } from '@/lib/site';
+import { SITE, IMG, waLink } from '@/lib/site';
 
 export default function Home({ params }: { params: { lang: string } }) {
   const lang = isLang(params.lang) ? params.lang : 'en';
@@ -22,7 +22,7 @@ export default function Home({ params }: { params: { lang: string } }) {
           <p className="hero-langline">{t('hero.langline')}</p>
           <div className="hero-cta">
             <Link className="btn btn-primary btn-lg" href={L('#contact')}><span>{t('cta.check')}</span><svg><use href="#i-arrow-right" /></svg></Link>
-            <a className="btn btn-outline btn-lg" href={SITE.waHref} target="_blank" rel="noopener"><svg><use href="#i-whatsapp" /></svg><span>{t('cta.wa')}</span></a>
+            <a className="btn btn-outline btn-lg" href={waLink(t('wa.generic'))} target="_blank" rel="noopener"><svg><use href="#i-whatsapp" /></svg><span>{t('cta.wa')}</span></a>
           </div>
         </div>
         <a className="scroll-cue" href={L('#tours')}><span>{t('hero.scroll')}</span><svg><use href="#i-arrow-down" /></svg></a>
@@ -129,7 +129,7 @@ export default function Home({ params }: { params: { lang: string } }) {
               <h3>{t('tours.cta.h3')}</h3>
               <p>{t('tours.cta.p')}</p>
             </div>
-            <a className="btn btn-wa btn-lg" href={SITE.waHref} target="_blank" rel="noopener"><svg><use href="#i-whatsapp" /></svg><span>{t('cta.wa')}</span></a>
+            <a className="btn btn-wa btn-lg" href={waLink(t('wa.custom'))} target="_blank" rel="noopener"><svg><use href="#i-whatsapp" /></svg><span>{t('cta.wa')}</span></a>
           </div>
         </div>
       </section>
@@ -146,7 +146,7 @@ export default function Home({ params }: { params: { lang: string } }) {
             <p>{t('aurora.p')}</p>
             <div className="aurora-cta">
               <Link className="btn btn-primary btn-lg" href={L('#contact')}><span>{t('aurora.cta1')}</span><svg><use href="#i-arrow-right" /></svg></Link>
-              <a className="btn btn-outline btn-lg" href={SITE.waHref} target="_blank" rel="noopener"><svg><use href="#i-whatsapp" /></svg><span>{t('cta.wa.short')}</span></a>
+              <a className="btn btn-outline btn-lg" href={waLink(t('wa.aurora'))} target="_blank" rel="noopener"><svg><use href="#i-whatsapp" /></svg><span>{t('cta.wa.short')}</span></a>
             </div>
           </div>
         </div>
@@ -356,7 +356,7 @@ export default function Home({ params }: { params: { lang: string } }) {
               </form>
             </div>
             <div className="contact-side reveal d1">
-              <a className="contact-method cm-wa" href={SITE.waHref} target="_blank" rel="noopener">
+              <a className="contact-method cm-wa" href={waLink(t('wa.generic'))} target="_blank" rel="noopener">
                 <div className="ic"><svg><use href="#i-whatsapp" /></svg></div>
                 <div><small>{t('cm.wa.l')}</small><b>{SITE.phoneDisplay}</b></div>
               </a>

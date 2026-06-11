@@ -20,6 +20,7 @@ en:{
   "doc.title":"Journey Iceland — Private tours & airport transfers with a local",
   "nav.tours":"Tours","nav.why":"Why me","nav.about":"About","nav.gallery":"Gallery","nav.reviews":"Reviews","nav.faq":"FAQ","nav.contact":"Contact",
   "cta.check":"Check availability","cta.wa":"Message me on WhatsApp","cta.wa.short":"WhatsApp","cta.ask":"Ask about it",
+  "wa.generic":"Hi! I'm writing from your website journeyiceland.is. I'd like to ask about a private tour or transfer: ","wa.custom":"Hi! I'm writing from journeyiceland.is about a custom route. My question: ","wa.aurora":"Hi! I'm writing from journeyiceland.is about the Northern Lights tour. My question: ","wa.gc":"Hi! I'm writing from journeyiceland.is about the Golden Circle tour. My question: ",
   "brand.tag":"Private tours · Iceland",
   "menu":"Menu",
 
@@ -90,7 +91,7 @@ en:{
   "form.p.1":"1–4 people","form.p.2":"5–8 people",
   "opt.gc":"Golden Circle — private tour","opt.sc":"South Coast — private tour","opt.jk":"Jökulsárlón Glacier Lagoon","opt.kef":"Keflavík airport transfer","opt.bl":"Blue Lagoon transfer","opt.aurora":"Northern Lights (autumn)","opt.custom":"Custom / not sure yet",
 
-  "cm.wa.l":"WhatsApp","cm.wa.v":"+354 555 0148","cm.phone.l":"Call / text","cm.phone.v":"+354 555 0148","cm.mail.l":"Email","cm.mail.v":"hello@journeyiceland.is","cm.hours.l":"Based in","cm.hours.v":"Reykjavík · 7 days a week","map.label":"map — Reykjavík pick-up area",
+  "cm.wa.l":"WhatsApp","cm.wa.v":"+354 785 0558","cm.phone.l":"Call / text","cm.phone.v":"+354 785 0558","cm.mail.l":"Email","cm.mail.v":"hello@journeyiceland.is","cm.hours.l":"Based in","cm.hours.v":"Reykjavík · 7 days a week","map.label":"map — Reykjavík pick-up area",
 
   "pl.offer":"",
 
@@ -148,6 +149,7 @@ pl:{
   "doc.title":"Journey Iceland — prywatne wycieczki i transfery z lokalnym kierowcą",
   "nav.tours":"Wycieczki","nav.why":"Dlaczego ja","nav.about":"O mnie","nav.gallery":"Galeria","nav.reviews":"Opinie","nav.faq":"FAQ","nav.contact":"Kontakt",
   "cta.check":"Sprawdź dostępność","cta.wa":"Napisz na WhatsApp","cta.wa.short":"WhatsApp","cta.ask":"Zapytaj o termin",
+  "wa.generic":"Cześć! Piszę z Waszej strony journeyiceland.is. Chciał(a)bym zapytać o prywatną wycieczkę lub transfer: ","wa.custom":"Cześć! Piszę z journeyiceland.is w sprawie trasy na życzenie. Moje pytanie: ","wa.aurora":"Cześć! Piszę z journeyiceland.is w sprawie wycieczki na zorzę. Moje pytanie: ","wa.gc":"Cześć! Piszę z journeyiceland.is w sprawie wycieczki Golden Circle. Moje pytanie: ",
   "brand.tag":"Prywatne wycieczki · Islandia",
   "menu":"Menu",
 
@@ -214,7 +216,7 @@ pl:{
   "form.p.1":"1–4 osoby","form.p.2":"5–8 osób",
   "opt.gc":"Golden Circle — wycieczka prywatna","opt.sc":"Południowe wybrzeże — prywatnie","opt.jk":"Laguna lodowcowa Jökulsárlón","opt.kef":"Transfer z lotniska Keflavík","opt.bl":"Transfer do Blue Lagoon","opt.aurora":"Zorza polarna (jesień)","opt.custom":"Inne / jeszcze nie wiem",
 
-  "cm.wa.l":"WhatsApp","cm.wa.v":"+354 555 0148","cm.phone.l":"Telefon / SMS","cm.phone.v":"+354 555 0148","cm.mail.l":"E-mail","cm.mail.v":"hello@journeyiceland.is","cm.hours.l":"Baza","cm.hours.v":"Reykjavík · 7 dni w tygodniu","map.label":"mapa — rejon odbioru Reykjavík",
+  "cm.wa.l":"WhatsApp","cm.wa.v":"+354 785 0558","cm.phone.l":"Telefon / SMS","cm.phone.v":"+354 785 0558","cm.mail.l":"E-mail","cm.mail.v":"hello@journeyiceland.is","cm.hours.l":"Baza","cm.hours.v":"Reykjavík · 7 dni w tygodniu","map.label":"mapa — rejon odbioru Reykjavík",
 
   "pl.offer":"🇵🇱 Dla polskich podróżnych — zapytaj o specjalną cenę i powitanie po polsku.",
 
@@ -270,6 +272,7 @@ de:{
   "doc.title":"Journey Iceland — private Touren & Flughafentransfers mit einem Einheimischen",
   "nav.tours":"Touren","nav.why":"Warum ich","nav.about":"Über mich","nav.gallery":"Galerie","nav.reviews":"Bewertungen","nav.faq":"FAQ","nav.contact":"Kontakt",
   "cta.check":"Verfügbarkeit prüfen","cta.wa":"Schreib mir auf WhatsApp","cta.wa.short":"WhatsApp","cta.ask":"Frag nach",
+  "wa.generic":"Hallo! Ich schreibe über Ihre Website journeyiceland.is. Ich möchte gern nach einer privaten Tour oder einem Transfer fragen: ","wa.custom":"Hallo! Ich schreibe über journeyiceland.is wegen einer Wunschroute. Meine Frage: ","wa.aurora":"Hallo! Ich schreibe über journeyiceland.is wegen der Nordlicht-Tour. Meine Frage: ","wa.gc":"Hallo! Ich schreibe über journeyiceland.is wegen der Golden-Circle-Tour. Meine Frage: ",
   "brand.tag":"Private Touren · Island",
   "menu":"Menü",
 
@@ -336,7 +339,7 @@ de:{
   "form.p.1":"1–4 Personen","form.p.2":"5–8 Personen",
   "opt.gc":"Golden Circle — private Tour","opt.sc":"Südküste — private Tour","opt.jk":"Gletscherlagune Jökulsárlón","opt.kef":"Flughafentransfer Keflavík","opt.bl":"Blue-Lagoon-Transfer","opt.aurora":"Nordlichter (Herbst)","opt.custom":"Individuell / noch unklar",
 
-  "cm.wa.l":"WhatsApp","cm.wa.v":"+354 555 0148","cm.phone.l":"Anruf / SMS","cm.phone.v":"+354 555 0148","cm.mail.l":"E-Mail","cm.mail.v":"hello@journeyiceland.is","cm.hours.l":"Standort","cm.hours.v":"Reykjavík · 7 Tage die Woche","map.label":"Karte — Abholbereich Reykjavík",
+  "cm.wa.l":"WhatsApp","cm.wa.v":"+354 785 0558","cm.phone.l":"Anruf / SMS","cm.phone.v":"+354 785 0558","cm.mail.l":"E-Mail","cm.mail.v":"hello@journeyiceland.is","cm.hours.l":"Standort","cm.hours.v":"Reykjavík · 7 Tage die Woche","map.label":"Karte — Abholbereich Reykjavík",
 
   "pl.offer":"",
 

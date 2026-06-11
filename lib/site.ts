@@ -1,16 +1,22 @@
-// Central contact constants — PLACEHOLDERS until the client sends real ones.
+// Central contact constants.
 export const SITE = {
   brand: 'Journey Iceland',
   domain: 'journeyiceland.is',
   email: 'hello@journeyiceland.is',
-  phoneDisplay: '+354 555 0148',
-  phoneHref: 'tel:+3545550148',
-  wa: '3545550148',
-  waHref: 'https://wa.me/3545550148',
+  phoneDisplay: '+354 785 0558',
+  phoneHref: 'tel:+3547850558',
+  wa: '3547850558',
+  waHref: 'https://wa.me/3547850558',
   facebook: '#',
   instagram: '#',
   google: '#',
 };
+
+// Build a WhatsApp link with an optional pre-filled (localized) message.
+export function waLink(text?: string) {
+  const base = `https://wa.me/${SITE.wa}`;
+  return text ? `${base}?text=${encodeURIComponent(text)}` : base;
+}
 
 // Optimised golden-hour photography (WebP). Gradient placeholders remain only
 // where we still need real shots (food/grill/restaurant, true Golden Circle).

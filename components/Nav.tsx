@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import LangSwitch from './LangSwitch';
-import { SITE, IMG } from '@/lib/site';
+import { SITE, IMG, waLink } from '@/lib/site';
 
 type T = (k: string) => string;
 
@@ -32,7 +32,7 @@ export default function Nav({ lang, t }: { lang: string; t: T }) {
           <div className="nav-right">
             <div className="nav-contact-icons">
               <a className="icon-btn" href={SITE.phoneHref} aria-label="Call"><svg><use href="#i-phone" /></svg></a>
-              <a className="icon-btn" href={SITE.waHref} target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-whatsapp" /></svg></a>
+              <a className="icon-btn" href={waLink(t('wa.generic'))} target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-whatsapp" /></svg></a>
               <a className="icon-btn" href={`mailto:${SITE.email}`} aria-label="Email"><svg><use href="#i-mail" /></svg></a>
             </div>
             <LangSwitch lang={lang} />
@@ -59,7 +59,7 @@ export default function Nav({ lang, t }: { lang: string; t: T }) {
           </nav>
           <div className="drawer-foot">
             <div className="drawer-contact">
-              <a href={SITE.waHref} target="_blank" rel="noopener"><svg><use href="#i-whatsapp" /></svg><span>{SITE.phoneDisplay}</span></a>
+              <a href={waLink(t('wa.generic'))} target="_blank" rel="noopener"><svg><use href="#i-whatsapp" /></svg><span>{SITE.phoneDisplay}</span></a>
               <a href={SITE.phoneHref}><svg><use href="#i-phone" /></svg><span>{SITE.phoneDisplay}</span></a>
               <a href={`mailto:${SITE.email}`}><svg><use href="#i-mail" /></svg><span>{SITE.email}</span></a>
             </div>

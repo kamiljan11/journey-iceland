@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import '../globals.css';
 import { LANGS, isLang, makeT } from '@/lib/dictionary';
-import { SITE } from '@/lib/site';
+import { SITE, waLink } from '@/lib/site';
 import Sprite from '@/components/Sprite';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
@@ -60,7 +60,7 @@ export default function LangLayout({
         <Footer lang={lang} t={t} />
 
         {/* floating WhatsApp */}
-        <a className="wa-float" href={SITE.waHref} target="_blank" rel="noopener" aria-label="WhatsApp">
+        <a className="wa-float" href={waLink(t('wa.generic'))} target="_blank" rel="noopener" aria-label="WhatsApp">
           <span className="wa-pulse"></span>
           <svg><use href="#i-whatsapp" /></svg>
           <span className="wa-label">{t('cta.wa.short')}</span>

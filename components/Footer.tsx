@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { SITE, IMG } from '@/lib/site';
+import { SITE, IMG, waLink } from '@/lib/site';
 
 type T = (k: string) => string;
 
@@ -40,7 +40,7 @@ export default function Footer({ lang, t }: { lang: string; t: T }) {
         <div className="footer-col">
           <h5>{t('footer.contact')}</h5>
           <ul>
-            <li><a href={SITE.waHref} target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href={waLink(t('wa.generic'))} target="_blank" rel="noopener">WhatsApp</a></li>
             <li><a href={SITE.phoneHref}>{SITE.phoneDisplay}</a></li>
             <li><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
           </ul>

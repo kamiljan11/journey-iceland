@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { isLang, makeT } from '@/lib/dictionary';
-import { SITE, IMG } from '@/lib/site';
+import { SITE, IMG, waLink } from '@/lib/site';
 
 export function generateMetadata({ params }: { params: { lang: string } }): Metadata {
   const lang = isLang(params.lang) ? params.lang : 'en';
@@ -65,7 +65,7 @@ export default function GoldenCircle({ params }: { params: { lang: string } }) {
           </div>
           <div className="hero-cta">
             <a className="btn btn-primary btn-lg" href="#avail"><span>{t('cta.check')}</span><svg><use href="#i-arrow-right" /></svg></a>
-            <a className="btn btn-outline btn-lg" href={SITE.waHref} target="_blank" rel="noopener"><svg><use href="#i-whatsapp" /></svg><span>{t('cta.wa.short')}</span></a>
+            <a className="btn btn-outline btn-lg" href={waLink(t('wa.gc'))} target="_blank" rel="noopener"><svg><use href="#i-whatsapp" /></svg><span>{t('cta.wa.short')}</span></a>
           </div>
         </div>
       </section>
@@ -362,7 +362,7 @@ export default function GoldenCircle({ params }: { params: { lang: string } }) {
               </form>
             </div>
             <div className="contact-side reveal d1">
-              <a className="contact-method cm-wa" href={SITE.waHref} target="_blank" rel="noopener">
+              <a className="contact-method cm-wa" href={waLink(t('wa.gc'))} target="_blank" rel="noopener">
                 <div className="ic"><svg><use href="#i-whatsapp" /></svg></div>
                 <div><small>{t('cm.wa.l')}</small><b>{SITE.phoneDisplay}</b></div>
               </a>
