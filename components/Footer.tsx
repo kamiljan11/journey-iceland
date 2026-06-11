@@ -13,6 +13,7 @@ export default function Footer({ lang, t }: { lang: string; t: T }) {
             <img src={IMG.logo} alt="Journey Iceland" style={{ height: 54, width: 'auto', maxWidth: '100%' }} />
           </Link>
           <p className="footer-about">{t('footer.tagline')}</p>
+          <p className="footer-about" style={{ marginTop: 8, opacity: 0.82, fontSize: '.82rem' }}>{SITE.address}</p>
           <div className="footer-social">
             <a href={SITE.facebook} aria-label="Facebook"><svg><use href="#i-facebook" /></svg></a>
             <a href={SITE.instagram} aria-label="Instagram"><svg><use href="#i-instagram" /></svg></a>

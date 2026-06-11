@@ -162,9 +162,9 @@ export default function Home({ params }: { params: { lang: string } }) {
           </div>
           <div className="why-grid">
             <div className="why-card reveal"><div className="why-ic"><svg><use href="#i-users" /></svg></div><h3>{t('why.1.t')}</h3><p>{t('why.1.d')}</p></div>
-            <div className="why-card reveal d1"><div className="why-ic"><svg><use href="#i-pin" /></svg></div><h3>{t('why.2.t')}</h3><p>{t('why.2.d')}</p></div>
-            <div className="why-card reveal d2"><div className="why-ic"><svg><use href="#i-shield" /></svg></div><h3>{t('why.3.t')}</h3><p>{t('why.3.d')}</p></div>
-            <div className="why-card reveal d3"><div className="why-ic"><svg><use href="#i-globe" /></svg></div><h3>{t('why.4.t')}</h3><p>{t('why.4.d')}</p></div>
+            <div className="why-card reveal d1"><div className="why-ic"><svg><use href="#i-heart" /></svg></div><h3>{t('why.2.t')}</h3><p>{t('why.2.d')}</p></div>
+            <div className="why-card reveal d2"><div className="why-ic"><svg><use href="#i-route" /></svg></div><h3>{t('why.3.t')}</h3><p>{t('why.3.d')}</p></div>
+            <div className="why-card reveal d3"><div className="why-ic"><svg><use href="#i-camera" /></svg></div><h3>{t('why.4.t')}</h3><p>{t('why.4.d')}</p></div>
           </div>
           <div className="compare">
             <div className="compare-col compare-mine reveal">
@@ -205,6 +205,7 @@ export default function Home({ params }: { params: { lang: string } }) {
             <p className="lead">{t('about.lead')}</p>
             <p>{t('about.p1')}</p>
             <p>{t('about.p2')}</p>
+            <p>{t('about.p3')}</p>
             <p className="signature">{t('about.sign')}</p>
           </div>
         </div>
@@ -294,7 +295,7 @@ export default function Home({ params }: { params: { lang: string } }) {
             <h2>{t('faq.h2')}</h2>
           </div>
           <div className="faq">
-            {[1, 2, 3, 4, 5, 6, 7].map((n) => (
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => (
               <div className="faq-item reveal" key={n}>
                 <button className="faq-q"><span>{t(`faq.${n}.q`)}</span><span className="q-ic"><svg><use href="#i-plus" /></svg></span></button>
                 <div className="faq-a"><div className="faq-a-inner">{t(`faq.${n}.a`)}</div></div>

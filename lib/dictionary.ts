@@ -18,7 +18,7 @@ export const I18N: Record<string, Record<string,string>> = {
 /* =========================== ENGLISH =========================== */
 en:{
   "doc.title":"Journey Iceland — Private tours & airport transfers with a local",
-  "nav.tours":"Tours","nav.why":"Why me","nav.about":"About","nav.gallery":"Gallery","nav.reviews":"Reviews","nav.faq":"FAQ","nav.contact":"Contact",
+  "nav.tours":"Tours","nav.why":"Why us","nav.about":"About","nav.gallery":"Gallery","nav.reviews":"Reviews","nav.faq":"FAQ","nav.contact":"Contact",
   "cta.check":"Check availability","cta.wa":"Message me on WhatsApp","cta.wa.short":"WhatsApp","cta.ask":"Ask about it",
   "wa.generic":"Hi! I'm writing from your website journeyiceland.is. I'd like to ask about a private tour or transfer: ","wa.custom":"Hi! I'm writing from journeyiceland.is about a custom route. My question: ","wa.aurora":"Hi! I'm writing from journeyiceland.is about the Northern Lights tour. My question: ","wa.gc":"Hi! I'm writing from journeyiceland.is about the Golden Circle tour. My question: ",
   "brand.tag":"Private tours · Iceland",
@@ -34,30 +34,30 @@ en:{
 
   "tours.eyebrow":"Tours & transfers","tours.h2":"Where would you like to go?","tours.lead":"Small private groups, hotel pick-up, and a route we shape around you. Tour prices are per group — not per person.",
   "tours.toursLabel":"Day tours","tours.transfersLabel":"Airport & spa transfers",
-  "tour.see":"See tour","tour.tbc":"price TBC","tour.perGroup":"per group",
+  "tour.see":"See tour","tour.tbc":"","tour.perGroup":"per group",
 
-  "tour.gc.name":"Golden Circle","tour.gc.dur":"6–8 hrs","tour.gc.price":"from 89,000 ISK","tour.gc.alt":"≈ $640 / €590 · per group",
-  "tour.sc.name":"South Coast","tour.sc.dur":"10–11 hrs","tour.sc.price":"from 129,000 ISK","tour.sc.alt":"≈ $930 / €855 · per group",
+  "tour.gc.name":"Golden Circle","tour.gc.dur":"6–8 hrs","tour.gc.price":"from 85,000 ISK","tour.gc.alt":"≈ $610 / €570 · per group",
+  "tour.sc.name":"South Coast","tour.sc.dur":"8–10 hrs","tour.sc.price":"from 110,000 ISK","tour.sc.alt":"≈ $790 / €730 · per group",
   "tour.jk.name":"Jökulsárlón Glacier Lagoon","tour.jk.dur":"12–14 hrs","tour.jk.price":"from 189,000 ISK","tour.jk.alt":"≈ $1,360 / €1,250 · per group",
 
   "transfer.kef.name":"Keflavík Airport ⇄ Reykjavík","transfer.kef.meta":"≈ 50 min · up to 4 guests","transfer.kef.price":"from 22,000 ISK",
-  "transfer.bl.name":"Blue Lagoon transfer","transfer.bl.meta":"Airport or city · wait & return option","transfer.bl.price":"from 28,000 ISK",
+  "transfer.bl.name":"Blue Lagoon transfer","transfer.bl.meta":"Airport or city · ticket not included","transfer.bl.price":"from 22,000 ISK",
   "transfer.check":"Check availability",
 
   "tours.cta.h3":"We drive everywhere — custom route on request.","tours.cta.p":"Volcanoes, hot springs, a wedding photo run, a multi-day loop. Tell me the idea and I'll build the day around it.",
 
-  "aurora.tag":"This autumn · pre-booking now","aurora.eyebrow":"Northern Lights","aurora.h2":"Chasing the Northern Lights — this autumn.","aurora.p":"From September the skies go dark again. I watch the forecast for you, drive away from the city glow, and Kate sends a thermos of hot chocolate. Seats are limited — ask to pre-book now.","aurora.cta1":"Ask about it",
+  "aurora.tag":"This autumn · pre-booking now","aurora.eyebrow":"Northern Lights","aurora.h2":"Chasing the Northern Lights — this autumn.","aurora.p":"From September the skies go dark again. I watch the forecast for you, drive away from the city glow, and Kate sends a thermos of hot chocolate. Seats are limited — ask to pre-book now. From 50,000 ISK per group (1–4) · 2–3 h.","aurora.cta1":"Ask about it",
 
-  "why.eyebrow":"Why travel with me","why.h2":"You're not a number on a bus.","why.lead":"One driver, one small group, one day shaped entirely around you.",
-  "why.1.t":"Private & personal","why.1.d":"Only your group in the car. We start when you like, stop where you like, and never wait on forty strangers.",
-  "why.2.t":"Local & honest","why.2.d":"I live here. I'll take you to the quiet spots — and tell you honestly if it's not worth going today.",
-  "why.3.t":"Safety first","why.3.d":"Experienced, fully insured, and sensible about the weather. If a road is bad, we change the plan, not your safety.",
-  "why.4.t":"Your language","why.4.d":"I guide in English, Polish and German — so nothing important gets lost on the road.",
+  "why.eyebrow":"Why travel with us","why.h2":"We're not just guides — we're a family.","why.lead":"We live here — we raise our kids, work and spend our free time here, and we show you the Iceland we love.",
+  "why.1.t":"Not a mass agency","why.1.d":"We never rush you or tick sights off a list. There's room to slow down and truly feel the atmosphere of Iceland.",
+  "why.2.t":"Hospitality in our blood","why.2.d":"We love people. We care about the good atmosphere, the small gestures, and making sure you feel relaxed and looked after.",
+  "why.3.t":"We travel the way we'd want to","why.3.d":"We stop where the view takes your breath away — and sometimes take the longer road, because it turns out to be the most beautiful.",
+  "why.4.t":"Memories, not a checklist","why.4.d":"You'll go home with more than photos — with emotions, stories and the feeling that you met the real Iceland.",
   "compare.mine.title":"Private with me","compare.mine.tag":"You","compare.bus.title":"Big bus tour","compare.bus.tag":"Them",
   "compare.mine.1":"Your group only — up to 4 in comfort","compare.mine.2":"Leave when you're ready, stop on a whim","compare.mine.3":"Hidden spots the buses can't reach","compare.mine.4":"Home-cooked snacks from Kate","compare.mine.5":"One guide who knows your name",
   "compare.bus.1":"40+ strangers on a fixed schedule","compare.bus.2":"15 minutes per photo stop, then go","compare.bus.3":"Only the crowded headline sights","compare.bus.4":"A petrol-station sandwich","compare.bus.5":"A microphone and a headcount",
 
-  "about.eyebrow":"About","about.h2":"Hi, I'm Sylwiusz “Syl”.","about.lead":"A Pole who fell for Iceland years ago — and never left.","about.p1":"I came for a season and stayed for the light. After years of driving these roads I know where the buses don't go: the waterfall with no car park, the hot spring locals keep to themselves, the spot where the sunset lands just right.","about.p2":"My wife Kate is a chef, so you'll never leave hungry. We treat every guest the way we'd want to be treated abroad — like family. That's the whole idea behind Journey Iceland.","about.sign":"— Sylwiusz & Kate","about.badge.num":"600+","about.badge.t":"happy guests since 2014",
+  "about.eyebrow":"About","about.h2":"Hi, I'm Sylwiusz “Syl”.","about.lead":"Our Iceland story began years ago. Like many, we started from scratch and, step by step, built a life here — until this island became home. It's where our twin daughters were born and where our greatest adventure truly began.","about.p1":"For as long as I can remember I've explored Iceland — discovering hidden roads, chasing breathtaking viewpoints and finding the stories that make each place unique. My passion goes far beyond the famous landmarks; I'm always looking for the quiet corners most people drive straight past.","about.p2":"As a family we keep that adventure alive. With our daughters beside us we hike, take the scenic route and often set off with no strict plan — stopping by a waterfall for a picnic, gathering wild herbs and watching the weather change by the minute. My wife is a Head Chef who loves welcoming people; every year we still make homemade syrups and tinctures, just as our grandmothers did.","about.p3":"We don't see our guests as tourists — we welcome them as friends, and invite you to discover Iceland the way we do: with curiosity, authenticity and heart. Discover Iceland the old-fashioned way.","about.sign":"— Sylwiusz & Kate","about.badge.num":"600+","about.badge.t":"happy guests since 2014",
 
   "exp.eyebrow":"The experience","exp.h2":"More than a drive — an experience.","exp.lead":"The little things that turn a transfer into a story you'll tell back home.",
   "exp.1.t":"Home-cooked welcome set","exp.1.d":"Kate is a chef. Every tour starts with a warm welcome box — skyr, fresh fruit, something baked that morning.",
@@ -83,6 +83,8 @@ en:{
   "faq.5.q":"Is the tour really private?","faq.5.a":"Always. It's only ever your group in the car — never shared with strangers. The pace, the stops and the music are yours.",
   "faq.6.q":"Do you pick up from my hotel?","faq.6.a":"Yes — free hotel, apartment or campsite pick-up across the Reykjavík area, and from Keflavík Airport for transfers. I'll confirm the exact time when we talk.",
   "faq.7.q":"What if the weather turns bad on the day?","faq.7.a":"We adapt. I'll re-route to sheltered, still-beautiful stops, move the day if it's truly unsafe, or reschedule with no fuss. You'll never be pushed out into a storm for the sake of a timetable.",
+  "faq.8.q":"Can I pay by card while travelling in Iceland?","faq.8.a":"Yes — card works almost everywhere in Iceland, from fuel stations to small cafés, so you'll rarely need cash. For the tour itself I'll send a secure payment link or take card on the day.",
+  "faq.9.q":"What weather can we expect in Iceland?","faq.9.a":"Honestly — a bit of everything. Iceland's weather can change within minutes, so a sunny morning may turn to rain and back again. I watch the forecast closely, dress in layers, and shape the day around the conditions so you still get the best of it.",
 
   "contact.eyebrow":"Check availability","contact.h2":"Let's plan your day in Iceland.","contact.lead":"Send a quick request and I'll reply personally — usually within a few hours — to confirm the details with you.",
   "form.tour":"Which tour or transfer?","form.tour.opt":"Choose one…","form.date":"Preferred date","form.people":"How many of you?","form.name":"Your name","form.email":"Email","form.phone":"Phone / WhatsApp","form.phone.opt":"(optional)","form.msg":"Anything else?","form.msg.opt":"(optional)","form.msg.ph":"Flight times, ideas, must-see places…",
@@ -101,7 +103,7 @@ en:{
   "tp.bc.tours":"Tours","tp.bc.cur":"Golden Circle",
   "tp.eyebrow":"Private day tour · from Reykjavík",
   "tp.h1":"Golden Circle — private tour from Reykjavík.","tp.sub":"Iceland's three icons — a thundering waterfall, an erupting geyser and a continental rift — at your own pace, with no crowds and no clock.",
-  "tp.qf.dur":"6–8 hours","tp.qf.price":"from 89,000 ISK","tp.qf.priv":"Private · max 4","tp.qf.pickup":"Hotel pick-up","tp.qf.lang":"EN · PL · DE",
+  "tp.qf.dur":"6–8 hours","tp.qf.price":"from 85,000 ISK","tp.qf.priv":"Private · max 4","tp.qf.pickup":"Hotel pick-up","tp.qf.lang":"EN · PL · DE",
   "tp.sn.overview":"Overview","tp.sn.route":"Route","tp.sn.map":"Map","tp.sn.gallery":"Gallery","tp.sn.reviews":"Reviews","tp.sn.faq":"FAQ","tp.sn.avail":"Availability",
 
   "tp.hl.eyebrow":"In short","tp.hl.h2":"What the day looks like.",
@@ -138,7 +140,7 @@ en:{
   "tp.faq.1.q":"How long is the Golden Circle tour?","tp.faq.1.a":"Usually 6–8 hours door to door, depending on how long you want to linger and whether we add a hidden stop or a hot-spring soak. It's your day — we're never watching a coach timetable.",
   "tp.faq.2.q":"How many people can come?","tp.faq.2.a":"Up to 4 guests travel in comfort in the car. Have a group of 5–8? Message me and I'll arrange the right vehicle.",
   "tp.faq.3.q":"Can we do the Golden Circle in winter?","tp.faq.3.a":"Yes — it's beautiful under snow, and the shorter days even give a chance of aurora on the drive home. I adjust the route and timing to the conditions and daylight.",
-  "tp.faq.4.q":"What does 'from 89,000 ISK' mean?","tp.faq.4.a":"That's a per-group starting price, not per person — so it's the same whether one or four of you travel. The final quote depends on season, pick-up point and any extras. (Prices to be confirmed.)",
+  "tp.faq.4.q":"What does 'from 85,000 ISK' mean?","tp.faq.4.a":"That's a per-group starting price, not per person — so it's the same whether one or four of you travel. The final quote depends on season, pick-up point and any extras.",
 
   "tp.also.eyebrow":"You may also like","tp.also.h2":"Other ways to see Iceland.",
   "tp.avail.eyebrow":"Check availability","tp.avail.h2":"Check dates for the Golden Circle.","tp.avail.lead":"Send a quick request with your dates and I'll reply personally to confirm everything.",
@@ -147,7 +149,7 @@ en:{
 /* =========================== POLSKI =========================== */
 pl:{
   "doc.title":"Journey Iceland — prywatne wycieczki i transfery z lokalnym kierowcą",
-  "nav.tours":"Wycieczki","nav.why":"Dlaczego ja","nav.about":"O mnie","nav.gallery":"Galeria","nav.reviews":"Opinie","nav.faq":"FAQ","nav.contact":"Kontakt",
+  "nav.tours":"Wycieczki","nav.why":"Dlaczego my","nav.about":"O nas","nav.gallery":"Galeria","nav.reviews":"Opinie","nav.faq":"FAQ","nav.contact":"Kontakt",
   "cta.check":"Sprawdź dostępność","cta.wa":"Napisz na WhatsApp","cta.wa.short":"WhatsApp","cta.ask":"Zapytaj o termin",
   "wa.generic":"Cześć! Piszę z Waszej strony journeyiceland.is. Chciał(a)bym zapytać o prywatną wycieczkę lub transfer: ","wa.custom":"Cześć! Piszę z journeyiceland.is w sprawie trasy na życzenie. Moje pytanie: ","wa.aurora":"Cześć! Piszę z journeyiceland.is w sprawie wycieczki na zorzę. Moje pytanie: ","wa.gc":"Cześć! Piszę z journeyiceland.is w sprawie wycieczki Golden Circle. Moje pytanie: ",
   "brand.tag":"Prywatne wycieczki · Islandia",
@@ -159,30 +161,30 @@ pl:{
 
   "tours.eyebrow":"Wycieczki i transfery","tours.h2":"Dokąd chcesz pojechać?","tours.lead":"Małe prywatne grupy, odbiór z hotelu i trasa ułożona pod Ciebie. Ceny wycieczek są za grupę — nie od osoby.",
   "tours.toursLabel":"Wycieczki jednodniowe","tours.transfersLabel":"Transfery z lotniska i do term",
-  "tour.see":"Zobacz wycieczkę","tour.tbc":"cena do potwierdzenia","tour.perGroup":"za grupę",
+  "tour.see":"Zobacz wycieczkę","tour.tbc":"","tour.perGroup":"za grupę",
 
-  "tour.gc.name":"Golden Circle","tour.gc.dur":"6–8 godz.","tour.gc.price":"od 89 000 ISK","tour.gc.alt":"≈ 2 600 zł · za grupę",
-  "tour.sc.name":"Południowe wybrzeże","tour.sc.dur":"10–11 godz.","tour.sc.price":"od 129 000 ISK","tour.sc.alt":"≈ 3 800 zł · za grupę",
+  "tour.gc.name":"Golden Circle","tour.gc.dur":"6–8 godz.","tour.gc.price":"od 85 000 ISK","tour.gc.alt":"≈ 2 600 zł · za grupę",
+  "tour.sc.name":"Południowe wybrzeże","tour.sc.dur":"8–10 godz.","tour.sc.price":"od 110 000 ISK","tour.sc.alt":"≈ 3 300 zł · za grupę",
   "tour.jk.name":"Laguna lodowcowa Jökulsárlón","tour.jk.dur":"12–14 godz.","tour.jk.price":"od 189 000 ISK","tour.jk.alt":"≈ 5 600 zł · za grupę",
 
   "transfer.kef.name":"Lotnisko Keflavík ⇄ Reykjavík","transfer.kef.meta":"≈ 50 min · do 4 osób","transfer.kef.price":"od 22 000 ISK",
-  "transfer.bl.name":"Transfer do Blue Lagoon","transfer.bl.meta":"Z lotniska lub miasta · opcja z powrotem","transfer.bl.price":"od 28 000 ISK",
+  "transfer.bl.name":"Transfer do Blue Lagoon","transfer.bl.meta":"Z lotniska lub miasta · bilet nieuwzględniony","transfer.bl.price":"od 22 000 ISK",
   "transfer.check":"Sprawdź dostępność",
 
   "tours.cta.h3":"Dowiozę wszędzie — trasa na życzenie.","tours.cta.p":"Wulkany, gorące źródła, sesja ślubna, kilkudniowa pętla. Powiedz, co chodzi Ci po głowie, a ułożę pod to cały dzień.",
 
-  "aurora.tag":"Tej jesieni · zapisy już teraz","aurora.eyebrow":"Zorza polarna","aurora.h2":"Pogoń za zorzą — już tej jesieni.","aurora.p":"Od września niebo znów robi się ciemne. Śledzę dla Ciebie prognozę, wywożę poza łunę miasta, a Kasia dorzuca termos gorącej czekolady. Miejsc jest mało — zapytaj o wcześniejszą rezerwację.","aurora.cta1":"Zapytaj o termin",
+  "aurora.tag":"Tej jesieni · zapisy już teraz","aurora.eyebrow":"Zorza polarna","aurora.h2":"Pogoń za zorzą — już tej jesieni.","aurora.p":"Od września niebo znów robi się ciemne. Śledzę dla Ciebie prognozę, wywożę poza łunę miasta, a Kasia dorzuca termos gorącej czekolady. Miejsc jest mało — zapytaj o wcześniejszą rezerwację. Od 50 000 ISK za grupę (1–4) · 2–3 h.","aurora.cta1":"Zapytaj o termin",
 
-  "why.eyebrow":"Dlaczego ze mną","why.h2":"Nie jesteś numerem w autobusie.","why.lead":"Jeden kierowca, jedna mała grupa, jeden dzień ułożony w całości pod Ciebie.",
-  "why.1.t":"Prywatnie i osobiście","why.1.d":"W aucie tylko Twoja grupa. Ruszamy, kiedy chcesz, stajemy, gdzie chcesz, i nie czekamy na czterdziestu obcych ludzi.",
-  "why.2.t":"Lokalnie i szczerze","why.2.d":"Tu mieszkam. Zawiozę Cię w ciche miejsca — i powiem szczerze, jeśli dziś nie warto jechać.",
-  "why.3.t":"Bezpieczeństwo przede wszystkim","why.3.d":"Doświadczony, w pełni ubezpieczony i rozsądny wobec pogody. Jeśli droga jest zła, zmieniamy plan, nie Twoje bezpieczeństwo.",
-  "why.4.t":"Twój język","why.4.d":"Oprowadzam po polsku, angielsku i niemiecku — nic ważnego nie zgubi się po drodze.",
+  "why.eyebrow":"Dlaczego z nami","why.h2":"Nie jesteśmy tylko przewodnikami — jesteśmy rodziną.","why.lead":"Mieszkamy tutaj od lat. To tu wychowujemy dzieci, pracujemy i spędzamy wolny czas. Pokazujemy Islandię, którą sami kochamy.",
+  "why.1.t":"Nie masowe biuro podróży","why.1.d":"Nie poganiamy i nie odhaczamy atrakcji z listy. Dajemy przestrzeń, by zwolnić i naprawdę poczuć atmosferę Islandii.",
+  "why.2.t":"Gościnność mamy we krwi","why.2.d":"Uwielbiamy ludzi. Dbamy o dobrą atmosferę, drobne gesty i to, by goście czuli się swobodnie i zaopiekowani.",
+  "why.3.t":"Podróżujemy tak, jak sami chcielibyśmy","why.3.d":"Zatrzymujemy się tam, gdzie widok zapiera dech. Czasem wybieramy dłuższą drogę, bo to właśnie ona okazuje się najpiękniejsza.",
+  "why.4.t":"Wspomnienia, nie lista atrakcji","why.4.d":"Zostają z Wami nie tylko zdjęcia, ale emocje, historie i poczucie, że poznaliście prawdziwą Islandię.",
   "compare.mine.title":"Prywatnie ze mną","compare.mine.tag":"Ty","compare.bus.title":"Duży autokar","compare.bus.tag":"Oni",
   "compare.mine.1":"Tylko Twoja grupa — do 4 osób w komforcie","compare.mine.2":"Wyjazd, gdy jesteś gotowy, postój pod wpływem chwili","compare.mine.3":"Ukryte miejsca, do których autokar nie dojedzie","compare.mine.4":"Domowy poczęstunek od Kasi","compare.mine.5":"Jeden przewodnik, który zna Twoje imię",
   "compare.bus.1":"40+ obcych osób i sztywny harmonogram","compare.bus.2":"15 minut na zdjęcie i jedziemy dalej","compare.bus.3":"Tylko zatłoczone, najbardziej znane punkty","compare.bus.4":"Kanapka ze stacji benzynowej","compare.bus.5":"Mikrofon i liczenie głów",
 
-  "about.eyebrow":"O mnie","about.h2":"Cześć, jestem Sylwiusz.","about.lead":"Polak, który lata temu zakochał się w Islandii — i już został.","about.p1":"Przyjechałem na jeden sezon, a zostałem dla światła. Po latach na tych drogach wiem, gdzie nie jeżdżą autobusy: wodospad bez parkingu, gorące źródło, które miejscowi zostawiają dla siebie, miejsce, gdzie zachód słońca pada dokładnie tak, jak trzeba.","about.p2":"Moja żona Kasia jest szefową kuchni, więc nigdy nie wyjedziesz głodny. Każdego gościa traktujemy tak, jak sami chcielibyśmy być traktowani za granicą — jak rodzinę. O to właśnie chodzi w Journey Iceland.","about.sign":"— Sylwiusz i Kasia","about.badge.num":"600+","about.badge.t":"zadowolonych gości od 2014",
+  "about.eyebrow":"O nas","about.h2":"Cześć, jestem Sylwiusz.","about.lead":"Nasza islandzka historia zaczęła się lata temu. Jak wielu, zaczynaliśmy od zera i krok po kroku budowaliśmy tu życie — aż ta wyspa stała się naszym domem. To tu urodziły się nasze bliźniaczki i tu naprawdę zaczęła się nasza największa przygoda.","about.p1":"Odkąd pamiętam, zwiedzam Islandię — szukając ukrytych dróg, zapierających dech widoków i historii, które sprawiają, że każde miejsce jest wyjątkowe. Moja pasja sięga daleko poza znane atrakcje; zawsze szukam cichych zakątków, które większość po prostu mija.","about.p2":"Jako rodzina wciąż przeżywamy tę przygodę. Z córkami u boku wędrujemy, wybieramy malowniczą trasę i często ruszamy bez sztywnego planu — zatrzymując się na piknik przy wodospadzie, zbierając dzikie zioła i patrząc, jak pogoda zmienia się z minuty na minutę. Moja żona jest szefową kuchni i uwielbia gościć ludzi; co roku robimy domowe syropy i nalewki, tak jak kiedyś nasze babcie.","about.p3":"Naszych gości nie traktujemy jak turystów — witamy ich jak przyjaciół i zapraszamy, byś odkrył Islandię tak jak my: z ciekawością, autentycznością i sercem. Odkryj Islandię w starym, dobrym stylu.","about.sign":"— Sylwiusz i Kasia","about.badge.num":"600+","about.badge.t":"zadowolonych gości od 2014",
 
   "exp.eyebrow":"Przeżycie","exp.h2":"Więcej niż przejazd — przeżycie.","exp.lead":"Drobiazgi, które zamieniają transfer w historię opowiadaną po powrocie.",
   "exp.1.t":"Domowy zestaw powitalny","exp.1.d":"Kasia jest szefową kuchni. Każda wycieczka zaczyna się od ciepłego pudełka — skyr, świeże owoce, coś upieczonego tego ranka.",
@@ -208,6 +210,8 @@ pl:{
   "faq.5.q":"Czy wycieczka jest naprawdę prywatna?","faq.5.a":"Zawsze. W aucie jest wyłącznie Twoja grupa — nigdy z obcymi. Tempo, przystanki i muzyka należą do Ciebie.",
   "faq.6.q":"Czy odbierasz z hotelu?","faq.6.a":"Tak — bezpłatny odbiór z hotelu, mieszkania lub kempingu w rejonie Reykjavíku, a przy transferach także z lotniska Keflavík. Dokładną godzinę ustalimy w rozmowie.",
   "faq.7.q":"Co, jeśli w dniu wyjazdu pogoda się popsuje?","faq.7.a":"Dostosowujemy się. Zmienię trasę na osłonięte, wciąż piękne miejsca, przesunę dzień, jeśli naprawdę jest niebezpiecznie, albo umówimy nowy termin bez problemu. Nigdy nie wypchnę Cię w burzę dla samego harmonogramu.",
+  "faq.8.q":"Czy będąc na Islandii mogę płacić kartą?","faq.8.a":"Tak — na Islandii kartą zapłacisz niemal wszędzie, od stacji paliw po małe kawiarnie, więc gotówka prawie nie jest potrzebna. Za samą wycieczkę wyślę bezpieczny link do płatności albo przyjmę kartę na miejscu.",
+  "faq.9.q":"Jakiej pogody możemy się spodziewać na Islandii?","faq.9.a":"Szczerze — wszystkiego po trochu. Islandzka pogoda potrafi zmienić się w kilka minut, więc słoneczny poranek może przejść w deszcz i z powrotem. Śledzę prognozę na bieżąco, ubieram się na warstwy i układam dzień pod warunki, żebyś i tak wyniósł z niego jak najwięcej.",
 
   "contact.eyebrow":"Sprawdź dostępność","contact.h2":"Zaplanujmy Twój dzień na Islandii.","contact.lead":"Wyślij krótkie zapytanie, a odpiszę osobiście — zwykle w ciągu kilku godzin — żeby ustalić szczegóły.",
   "form.tour":"Która wycieczka lub transfer?","form.tour.opt":"Wybierz…","form.date":"Preferowana data","form.people":"Ile Was jest?","form.name":"Imię","form.email":"E-mail","form.phone":"Telefon / WhatsApp","form.phone.opt":"(opcjonalnie)","form.msg":"Coś jeszcze?","form.msg.opt":"(opcjonalnie)","form.msg.ph":"Godziny lotów, pomysły, miejsca obowiązkowe…",
@@ -224,7 +228,7 @@ pl:{
 
   "tp.bc.tours":"Wycieczki","tp.bc.cur":"Golden Circle",
   "tp.eyebrow":"Prywatna wycieczka jednodniowa · z Reykjavíku","tp.h1":"Golden Circle — prywatna wycieczka z Reykjavíku.","tp.sub":"Trzy ikony Islandii — huczący wodospad, wybuchający gejzer i ryft kontynentalny — w Twoim tempie, bez tłumów i bez zegarka.",
-  "tp.qf.dur":"6–8 godzin","tp.qf.price":"od 89 000 ISK","tp.qf.priv":"Prywatnie · maks. 4","tp.qf.pickup":"Odbiór z hotelu","tp.qf.lang":"EN · PL · DE",
+  "tp.qf.dur":"6–8 godzin","tp.qf.price":"od 85 000 ISK","tp.qf.priv":"Prywatnie · maks. 4","tp.qf.pickup":"Odbiór z hotelu","tp.qf.lang":"EN · PL · DE",
   "tp.sn.overview":"Opis","tp.sn.route":"Trasa","tp.sn.map":"Mapa","tp.sn.gallery":"Galeria","tp.sn.reviews":"Opinie","tp.sn.faq":"FAQ","tp.sn.avail":"Dostępność",
 
   "tp.hl.eyebrow":"W skrócie","tp.hl.h2":"Jak wygląda ten dzień.",
@@ -261,7 +265,7 @@ pl:{
   "tp.faq.1.q":"Ile trwa wycieczka Golden Circle?","tp.faq.1.a":"Zwykle 6–8 godzin od drzwi do drzwi, zależnie od tego, jak długo chcesz się zatrzymywać i czy dorzucimy ukryty przystanek albo kąpiel w gorącym źródle. To Twój dzień — nie patrzymy na rozkład autokaru.",
   "tp.faq.2.q":"Ile osób może jechać?","tp.faq.2.a":"W komforcie podróżuje do 4 gości. Macie grupę 5–8 osób? Napisz, a zorganizuję odpowiedni pojazd.",
   "tp.faq.3.q":"Czy Golden Circle da się zrobić zimą?","tp.faq.3.a":"Tak — pod śniegiem jest przepięknie, a krótsze dni dają nawet szansę na zorzę w drodze powrotnej. Dopasowuję trasę i godziny do warunków i długości dnia.",
-  "tp.faq.4.q":"Co znaczy „od 89 000 ISK”?","tp.faq.4.a":"To cena wyjściowa za grupę, nie od osoby — więc jest taka sama, czy jedzie jedna osoba, czy cztery. Ostateczna wycena zależy od sezonu, miejsca odbioru i dodatków. (Ceny do potwierdzenia.)",
+  "tp.faq.4.q":"Co znaczy „od 85 000 ISK”?","tp.faq.4.a":"To cena wyjściowa za grupę, nie od osoby — więc jest taka sama, czy jedzie jedna osoba, czy cztery. Ostateczna wycena zależy od sezonu, miejsca odbioru i dodatków.",
 
   "tp.also.eyebrow":"Może Cię zainteresować","tp.also.h2":"Inne sposoby na Islandię.",
   "tp.avail.eyebrow":"Sprawdź dostępność","tp.avail.h2":"Sprawdź terminy dla Golden Circle.","tp.avail.lead":"Wyślij krótkie zapytanie z terminami, a odpiszę osobiście, żeby wszystko potwierdzić.",
@@ -270,7 +274,7 @@ pl:{
 /* =========================== DEUTSCH =========================== */
 de:{
   "doc.title":"Journey Iceland — private Touren & Flughafentransfers mit einem Einheimischen",
-  "nav.tours":"Touren","nav.why":"Warum ich","nav.about":"Über mich","nav.gallery":"Galerie","nav.reviews":"Bewertungen","nav.faq":"FAQ","nav.contact":"Kontakt",
+  "nav.tours":"Touren","nav.why":"Warum wir","nav.about":"Über uns","nav.gallery":"Galerie","nav.reviews":"Bewertungen","nav.faq":"FAQ","nav.contact":"Kontakt",
   "cta.check":"Verfügbarkeit prüfen","cta.wa":"Schreib mir auf WhatsApp","cta.wa.short":"WhatsApp","cta.ask":"Frag nach",
   "wa.generic":"Hallo! Ich schreibe über Ihre Website journeyiceland.is. Ich möchte gern nach einer privaten Tour oder einem Transfer fragen: ","wa.custom":"Hallo! Ich schreibe über journeyiceland.is wegen einer Wunschroute. Meine Frage: ","wa.aurora":"Hallo! Ich schreibe über journeyiceland.is wegen der Nordlicht-Tour. Meine Frage: ","wa.gc":"Hallo! Ich schreibe über journeyiceland.is wegen der Golden-Circle-Tour. Meine Frage: ",
   "brand.tag":"Private Touren · Island",
@@ -282,30 +286,30 @@ de:{
 
   "tours.eyebrow":"Touren & Transfers","tours.h2":"Wohin möchtest du?","tours.lead":"Kleine private Gruppen, Hotelabholung und eine Route, die wir um dich herum gestalten. Tourpreise gelten pro Gruppe — nicht pro Person.",
   "tours.toursLabel":"Tagestouren","tours.transfersLabel":"Flughafen- & Spa-Transfers",
-  "tour.see":"Tour ansehen","tour.tbc":"Preis vorbehaltlich","tour.perGroup":"pro Gruppe",
+  "tour.see":"Tour ansehen","tour.tbc":"","tour.perGroup":"pro Gruppe",
 
-  "tour.gc.name":"Golden Circle","tour.gc.dur":"6–8 Std.","tour.gc.price":"ab 89.000 ISK","tour.gc.alt":"≈ 590 € / 640 $ · pro Gruppe",
-  "tour.sc.name":"Südküste","tour.sc.dur":"10–11 Std.","tour.sc.price":"ab 129.000 ISK","tour.sc.alt":"≈ 855 € / 930 $ · pro Gruppe",
+  "tour.gc.name":"Golden Circle","tour.gc.dur":"6–8 Std.","tour.gc.price":"ab 85.000 ISK","tour.gc.alt":"≈ 570 € / 610 $ · pro Gruppe",
+  "tour.sc.name":"Südküste","tour.sc.dur":"8–10 Std.","tour.sc.price":"ab 110.000 ISK","tour.sc.alt":"≈ 730 € / 790 $ · pro Gruppe",
   "tour.jk.name":"Gletscherlagune Jökulsárlón","tour.jk.dur":"12–14 Std.","tour.jk.price":"ab 189.000 ISK","tour.jk.alt":"≈ 1.250 € / 1.360 $ · pro Gruppe",
 
   "transfer.kef.name":"Flughafen Keflavík ⇄ Reykjavík","transfer.kef.meta":"≈ 50 Min · bis zu 4 Gäste","transfer.kef.price":"ab 22.000 ISK",
-  "transfer.bl.name":"Blue-Lagoon-Transfer","transfer.bl.meta":"Flughafen oder Stadt · mit Rückfahrt-Option","transfer.bl.price":"ab 28.000 ISK",
+  "transfer.bl.name":"Blue-Lagoon-Transfer","transfer.bl.meta":"Flughafen oder Stadt · Ticket nicht inkl.","transfer.bl.price":"ab 22.000 ISK",
   "transfer.check":"Verfügbarkeit prüfen",
 
   "tours.cta.h3":"Ich fahre überallhin — Wunschroute auf Anfrage.","tours.cta.p":"Vulkane, heiße Quellen, ein Hochzeitsshooting, eine mehrtägige Runde. Sag mir die Idee und ich baue den Tag darum herum.",
 
-  "aurora.tag":"Diesen Herbst · jetzt vormerken","aurora.eyebrow":"Nordlichter","aurora.h2":"Den Nordlichtern hinterher — diesen Herbst.","aurora.p":"Ab September wird der Himmel wieder dunkel. Ich beobachte für dich die Vorhersage, fahre weg vom Stadtlicht, und Kate gibt eine Thermoskanne heiße Schokolade dazu. Die Plätze sind begrenzt — frag jetzt nach einer Vormerkung.","aurora.cta1":"Frag nach",
+  "aurora.tag":"Diesen Herbst · jetzt vormerken","aurora.eyebrow":"Nordlichter","aurora.h2":"Den Nordlichtern hinterher — diesen Herbst.","aurora.p":"Ab September wird der Himmel wieder dunkel. Ich beobachte für dich die Vorhersage, fahre weg vom Stadtlicht, und Kate gibt eine Thermoskanne heiße Schokolade dazu. Die Plätze sind begrenzt — frag jetzt nach einer Vormerkung. Ab 50.000 ISK pro Gruppe (1–4) · 2–3 Std.","aurora.cta1":"Frag nach",
 
-  "why.eyebrow":"Warum mit mir","why.h2":"Du bist keine Nummer im Bus.","why.lead":"Ein Fahrer, eine kleine Gruppe, ein Tag, ganz um dich herum gestaltet.",
-  "why.1.t":"Privat & persönlich","why.1.d":"Nur deine Gruppe im Auto. Wir starten, wann du willst, halten, wo du willst, und warten nie auf vierzig Fremde.",
-  "why.2.t":"Lokal & ehrlich","why.2.d":"Ich lebe hier. Ich bringe dich zu den ruhigen Orten — und sage dir ehrlich, wenn es sich heute nicht lohnt.",
-  "why.3.t":"Sicherheit zuerst","why.3.d":"Erfahren, voll versichert und vernünftig beim Wetter. Ist eine Straße schlecht, ändern wir den Plan, nicht deine Sicherheit.",
-  "why.4.t":"Deine Sprache","why.4.d":"Ich führe auf Deutsch, Englisch und Polnisch — so geht unterwegs nichts Wichtiges verloren.",
+  "why.eyebrow":"Warum mit uns","why.h2":"Wir sind nicht nur Guides — wir sind eine Familie.","why.lead":"Wir leben hier — ziehen unsere Kinder groß, arbeiten und verbringen unsere Freizeit hier. Wir zeigen dir das Island, das wir lieben.",
+  "why.1.t":"Kein Massenanbieter","why.1.d":"Wir hetzen dich nicht und haken keine Sehenswürdigkeiten ab. Es bleibt Zeit, langsamer zu machen und Island wirklich zu spüren.",
+  "why.2.t":"Gastfreundschaft im Blut","why.2.d":"Wir lieben Menschen. Uns sind die gute Atmosphäre und die kleinen Gesten wichtig — und dass du dich entspannt und umsorgt fühlst.",
+  "why.3.t":"Wir reisen, wie wir es selbst wollen","why.3.d":"Wir halten, wo die Aussicht den Atem raubt — und nehmen manchmal den längeren Weg, weil er der schönste ist.",
+  "why.4.t":"Erinnerungen statt Programm","why.4.d":"Du fährst mit mehr als Fotos nach Hause — mit Emotionen, Geschichten und dem Gefühl, das echte Island erlebt zu haben.",
   "compare.mine.title":"Privat mit mir","compare.mine.tag":"Du","compare.bus.title":"Großer Reisebus","compare.bus.tag":"Die",
   "compare.mine.1":"Nur deine Gruppe — bis zu 4 bequem","compare.mine.2":"Losfahren, wenn du bereit bist, spontan halten","compare.mine.3":"Versteckte Orte, die Busse nicht erreichen","compare.mine.4":"Hausgemachte Snacks von Kate","compare.mine.5":"Ein Guide, der deinen Namen kennt",
   "compare.bus.1":"40+ Fremde nach festem Fahrplan","compare.bus.2":"15 Minuten pro Fotostopp, dann weiter","compare.bus.3":"Nur die überfüllten Hauptsehenswürdigkeiten","compare.bus.4":"Ein Sandwich von der Tankstelle","compare.bus.5":"Ein Mikrofon und das Durchzählen",
 
-  "about.eyebrow":"Über mich","about.h2":"Hallo, ich bin Sylwiusz „Syl“.","about.lead":"Ein Pole, der sich vor Jahren in Island verliebt hat — und nie wieder ging.","about.p1":"Ich kam für eine Saison und blieb wegen des Lichts. Nach Jahren auf diesen Straßen weiß ich, wo die Busse nicht hinfahren: der Wasserfall ohne Parkplatz, die heiße Quelle, die Einheimische für sich behalten, der Ort, an dem der Sonnenuntergang genau richtig fällt.","about.p2":"Meine Frau Kate ist Köchin, du gehst also nie hungrig nach Hause. Wir behandeln jeden Gast so, wie wir selbst im Ausland behandelt werden möchten — wie Familie. Genau darum geht es bei Journey Iceland.","about.sign":"— Sylwiusz & Kate","about.badge.num":"600+","about.badge.t":"zufriedene Gäste seit 2014",
+  "about.eyebrow":"Über uns","about.h2":"Hallo, ich bin Sylwiusz „Syl“.","about.lead":"Unsere Island-Geschichte begann vor vielen Jahren. Wie viele fingen wir bei null an und bauten uns Schritt für Schritt ein Leben auf — bis diese Insel zu unserem Zuhause wurde. Hier kamen unsere Zwillingstöchter zur Welt, und hier begann unser größtes Abenteuer.","about.p1":"Solange ich denken kann, erkunde ich Island — versteckte Straßen, atemberaubende Aussichtspunkte und die Geschichten, die jeden Ort einzigartig machen. Meine Leidenschaft reicht weit über die berühmten Sehenswürdigkeiten hinaus; ich suche immer die stillen Ecken, an denen die meisten vorbeifahren.","about.p2":"Als Familie halten wir dieses Abenteuer lebendig. Mit unseren Töchtern wandern wir, nehmen die schöne Route und brechen oft ohne festen Plan auf — ein Picknick am Wasserfall, wilde Kräuter sammeln, dem Wetter zusehen, das sich im Minutentakt ändert. Meine Frau ist Head Chef und liebt es, Menschen zu empfangen; jedes Jahr machen wir hausgemachte Sirupe und Tinkturen, wie einst unsere Großmütter.","about.p3":"Wir sehen unsere Gäste nicht als Touristen — wir empfangen sie als Freunde und laden dich ein, Island so zu entdecken wie wir: mit Neugier, Authentizität und Herz. Entdecke Island auf die altmodische Art.","about.sign":"— Sylwiusz & Kate","about.badge.num":"600+","about.badge.t":"zufriedene Gäste seit 2014",
 
   "exp.eyebrow":"Das Erlebnis","exp.h2":"Mehr als eine Fahrt — ein Erlebnis.","exp.lead":"Die kleinen Dinge, die aus einem Transfer eine Geschichte machen, die du zu Hause erzählst.",
   "exp.1.t":"Hausgemachtes Willkommens-Set","exp.1.d":"Kate ist Köchin. Jede Tour beginnt mit einer warmen Willkommensbox — Skyr, frisches Obst, etwas am Morgen Gebackenes.",
@@ -331,6 +335,8 @@ de:{
   "faq.5.q":"Ist die Tour wirklich privat?","faq.5.a":"Immer. Es ist nur deine Gruppe im Auto — nie mit Fremden geteilt. Tempo, Stopps und Musik gehören dir.",
   "faq.6.q":"Holst du mich am Hotel ab?","faq.6.a":"Ja — kostenlose Abholung an Hotel, Apartment oder Campingplatz im Raum Reykjavík und bei Transfers auch am Flughafen Keflavík. Die genaue Zeit bestätige ich im Gespräch.",
   "faq.7.q":"Was, wenn das Wetter am Tag schlecht wird?","faq.7.a":"Wir passen uns an. Ich leite zu geschützten, trotzdem schönen Stopps um, verschiebe den Tag, wenn es wirklich unsicher ist, oder vereinbare unkompliziert einen neuen Termin. Für einen Zeitplan schicke ich dich nie in einen Sturm hinaus.",
+  "faq.8.q":"Kann ich in Island mit Karte zahlen?","faq.8.a":"Ja — in Island zahlst du fast überall mit Karte, von der Tankstelle bis zum kleinen Café, Bargeld brauchst du kaum. Für die Tour selbst schicke ich einen sicheren Zahlungslink oder nehme die Karte am Tag.",
+  "faq.9.q":"Mit welchem Wetter können wir in Island rechnen?","faq.9.a":"Ehrlich — mit allem ein bisschen. Islands Wetter kann sich in Minuten ändern, ein sonniger Morgen wird zu Regen und zurück. Ich verfolge die Vorhersage genau, kleide mich in Schichten und richte den Tag nach den Bedingungen aus, damit du trotzdem das Beste erlebst.",
 
   "contact.eyebrow":"Verfügbarkeit prüfen","contact.h2":"Planen wir deinen Tag in Island.","contact.lead":"Sende eine kurze Anfrage und ich antworte persönlich — meist innerhalb weniger Stunden — um die Details mit dir abzustimmen.",
   "form.tour":"Welche Tour oder welcher Transfer?","form.tour.opt":"Auswählen…","form.date":"Wunschdatum","form.people":"Wie viele seid ihr?","form.name":"Dein Name","form.email":"E-Mail","form.phone":"Telefon / WhatsApp","form.phone.opt":"(optional)","form.msg":"Sonst noch etwas?","form.msg.opt":"(optional)","form.msg.ph":"Flugzeiten, Ideen, Lieblingsorte…",
@@ -347,7 +353,7 @@ de:{
 
   "tp.bc.tours":"Touren","tp.bc.cur":"Golden Circle",
   "tp.eyebrow":"Private Tagestour · ab Reykjavík","tp.h1":"Golden Circle — private Tour ab Reykjavík.","tp.sub":"Islands drei Ikonen — ein donnernder Wasserfall, ein ausbrechender Geysir und ein Kontinentalgraben — in deinem Tempo, ohne Menschenmassen und ohne Uhr.",
-  "tp.qf.dur":"6–8 Stunden","tp.qf.price":"ab 89.000 ISK","tp.qf.priv":"Privat · max. 4","tp.qf.pickup":"Hotelabholung","tp.qf.lang":"EN · PL · DE",
+  "tp.qf.dur":"6–8 Stunden","tp.qf.price":"ab 85.000 ISK","tp.qf.priv":"Privat · max. 4","tp.qf.pickup":"Hotelabholung","tp.qf.lang":"EN · PL · DE",
   "tp.sn.overview":"Überblick","tp.sn.route":"Route","tp.sn.map":"Karte","tp.sn.gallery":"Galerie","tp.sn.reviews":"Bewertungen","tp.sn.faq":"FAQ","tp.sn.avail":"Verfügbarkeit",
 
   "tp.hl.eyebrow":"Kurz gesagt","tp.hl.h2":"So sieht der Tag aus.",
@@ -384,7 +390,7 @@ de:{
   "tp.faq.1.q":"Wie lange dauert die Golden-Circle-Tour?","tp.faq.1.a":"Meist 6–8 Stunden von Tür zu Tür, je nachdem, wie lange du verweilen möchtest und ob wir einen versteckten Stopp oder ein Bad in einer heißen Quelle einbauen. Es ist dein Tag — wir schauen nie auf einen Busfahrplan.",
   "tp.faq.2.q":"Wie viele Personen können mit?","tp.faq.2.a":"Bis zu 4 Gäste reisen bequem im Auto. Ihr seid 5–8? Schreib mir und ich organisiere das passende Fahrzeug.",
   "tp.faq.3.q":"Kann man den Golden Circle im Winter machen?","tp.faq.3.a":"Ja — unter Schnee ist er wunderschön, und die kürzeren Tage bieten sogar die Chance auf Nordlichter auf der Heimfahrt. Ich passe Route und Zeiten an Bedingungen und Tageslicht an.",
-  "tp.faq.4.q":"Was bedeutet „ab 89.000 ISK“?","tp.faq.4.a":"Das ist ein Startpreis pro Gruppe, nicht pro Person — also gleich, ob einer oder vier mitfahren. Der Endpreis hängt von Saison, Abholort und Extras ab. (Preise vorbehaltlich.)",
+  "tp.faq.4.q":"Was bedeutet „ab 85.000 ISK“?","tp.faq.4.a":"Das ist ein Startpreis pro Gruppe, nicht pro Person — also gleich, ob einer oder vier mitfahren. Der Endpreis hängt von Saison, Abholort und Extras ab.",
 
   "tp.also.eyebrow":"Das könnte dir gefallen","tp.also.h2":"Weitere Wege, Island zu sehen.",
   "tp.avail.eyebrow":"Verfügbarkeit prüfen","tp.avail.h2":"Termine für den Golden Circle prüfen.","tp.avail.lead":"Sende eine kurze Anfrage mit deinen Daten und ich antworte persönlich, um alles zu bestätigen.",

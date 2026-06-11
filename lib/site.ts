@@ -7,9 +7,11 @@ export const SITE = {
   phoneHref: 'tel:+3547850558',
   wa: '3547850558',
   waHref: 'https://wa.me/3547850558',
-  facebook: '#',
-  instagram: '#',
-  google: '#',
+  facebook: '#', // TODO: exact Facebook page URL ("Journey Iceland")
+  instagram: 'https://instagram.com/journeyiceland1',
+  google: '#', // TODO: Google Business profile URL ("Journey Iceland")
+  company: 'Journey Iceland',
+  address: 'Urðarholt 5, 270 Mosfellsbær, Iceland',
 };
 
 // Build a WhatsApp link with an optional pre-filled (localized) message.
