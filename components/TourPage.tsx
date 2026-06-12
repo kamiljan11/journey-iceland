@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { makeT } from '@/lib/dictionary';
 import { SITE, waLink } from '@/lib/site';
 import { getTour, TOUR_CARDS } from '@/lib/tours';
+import RouteMap from '@/components/RouteMap';
 
 const BRING_ICONS = ['#i-snow', '#i-boot', '#i-camera', '#i-waves'];
 const SUBNAV: [string, string][] = [
@@ -94,8 +95,8 @@ export default function TourPage({ lang, slug }: { lang: string; slug: string })
         <div className="wrap">
           <div className="sec-head reveal"><span className="eyebrow">{t('tp.map.eyebrow')}</span><h2>{x.mapH2}</h2></div>
           <div className="contact-map reveal" style={{ aspectRatio: '21/9', minHeight: 280, overflow: 'hidden' }}>
-            {x.mapEmbed ? (
-              <iframe title={x.mapLabel} src={x.mapEmbed} loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen style={{ width: '100%', height: '100%', border: 0, display: 'block' }} />
+            {x.route && x.route.length > 1 ? (
+              <RouteMap points={x.route} />
             ) : (
               <>
                 <div className="ph" data-label={x.mapLabel}></div>

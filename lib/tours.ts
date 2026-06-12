@@ -13,26 +13,26 @@ export type TourText = {
 
 type TourMeta = {
   priceKey: string; nameKey: string; waKey: string; preselect: string;
-  heroImg: string; ftImg?: string; ftLabel?: string; mapEmbed?: string; gallery: GalleryItem[];
+  heroImg: string; ftImg?: string; ftLabel?: string; route?: { lat: number; lng: number; label: string }[]; gallery: GalleryItem[];
 };
 
 export const META: Record<string, TourMeta> = {
   'golden-circle': {
     priceKey: 'tour.gc.price', nameKey: 'tour.gc.name', waKey: 'wa.gc', preselect: 'gc',
     heroImg: '/img/gc-hero.webp', ftImg: '/img/exp-lunchbox.webp',
-    mapEmbed: 'https://maps.google.com/maps?saddr=Reykjavik,Iceland&daddr=Thingvellir+National+Park+to:Geysir+to:Gullfoss+to:Kerid+Crater+to:Reykjavik,Iceland&output=embed',
+    route: [{ lat: 64.1466, lng: -21.9426, label: 'Reykjavík' }, { lat: 64.2559, lng: -21.1295, label: 'Þingvellir' }, { lat: 64.3104, lng: -20.3024, label: 'Geysir & Strokkur' }, { lat: 64.3271, lng: -20.1199, label: 'Gullfoss' }, { lat: 64.0411, lng: -20.8857, label: 'Kerið' }, { lat: 64.1466, lng: -21.9426, label: 'Reykjavík' }],
     gallery: [{ src: '/img/tour-gc.webp' }, { src: '/img/gc-strokkur.webp' }, { src: '/img/g9.webp' }, { src: '/img/g5.webp' }, { src: '/img/g6.webp' }, { src: '/img/g3.webp' }],
   },
   'south-coast': {
     priceKey: 'tour.sc.price', nameKey: 'tour.sc.name', waKey: 'wa.generic', preselect: 'sc',
     heroImg: '/img/tour-sc.webp', ftImg: '/img/exp-lunchbox.webp',
-    mapEmbed: 'https://maps.google.com/maps?saddr=Reykjavik,Iceland&daddr=Seljalandsfoss+to:Skogafoss+to:Solheimajokull+to:Reynisfjara+to:Vik,Iceland&output=embed',
+    route: [{ lat: 64.1466, lng: -21.9426, label: 'Reykjavík' }, { lat: 63.6156, lng: -19.9886, label: 'Seljalandsfoss' }, { lat: 63.5320, lng: -19.5113, label: 'Skógafoss' }, { lat: 63.5316, lng: -19.3690, label: 'Sólheimajökull' }, { lat: 63.4061, lng: -19.0448, label: 'Reynisfjara' }, { lat: 63.4186, lng: -19.0060, label: 'Vík í Mýrdal' }],
     gallery: [{ src: '/img/tour-sc.webp' }, { src: '/img/g6.webp' }, { src: '/img/g5.webp' }, { src: '/img/g1.webp' }, { src: '/img/g3.webp' }, { src: '/img/g7.webp' }],
   },
   'jokulsarlon': {
     priceKey: 'tour.jk.price', nameKey: 'tour.jk.name', waKey: 'wa.generic', preselect: 'jk',
     heroImg: '/img/tour-jk.webp', ftImg: '/img/exp-lunchbox.webp',
-    mapEmbed: 'https://maps.google.com/maps?saddr=Reykjavik,Iceland&daddr=Seljalandsfoss+to:Skogafoss+to:Vik,Iceland+to:Jokulsarlon+to:Diamond+Beach,Iceland&output=embed',
+    route: [{ lat: 64.1466, lng: -21.9426, label: 'Reykjavík' }, { lat: 63.6156, lng: -19.9886, label: 'Seljalandsfoss' }, { lat: 63.5320, lng: -19.5113, label: 'Skógafoss' }, { lat: 63.4186, lng: -19.0060, label: 'Vík í Mýrdal' }, { lat: 64.0784, lng: -16.2306, label: 'Jökulsárlón' }, { lat: 64.0438, lng: -16.1790, label: 'Diamond Beach' }],
     gallery: [{ src: '/img/tour-jk.webp' }, { src: '/img/g6.webp' }, { src: '/img/g5.webp' }, { src: '/img/g1.webp' }, { src: '/img/g7.webp' }, { src: '/img/tour-sc.webp' }],
   },
 };
