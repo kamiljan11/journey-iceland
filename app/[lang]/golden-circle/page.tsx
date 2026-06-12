@@ -215,7 +215,7 @@ export default function GoldenCircle({ params }: { params: { lang: string } }) {
           <div className="gallery">
             <div className="g-item"><div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="" src={IMG.gallery[0]} /></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
             <div className="g-item"><div className="ph" data-label="Þingvellir rift"></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
-            <div className="g-item"><div className="ph" data-label="Strokkur geyser erupting"></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
+            <div className="g-item"><div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="Strokkur geyser" src="/img/gc-strokkur.webp" /></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
             <div className="g-item"><div className="ph" data-label="Gullfoss waterfall"></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
             <div className="g-item"><div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="" src={IMG.gallery[4]} /></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
             <div className="g-item"><div className="ph" data-label="Kerið crater"></div><span className="g-zoom"><svg><use href="#i-search-plus" /></svg></span></div>
