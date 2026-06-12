@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { isLang, makeT } from '@/lib/dictionary';
-import { SITE, IMG, waLink } from '@/lib/site';
+import { SITE, IMG, waLink, RESTAURANTS } from '@/lib/site';
 
 export default function Home({ params }: { params: { lang: string } }) {
   const lang = isLang(params.lang) ? params.lang : 'en';
@@ -234,6 +234,17 @@ export default function Home({ params }: { params: { lang: string } }) {
             </article>
           </div>
           <p className="exp-foot reveal">{t('exp.foot')}</p>
+          <div className="reveal" style={{ textAlign: 'center', marginTop: '8px', fontSize: '.92rem', color: 'var(--muted)' }}>
+            <span style={{ fontWeight: 600, color: 'var(--espresso)' }}>{t('exp.rest.h')}:</span>{' '}
+            {RESTAURANTS.map((r, i) => (
+              <span key={r.name}>
+                {i > 0 ? ' · ' : ''}
+                <a href={r.url} target="_blank" rel="noopener" style={{ color: 'var(--terracotta)', fontWeight: 600 }}>{r.name}</a>{' '}
+                <span style={{ opacity: 0.75 }}>({r.off})</span>
+              </span>
+            ))}
+            <span style={{ display: 'block', fontSize: '.8rem', opacity: 0.7, marginTop: '4px' }}>{t('exp.rest.note')}</span>
+          </div>
         </div>
       </section>
 

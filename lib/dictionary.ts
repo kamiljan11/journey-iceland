@@ -38,7 +38,7 @@ en:{
 
   "tour.gc.name":"Golden Circle","tour.gc.dur":"6–8 hrs","tour.gc.price":"from 85,000 ISK","tour.gc.alt":"≈ $610 / €570 · per group",
   "tour.sc.name":"South Coast","tour.sc.dur":"8–10 hrs","tour.sc.price":"from 110,000 ISK","tour.sc.alt":"≈ $790 / €730 · per group",
-  "tour.jk.name":"Jökulsárlón Glacier Lagoon","tour.jk.dur":"12–14 hrs","tour.jk.price":"from 189,000 ISK","tour.jk.alt":"≈ $1,360 / €1,250 · per group",
+  "tour.jk.name":"Jökulsárlón Glacier Lagoon","tour.jk.dur":"12–14 hrs","tour.jk.price":"from 179,000 ISK","tour.jk.alt":"≈ $1,280 / €1,190 · per group",
 
   "transfer.kef.name":"Keflavík Airport ⇄ Reykjavík","transfer.kef.meta":"≈ 50 min · up to 4 guests","transfer.kef.price":"from 22,000 ISK",
   "transfer.bl.name":"Blue Lagoon transfer","transfer.bl.meta":"Airport or city · ticket not included","transfer.bl.price":"from 22,000 ISK",
@@ -61,8 +61,9 @@ en:{
 
   "exp.eyebrow":"The experience","exp.h2":"More than a drive — an experience.","exp.lead":"The little things that turn a transfer into a story you'll tell back home.",
   "exp.1.t":"Home-cooked welcome set","exp.1.d":"Kate is a chef. Every tour starts with a warm welcome box — skyr, fresh fruit, something baked that morning.",
-  "exp.2.t":"Lunchboxes for the road","exp.2.d":"On longer days we pack a proper lunchbox — Icelandic treats and something warm — so you can stop and eat with a view no restaurant can sell you.",
-  "exp.3.t":"Restaurant perk","exp.3.d":"Guests get a standing discount at Reykjavík Kitchen — and I'll take your photos along the way, free of charge.",
+  "exp.2.t":"Homemade lunch boxes","exp.2.d":"Freshly made by Kate, our Head Chef, and included in every tour — quality ingredients and the hospitality we'd give guests in our own home. Just tell us about any allergies or dietary needs when you book and we'll happily accommodate you.",
+  "exp.3.t":"Restaurant perks","exp.3.d":"Our guests enjoy standing discounts (10–20%) at hand-picked Reykjavík restaurants — and I'll take your photos along the way, free of charge.",
+  "exp.rest.h":"Discounts at our partner restaurants","exp.rest.note":"lunch / dinner",
   "exp.foot":"\u201cI'll tell you honestly if it's not worth going today.\u201d",
 
   "gallery.eyebrow":"Gallery","gallery.h2":"Moments from the road.","gallery.lead":"Golden light, quiet roads, warm food, and the odd green sky. Swipe through.",
@@ -123,7 +124,7 @@ en:{
 
   "tp.incl.eyebrow":"The details","tp.incl.h2":"What's included.",
   "tp.incl.yes.t":"Included","tp.incl.no.t":"Not included",
-  "tp.incl.yes.1":"Private 4×4 with fuel & all road costs","tp.incl.yes.2":"Hotel pick-up & drop-off","tp.incl.yes.3":"Local English / Polish / German / Spanish guide","tp.incl.yes.4":"Kate's home-cooked welcome box","tp.incl.yes.5":"Photos of you along the way","tp.incl.yes.6":"Flexible pace & a hidden stop",
+  "tp.incl.yes.1":"Private 4×4 with fuel & all road costs","tp.incl.yes.2":"Hotel pick-up & drop-off","tp.incl.yes.3":"Local English / Polish / German / Spanish guide","tp.incl.yes.4":"Kate's home-cooked lunch box","tp.incl.yes.5":"Photos of you along the way","tp.incl.yes.6":"Flexible pace & a hidden stop",
   "tp.incl.no.1":"Lunch at the farm café (optional)","tp.incl.no.2":"Entry to any optional spa / pool","tp.incl.no.3":"Gratuities (never expected)",
 
   "tp.bring.eyebrow":"Come prepared","tp.bring.h2":"What to bring.",
@@ -165,7 +166,7 @@ pl:{
 
   "tour.gc.name":"Golden Circle","tour.gc.dur":"6–8 godz.","tour.gc.price":"od 85 000 ISK","tour.gc.alt":"≈ 2 600 zł · za grupę",
   "tour.sc.name":"Południowe wybrzeże","tour.sc.dur":"8–10 godz.","tour.sc.price":"od 110 000 ISK","tour.sc.alt":"≈ 3 300 zł · za grupę",
-  "tour.jk.name":"Laguna lodowcowa Jökulsárlón","tour.jk.dur":"12–14 godz.","tour.jk.price":"od 189 000 ISK","tour.jk.alt":"≈ 5 600 zł · za grupę",
+  "tour.jk.name":"Laguna lodowcowa Jökulsárlón","tour.jk.dur":"12–14 godz.","tour.jk.price":"od 179 000 ISK","tour.jk.alt":"≈ 5 400 zł · za grupę",
 
   "transfer.kef.name":"Lotnisko Keflavík ⇄ Reykjavík","transfer.kef.meta":"≈ 50 min · do 4 osób","transfer.kef.price":"od 22 000 ISK",
   "transfer.bl.name":"Transfer do Blue Lagoon","transfer.bl.meta":"Z lotniska lub miasta · bilet nieuwzględniony","transfer.bl.price":"od 22 000 ISK",
@@ -188,8 +189,9 @@ pl:{
 
   "exp.eyebrow":"Przeżycie","exp.h2":"Więcej niż przejazd — przeżycie.","exp.lead":"Drobiazgi, które zamieniają transfer w historię opowiadaną po powrocie.",
   "exp.1.t":"Domowy zestaw powitalny","exp.1.d":"Kasia jest szefową kuchni. Każda wycieczka zaczyna się od ciepłego pudełka — skyr, świeże owoce, coś upieczonego tego ranka.",
-  "exp.2.t":"Lunchboxy w drogę","exp.2.d":"Na dłuższych trasach pakujemy porządny lunchbox — islandzkie smaki i coś ciepłego — żebyś mógł zatrzymać się i zjeść z widokiem, którego nie sprzeda żadna restauracja.",
-  "exp.3.t":"Zniżka w restauracji","exp.3.d":"Goście mają stałą zniżkę w Reykjavík Kitchen — a po drodze zrobię Ci zdjęcia, zupełnie za darmo.",
+  "exp.2.t":"Domowe lunchboxy","exp.2.d":"Świeżo przygotowane przez Kasię, naszą szefową kuchni, i wliczone w każdą wycieczkę — dobre składniki i gościnność jak u nas w domu. Wystarczy, że przy rezerwacji dasz znać o alergiach lub diecie, a my się dostosujemy.",
+  "exp.3.t":"Zniżki w restauracjach","exp.3.d":"Nasi goście mają stałe zniżki (10–20%) w starannie wybranych restauracjach w Reykjavíku — a po drodze zrobię Ci zdjęcia, zupełnie za darmo.",
+  "exp.rest.h":"Zniżki w restauracjach partnerskich","exp.rest.note":"lunch / kolacja",
   "exp.foot":"\u201ePowiem szczerze, jeśli dziś nie warto jechać.\u201d",
 
   "gallery.eyebrow":"Galeria","gallery.h2":"Chwile z trasy.","gallery.lead":"Złote światło, ciche drogi, ciepłe jedzenie i czasem zielone niebo. Przesuwaj.",
@@ -248,7 +250,7 @@ pl:{
 
   "tp.incl.eyebrow":"Szczegóły","tp.incl.h2":"Co jest w cenie.",
   "tp.incl.yes.t":"W cenie","tp.incl.no.t":"Poza ceną",
-  "tp.incl.yes.1":"Prywatne 4×4 z paliwem i opłatami drogowymi","tp.incl.yes.2":"Odbiór i odwóz do hotelu","tp.incl.yes.3":"Lokalny przewodnik EN / PL / DE / ES","tp.incl.yes.4":"Domowe pudełko powitalne Kasi","tp.incl.yes.5":"Zdjęcia po drodze","tp.incl.yes.6":"Elastyczne tempo i ukryty przystanek",
+  "tp.incl.yes.1":"Prywatne 4×4 z paliwem i opłatami drogowymi","tp.incl.yes.2":"Odbiór i odwóz do hotelu","tp.incl.yes.3":"Lokalny przewodnik EN / PL / DE / ES","tp.incl.yes.4":"Domowy lunchbox Kasi","tp.incl.yes.5":"Zdjęcia po drodze","tp.incl.yes.6":"Elastyczne tempo i ukryty przystanek",
   "tp.incl.no.1":"Lunch w kawiarni w gospodarstwie (opcjonalnie)","tp.incl.no.2":"Wstęp do opcjonalnych term / basenu","tp.incl.no.3":"Napiwki (nigdy nieoczekiwane)",
 
   "tp.bring.eyebrow":"Przygotuj się","tp.bring.h2":"Co zabrać.",
@@ -290,7 +292,7 @@ de:{
 
   "tour.gc.name":"Golden Circle","tour.gc.dur":"6–8 Std.","tour.gc.price":"ab 85.000 ISK","tour.gc.alt":"≈ 570 € / 610 $ · pro Gruppe",
   "tour.sc.name":"Südküste","tour.sc.dur":"8–10 Std.","tour.sc.price":"ab 110.000 ISK","tour.sc.alt":"≈ 730 € / 790 $ · pro Gruppe",
-  "tour.jk.name":"Gletscherlagune Jökulsárlón","tour.jk.dur":"12–14 Std.","tour.jk.price":"ab 189.000 ISK","tour.jk.alt":"≈ 1.250 € / 1.360 $ · pro Gruppe",
+  "tour.jk.name":"Gletscherlagune Jökulsárlón","tour.jk.dur":"12–14 Std.","tour.jk.price":"ab 179.000 ISK","tour.jk.alt":"≈ 1.190 € / 1.280 $ · pro Gruppe",
 
   "transfer.kef.name":"Flughafen Keflavík ⇄ Reykjavík","transfer.kef.meta":"≈ 50 Min · bis zu 4 Gäste","transfer.kef.price":"ab 22.000 ISK",
   "transfer.bl.name":"Blue-Lagoon-Transfer","transfer.bl.meta":"Flughafen oder Stadt · Ticket nicht inkl.","transfer.bl.price":"ab 22.000 ISK",
@@ -313,8 +315,9 @@ de:{
 
   "exp.eyebrow":"Das Erlebnis","exp.h2":"Mehr als eine Fahrt — ein Erlebnis.","exp.lead":"Die kleinen Dinge, die aus einem Transfer eine Geschichte machen, die du zu Hause erzählst.",
   "exp.1.t":"Hausgemachtes Willkommens-Set","exp.1.d":"Kate ist Köchin. Jede Tour beginnt mit einer warmen Willkommensbox — Skyr, frisches Obst, etwas am Morgen Gebackenes.",
-  "exp.2.t":"Lunchboxen für unterwegs","exp.2.d":"An längeren Tagen packen wir eine richtige Lunchbox — isländische Leckereien und etwas Warmes — damit du mit einer Aussicht hältst, die kein Restaurant verkaufen kann.",
-  "exp.3.t":"Restaurant-Bonus","exp.3.d":"Gäste bekommen einen festen Rabatt in der Reykjavík Kitchen — und unterwegs mache ich deine Fotos, kostenlos.",
+  "exp.2.t":"Hausgemachte Lunchboxen","exp.2.d":"Frisch zubereitet von Kate, unserer Head Chef, und in jeder Tour inklusive — gute Zutaten und die Gastfreundschaft, die wir Gästen zu Hause geben. Sag uns bei der Buchung einfach Bescheid über Allergien oder Ernährungswünsche, wir richten uns danach.",
+  "exp.3.t":"Restaurant-Rabatte","exp.3.d":"Unsere Gäste erhalten feste Rabatte (10–20%) in handverlesenen Restaurants in Reykjavík — und unterwegs mache ich deine Fotos, kostenlos.",
+  "exp.rest.h":"Rabatte in unseren Partnerrestaurants","exp.rest.note":"Mittag / Abend",
   "exp.foot":"\u201eIch sage dir ehrlich, wenn es sich heute nicht lohnt.\u201c",
 
   "gallery.eyebrow":"Galerie","gallery.h2":"Momente von unterwegs.","gallery.lead":"Goldenes Licht, stille Straßen, warmes Essen und ab und zu ein grüner Himmel. Wischen.",
@@ -373,7 +376,7 @@ de:{
 
   "tp.incl.eyebrow":"Die Details","tp.incl.h2":"Was enthalten ist.",
   "tp.incl.yes.t":"Enthalten","tp.incl.no.t":"Nicht enthalten",
-  "tp.incl.yes.1":"Privates 4×4 mit Sprit & allen Straßenkosten","tp.incl.yes.2":"Abholung & Rückbringung zum Hotel","tp.incl.yes.3":"Lokaler Guide EN / PL / DE / ES","tp.incl.yes.4":"Kates hausgemachte Willkommensbox","tp.incl.yes.5":"Fotos von dir unterwegs","tp.incl.yes.6":"Flexibles Tempo & ein versteckter Stopp",
+  "tp.incl.yes.1":"Privates 4×4 mit Sprit & allen Straßenkosten","tp.incl.yes.2":"Abholung & Rückbringung zum Hotel","tp.incl.yes.3":"Lokaler Guide EN / PL / DE / ES","tp.incl.yes.4":"Kates hausgemachte Lunchbox","tp.incl.yes.5":"Fotos von dir unterwegs","tp.incl.yes.6":"Flexibles Tempo & ein versteckter Stopp",
   "tp.incl.no.1":"Mittagessen im Hofcafé (optional)","tp.incl.no.2":"Eintritt in optionales Spa / Bad","tp.incl.no.3":"Trinkgeld (nie erwartet)",
 
   "tp.bring.eyebrow":"Gut vorbereitet","tp.bring.h2":"Was du mitbringen solltest.",
@@ -419,7 +422,7 @@ es:{
 
   "tour.gc.name":"Círculo Dorado","tour.gc.dur":"6–8 h","tour.gc.price":"desde 85.000 ISK","tour.gc.alt":"≈ 570 € / 610 $ · por grupo",
   "tour.sc.name":"Costa Sur","tour.sc.dur":"8–10 h","tour.sc.price":"desde 110.000 ISK","tour.sc.alt":"≈ 730 € / 790 $ · por grupo",
-  "tour.jk.name":"Laguna glaciar Jökulsárlón","tour.jk.dur":"12–14 h","tour.jk.price":"desde 189.000 ISK","tour.jk.alt":"≈ 1.250 € / 1.360 $ · por grupo",
+  "tour.jk.name":"Laguna glaciar Jökulsárlón","tour.jk.dur":"12–14 h","tour.jk.price":"desde 179.000 ISK","tour.jk.alt":"≈ 1.190 € / 1.280 $ · por grupo",
 
   "transfer.kef.name":"Aeropuerto de Keflavík ⇄ Reikiavik","transfer.kef.meta":"≈ 50 min · hasta 4 pasajeros","transfer.kef.price":"desde 22.000 ISK",
   "transfer.bl.name":"Traslado a Blue Lagoon","transfer.bl.meta":"Aeropuerto o ciudad · entrada no incluida","transfer.bl.price":"desde 22.000 ISK",
@@ -442,9 +445,10 @@ es:{
 
   "exp.eyebrow":"La experiencia","exp.h2":"Más que un trayecto — una experiencia.","exp.lead":"Los pequeños detalles que convierten un traslado en una historia que contarás al volver a casa.",
   "exp.1.t":"Set de bienvenida casero","exp.1.d":"Kate es chef. Cada tour empieza con una caja de bienvenida calentita — skyr, fruta fresca y algo horneado esa mañana.",
-  "exp.2.t":"Lunchboxes para el camino","exp.2.d":"En los días más largos preparamos una buena lunchbox — delicias islandesas y algo caliente — para que pares a comer con una vista que ningún restaurante te puede vender.",
-  "exp.3.t":"Ventaja en restaurante","exp.3.d":"Los huéspedes tienen un descuento permanente en Reykjavík Kitchen — y por el camino te hago fotos, sin coste.",
+  "exp.2.t":"Lunchboxes caseras","exp.2.d":"Recién preparadas por Kate, nuestra Head Chef, e incluidas en cada tour — buenos ingredientes y la hospitalidad que daríamos en nuestra propia casa. Solo dinos al reservar si tienes alergias o necesidades dietéticas y nos adaptaremos.",
+  "exp.3.t":"Ventajas en restaurantes","exp.3.d":"Nuestros huéspedes disfrutan de descuentos fijos (10–20%) en restaurantes seleccionados de Reikiavik — y por el camino te hago fotos, sin coste.",
   "exp.foot":"«Te diré con sinceridad si hoy no vale la pena ir.»",
+  "exp.rest.h":"Descuentos en nuestros restaurantes asociados","exp.rest.note":"comida / cena",
 
   "gallery.eyebrow":"Galería","gallery.h2":"Momentos de la carretera.","gallery.lead":"Luz dorada, carreteras tranquilas, comida caliente y algún cielo verde. Desliza.",
 
@@ -504,7 +508,7 @@ es:{
 
   "tp.incl.eyebrow":"Los detalles","tp.incl.h2":"Qué incluye.",
   "tp.incl.yes.t":"Incluido","tp.incl.no.t":"No incluido",
-  "tp.incl.yes.1":"4×4 privado con combustible y peajes","tp.incl.yes.2":"Recogida y regreso al hotel","tp.incl.yes.3":"Guía local en inglés / polaco / alemán / español","tp.incl.yes.4":"La caja de bienvenida casera de Kate","tp.incl.yes.5":"Fotos tuyas por el camino","tp.incl.yes.6":"Ritmo flexible y una parada escondida",
+  "tp.incl.yes.1":"4×4 privado con combustible y peajes","tp.incl.yes.2":"Recogida y regreso al hotel","tp.incl.yes.3":"Guía local en inglés / polaco / alemán / español","tp.incl.yes.4":"La lunchbox casera de Kate","tp.incl.yes.5":"Fotos tuyas por el camino","tp.incl.yes.6":"Ritmo flexible y una parada escondida",
   "tp.incl.no.1":"Almuerzo en el café rural (opcional)","tp.incl.no.2":"Entrada a spa / piscina opcional","tp.incl.no.3":"Propinas (nunca se esperan)",
 
   "tp.bring.eyebrow":"Ven preparado","tp.bring.h2":"Qué llevar.",

@@ -39,3 +39,11 @@ export const IMG = {
     '/img/g-people.webp', '/img/g9.webp', '/img/g10.webp',
   ],
 };
+
+// Partner restaurants with guest discounts (two figures = lunch / dinner).
+export const RESTAURANTS = [
+  { name: 'Reykjavík Kitchen', url: 'https://reykjavikkitchen.is/', off: '20% / 10%' },
+  { name: 'Old Iceland', url: 'https://www.oldiceland.is/', off: '15% / 10%' },
+  { name: 'Biang', url: 'https://www.instagram.com/biang.reykjavik', off: '10%' },
+  { name: 'Turf House', url: 'https://turf-house.is/', off: '10%' },
+];
