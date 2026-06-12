@@ -61,7 +61,7 @@ en:{
 
   "exp.eyebrow":"The experience","exp.h2":"More than a drive — an experience.","exp.lead":"The little things that turn a transfer into a story you'll tell back home.",
   "exp.1.t":"Home-cooked welcome set","exp.1.d":"Kate is a chef. Every tour starts with a warm welcome box — skyr, fresh fruit, something baked that morning.",
-  "exp.2.t":"Roadside grill & tastings","exp.2.d":"On longer days we stop to grill Icelandic hot dogs and taste local treats with a view no restaurant can sell you.",
+  "exp.2.t":"Lunchboxes for the road","exp.2.d":"On longer days we pack a proper lunchbox — Icelandic treats and something warm — so you can stop and eat with a view no restaurant can sell you.",
   "exp.3.t":"Restaurant perk","exp.3.d":"Guests get a standing discount at Reykjavík Kitchen — and I'll take your photos along the way, free of charge.",
   "exp.foot":"\u201cI'll tell you honestly if it's not worth going today.\u201d",
 
@@ -188,7 +188,7 @@ pl:{
 
   "exp.eyebrow":"Przeżycie","exp.h2":"Więcej niż przejazd — przeżycie.","exp.lead":"Drobiazgi, które zamieniają transfer w historię opowiadaną po powrocie.",
   "exp.1.t":"Domowy zestaw powitalny","exp.1.d":"Kasia jest szefową kuchni. Każda wycieczka zaczyna się od ciepłego pudełka — skyr, świeże owoce, coś upieczonego tego ranka.",
-  "exp.2.t":"Grill i lokalne smaki w terenie","exp.2.d":"Na dłuższych trasach stajemy, by upiec islandzkie hot dogi i spróbować lokalnych przysmaków z widokiem, którego nie sprzeda żadna restauracja.",
+  "exp.2.t":"Lunchboxy w drogę","exp.2.d":"Na dłuższych trasach pakujemy porządny lunchbox — islandzkie smaki i coś ciepłego — żebyś mógł zatrzymać się i zjeść z widokiem, którego nie sprzeda żadna restauracja.",
   "exp.3.t":"Zniżka w restauracji","exp.3.d":"Goście mają stałą zniżkę w Reykjavík Kitchen — a po drodze zrobię Ci zdjęcia, zupełnie za darmo.",
   "exp.foot":"\u201ePowiem szczerze, jeśli dziś nie warto jechać.\u201d",
 
@@ -313,7 +313,7 @@ de:{
 
   "exp.eyebrow":"Das Erlebnis","exp.h2":"Mehr als eine Fahrt — ein Erlebnis.","exp.lead":"Die kleinen Dinge, die aus einem Transfer eine Geschichte machen, die du zu Hause erzählst.",
   "exp.1.t":"Hausgemachtes Willkommens-Set","exp.1.d":"Kate ist Köchin. Jede Tour beginnt mit einer warmen Willkommensbox — Skyr, frisches Obst, etwas am Morgen Gebackenes.",
-  "exp.2.t":"Grill & Kostproben unterwegs","exp.2.d":"An langen Tagen halten wir, um isländische Hot Dogs zu grillen und lokale Spezialitäten zu probieren — mit einer Aussicht, die kein Restaurant verkaufen kann.",
+  "exp.2.t":"Lunchboxen für unterwegs","exp.2.d":"An längeren Tagen packen wir eine richtige Lunchbox — isländische Leckereien und etwas Warmes — damit du mit einer Aussicht hältst, die kein Restaurant verkaufen kann.",
   "exp.3.t":"Restaurant-Bonus","exp.3.d":"Gäste bekommen einen festen Rabatt in der Reykjavík Kitchen — und unterwegs mache ich deine Fotos, kostenlos.",
   "exp.foot":"\u201eIch sage dir ehrlich, wenn es sich heute nicht lohnt.\u201c",
 
@@ -442,7 +442,7 @@ es:{
 
   "exp.eyebrow":"La experiencia","exp.h2":"Más que un trayecto — una experiencia.","exp.lead":"Los pequeños detalles que convierten un traslado en una historia que contarás al volver a casa.",
   "exp.1.t":"Set de bienvenida casero","exp.1.d":"Kate es chef. Cada tour empieza con una caja de bienvenida calentita — skyr, fruta fresca y algo horneado esa mañana.",
-  "exp.2.t":"Parrilla y degustaciones en ruta","exp.2.d":"En los días más largos paramos para asar perritos islandeses y probar delicias locales con una vista que ningún restaurante te puede vender.",
+  "exp.2.t":"Lunchboxes para el camino","exp.2.d":"En los días más largos preparamos una buena lunchbox — delicias islandesas y algo caliente — para que pares a comer con una vista que ningún restaurante te puede vender.",
   "exp.3.t":"Ventaja en restaurante","exp.3.d":"Los huéspedes tienen un descuento permanente en Reykjavík Kitchen — y por el camino te hago fotos, sin coste.",
   "exp.foot":"«Te diré con sinceridad si hoy no vale la pena ir.»",
 

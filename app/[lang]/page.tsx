@@ -225,11 +225,11 @@ export default function Home({ params }: { params: { lang: string } }) {
               <div className="exp-body"><div className="why-ic"><svg><use href="#i-gift" /></svg></div><h3>{t('exp.1.t')}</h3><p>{t('exp.1.d')}</p></div>
             </article>
             <article className="exp-card reveal d1">
-              <div className="ph" data-label="Roadside grill — Icelandic hot dogs with a view"></div>
-              <div className="exp-body"><div className="why-ic"><svg><use href="#i-flame" /></svg></div><h3>{t('exp.2.t')}</h3><p>{t('exp.2.d')}</p></div>
+              <div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="Lunchbox for the road" src="/img/exp-lunchbox.webp" /></div>
+              <div className="exp-body"><div className="why-ic"><svg><use href="#i-cup" /></svg></div><h3>{t('exp.2.t')}</h3><p>{t('exp.2.d')}</p></div>
             </article>
             <article className="exp-card reveal d2">
-              <div className="ph" data-label="Reykjavík Kitchen — warm restaurant interior"></div>
+              <div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="Restaurant interior" src="/img/exp-restaurant.webp" /></div>
               <div className="exp-body"><div className="why-ic"><svg><use href="#i-camera" /></svg></div><h3>{t('exp.3.t')}</h3><p>{t('exp.3.d')}</p></div>
             </article>
           </div>
