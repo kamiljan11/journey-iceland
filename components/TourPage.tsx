@@ -93,9 +93,15 @@ export default function TourPage({ lang, slug }: { lang: string; slug: string })
       <section className="sec bg-cream2" id="map" data-screen-label="Map">
         <div className="wrap">
           <div className="sec-head reveal"><span className="eyebrow">{t('tp.map.eyebrow')}</span><h2>{x.mapH2}</h2></div>
-          <div className="contact-map reveal" style={{ aspectRatio: '21/9', minHeight: 280 }}>
-            <div className="ph" data-label={x.mapLabel}></div>
-            <span className="map-pin"><svg><use href="#i-pin-fill" /></svg></span>
+          <div className="contact-map reveal" style={{ aspectRatio: '21/9', minHeight: 280, overflow: 'hidden' }}>
+            {x.mapEmbed ? (
+              <iframe title={x.mapLabel} src={x.mapEmbed} loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen style={{ width: '100%', height: '100%', border: 0, display: 'block' }} />
+            ) : (
+              <>
+                <div className="ph" data-label={x.mapLabel}></div>
+                <span className="map-pin"><svg><use href="#i-pin-fill" /></svg></span>
+              </>
+            )}
           </div>
         </div>
       </section>

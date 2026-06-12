@@ -13,23 +13,26 @@ export type TourText = {
 
 type TourMeta = {
   priceKey: string; nameKey: string; waKey: string; preselect: string;
-  heroImg: string; ftImg?: string; ftLabel?: string; gallery: GalleryItem[];
+  heroImg: string; ftImg?: string; ftLabel?: string; mapEmbed?: string; gallery: GalleryItem[];
 };
 
 export const META: Record<string, TourMeta> = {
   'golden-circle': {
     priceKey: 'tour.gc.price', nameKey: 'tour.gc.name', waKey: 'wa.gc', preselect: 'gc',
     heroImg: '/img/gc-hero.webp', ftImg: '/img/exp-lunchbox.webp',
+    mapEmbed: 'https://maps.google.com/maps?saddr=Reykjavik,Iceland&daddr=Thingvellir+National+Park+to:Geysir+to:Gullfoss+to:Kerid+Crater+to:Reykjavik,Iceland&output=embed',
     gallery: [{ src: '/img/tour-gc.webp' }, { src: '/img/gc-strokkur.webp' }, { src: '/img/g9.webp' }, { src: '/img/g5.webp' }, { src: '/img/g6.webp' }, { src: '/img/g3.webp' }],
   },
   'south-coast': {
     priceKey: 'tour.sc.price', nameKey: 'tour.sc.name', waKey: 'wa.generic', preselect: 'sc',
     heroImg: '/img/tour-sc.webp', ftImg: '/img/exp-lunchbox.webp',
+    mapEmbed: 'https://maps.google.com/maps?saddr=Reykjavik,Iceland&daddr=Seljalandsfoss+to:Skogafoss+to:Solheimajokull+to:Reynisfjara+to:Vik,Iceland&output=embed',
     gallery: [{ src: '/img/tour-sc.webp' }, { src: '/img/g6.webp' }, { src: '/img/g5.webp' }, { src: '/img/g1.webp' }, { src: '/img/g3.webp' }, { src: '/img/g7.webp' }],
   },
   'jokulsarlon': {
     priceKey: 'tour.jk.price', nameKey: 'tour.jk.name', waKey: 'wa.generic', preselect: 'jk',
     heroImg: '/img/tour-jk.webp', ftImg: '/img/exp-lunchbox.webp',
+    mapEmbed: 'https://maps.google.com/maps?saddr=Reykjavik,Iceland&daddr=Seljalandsfoss+to:Skogafoss+to:Vik,Iceland+to:Jokulsarlon+to:Diamond+Beach,Iceland&output=embed',
     gallery: [{ src: '/img/tour-jk.webp' }, { src: '/img/g6.webp' }, { src: '/img/g5.webp' }, { src: '/img/g1.webp' }, { src: '/img/g7.webp' }, { src: '/img/tour-sc.webp' }],
   },
 };
