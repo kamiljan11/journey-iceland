@@ -21,7 +21,7 @@ export function generateMetadata({ params }: { params: { lang: string } }): Meta
     description: t('hero.sub'),
     alternates: {
       canonical: `/${lang}`,
-      languages: { en: '/en', pl: '/pl', de: '/de' },
+      languages: { en: '/en', pl: '/pl', de: '/de', es: '/es' },
     },
     openGraph: {
       title: t('doc.title'),

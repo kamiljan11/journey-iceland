@@ -5,6 +5,7 @@ const LOCALES: [string, string][] = [
   ['en', 'EN'],
   ['de', 'DE'],
   ['pl', 'PL'],
+  ['es', 'ES'],
 ];
 
 export default function LangSwitch({ lang }: { lang: string }) {

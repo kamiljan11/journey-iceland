@@ -395,10 +395,141 @@ de:{
   "tp.also.eyebrow":"Das könnte dir gefallen","tp.also.h2":"Weitere Wege, Island zu sehen.",
   "tp.avail.eyebrow":"Verfügbarkeit prüfen","tp.avail.h2":"Termine für den Golden Circle prüfen.","tp.avail.lead":"Sende eine kurze Anfrage mit deinen Daten und ich antworte persönlich, um alles zu bestätigen.",
 },
+
+/* =========================== ESPAÑOL =========================== */
+es:{
+  "doc.title":"Journey Iceland — tours privados y traslados al aeropuerto con un local",
+  "nav.tours":"Tours","nav.why":"Por qué nosotros","nav.about":"Nosotros","nav.gallery":"Galería","nav.reviews":"Opiniones","nav.faq":"FAQ","nav.contact":"Contacto",
+  "cta.check":"Comprobar disponibilidad","cta.wa":"Escríbeme por WhatsApp","cta.wa.short":"WhatsApp","cta.ask":"Pregúntame",
+  "wa.generic":"¡Hola! Escribo desde tu web journeyiceland.is. Me gustaría preguntar por un tour privado o un traslado: ","wa.custom":"¡Hola! Escribo desde journeyiceland.is sobre una ruta personalizada. Mi pregunta: ","wa.aurora":"¡Hola! Escribo desde journeyiceland.is sobre el tour de auroras boreales. Mi pregunta: ","wa.gc":"¡Hola! Escribo desde journeyiceland.is sobre el tour del Círculo Dorado. Mi pregunta: ",
+  "brand.tag":"Tours privados · Islandia",
+  "menu":"Menú",
+
+  "hero.eyebrow":"Conductor y guía privado · desde 2014",
+  "hero.h1":"Islandia, como te la enseña un local.",
+  "hero.sub":"Tours privados y traslados al aeropuerto con un conductor local que te trata como a la familia: lugares escondidos, tu ritmo, consejos sinceros.",
+  "hero.langline":"English · Polski · Deutsch",
+  "hero.scroll":"Desplázate",
+
+  "trust.rating":"Valorado en Google","trust.insured":"Conductor experimentado y asegurado","trust.private":"Solo grupos privados","trust.langs":"English · Polski · Deutsch","trust.pickup":"Recogida gratis en el hotel",
+
+  "tours.eyebrow":"Tours y traslados","tours.h2":"¿A dónde te gustaría ir?","tours.lead":"Grupos privados pequeños, recogida en el hotel y una ruta a tu medida. Los precios de los tours son por grupo, no por persona.",
+  "tours.toursLabel":"Tours de un día","tours.transfersLabel":"Traslados al aeropuerto y al spa",
+  "tour.see":"Ver tour","tour.tbc":"","tour.perGroup":"por grupo",
+
+  "tour.gc.name":"Círculo Dorado","tour.gc.dur":"6–8 h","tour.gc.price":"desde 85.000 ISK","tour.gc.alt":"≈ 570 € / 610 $ · por grupo",
+  "tour.sc.name":"Costa Sur","tour.sc.dur":"8–10 h","tour.sc.price":"desde 110.000 ISK","tour.sc.alt":"≈ 730 € / 790 $ · por grupo",
+  "tour.jk.name":"Laguna glaciar Jökulsárlón","tour.jk.dur":"12–14 h","tour.jk.price":"desde 189.000 ISK","tour.jk.alt":"≈ 1.250 € / 1.360 $ · por grupo",
+
+  "transfer.kef.name":"Aeropuerto de Keflavík ⇄ Reikiavik","transfer.kef.meta":"≈ 50 min · hasta 4 pasajeros","transfer.kef.price":"desde 22.000 ISK",
+  "transfer.bl.name":"Traslado a Blue Lagoon","transfer.bl.meta":"Aeropuerto o ciudad · entrada no incluida","transfer.bl.price":"desde 22.000 ISK",
+  "transfer.check":"Comprobar disponibilidad",
+
+  "tours.cta.h3":"Vamos a todas partes — ruta personalizada bajo petición.","tours.cta.p":"Volcanes, fuentes termales, una sesión de fotos de boda, una vuelta de varios días. Cuéntame la idea y construyo el día a su alrededor.",
+
+  "aurora.tag":"Este otoño · reservas abiertas","aurora.eyebrow":"Auroras boreales","aurora.h2":"Tras las auroras boreales — este otoño.","aurora.p":"Desde septiembre los cielos vuelven a oscurecerse. Vigilo la previsión por ti, te alejo del resplandor de la ciudad y Kate prepara un termo de chocolate caliente. Las plazas son limitadas — pregunta para reservar con antelación. Desde 50.000 ISK por grupo (1–4) · 2–3 h.","aurora.cta1":"Pregúntame",
+
+  "why.eyebrow":"Por qué viajar con nosotros","why.h2":"No somos solo guías — somos una familia.","why.lead":"Vivimos aquí — criamos a nuestras hijas, trabajamos y pasamos nuestro tiempo libre aquí, y te enseñamos la Islandia que amamos.",
+  "why.1.t":"No una agencia masiva","why.1.d":"Nunca te metemos prisa ni vamos tachando lugares de una lista. Hay espacio para ir despacio y sentir de verdad la atmósfera de Islandia.",
+  "why.2.t":"Hospitalidad en la sangre","why.2.d":"Nos encanta la gente. Cuidamos el buen ambiente, los pequeños detalles y que te sientas a gusto y bien atendido.",
+  "why.3.t":"Viajamos como nos gustaría a nosotros","why.3.d":"Paramos donde la vista te corta la respiración — y a veces tomamos el camino más largo, porque resulta ser el más bonito.",
+  "why.4.t":"Recuerdos, no una lista","why.4.d":"Volverás a casa con algo más que fotos: con emociones, historias y la sensación de haber conocido la Islandia auténtica.",
+  "compare.mine.title":"Privado conmigo","compare.mine.tag":"Tú","compare.bus.title":"Autobús grande","compare.bus.tag":"Ellos",
+  "compare.mine.1":"Solo tu grupo — hasta 4 con comodidad","compare.mine.2":"Sales cuando estás listo, paras por capricho","compare.mine.3":"Rincones escondidos a los que el autobús no llega","compare.mine.4":"Aperitivos caseros de Kate","compare.mine.5":"Un guía que sabe tu nombre",
+  "compare.bus.1":"Más de 40 desconocidos con horario fijo","compare.bus.2":"15 minutos por parada de fotos y a seguir","compare.bus.3":"Solo los lugares famosos y abarrotados","compare.bus.4":"Un sándwich de gasolinera","compare.bus.5":"Un micrófono y un recuento de cabezas",
+
+  "about.eyebrow":"Nosotros","about.h2":"Hola, soy Sylwiusz «Syl».","about.lead":"Nuestra historia islandesa empezó hace años. Como muchos, empezamos de cero y, paso a paso, construimos una vida aquí — hasta que esta isla se convirtió en nuestro hogar. Aquí nacieron nuestras hijas gemelas y aquí empezó de verdad nuestra mayor aventura.","about.p1":"Desde que tengo memoria exploro Islandia — descubriendo caminos escondidos, persiguiendo miradores impresionantes y encontrando las historias que hacen único cada lugar. Mi pasión va mucho más allá de los sitios famosos; siempre busco los rincones tranquilos por los que la mayoría pasa de largo.","about.p2":"Como familia mantenemos viva esa aventura. Con nuestras hijas al lado caminamos, tomamos la ruta panorámica y a menudo salimos sin un plan estricto — parando junto a una cascada para un picnic, recogiendo hierbas silvestres y viendo cómo el tiempo cambia minuto a minuto. Mi mujer es Head Chef y le encanta recibir a la gente; cada año seguimos haciendo siropes y tinturas caseras, como hacían nuestras abuelas.","about.p3":"No vemos a nuestros huéspedes como turistas — los recibimos como amigos y te invitamos a descubrir Islandia como lo hacemos nosotros: con curiosidad, autenticidad y corazón. Descubre Islandia a la antigua usanza.","about.sign":"— Sylwiusz y Kate","about.badge.num":"600+","about.badge.t":"huéspedes felices desde 2014",
+
+  "exp.eyebrow":"La experiencia","exp.h2":"Más que un trayecto — una experiencia.","exp.lead":"Los pequeños detalles que convierten un traslado en una historia que contarás al volver a casa.",
+  "exp.1.t":"Set de bienvenida casero","exp.1.d":"Kate es chef. Cada tour empieza con una caja de bienvenida calentita — skyr, fruta fresca y algo horneado esa mañana.",
+  "exp.2.t":"Parrilla y degustaciones en ruta","exp.2.d":"En los días más largos paramos para asar perritos islandeses y probar delicias locales con una vista que ningún restaurante te puede vender.",
+  "exp.3.t":"Ventaja en restaurante","exp.3.d":"Los huéspedes tienen un descuento permanente en Reykjavík Kitchen — y por el camino te hago fotos, sin coste.",
+  "exp.foot":"«Te diré con sinceridad si hoy no vale la pena ir.»",
+
+  "gallery.eyebrow":"Galería","gallery.h2":"Momentos de la carretera.","gallery.lead":"Luz dorada, carreteras tranquilas, comida caliente y algún cielo verde. Desliza.",
+
+  "reviews.eyebrow":"Opiniones","reviews.h2":"Llegaron como huéspedes, se fueron como amigos.","reviews.lead":"Unas palabras de viajeros recientes. Más en Google.",
+  "rev.1.q":"Syl nos encontró una cascada sin nadie más alrededor. El mejor día de todo nuestro viaje por Islandia — y nunca nos sentimos apurados.","rev.1.name":"Sarah & Mike","rev.1.loc":"Austin, EE. UU.",
+  "rev.2.q":"Profesional, cercano y en polaco. Nos sentimos cuidados desde el aeropuerto hasta la última parada.","rev.2.name":"Tomasz K.","rev.2.loc":"Varsovia, PL",
+  "rev.3.q":"Sincero con el tiempo, flexible con el plan, y los aperitivos de Kate eran increíbles. Lo reservamos dos veces en una semana.","rev.3.name":"Emma L.","rev.3.loc":"Londres, UK",
+  "rev.4.q":"Muy cercano y relajado. Syl conoce lugares que no salen en ninguna guía. ¡Totalmente recomendable!","rev.4.name":"Familia Berger","rev.4.loc":"Múnich, DE",
+  "rev.5.q":"Nuestro vuelo se retrasó hasta medianoche y él seguía allí, sonriendo, con la calefacción puesta. Esa es toda la empresa en un solo momento.","rev.5.name":"Dana R.","rev.5.loc":"Toronto, CA",
+  "rev.6.q":"Parábamos donde queríamos para hacer fotos. Prueba a hacer eso en un autobús de 50 plazas. Vale cada corona.","rev.6.name":"Priya & Sam","rev.6.loc":"Manchester, UK",
+
+  "faq.eyebrow":"Bueno saberlo","faq.h2":"Preguntas, respondidas.",
+  "faq.1.q":"¿Es seguro recorrer las carreteras de Islandia contigo?","faq.1.a":"Sí. Soy un conductor local experimentado y totalmente asegurado, con un 4×4 bien mantenido. Consulto a diario el tiempo y el estado de las carreteras, y cambio el plan encantado antes que arriesgar. Tu seguridad va siempre por delante de cualquier itinerario.",
+  "faq.2.q":"¿Puedes garantizar que veremos las auroras boreales?","faq.2.a":"Sinceramente, nadie puede — la aurora depende de la oscuridad, el cielo despejado y la actividad solar. Lo que sí prometo es seguir la previsión, alejarte de las luces de la ciudad hacia la mejor opción y mantenerte caliente mientras esperamos. Si el cielo no acompaña, te lo diré claramente.",
+  "faq.3.q":"¿Cómo funciona el pago si no puedo reservar online?","faq.3.a":"Es a propósito. Envías una solicitud de disponibilidad, confirmamos los detalles juntos en persona, y luego te envío un enlace de pago seguro o cobro con tarjeta el mismo día. No se cobra ningún depósito solo por preguntar por una fecha.",
+  "faq.4.q":"¿Qué idiomas hablas?","faq.4.a":"Guío en inglés, polaco y alemán. Solo dime en cuál te sientes más cómodo y ese será el idioma del día.",
+  "faq.5.q":"¿El tour es realmente privado?","faq.5.a":"Siempre. En el coche va únicamente tu grupo — nunca se comparte con desconocidos. El ritmo, las paradas y la música son tuyos.",
+  "faq.6.q":"¿Recoges en mi hotel?","faq.6.a":"Sí — recogida gratuita en hotel, apartamento o camping en la zona de Reikiavik, y en el aeropuerto de Keflavík para los traslados. Confirmo la hora exacta cuando hablemos.",
+  "faq.7.q":"¿Y si el día se estropea el tiempo?","faq.7.a":"Nos adaptamos. Reorganizo la ruta hacia paradas resguardadas e igual de bonitas, muevo el día si es realmente inseguro, o lo reprogramo sin problema. Nunca te empujaré a una tormenta por cumplir un horario.",
+  "faq.8.q":"¿Puedo pagar con tarjeta mientras viajo por Islandia?","faq.8.a":"Sí — la tarjeta funciona casi en todas partes en Islandia, desde gasolineras hasta pequeñas cafeterías, así que apenas necesitarás efectivo. Para el tour en sí te envío un enlace de pago seguro o cobro con tarjeta el mismo día.",
+  "faq.9.q":"¿Qué tiempo podemos esperar en Islandia?","faq.9.a":"Sinceramente — un poco de todo. El tiempo en Islandia puede cambiar en minutos, así que una mañana soleada puede pasar a lluvia y volver. Sigo la previsión de cerca, me visto por capas y adapto el día a las condiciones para que aun así aproveches lo mejor.",
+
+  "contact.eyebrow":"Comprobar disponibilidad","contact.h2":"Planifiquemos tu día en Islandia.","contact.lead":"Envía una solicitud rápida y te responderé personalmente — normalmente en unas horas — para confirmar los detalles contigo.",
+  "form.tour":"¿Qué tour o traslado?","form.tour.opt":"Elige una opción…","form.date":"Fecha preferida","form.people":"¿Cuántos sois?","form.name":"Tu nombre","form.email":"Correo","form.phone":"Teléfono / WhatsApp","form.phone.opt":"(opcional)","form.msg":"¿Algo más?","form.msg.opt":"(opcional)","form.msg.ph":"Horarios de vuelo, ideas, lugares imprescindibles…",
+  "form.send":"Enviar solicitud","form.legal":"Esto es una solicitud de disponibilidad, no una reserva — confirmaré los detalles contigo personalmente.",
+  "form.sent.title":"¡Gracias — solicitud enviada!","form.sent.body":"Te responderé personalmente, normalmente en unas horas, para confirmar los detalles.",
+  "form.p.1":"1–4 personas","form.p.2":"5–8 personas",
+  "opt.gc":"Círculo Dorado — tour privado","opt.sc":"Costa Sur — tour privado","opt.jk":"Laguna glaciar Jökulsárlón","opt.kef":"Traslado aeropuerto Keflavík","opt.bl":"Traslado a Blue Lagoon","opt.aurora":"Auroras boreales (otoño)","opt.custom":"Personalizado / aún no lo sé",
+
+  "cm.wa.l":"WhatsApp","cm.wa.v":"+354 785 0558","cm.phone.l":"Llamada / SMS","cm.phone.v":"+354 785 0558","cm.mail.l":"Correo","cm.mail.v":"hello@journeyiceland.is","cm.hours.l":"Base","cm.hours.v":"Reikiavik · 7 días a la semana","map.label":"mapa — zona de recogida en Reikiavik",
+
+  "pl.offer":"",
+
+  "footer.tagline":"Tours privados y traslados al aeropuerto por toda Islandia — un conductor local que te trata como a la familia.","footer.explore":"Explora","footer.tours":"Tours","footer.contact":"Contacto","footer.disclaimer":"Journey Iceland es un servicio privado de conductor y guía. Las solicitudes de disponibilidad se confirman personalmente; este sitio no acepta reservas ni pagos online.","footer.privacy":"Privacidad","footer.terms":"Términos","footer.rights":"© 2026 Journey Iceland. Hecho con cariño en Reikiavik.",
+
+  /* ---------------- PÁGINA DE TOUR: Círculo Dorado ---------------- */
+  "tp.bc.tours":"Tours","tp.bc.cur":"Círculo Dorado",
+  "tp.eyebrow":"Tour privado de un día · desde Reikiavik",
+  "tp.h1":"Círculo Dorado — tour privado desde Reikiavik.","tp.sub":"Los tres iconos de Islandia — una cascada atronadora, un géiser en erupción y una grieta continental — a tu ritmo, sin multitudes y sin reloj.",
+  "tp.qf.dur":"6–8 horas","tp.qf.price":"desde 85.000 ISK","tp.qf.priv":"Privado · máx. 4","tp.qf.pickup":"Recogida en el hotel","tp.qf.lang":"EN · PL · DE",
+  "tp.sn.overview":"Resumen","tp.sn.route":"Ruta","tp.sn.map":"Mapa","tp.sn.gallery":"Galería","tp.sn.reviews":"Opiniones","tp.sn.faq":"FAQ","tp.sn.avail":"Disponibilidad",
+
+  "tp.hl.eyebrow":"En resumen","tp.hl.h2":"Cómo es el día.",
+  "tp.hl.1":"Þingvellir — camina entre dos continentes","tp.hl.2":"El géiser Strokkur en erupción cada pocos minutos","tp.hl.3":"Gullfoss, la cascada dorada de dos niveles","tp.hl.4":"Una parada tranquila por la que los autobuses pasan de largo","tp.hl.5":"Cráter volcánico Kerið (según temporada)","tp.hl.6":"Recogida y regreso puerta a puerta","tp.hl.7":"La caja de bienvenida casera de Kate","tp.hl.8":"Tus fotos tomadas por el camino",
+
+  "tp.ov.eyebrow":"Por qué este tour","tp.ov.h2":"El clásico — con calma.","tp.ov.p1":"El Círculo Dorado es la ruta que todos hacen, y por algo es: en una sola vuelta tienes un valle de fractura tectónica, el géiser más fiable de Islandia y una de sus cascadas más imponentes. La diferencia está en cómo lo vives.","tp.ov.p2":"Con un autobús grande tienes quince minutos y un recuento de cabezas. Conmigo, es solo tu grupo. Salimos cuando estás listo, nos demoramos donde es bonito y colamos una parada o dos que los autocares nunca ven — una iglesia de turba, un cráter tranquilo, una granja que hace helado con la leche de sus vacas.","tp.ov.p3":"Observo el tiempo y la luz del día y ordeno las paradas en función de ello, para que estés en los lugares más bonitos cuando mejor se ven.",
+
+  "tp.rt.eyebrow":"La ruta","tp.rt.h2":"Parada a parada.",
+  "tp.rt.1.t":"Recogida en el hotel","tp.rt.1.time":"sobre las 8:30","tp.rt.1.d":"Te recojo puerta a puerta en la zona de Reikiavik. La caja de bienvenida de Kate y bebidas calientes esperan en el coche.",
+  "tp.rt.2.t":"Parque Nacional Þingvellir","tp.rt.2.time":"parada 1","tp.rt.2.d":"Camina por la grieta donde las placas norteamericana y euroasiática se separan — y donde Islandia fundó el parlamento más antiguo del mundo.",
+  "tp.rt.3.t":"Geysir y Strokkur","tp.rt.3.time":"parada 2","tp.rt.3.d":"Strokkur lanza una columna de agua hirviendo de 20–30 m al aire cada pocos minutos. Esperamos la foto perfecta — sin prisas.",
+  "tp.rt.4.t":"Cascada Gullfoss","tp.rt.4.time":"parada 3","tp.rt.4.d":"Las «cascadas doradas» caen en dos grandes escalones hacia un cañón. En un día soleado la espuma dibuja arcoíris sobre la garganta.",
+  "tp.rt.5.t":"Una parada escondida","tp.rt.5.time":"parada 4","tp.rt.5.d":"Mi parte favorita: algún lugar fuera de la ruta principal — un cráter, una iglesia de turba o un café rural — elegido según el día y la luz.",
+  "tp.rt.6.t":"De vuelta a tu hotel","tp.rt.6.time":"sobre las 16:00","tp.rt.6.d":"En casa a media tarde, con la cabeza llena de fotos. ¿Quieres añadir cena o un baño en una fuente termal? Dilo y lo encajamos.",
+
+  "tp.map.eyebrow":"La vuelta","tp.map.h2":"Unos 230 km, todo por buenas carreteras.","tp.map.label":"mapa — ruta del Círculo Dorado desde Reikiavik",
+
+  "tp.incl.eyebrow":"Los detalles","tp.incl.h2":"Qué incluye.",
+  "tp.incl.yes.t":"Incluido","tp.incl.no.t":"No incluido",
+  "tp.incl.yes.1":"4×4 privado con combustible y peajes","tp.incl.yes.2":"Recogida y regreso al hotel","tp.incl.yes.3":"Guía local en inglés / polaco / alemán","tp.incl.yes.4":"La caja de bienvenida casera de Kate","tp.incl.yes.5":"Fotos tuyas por el camino","tp.incl.yes.6":"Ritmo flexible y una parada escondida",
+  "tp.incl.no.1":"Almuerzo en el café rural (opcional)","tp.incl.no.2":"Entrada a spa / piscina opcional","tp.incl.no.3":"Propinas (nunca se esperan)",
+
+  "tp.bring.eyebrow":"Ven preparado","tp.bring.h2":"Qué llevar.",
+  "tp.bring.1.t":"Capas","tp.bring.1.d":"El tiempo en Islandia cambia cada hora. Una capa intermedia caliente y una chaqueta cortavientos cubren casi cualquier día.",
+  "tp.bring.2.t":"Calzado resistente","tp.bring.2.d":"Los caminos pueden estar mojados o helados. Lo ideal son zapatos o botas de montaña impermeables.",
+  "tp.bring.3.t":"Una cámara","tp.bring.3.d":"Móvil o cámara — y con gusto os hago las fotos en pareja que nunca consigues en un autobús.",
+  "tp.bring.4.t":"Bañador (opcional)","tp.bring.4.d":"Si te apetece una parada en una fuente termal a la vuelta, lleva bañador y toalla.",
+
+  "tp.ft.eyebrow":"El toque familiar","tp.ft.h2":"Una parada con parrilla y vistas.","tp.ft.p":"En el Círculo Dorado me encanta parar donde la carretera se queda en silencio para encender la pequeña parrilla — perritos islandeses, chocolate caliente del termo de Kate y un horizonte solo para vosotros. Es el momento que la mayoría de los huéspedes recuerda mejor.",
+
+  "tp.gal.eyebrow":"Galería","tp.gal.h2":"De esta ruta.",
+  "tp.rev.eyebrow":"Opiniones","tp.rev.h2":"Lo que dicen los huéspedes de este tour.",
+  "tp.faq.eyebrow":"FAQ Círculo Dorado","tp.faq.h2":"Preguntas sobre este tour.",
+  "tp.faq.1.q":"¿Cuánto dura el tour del Círculo Dorado?","tp.faq.1.a":"Normalmente 6–8 horas puerta a puerta, según cuánto quieras demorarte y si añadimos una parada escondida o un baño termal. Es tu día — nunca miramos el horario de un autocar.",
+  "tp.faq.2.q":"¿Cuántas personas pueden ir?","tp.faq.2.a":"Hasta 4 huéspedes viajan con comodidad en el coche. ¿Sois un grupo de 5–8? Escríbeme y organizo el vehículo adecuado.",
+  "tp.faq.3.q":"¿Se puede hacer el Círculo Dorado en invierno?","tp.faq.3.a":"Sí — es precioso bajo la nieve, y los días más cortos hasta dan opción a ver auroras en el viaje de vuelta. Ajusto la ruta y los horarios a las condiciones y a la luz.",
+  "tp.faq.4.q":"¿Qué significa «desde 85.000 ISK»?","tp.faq.4.a":"Es un precio de salida por grupo, no por persona — así que es lo mismo si viaja uno o cuatro. El precio final depende de la temporada, el punto de recogida y los extras.",
+
+  "tp.also.eyebrow":"También te puede gustar","tp.also.h2":"Otras formas de ver Islandia.",
+  "tp.avail.eyebrow":"Comprobar disponibilidad","tp.avail.h2":"Consulta fechas para el Círculo Dorado.","tp.avail.lead":"Envía una solicitud rápida con tus fechas y te responderé personalmente para confirmarlo todo.",
+},
 };
 
-export type Lang = 'en' | 'pl' | 'de';
-export const LANGS: Lang[] = ['en', 'pl', 'de'];
+export type Lang = 'en' | 'pl' | 'de' | 'es';
+export const LANGS: Lang[] = ['en', 'pl', 'de', 'es'];
 export function isLang(x: string): x is Lang { return (LANGS as string[]).includes(x); }
 export function getDict(lang: string) { return I18N[lang] || I18N.en; }
 export function makeT(lang: string) {
