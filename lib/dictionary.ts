@@ -27,10 +27,10 @@ en:{
   "hero.eyebrow":"Private driver & guide · since 2014",
   "hero.h1":"Iceland, the way a local shows it.",
   "hero.sub":"Private tours & airport transfers with a local driver who treats you like family — hidden places, your pace, honest advice.",
-  "hero.langline":"English · Polski · Deutsch",
+  "hero.langline":"English · Polski · Deutsch · Español",
   "hero.scroll":"Scroll",
 
-  "trust.rating":"Google rated","trust.insured":"Experienced & insured driver","trust.private":"Private groups only","trust.langs":"English · Polski · Deutsch","trust.pickup":"Free hotel pick-up",
+  "trust.rating":"Google rated","trust.insured":"Experienced & insured driver","trust.private":"Private groups only","trust.langs":"English · Polski · Deutsch · Español","trust.pickup":"Free hotel pick-up",
 
   "tours.eyebrow":"Tours & transfers","tours.h2":"Where would you like to go?","tours.lead":"Small private groups, hotel pick-up, and a route we shape around you. Tour prices are per group — not per person.",
   "tours.toursLabel":"Day tours","tours.transfersLabel":"Airport & spa transfers",
@@ -79,7 +79,7 @@ en:{
   "faq.1.q":"Is it safe to drive Iceland's roads with you?","faq.1.a":"Yes. I'm an experienced, fully insured local driver in a well-maintained 4×4. I read the weather and road service daily and will happily change a plan rather than take a risk. Your safety always comes before any itinerary.",
   "faq.2.q":"Can you guarantee we'll see the Northern Lights?","faq.2.a":"No one honestly can — the aurora depends on darkness, clear skies and solar activity. What I can promise is that I track the forecast, drive you away from city light to the best chance, and keep you warm while we wait. If the sky simply won't cooperate, I'll tell you straight.",
   "faq.3.q":"How does payment work if I can't book online?","faq.3.a":"By design. You send an availability request, we confirm the details together personally, and then I send a secure payment link or take card on the day. No deposit is taken just to ask about a date.",
-  "faq.4.q":"Which languages do you speak?","faq.4.a":"I guide in English, Polish and German. Just tell me which you're most comfortable in and that's the language for the day.",
+  "faq.4.q":"Which languages do you speak?","faq.4.a":"I guide in English, Polish, German and Spanish. Just tell me which you're most comfortable in and that's the language for the day.",
   "faq.5.q":"Is the tour really private?","faq.5.a":"Always. It's only ever your group in the car — never shared with strangers. The pace, the stops and the music are yours.",
   "faq.6.q":"Do you pick up from my hotel?","faq.6.a":"Yes — free hotel, apartment or campsite pick-up across the Reykjavík area, and from Keflavík Airport for transfers. I'll confirm the exact time when we talk.",
   "faq.7.q":"What if the weather turns bad on the day?","faq.7.a":"We adapt. I'll re-route to sheltered, still-beautiful stops, move the day if it's truly unsafe, or reschedule with no fuss. You'll never be pushed out into a storm for the sake of a timetable.",
@@ -103,7 +103,7 @@ en:{
   "tp.bc.tours":"Tours","tp.bc.cur":"Golden Circle",
   "tp.eyebrow":"Private day tour · from Reykjavík",
   "tp.h1":"Golden Circle — private tour from Reykjavík.","tp.sub":"Iceland's three icons — a thundering waterfall, an erupting geyser and a continental rift — at your own pace, with no crowds and no clock.",
-  "tp.qf.dur":"6–8 hours","tp.qf.price":"from 85,000 ISK","tp.qf.priv":"Private · max 4","tp.qf.pickup":"Hotel pick-up","tp.qf.lang":"EN · PL · DE",
+  "tp.qf.dur":"6–8 hours","tp.qf.price":"from 85,000 ISK","tp.qf.priv":"Private · max 4","tp.qf.pickup":"Hotel pick-up","tp.qf.lang":"EN · PL · DE · ES",
   "tp.sn.overview":"Overview","tp.sn.route":"Route","tp.sn.map":"Map","tp.sn.gallery":"Gallery","tp.sn.reviews":"Reviews","tp.sn.faq":"FAQ","tp.sn.avail":"Availability",
 
   "tp.hl.eyebrow":"In short","tp.hl.h2":"What the day looks like.",
@@ -123,7 +123,7 @@ en:{
 
   "tp.incl.eyebrow":"The details","tp.incl.h2":"What's included.",
   "tp.incl.yes.t":"Included","tp.incl.no.t":"Not included",
-  "tp.incl.yes.1":"Private 4×4 with fuel & all road costs","tp.incl.yes.2":"Hotel pick-up & drop-off","tp.incl.yes.3":"Local English / Polish / German guide","tp.incl.yes.4":"Kate's home-cooked welcome box","tp.incl.yes.5":"Photos of you along the way","tp.incl.yes.6":"Flexible pace & a hidden stop",
+  "tp.incl.yes.1":"Private 4×4 with fuel & all road costs","tp.incl.yes.2":"Hotel pick-up & drop-off","tp.incl.yes.3":"Local English / Polish / German / Spanish guide","tp.incl.yes.4":"Kate's home-cooked welcome box","tp.incl.yes.5":"Photos of you along the way","tp.incl.yes.6":"Flexible pace & a hidden stop",
   "tp.incl.no.1":"Lunch at the farm café (optional)","tp.incl.no.2":"Entry to any optional spa / pool","tp.incl.no.3":"Gratuities (never expected)",
 
   "tp.bring.eyebrow":"Come prepared","tp.bring.h2":"What to bring.",
@@ -155,9 +155,9 @@ pl:{
   "brand.tag":"Prywatne wycieczki · Islandia",
   "menu":"Menu",
 
-  "hero.eyebrow":"Prywatny kierowca i przewodnik · od 2014","hero.h1":"Islandia, jakiej nie pokaże autobus.","hero.sub":"Prywatne wycieczki i transfery z lokalnym kierowcą, który zadba o Ciebie jak o rodzinę — ukryte miejsca, Twoje tempo, szczerość.","hero.langline":"English · Polski · Deutsch","hero.scroll":"Przewiń",
+  "hero.eyebrow":"Prywatny kierowca i przewodnik · od 2014","hero.h1":"Islandia, jakiej nie pokaże autobus.","hero.sub":"Prywatne wycieczki i transfery z lokalnym kierowcą, który zadba o Ciebie jak o rodzinę — ukryte miejsca, Twoje tempo, szczerość.","hero.langline":"English · Polski · Deutsch · Español","hero.scroll":"Przewiń",
 
-  "trust.rating":"Ocena Google","trust.insured":"Doświadczony, ubezpieczony kierowca","trust.private":"Tylko prywatne grupy","trust.langs":"English · Polski · Deutsch","trust.pickup":"Bezpłatny odbiór z hotelu",
+  "trust.rating":"Ocena Google","trust.insured":"Doświadczony, ubezpieczony kierowca","trust.private":"Tylko prywatne grupy","trust.langs":"English · Polski · Deutsch · Español","trust.pickup":"Bezpłatny odbiór z hotelu",
 
   "tours.eyebrow":"Wycieczki i transfery","tours.h2":"Dokąd chcesz pojechać?","tours.lead":"Małe prywatne grupy, odbiór z hotelu i trasa ułożona pod Ciebie. Ceny wycieczek są za grupę — nie od osoby.",
   "tours.toursLabel":"Wycieczki jednodniowe","tours.transfersLabel":"Transfery z lotniska i do term",
@@ -206,7 +206,7 @@ pl:{
   "faq.1.q":"Czy jazda islandzkimi drogami z Tobą jest bezpieczna?","faq.1.a":"Tak. Jestem doświadczonym, w pełni ubezpieczonym lokalnym kierowcą, jeżdżę zadbanym autem 4×4. Codziennie sprawdzam pogodę i stan dróg i chętnie zmienię plan, zamiast ryzykować. Twoje bezpieczeństwo zawsze jest ważniejsze niż plan dnia.",
   "faq.2.q":"Czy gwarantujesz, że zobaczymy zorzę?","faq.2.a":"Uczciwie — nikt nie może. Zorza zależy od ciemności, czystego nieba i aktywności słońca. Mogę za to obiecać, że śledzę prognozę, wywożę Cię poza światła miasta tam, gdzie szanse są największe, i dbam o ciepło podczas czekania. A jeśli niebo nie da rady, powiem wprost.",
   "faq.3.q":"Jak działa płatność, skoro nie ma rezerwacji online?","faq.3.a":"Tak to działa celowo. Wysyłasz zapytanie o termin, ustalamy szczegóły osobiście, a potem wysyłam bezpieczny link do płatności albo przyjmuję kartę na miejscu. Samo zapytanie o termin nie wiąże się z żadną zaliczką.",
-  "faq.4.q":"Jakimi językami mówisz?","faq.4.a":"Oprowadzam po polsku, angielsku i niemiecku. Powiedz tylko, w którym czujesz się najlepiej, i taki będzie język całego dnia.",
+  "faq.4.q":"Jakimi językami mówisz?","faq.4.a":"Oprowadzam po polsku, angielsku, niemiecku i hiszpańsku. Powiedz tylko, w którym czujesz się najlepiej, i taki będzie język całego dnia.",
   "faq.5.q":"Czy wycieczka jest naprawdę prywatna?","faq.5.a":"Zawsze. W aucie jest wyłącznie Twoja grupa — nigdy z obcymi. Tempo, przystanki i muzyka należą do Ciebie.",
   "faq.6.q":"Czy odbierasz z hotelu?","faq.6.a":"Tak — bezpłatny odbiór z hotelu, mieszkania lub kempingu w rejonie Reykjavíku, a przy transferach także z lotniska Keflavík. Dokładną godzinę ustalimy w rozmowie.",
   "faq.7.q":"Co, jeśli w dniu wyjazdu pogoda się popsuje?","faq.7.a":"Dostosowujemy się. Zmienię trasę na osłonięte, wciąż piękne miejsca, przesunę dzień, jeśli naprawdę jest niebezpiecznie, albo umówimy nowy termin bez problemu. Nigdy nie wypchnę Cię w burzę dla samego harmonogramu.",
@@ -228,7 +228,7 @@ pl:{
 
   "tp.bc.tours":"Wycieczki","tp.bc.cur":"Golden Circle",
   "tp.eyebrow":"Prywatna wycieczka jednodniowa · z Reykjavíku","tp.h1":"Golden Circle — prywatna wycieczka z Reykjavíku.","tp.sub":"Trzy ikony Islandii — huczący wodospad, wybuchający gejzer i ryft kontynentalny — w Twoim tempie, bez tłumów i bez zegarka.",
-  "tp.qf.dur":"6–8 godzin","tp.qf.price":"od 85 000 ISK","tp.qf.priv":"Prywatnie · maks. 4","tp.qf.pickup":"Odbiór z hotelu","tp.qf.lang":"EN · PL · DE",
+  "tp.qf.dur":"6–8 godzin","tp.qf.price":"od 85 000 ISK","tp.qf.priv":"Prywatnie · maks. 4","tp.qf.pickup":"Odbiór z hotelu","tp.qf.lang":"EN · PL · DE · ES",
   "tp.sn.overview":"Opis","tp.sn.route":"Trasa","tp.sn.map":"Mapa","tp.sn.gallery":"Galeria","tp.sn.reviews":"Opinie","tp.sn.faq":"FAQ","tp.sn.avail":"Dostępność",
 
   "tp.hl.eyebrow":"W skrócie","tp.hl.h2":"Jak wygląda ten dzień.",
@@ -248,7 +248,7 @@ pl:{
 
   "tp.incl.eyebrow":"Szczegóły","tp.incl.h2":"Co jest w cenie.",
   "tp.incl.yes.t":"W cenie","tp.incl.no.t":"Poza ceną",
-  "tp.incl.yes.1":"Prywatne 4×4 z paliwem i opłatami drogowymi","tp.incl.yes.2":"Odbiór i odwóz do hotelu","tp.incl.yes.3":"Lokalny przewodnik EN / PL / DE","tp.incl.yes.4":"Domowe pudełko powitalne Kasi","tp.incl.yes.5":"Zdjęcia po drodze","tp.incl.yes.6":"Elastyczne tempo i ukryty przystanek",
+  "tp.incl.yes.1":"Prywatne 4×4 z paliwem i opłatami drogowymi","tp.incl.yes.2":"Odbiór i odwóz do hotelu","tp.incl.yes.3":"Lokalny przewodnik EN / PL / DE / ES","tp.incl.yes.4":"Domowe pudełko powitalne Kasi","tp.incl.yes.5":"Zdjęcia po drodze","tp.incl.yes.6":"Elastyczne tempo i ukryty przystanek",
   "tp.incl.no.1":"Lunch w kawiarni w gospodarstwie (opcjonalnie)","tp.incl.no.2":"Wstęp do opcjonalnych term / basenu","tp.incl.no.3":"Napiwki (nigdy nieoczekiwane)",
 
   "tp.bring.eyebrow":"Przygotuj się","tp.bring.h2":"Co zabrać.",
@@ -280,9 +280,9 @@ de:{
   "brand.tag":"Private Touren · Island",
   "menu":"Menü",
 
-  "hero.eyebrow":"Privater Fahrer & Guide · seit 2014","hero.h1":"Island, wie ein Einheimischer es zeigt.","hero.sub":"Private Touren und Flughafentransfers mit einem einheimischen Fahrer, der dich wie Familie behandelt — versteckte Orte, dein Tempo, ehrlicher Rat.","hero.langline":"English · Polski · Deutsch","hero.scroll":"Scrollen",
+  "hero.eyebrow":"Privater Fahrer & Guide · seit 2014","hero.h1":"Island, wie ein Einheimischer es zeigt.","hero.sub":"Private Touren und Flughafentransfers mit einem einheimischen Fahrer, der dich wie Familie behandelt — versteckte Orte, dein Tempo, ehrlicher Rat.","hero.langline":"English · Polski · Deutsch · Español","hero.scroll":"Scrollen",
 
-  "trust.rating":"Google-Bewertung","trust.insured":"Erfahrener, versicherter Fahrer","trust.private":"Nur private Gruppen","trust.langs":"English · Polski · Deutsch","trust.pickup":"Kostenlose Hotelabholung",
+  "trust.rating":"Google-Bewertung","trust.insured":"Erfahrener, versicherter Fahrer","trust.private":"Nur private Gruppen","trust.langs":"English · Polski · Deutsch · Español","trust.pickup":"Kostenlose Hotelabholung",
 
   "tours.eyebrow":"Touren & Transfers","tours.h2":"Wohin möchtest du?","tours.lead":"Kleine private Gruppen, Hotelabholung und eine Route, die wir um dich herum gestalten. Tourpreise gelten pro Gruppe — nicht pro Person.",
   "tours.toursLabel":"Tagestouren","tours.transfersLabel":"Flughafen- & Spa-Transfers",
@@ -331,7 +331,7 @@ de:{
   "faq.1.q":"Ist es sicher, mit dir über Islands Straßen zu fahren?","faq.1.a":"Ja. Ich bin ein erfahrener, voll versicherter einheimischer Fahrer in einem gepflegten 4×4. Ich prüfe täglich Wetter und Straßenzustand und ändere lieber einen Plan, als ein Risiko einzugehen. Deine Sicherheit geht immer vor jeden Reiseplan.",
   "faq.2.q":"Kannst du garantieren, dass wir die Nordlichter sehen?","faq.2.a":"Ehrlich gesagt kann das niemand — die Aurora hängt von Dunkelheit, klarem Himmel und Sonnenaktivität ab. Versprechen kann ich, dass ich die Vorhersage verfolge, dich weg vom Stadtlicht zur besten Chance fahre und dich beim Warten warmhalte. Spielt der Himmel nicht mit, sage ich es dir geradeheraus.",
   "faq.3.q":"Wie funktioniert die Zahlung, wenn ich nicht online buchen kann?","faq.3.a":"Das ist Absicht. Du sendest eine Verfügbarkeitsanfrage, wir klären die Details persönlich, und dann schicke ich dir einen sicheren Zahlungslink oder nehme die Karte am Tag selbst. Für eine reine Terminanfrage wird keine Anzahlung fällig.",
-  "faq.4.q":"Welche Sprachen sprichst du?","faq.4.a":"Ich führe auf Deutsch, Englisch und Polnisch. Sag mir einfach, in welcher du dich am wohlsten fühlst, und das ist die Sprache des Tages.",
+  "faq.4.q":"Welche Sprachen sprichst du?","faq.4.a":"Ich führe auf Deutsch, Englisch, Polnisch und Spanisch. Sag mir einfach, in welcher du dich am wohlsten fühlst, und das ist die Sprache des Tages.",
   "faq.5.q":"Ist die Tour wirklich privat?","faq.5.a":"Immer. Es ist nur deine Gruppe im Auto — nie mit Fremden geteilt. Tempo, Stopps und Musik gehören dir.",
   "faq.6.q":"Holst du mich am Hotel ab?","faq.6.a":"Ja — kostenlose Abholung an Hotel, Apartment oder Campingplatz im Raum Reykjavík und bei Transfers auch am Flughafen Keflavík. Die genaue Zeit bestätige ich im Gespräch.",
   "faq.7.q":"Was, wenn das Wetter am Tag schlecht wird?","faq.7.a":"Wir passen uns an. Ich leite zu geschützten, trotzdem schönen Stopps um, verschiebe den Tag, wenn es wirklich unsicher ist, oder vereinbare unkompliziert einen neuen Termin. Für einen Zeitplan schicke ich dich nie in einen Sturm hinaus.",
@@ -353,7 +353,7 @@ de:{
 
   "tp.bc.tours":"Touren","tp.bc.cur":"Golden Circle",
   "tp.eyebrow":"Private Tagestour · ab Reykjavík","tp.h1":"Golden Circle — private Tour ab Reykjavík.","tp.sub":"Islands drei Ikonen — ein donnernder Wasserfall, ein ausbrechender Geysir und ein Kontinentalgraben — in deinem Tempo, ohne Menschenmassen und ohne Uhr.",
-  "tp.qf.dur":"6–8 Stunden","tp.qf.price":"ab 85.000 ISK","tp.qf.priv":"Privat · max. 4","tp.qf.pickup":"Hotelabholung","tp.qf.lang":"EN · PL · DE",
+  "tp.qf.dur":"6–8 Stunden","tp.qf.price":"ab 85.000 ISK","tp.qf.priv":"Privat · max. 4","tp.qf.pickup":"Hotelabholung","tp.qf.lang":"EN · PL · DE · ES",
   "tp.sn.overview":"Überblick","tp.sn.route":"Route","tp.sn.map":"Karte","tp.sn.gallery":"Galerie","tp.sn.reviews":"Bewertungen","tp.sn.faq":"FAQ","tp.sn.avail":"Verfügbarkeit",
 
   "tp.hl.eyebrow":"Kurz gesagt","tp.hl.h2":"So sieht der Tag aus.",
@@ -373,7 +373,7 @@ de:{
 
   "tp.incl.eyebrow":"Die Details","tp.incl.h2":"Was enthalten ist.",
   "tp.incl.yes.t":"Enthalten","tp.incl.no.t":"Nicht enthalten",
-  "tp.incl.yes.1":"Privates 4×4 mit Sprit & allen Straßenkosten","tp.incl.yes.2":"Abholung & Rückbringung zum Hotel","tp.incl.yes.3":"Lokaler Guide EN / PL / DE","tp.incl.yes.4":"Kates hausgemachte Willkommensbox","tp.incl.yes.5":"Fotos von dir unterwegs","tp.incl.yes.6":"Flexibles Tempo & ein versteckter Stopp",
+  "tp.incl.yes.1":"Privates 4×4 mit Sprit & allen Straßenkosten","tp.incl.yes.2":"Abholung & Rückbringung zum Hotel","tp.incl.yes.3":"Lokaler Guide EN / PL / DE / ES","tp.incl.yes.4":"Kates hausgemachte Willkommensbox","tp.incl.yes.5":"Fotos von dir unterwegs","tp.incl.yes.6":"Flexibles Tempo & ein versteckter Stopp",
   "tp.incl.no.1":"Mittagessen im Hofcafé (optional)","tp.incl.no.2":"Eintritt in optionales Spa / Bad","tp.incl.no.3":"Trinkgeld (nie erwartet)",
 
   "tp.bring.eyebrow":"Gut vorbereitet","tp.bring.h2":"Was du mitbringen solltest.",
@@ -408,10 +408,10 @@ es:{
   "hero.eyebrow":"Conductor y guía privado · desde 2014",
   "hero.h1":"Islandia, como te la enseña un local.",
   "hero.sub":"Tours privados y traslados al aeropuerto con un conductor local que te trata como a la familia: lugares escondidos, tu ritmo, consejos sinceros.",
-  "hero.langline":"English · Polski · Deutsch",
+  "hero.langline":"English · Polski · Deutsch · Español",
   "hero.scroll":"Desplázate",
 
-  "trust.rating":"Valorado en Google","trust.insured":"Conductor experimentado y asegurado","trust.private":"Solo grupos privados","trust.langs":"English · Polski · Deutsch","trust.pickup":"Recogida gratis en el hotel",
+  "trust.rating":"Valorado en Google","trust.insured":"Conductor experimentado y asegurado","trust.private":"Solo grupos privados","trust.langs":"English · Polski · Deutsch · Español","trust.pickup":"Recogida gratis en el hotel",
 
   "tours.eyebrow":"Tours y traslados","tours.h2":"¿A dónde te gustaría ir?","tours.lead":"Grupos privados pequeños, recogida en el hotel y una ruta a tu medida. Los precios de los tours son por grupo, no por persona.",
   "tours.toursLabel":"Tours de un día","tours.transfersLabel":"Traslados al aeropuerto y al spa",
@@ -460,7 +460,7 @@ es:{
   "faq.1.q":"¿Es seguro recorrer las carreteras de Islandia contigo?","faq.1.a":"Sí. Soy un conductor local experimentado y totalmente asegurado, con un 4×4 bien mantenido. Consulto a diario el tiempo y el estado de las carreteras, y cambio el plan encantado antes que arriesgar. Tu seguridad va siempre por delante de cualquier itinerario.",
   "faq.2.q":"¿Puedes garantizar que veremos las auroras boreales?","faq.2.a":"Sinceramente, nadie puede — la aurora depende de la oscuridad, el cielo despejado y la actividad solar. Lo que sí prometo es seguir la previsión, alejarte de las luces de la ciudad hacia la mejor opción y mantenerte caliente mientras esperamos. Si el cielo no acompaña, te lo diré claramente.",
   "faq.3.q":"¿Cómo funciona el pago si no puedo reservar online?","faq.3.a":"Es a propósito. Envías una solicitud de disponibilidad, confirmamos los detalles juntos en persona, y luego te envío un enlace de pago seguro o cobro con tarjeta el mismo día. No se cobra ningún depósito solo por preguntar por una fecha.",
-  "faq.4.q":"¿Qué idiomas hablas?","faq.4.a":"Guío en inglés, polaco y alemán. Solo dime en cuál te sientes más cómodo y ese será el idioma del día.",
+  "faq.4.q":"¿Qué idiomas hablas?","faq.4.a":"Guío en inglés, polaco, alemán y español. Solo dime en cuál te sientes más cómodo y ese será el idioma del día.",
   "faq.5.q":"¿El tour es realmente privado?","faq.5.a":"Siempre. En el coche va únicamente tu grupo — nunca se comparte con desconocidos. El ritmo, las paradas y la música son tuyos.",
   "faq.6.q":"¿Recoges en mi hotel?","faq.6.a":"Sí — recogida gratuita en hotel, apartamento o camping en la zona de Reikiavik, y en el aeropuerto de Keflavík para los traslados. Confirmo la hora exacta cuando hablemos.",
   "faq.7.q":"¿Y si el día se estropea el tiempo?","faq.7.a":"Nos adaptamos. Reorganizo la ruta hacia paradas resguardadas e igual de bonitas, muevo el día si es realmente inseguro, o lo reprogramo sin problema. Nunca te empujaré a una tormenta por cumplir un horario.",
@@ -484,7 +484,7 @@ es:{
   "tp.bc.tours":"Tours","tp.bc.cur":"Círculo Dorado",
   "tp.eyebrow":"Tour privado de un día · desde Reikiavik",
   "tp.h1":"Círculo Dorado — tour privado desde Reikiavik.","tp.sub":"Los tres iconos de Islandia — una cascada atronadora, un géiser en erupción y una grieta continental — a tu ritmo, sin multitudes y sin reloj.",
-  "tp.qf.dur":"6–8 horas","tp.qf.price":"desde 85.000 ISK","tp.qf.priv":"Privado · máx. 4","tp.qf.pickup":"Recogida en el hotel","tp.qf.lang":"EN · PL · DE",
+  "tp.qf.dur":"6–8 horas","tp.qf.price":"desde 85.000 ISK","tp.qf.priv":"Privado · máx. 4","tp.qf.pickup":"Recogida en el hotel","tp.qf.lang":"EN · PL · DE · ES",
   "tp.sn.overview":"Resumen","tp.sn.route":"Ruta","tp.sn.map":"Mapa","tp.sn.gallery":"Galería","tp.sn.reviews":"Opiniones","tp.sn.faq":"FAQ","tp.sn.avail":"Disponibilidad",
 
   "tp.hl.eyebrow":"En resumen","tp.hl.h2":"Cómo es el día.",
@@ -504,7 +504,7 @@ es:{
 
   "tp.incl.eyebrow":"Los detalles","tp.incl.h2":"Qué incluye.",
   "tp.incl.yes.t":"Incluido","tp.incl.no.t":"No incluido",
-  "tp.incl.yes.1":"4×4 privado con combustible y peajes","tp.incl.yes.2":"Recogida y regreso al hotel","tp.incl.yes.3":"Guía local en inglés / polaco / alemán","tp.incl.yes.4":"La caja de bienvenida casera de Kate","tp.incl.yes.5":"Fotos tuyas por el camino","tp.incl.yes.6":"Ritmo flexible y una parada escondida",
+  "tp.incl.yes.1":"4×4 privado con combustible y peajes","tp.incl.yes.2":"Recogida y regreso al hotel","tp.incl.yes.3":"Guía local en inglés / polaco / alemán / español","tp.incl.yes.4":"La caja de bienvenida casera de Kate","tp.incl.yes.5":"Fotos tuyas por el camino","tp.incl.yes.6":"Ritmo flexible y una parada escondida",
   "tp.incl.no.1":"Almuerzo en el café rural (opcional)","tp.incl.no.2":"Entrada a spa / piscina opcional","tp.incl.no.3":"Propinas (nunca se esperan)",
 
   "tp.bring.eyebrow":"Ven preparado","tp.bring.h2":"Qué llevar.",

@@ -29,9 +29,15 @@ export default function Enhancements() {
     // 3. sticky nav
     const nav = document.querySelector('.nav');
     if (nav) {
-      const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
-      onScroll();
-      window.addEventListener('scroll', onScroll, { passive: true, signal: ac.signal });
+      const hasHero = !!document.querySelector('.hero');
+      if (!hasHero) {
+        // Pages without a dark hero (legal pages): keep the nav solid so it's legible.
+        nav.classList.add('scrolled');
+      } else {
+        const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true, signal: ac.signal });
+      }
     }
 
     // 3b. PL offer banner: measure height, offset nav

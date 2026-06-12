@@ -50,7 +50,7 @@ export default function Footer({ lang, t }: { lang: string; t: T }) {
       <div className="wrap footer-bottom">
         <span>{t('footer.rights')}</span>
         <span style={{ maxWidth: '48ch' }}>{t('footer.disclaimer')}</span>
-        <span className="legal-links"><a href="#">{t('footer.privacy')}</a><a href="#">{t('footer.terms')}</a></span>
+        <span className="legal-links"><Link href={`/${lang}/privacy`}>{t('footer.privacy')}</Link><Link href={`/${lang}/terms`}>{t('footer.terms')}</Link></span>
       </div>
     </footer>
   );
