@@ -3,7 +3,7 @@ import { isLang } from '@/lib/dictionary';
 import { getTour } from '@/lib/tours';
 import TourPage from '@/components/TourPage';
 
-const SLUG = 'golden-circle';
+const SLUG = 'south-coast';
 
 export function generateMetadata({ params }: { params: { lang: string } }): Metadata {
   const lang = isLang(params.lang) ? params.lang : 'en';

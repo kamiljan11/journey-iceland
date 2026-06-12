@@ -81,9 +81,9 @@ export default function Home({ params }: { params: { lang: string } }) {
                 </div>
                 <div className="tour-price"><span className="from">{t('tour.tbc')}</span><span className="amt">{t('tour.sc.price')}</span></div>
                 <div className="tour-price"><span className="alt">{t('tour.sc.alt')}</span></div>
-                <Link className="btn btn-primary btn-sm" href={L('#contact')}><span>{t('tour.see')}</span><svg><use href="#i-arrow-right" /></svg></Link>
+                <Link className="btn btn-primary btn-sm" href={`/${lang}/south-coast`}><span>{t('tour.see')}</span><svg><use href="#i-arrow-right" /></svg></Link>
               </div>
-              <Link className="tour-card-link" href={L('#contact')} aria-label="South Coast"></Link>
+              <Link className="tour-card-link" href={`/${lang}/south-coast`} aria-label="South Coast"></Link>
             </article>
 
             {/* Jökulsárlón */}
@@ -98,9 +98,9 @@ export default function Home({ params }: { params: { lang: string } }) {
                 </div>
                 <div className="tour-price"><span className="from">{t('tour.tbc')}</span><span className="amt">{t('tour.jk.price')}</span></div>
                 <div className="tour-price"><span className="alt">{t('tour.jk.alt')}</span></div>
-                <Link className="btn btn-primary btn-sm" href={L('#contact')}><span>{t('tour.see')}</span><svg><use href="#i-arrow-right" /></svg></Link>
+                <Link className="btn btn-primary btn-sm" href={`/${lang}/jokulsarlon`}><span>{t('tour.see')}</span><svg><use href="#i-arrow-right" /></svg></Link>
               </div>
-              <Link className="tour-card-link" href={L('#contact')} aria-label="Jökulsárlón"></Link>
+              <Link className="tour-card-link" href={`/${lang}/jokulsarlon`} aria-label="Jökulsárlón"></Link>
             </article>
           </div>
 
