@@ -43,6 +43,34 @@ export const TOUR_CARDS = [
   { slug: 'jokulsarlon', nameKey: 'tour.jk.name', priceKey: 'tour.jk.price', img: '/img/tour-jk.webp' },
 ];
 
+/* Golden Circle FAQ — client-supplied questions, answered in Sylwek's voice. */
+const GC_FAQ: Record<string, QA[]> = {
+  en: [
+    { q: 'Is the water at Geysir really hot?', a: 'Very — Strokkur fires boiling water 15–20 metres into the air every few minutes, and the whole area steams and bubbles. Stay behind the ropes and you feel the heat with none of the risk.' },
+    { q: 'Will we see Icelandic horses or sheep along the way?', a: "Usually, yes — the route runs through farmland and the Icelandic horses (and sheep in summer) are often right by the road. If you'd like, we pull over for photos; the horses are famously friendly." },
+    { q: 'Is there an entry fee for the sights?', a: 'The main stops — Þingvellir, Geysir and Gullfoss — are free; you only pay a small parking fee at Þingvellir, and Kerið crater has a tiny entrance fee. Everything else in the day is included in your price.' },
+    { q: 'Is the Golden Circle really worth it?', a: "Honestly, yes — it's the classic for a reason, and doing it privately means no crowds and no rushing. I'll always tell you straight if conditions aren't great that day, but on a good one it's hard to beat." },
+  ],
+  pl: [
+    { q: 'Czy woda w Geysir jest naprawdę gorąca?', a: 'Bardzo — Strokkur co kilka minut wyrzuca wrzącą wodę na 15–20 metrów, a cały teren paruje i bulgocze. Zostań za linami, a poczujesz żar bez żadnego ryzyka.' },
+    { q: 'Czy zobaczymy po drodze islandzkie konie lub owce?', a: 'Zwykle tak — trasa biegnie przez tereny rolnicze i islandzkie konie (a latem owce) często stoją tuż przy drodze. Jak chcesz, zatrzymamy się na zdjęcia; konie słyną z przyjaznego usposobienia.' },
+    { q: 'Czy wstęp do atrakcji jest płatny?', a: 'Główne przystanki — Þingvellir, Geysir i Gullfoss — są bezpłatne; płaci się tylko niewielką opłatę za parking przy Þingvellir, a krater Kerið ma symboliczny bilet wstępu. Reszta w ciągu dnia jest wliczona w cenę.' },
+    { q: 'Czy złoty krąg naprawdę warto zwiedzić?', a: 'Szczerze — tak. To klasyk nie bez powodu, a prywatnie znaczy bez tłumów i bez pośpiechu. Zawsze powiem Ci wprost, jeśli danego dnia warunki są słabe, ale w dobry dzień trudno o coś lepszego.' },
+  ],
+  de: [
+    { q: 'Ist das Wasser am Geysir wirklich heiß?', a: 'Sehr — Strokkur schießt alle paar Minuten kochendes Wasser 15–20 Meter in die Luft, und das ganze Gebiet dampft und brodelt. Bleib hinter den Seilen, dann spürst du die Hitze ganz ohne Risiko.' },
+    { q: 'Sehen wir unterwegs isländische Pferde oder Schafe?', a: 'Meistens ja — die Route führt durch Weideland, und die Islandpferde (im Sommer auch Schafe) stehen oft direkt an der Straße. Wenn du magst, halten wir für Fotos an; die Pferde sind bekannt freundlich.' },
+    { q: 'Kostet der Eintritt zu den Sehenswürdigkeiten?', a: 'Die Hauptstopps — Þingvellir, Geysir und Gullfoss — sind kostenlos; nur in Þingvellir zahlt man eine kleine Parkgebühr, und der Kratersee Kerið hat einen geringen Eintritt. Alles andere am Tag ist im Preis enthalten.' },
+    { q: 'Lohnt sich der Golden Circle wirklich?', a: 'Ehrlich gesagt: ja. Er ist nicht ohne Grund der Klassiker, und privat heißt ohne Menschenmassen und ohne Hetze. Ich sage dir immer offen, wenn die Bedingungen an dem Tag schlecht sind — aber an einem guten Tag ist er kaum zu schlagen.' },
+  ],
+  es: [
+    { q: '¿El agua de Geysir está realmente caliente?', a: 'Muchísimo — Strokkur lanza agua hirviendo a 15–20 metros cada pocos minutos, y toda la zona humea y burbujea. Quédate detrás de las cuerdas y sientes el calor sin ningún riesgo.' },
+    { q: '¿Veremos caballos islandeses u ovejas por el camino?', a: 'Normalmente sí — la ruta cruza zonas de granjas y los caballos islandeses (y ovejas en verano) suelen estar junto a la carretera. Si quieres, paramos para hacer fotos; los caballos son famosos por ser amistosos.' },
+    { q: '¿Hay que pagar entrada en los lugares?', a: 'Las paradas principales — Þingvellir, Geysir y Gullfoss — son gratuitas; solo se paga una pequeña tarifa de aparcamiento en Þingvellir, y el cráter Kerið tiene una entrada simbólica. Todo lo demás del día está incluido en tu precio.' },
+    { q: '¿Merece la pena el Círculo Dorado?', a: 'Con sinceridad, sí — es el clásico por algo, y hacerlo en privado significa sin multitudes y sin prisas. Siempre te diré claramente si las condiciones no son buenas ese día, pero en uno bueno es difícil de superar.' },
+  ],
+};
+
 /* ===== Golden Circle text comes from the main dictionary (tp.*) ===== */
 function gcText(lang: string): TourText {
   const t = makeT(lang);
@@ -53,7 +81,7 @@ function gcText(lang: string): TourText {
     stops: [1, 2, 3, 4, 5, 6].map((n) => ({ time: t(`tp.rt.${n}.time`), t: t(`tp.rt.${n}.t`), d: t(`tp.rt.${n}.d`) })),
     mapH2: t('tp.map.h2'), mapLabel: t('tp.map.label'),
     ftH2: t('tp.ft.h2'), ftP: t('tp.ft.p'),
-    faqEyebrow: t('tp.faq.eyebrow'), faq: [1, 2, 3, 4].map((n) => ({ q: t(`tp.faq.${n}.q`), a: t(`tp.faq.${n}.a`) })),
+    faqEyebrow: t('tp.faq.eyebrow'), faq: GC_FAQ[lang] || GC_FAQ.en,
     availH2: t('tp.avail.h2'),
   };
 }
@@ -80,9 +108,10 @@ const CONTENT: Record<string, Record<string, TourText>> = {
       ftH2: 'A picnic with the waves.', ftP: "On the south coast I love finding a quiet spot away from the crowds for Kate's lunch box — warm food, the sound of the surf and a black-sand horizon all to yourselves.",
       faqEyebrow: 'South Coast FAQ',
       faq: [
-        { q: 'How long is the South Coast tour?', a: "Usually 8–10 hours door to door, depending on how long you linger. It's your day — no coach timetable." },
-        { q: 'Can we do it in winter?', a: 'Yes — the waterfalls are stunning framed in ice and snow, and the shorter days even bring a chance of aurora on the way home. I adapt the route to conditions and daylight.' },
-        { q: 'Is Reynisfjara safe?', a: "It's beautiful, but the 'sneaker waves' there are genuinely dangerous. I'll show you where it's safe to stand and keep a close eye on the sea — your safety comes first." },
+        { q: 'Can you really walk behind Seljalandsfoss?', a: "Yes — a path runs right behind the curtain of water, and it's as fun as it sounds. You'll catch a bit of spray, so a waterproof helps and I'll keep your camera dry. In hard frost the path can ice over and be closed for safety; if so, the view from the front is still gorgeous." },
+        { q: 'Will we have somewhere to eat along the way?', a: "You won't go hungry — Kate's home-cooked lunch box and hot drinks travel with us, and I love picking a scenic spot to stop and eat. There are also cafés in Vík if you'd like a warm sit-down or something extra." },
+        { q: 'Is the black beach really as dangerous as they say?', a: "Reynisfjara is breathtaking, but the 'sneaker waves' are genuinely dangerous — they rush in fast and far, much further than you'd expect. I'll show you exactly where it's safe to stand and watch the sea the whole time. Treated with respect, it's perfectly fine." },
+        { q: 'What should I bring?', a: "Layers, a waterproof jacket and sturdy shoes that handle a little mud and spray — Icelandic weather changes fast. Bring your camera and leave the rest to me; there's a full packing list further up the page." },
       ],
       availH2: 'Check dates for the South Coast.',
     },
@@ -105,9 +134,10 @@ const CONTENT: Record<string, Record<string, TourText>> = {
       ftH2: 'Piknik przy szumie fal.', ftP: 'Na południowym wybrzeżu uwielbiam znaleźć ciche miejsce z dala od tłumów na lunchbox Kasi — ciepłe jedzenie, szum oceanu i czarno-piaskowy horyzont tylko dla Was.',
       faqEyebrow: 'FAQ Południowe wybrzeże',
       faq: [
-        { q: 'Ile trwa wycieczka na Południowe wybrzeże?', a: 'Zwykle 8–10 godzin od drzwi do drzwi, zależnie od tego, jak długo chcesz się zatrzymywać. To Twój dzień — bez rozkładu autokaru.' },
-        { q: 'Czy da się zimą?', a: 'Tak — wodospady w lodzie i śniegu są przepiękne, a krótsze dni dają nawet szansę na zorzę w drodze powrotnej. Dopasowuję trasę do warunków i światła.' },
-        { q: 'Czy Reynisfjara jest bezpieczna?', a: 'Jest piękna, ale tzw. fale-zabójcy są tam naprawdę groźne. Pokażę, gdzie można bezpiecznie stać, i pilnuję morza — bezpieczeństwo przede wszystkim.' },
+        { q: 'Czy naprawdę można przejść za wodospadem Seljalandsfoss?', a: 'Tak — ścieżka prowadzi tuż za kurtyną wody i jest dokładnie tak fajnie, jak brzmi. Trochę zmoczy, więc przyda się kurtka przeciwdeszczowa, a ja przypilnuję Twojego aparatu. Przy dużym mrozie ścieżka potrafi zamarznąć i bywa zamknięta dla bezpieczeństwa; wtedy widok z przodu i tak jest przepiękny.' },
+        { q: 'Czy będziemy mieli po drodze gdzie coś zjeść?', a: 'Nie będziesz głodny — domowy lunchbox Kasi i ciepłe napoje jadą z nami, a ja uwielbiam wybrać widokowe miejsce na postój i jedzenie. W Vík są też kawiarnie, jeśli wolisz usiąść w cieple albo dobrać coś ekstra.' },
+        { q: 'Czy czarna plaża jest tak niebezpieczna, jak mówią?', a: 'Reynisfjara zapiera dech, ale tzw. fale-zabójcy są naprawdę groźne — wpadają szybko i daleko, dużo dalej, niż myślisz. Pokażę Ci dokładnie, gdzie można bezpiecznie stać, i przez cały czas obserwuję morze. Z szacunkiem do żywiołu jest zupełnie bezpiecznie.' },
+        { q: 'Co zabrać ze sobą?', a: 'Ubrania na cebulkę, kurtkę przeciwdeszczową i solidne buty, którym niestraszne błoto i bryzgi — islandzka pogoda zmienia się błyskawicznie. Weź aparat, resztę zostaw mnie; pełna lista „co zabrać" jest wyżej na stronie.' },
       ],
       availH2: 'Sprawdź terminy dla Południowego wybrzeża.',
     },
@@ -130,9 +160,10 @@ const CONTENT: Record<string, Record<string, TourText>> = {
       ftH2: 'Ein Picknick am Meer.', ftP: 'An der Südküste suche ich gern einen ruhigen Ort abseits der Menge für Kates Lunchbox — warmes Essen, das Rauschen der Brandung und ein Horizont aus schwarzem Sand nur für euch.',
       faqEyebrow: 'Südküsten-FAQ',
       faq: [
-        { q: 'Wie lange dauert die Südküsten-Tour?', a: 'Meist 8–10 Stunden von Tür zu Tür, je nachdem, wie lange du verweilst. Es ist dein Tag — kein Busfahrplan.' },
-        { q: 'Geht das auch im Winter?', a: 'Ja — die Wasserfälle in Eis und Schnee sind wunderschön, und die kurzen Tage bieten sogar die Chance auf Nordlichter auf der Heimfahrt. Ich passe die Route an Bedingungen und Licht an.' },
-        { q: 'Ist Reynisfjara sicher?', a: 'Er ist schön, aber die sogenannten Kammwellen sind dort wirklich gefährlich. Ich zeige dir, wo du sicher stehst, und behalte das Meer im Auge — Sicherheit zuerst.' },
+        { q: 'Kann man wirklich hinter den Seljalandsfoss laufen?', a: 'Ja — ein Pfad führt direkt hinter den Wasservorhang, und es macht genauso viel Spaß, wie es klingt. Etwas Gischt bekommst du ab, eine Regenjacke hilft, und ich halte deine Kamera trocken. Bei strengem Frost kann der Pfad vereisen und aus Sicherheitsgründen gesperrt sein; dann ist der Blick von vorn trotzdem traumhaft.' },
+        { q: 'Gibt es unterwegs etwas zu essen?', a: 'Hunger leidest du nicht — Kates hausgemachte Lunchbox und heiße Getränke sind dabei, und ich suche gern einen schönen Platz für eine Pause. In Vík gibt es außerdem Cafés, falls du dich aufwärmen oder etwas dazunehmen möchtest.' },
+        { q: 'Ist der schwarze Strand wirklich so gefährlich, wie man sagt?', a: 'Reynisfjara ist atemberaubend, aber die Kammwellen sind wirklich gefährlich — sie kommen schnell und weit, viel weiter, als man denkt. Ich zeige dir genau, wo du sicher stehst, und behalte das Meer die ganze Zeit im Auge. Mit Respekt behandelt ist alles völlig sicher.' },
+        { q: 'Was soll ich mitnehmen?', a: 'Zwiebellook, eine Regenjacke und festes Schuhwerk, das etwas Schlamm und Gischt verträgt — das isländische Wetter wechselt schnell. Nimm deine Kamera mit, den Rest überlass mir; eine komplette Packliste steht weiter oben auf der Seite.' },
       ],
       availH2: 'Termine für die Südküste prüfen.',
     },
@@ -155,9 +186,10 @@ const CONTENT: Record<string, Record<string, TourText>> = {
       ftH2: 'Un picnic junto al mar.', ftP: 'En la costa sur me encanta buscar un sitio tranquilo lejos de la multitud para la lunchbox de Kate — comida caliente, el sonido del oleaje y un horizonte de arena negra solo para vosotros.',
       faqEyebrow: 'FAQ Costa Sur',
       faq: [
-        { q: '¿Cuánto dura el tour de la Costa Sur?', a: 'Normalmente 8–10 horas puerta a puerta, según cuánto te demores. Es tu día — sin horario de autocar.' },
-        { q: '¿Se puede en invierno?', a: 'Sí — las cascadas entre hielo y nieve son preciosas, y los días cortos hasta dan opción a auroras en la vuelta. Ajusto la ruta a las condiciones y la luz.' },
-        { q: '¿Es segura Reynisfjara?', a: 'Es preciosa, pero las llamadas olas asesinas son realmente peligrosas. Te muestro dónde es seguro estar y vigilo el mar — la seguridad primero.' },
+        { q: '¿De verdad se puede caminar por detrás de Seljalandsfoss?', a: 'Sí — un sendero pasa justo por detrás de la cortina de agua, y es tan divertido como suena. Te salpicará un poco, así que un chubasquero ayuda, y yo mantengo tu cámara seca. Con heladas fuertes el sendero puede congelarse y cerrarse por seguridad; si pasa, la vista de frente sigue siendo preciosa.' },
+        { q: '¿Tendremos dónde comer por el camino?', a: 'No pasarás hambre — la lunchbox casera de Kate y bebidas calientes viajan con nosotros, y me encanta elegir un sitio con vistas para parar a comer. También hay cafeterías en Vík si prefieres sentarte al calor o tomar algo más.' },
+        { q: '¿Es la playa negra tan peligrosa como dicen?', a: 'Reynisfjara quita el aliento, pero las olas asesinas son realmente peligrosas — entran rápido y lejos, mucho más de lo que esperas. Te muestro exactamente dónde es seguro estar y vigilo el mar todo el tiempo. Tratada con respeto, es totalmente segura.' },
+        { q: '¿Qué debo llevar?', a: 'Capas de ropa, un chubasquero y calzado resistente que aguante algo de barro y salpicaduras — el tiempo islandés cambia rápido. Trae tu cámara y deja el resto en mis manos; hay una lista completa de qué llevar más arriba en la página.' },
       ],
       availH2: 'Consulta fechas para la Costa Sur.',
     },
