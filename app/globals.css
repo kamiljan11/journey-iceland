@@ -1083,7 +1083,10 @@ body[data-lang="pl"] .pl-offer{display:block}
 
 .incl-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:34px}
 .incl-col{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px 26px}
-.incl-col h4{font-family:var(--sans);font-weight:800;font-size:1.1rem;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.incl-col h4{font-family:var(--sans);font-weight:800;font-size:1.1rem;margin-bottom:16px;display:flex;align-items:center;gap:11px}
+.incl-col h4 svg{width:34px;height:34px;padding:8px;border-radius:50%;flex:none;box-sizing:border-box}
+.incl-yes h4 svg{color:var(--aurora);background:color-mix(in srgb,var(--aurora) 15%,transparent)}
+.incl-no h4 svg{color:var(--terracotta);background:color-mix(in srgb,var(--terracotta) 15%,transparent)}
 .incl-col ul{list-style:none;display:flex;flex-direction:column;gap:12px}
 .incl-col li{display:flex;gap:11px;font-size:.95rem;align-items:flex-start}
 .incl-col li svg{width:19px;height:19px;flex:none;margin-top:2px}
