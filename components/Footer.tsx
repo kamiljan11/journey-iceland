@@ -52,6 +52,10 @@ export default function Footer({ lang, t }: { lang: string; t: T }) {
         <span>{t('footer.rights')}</span>
         <span style={{ maxWidth: '48ch' }}>{t('footer.disclaimer')}</span>
         <span className="legal-links"><Link href={`/${lang}/privacy`}>{t('footer.privacy')}</Link><Link href={`/${lang}/terms`}>{t('footer.terms')}</Link></span>
+        <span className="footer-credit" style={{ opacity: 0.7, fontSize: '.8rem' }}>
+          Built &amp; managed by{' '}
+          <a href="https://reykjawwwik.is" target="_blank" rel="noopener" style={{ fontWeight: 600 }}>reykjawwwik.is</a>
+        </span>
       </div>
     </footer>
   );
