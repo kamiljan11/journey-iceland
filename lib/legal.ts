@@ -3,7 +3,7 @@ import { SITE } from './site';
 export type LegalSection = { h: string; p: string[] };
 export type LegalDoc = { title: string; updated: string; intro: string; sections: LegalSection[] };
 
-const ADDR = `${SITE.company}, ${SITE.address}`;
+const ADDR = `${SITE.company} (kt. ${SITE.kennitala}), ${SITE.address}`;
 const UPDATED_EN = 'Last updated: 11 June 2026';
 const UPDATED_PL = 'Ostatnia aktualizacja: 11 czerwca 2026';
 

@@ -11,7 +11,9 @@ export const SITE = {
   instagram: 'https://instagram.com/journeyiceland1',
   google: '#', // TODO: Google Business profile URL ("Journey Iceland")
   company: 'Journey Iceland',
+  kennitala: '170687-4349',
   address: 'Urðarholt 5, 270 Mosfellsbær, Iceland',
+  slogan: 'Discover Iceland the Old-fashioned way',
 };
 
 // Build a WhatsApp link with an optional pre-filled (localized) message.

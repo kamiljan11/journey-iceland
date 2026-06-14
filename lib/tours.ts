@@ -97,7 +97,7 @@ const CONTENT: Record<string, Record<string, TourText>> = {
       ovH2: "Iceland's most beloved coast.",
       overview: ["The south coast is the most stunning and most-visited stretch of Iceland — and for good reason. In a single day it serves up two of the country's mightiest waterfalls, a glacier you can walk up to, and a black-sand beach straight out of a dream.", "With me it's just your group. We leave when you're ready, linger where it's beautiful, and I read the day's weather and light so you're at each place when it looks its best."],
       stops: [
-        { time: 'around 8:00', t: 'Hotel pick-up', d: "I collect you door-to-door in the Reykjavík area; Kate's lunch box and hot drinks are waiting in the car." },
+        { time: 'your chosen time', t: 'Hotel pick-up', d: "I collect you door-to-door in the Reykjavík area at a time that suits you; Kate's lunch box and hot drinks are waiting in the car." },
         { time: 'stop 1', t: 'Seljalandsfoss', d: 'A unique waterfall where you can walk along a path all the way behind the cascading water.' },
         { time: 'stop 2', t: 'Skógafoss', d: 'A massive, 60-metre-tall waterfall known for its deafening roar and the rainbows in its heavy mist.' },
         { time: 'stop 3', t: 'Sólheimajökull glacier', d: 'A glacier tongue reaching down from the Mýrdalsjökull ice cap — a close, dramatic look at Icelandic ice.' },
@@ -123,7 +123,7 @@ const CONTENT: Record<string, Record<string, TourText>> = {
       ovH2: 'Najbardziej kochane wybrzeże Islandii.',
       overview: ['Południowe wybrzeże to najpiękniejszy i najczęściej odwiedzany odcinek Islandii — i nie bez powodu. W jeden dzień podaje dwa z najpotężniejszych wodospadów kraju, lodowiec, pod który można podejść, i czarną plażę jak ze snu.', 'Ze mną jedzie tylko Twoja grupa. Ruszamy, gdy jesteś gotowy, zostajemy tam, gdzie pięknie, a ja śledzę pogodę i światło, byś był w każdym miejscu, gdy wygląda najlepiej.'],
       stops: [
-        { time: 'ok. 8:00', t: 'Odbiór z hotelu', d: 'Odbieram Cię pod drzwi w rejonie Reykjavíku; lunchbox Kasi i ciepłe napoje czekają w aucie.' },
+        { time: 'o wybranej porze', t: 'Odbiór z hotelu', d: 'Odbieram Cię pod drzwi w rejonie Reykjavíku o dogodnej dla Ciebie porze; lunchbox Kasi i ciepłe napoje czekają w aucie.' },
         { time: 'przystanek 1', t: 'Seljalandsfoss', d: 'Wyjątkowy wodospad, za którego kurtynę wody można przejść ścieżką.' },
         { time: 'przystanek 2', t: 'Skógafoss', d: 'Potężny, 60-metrowy wodospad znany z huku i tęcz w gęstej mgle wodnej.' },
         { time: 'przystanek 3', t: 'Lodowiec Sólheimajökull', d: 'Jęzor lodowca schodzący z czapy Mýrdalsjökull — islandzki lód z bliska.' },
@@ -149,7 +149,7 @@ const CONTENT: Record<string, Record<string, TourText>> = {
       ovH2: 'Islands beliebteste Küste.',
       overview: ['Die Südküste ist der schönste und meistbesuchte Abschnitt Islands — zu Recht. An einem Tag bekommst du zwei der mächtigsten Wasserfälle des Landes, einen Gletscher zum Anfassen und einen Strand wie aus einem Traum.', 'Bei mir fährt nur deine Gruppe. Wir starten, wenn du bereit bist, verweilen, wo es schön ist, und ich beobachte Wetter und Licht, damit du an jedem Ort bist, wenn er am besten aussieht.'],
       stops: [
-        { time: 'gegen 8:00', t: 'Hotelabholung', d: 'Ich hole dich im Raum Reykjavík bis vor die Tür ab; Kates Lunchbox und heiße Getränke warten im Auto.' },
+        { time: 'zur Wunschzeit', t: 'Hotelabholung', d: 'Ich hole dich im Raum Reykjavík zu einer dir passenden Zeit bis vor die Tür ab; Kates Lunchbox und heiße Getränke warten im Auto.' },
         { time: 'Stopp 1', t: 'Seljalandsfoss', d: 'Ein besonderer Wasserfall, hinter dessen fallendes Wasser ein Pfad führt.' },
         { time: 'Stopp 2', t: 'Skógafoss', d: 'Ein gewaltiger 60-Meter-Wasserfall, bekannt für sein Donnern und die Regenbögen in der Gischt.' },
         { time: 'Stopp 3', t: 'Gletscher Sólheimajökull', d: 'Eine Gletscherzunge der Mýrdalsjökull-Eiskappe — isländisches Eis aus der Nähe.' },
@@ -175,7 +175,7 @@ const CONTENT: Record<string, Record<string, TourText>> = {
       ovH2: 'La costa más querida de Islandia.',
       overview: ['La costa sur es el tramo más espectacular y visitado de Islandia, y con razón. En un solo día ofrece dos de las cascadas más imponentes del país, un glaciar al que puedes acercarte y una playa negra de ensueño.', 'Conmigo viaja solo tu grupo. Salimos cuando estás listo, nos demoramos donde es bonito, y yo observo el tiempo y la luz para que estés en cada lugar cuando mejor se ve.'],
       stops: [
-        { time: 'sobre las 8:00', t: 'Recogida en el hotel', d: 'Te recojo puerta a puerta en la zona de Reikiavik; la lunchbox de Kate y bebidas calientes esperan en el coche.' },
+        { time: 'a la hora que elijas', t: 'Recogida en el hotel', d: 'Te recojo puerta a puerta en la zona de Reikiavik a la hora que mejor te venga; la lunchbox de Kate y bebidas calientes esperan en el coche.' },
         { time: 'parada 1', t: 'Seljalandsfoss', d: 'Una cascada única por detrás de la cual se puede caminar por un sendero.' },
         { time: 'parada 2', t: 'Skógafoss', d: 'Una enorme cascada de 60 metros, famosa por su estruendo y los arcoíris en su rocío.' },
         { time: 'parada 3', t: 'Glaciar Sólheimajökull', d: 'Una lengua glaciar que baja del casquete Mýrdalsjökull — el hielo islandés de cerca.' },
@@ -203,7 +203,7 @@ const CONTENT: Record<string, Record<string, TourText>> = {
       ovH2: "Iceland's grandest glacial lagoon.",
       overview: ["On the edge of Vatnajökull — Europe's largest glacier — Jökulsárlón is Iceland's largest and deepest glacial lake. Huge icebergs break off the glacier and drift slowly across the lagoon before floating out to sea. Just across the road, Diamond Beach scatters pieces of ice over black sand that shine like diamonds in the light.", "It's about 380 km from Reykjavík, so it's a long but unforgettable day. With me it's just your group, with stops at the south coast's best sights along the way — and a lunch box so you never go hungry."],
       stops: [
-        { time: 'around 7:30', t: 'Hotel pick-up', d: "An early start for the long drive; Kate's lunch box and hot drinks are waiting in the car." },
+        { time: 'early start, time agreed', t: 'Hotel pick-up', d: "We agree an early pick-up for the long drive; Kate's lunch box and hot drinks are waiting in the car." },
         { time: 'stop 1', t: 'Seljalandsfoss', d: 'A unique waterfall you can walk all the way behind.' },
         { time: 'stop 2', t: 'Skógafoss', d: 'A massive 60-metre wall of water, thundering and full of rainbows.' },
         { time: 'stop 3', t: 'Vík í Mýrdal', d: 'A charming coastal village beneath the cliffs — a good place to pause for supplies.' },
@@ -228,7 +228,7 @@ const CONTENT: Record<string, Record<string, TourText>> = {
       ovH2: 'Najwspanialsza laguna lodowcowa Islandii.',
       overview: ['Na skraju Vatnajökull — największego lodowca Europy — Jökulsárlón to największe i najgłębsze jezioro lodowcowe Islandii. Ogromne góry lodowe odrywają się od lodowca i powoli dryfują przez lagunę, by wypłynąć w morze. Tuż po drugiej stronie drogi Diamond Beach rozsypuje kawałki lodu po czarnym piasku, które lśnią w słońcu jak diamenty.', 'Z Reykjavíku to ok. 380 km, więc to długi, ale niezapomniany dzień. Ze mną jedzie tylko Twoja grupa, z przystankami przy najlepszych miejscach południowego wybrzeża po drodze — i lunchbox, byś nigdy nie był głodny.'],
       stops: [
-        { time: 'ok. 7:30', t: 'Odbiór z hotelu', d: 'Wczesny start na długą trasę; lunchbox Kasi i ciepłe napoje czekają w aucie.' },
+        { time: 'wczesny start, pora ustalana', t: 'Odbiór z hotelu', d: 'Ustalamy wczesny odbiór pod długą trasę; lunchbox Kasi i ciepłe napoje czekają w aucie.' },
         { time: 'przystanek 1', t: 'Seljalandsfoss', d: 'Wyjątkowy wodospad, za którego kurtynę wody można przejść.' },
         { time: 'przystanek 2', t: 'Skógafoss', d: 'Potężna, 60-metrowa ściana wody — huk i tęcze.' },
         { time: 'przystanek 3', t: 'Vík í Mýrdal', d: 'Urokliwa nadmorska wioska u stóp klifów — dobre miejsce na krótki postój.' },
@@ -253,7 +253,7 @@ const CONTENT: Record<string, Record<string, TourText>> = {
       ovH2: 'Islands großartigste Gletscherlagune.',
       overview: ['Am Rand des Vatnajökull — Europas größtem Gletscher — ist Jökulsárlón Islands größter und tiefster Gletschersee. Riesige Eisberge brechen vom Gletscher ab und treiben langsam durch die Lagune, bevor sie aufs Meer hinausziehen. Direkt gegenüber verstreut der Diamond Beach Eisstücke über schwarzen Sand, die im Licht wie Diamanten funkeln.', 'Von Reykjavík sind es rund 380 km, also ein langer, aber unvergesslicher Tag. Bei mir fährt nur deine Gruppe, mit Stopps an den schönsten Orten der Südküste unterwegs — und einer Lunchbox, damit du nie hungrig wirst.'],
       stops: [
-        { time: 'gegen 7:30', t: 'Hotelabholung', d: 'Ein früher Start für die lange Fahrt; Kates Lunchbox und heiße Getränke warten im Auto.' },
+        { time: 'früh, Zeit abgestimmt', t: 'Hotelabholung', d: 'Wir stimmen eine frühe Abholung für die lange Fahrt ab; Kates Lunchbox und heiße Getränke warten im Auto.' },
         { time: 'Stopp 1', t: 'Seljalandsfoss', d: 'Ein besonderer Wasserfall, hinter den ein Pfad führt.' },
         { time: 'Stopp 2', t: 'Skógafoss', d: 'Eine gewaltige 60-Meter-Wand aus Wasser — donnernd und voller Regenbögen.' },
         { time: 'Stopp 3', t: 'Vík í Mýrdal', d: 'Ein charmantes Küstendorf unter den Klippen — ein guter Ort für eine kurze Pause.' },
@@ -278,7 +278,7 @@ const CONTENT: Record<string, Record<string, TourText>> = {
       ovH2: 'La laguna glaciar más grandiosa de Islandia.',
       overview: ['Al borde del Vatnajökull — el glaciar más grande de Europa — Jökulsárlón es el lago glaciar más grande y profundo de Islandia. Enormes icebergs se desprenden del glaciar y derivan lentamente por la laguna antes de salir al mar. Justo al otro lado de la carretera, Diamond Beach esparce trozos de hielo sobre arena negra que brillan como diamantes.', 'Está a unos 380 km de Reikiavik, así que es un día largo pero inolvidable. Conmigo viaja solo tu grupo, con paradas en los mejores lugares de la costa sur por el camino — y una lunchbox para que nunca pases hambre.'],
       stops: [
-        { time: 'sobre las 7:30', t: 'Recogida en el hotel', d: 'Salida temprana para el largo trayecto; la lunchbox de Kate y bebidas calientes esperan en el coche.' },
+        { time: 'temprano, hora acordada', t: 'Recogida en el hotel', d: 'Acordamos una recogida temprana para el largo trayecto; la lunchbox de Kate y bebidas calientes esperan en el coche.' },
         { time: 'parada 1', t: 'Seljalandsfoss', d: 'Una cascada única por detrás de la cual se puede caminar.' },
         { time: 'parada 2', t: 'Skógafoss', d: 'Una enorme pared de agua de 60 metros — atronadora y llena de arcoíris.' },
         { time: 'parada 3', t: 'Vík í Mýrdal', d: 'Un encantador pueblo costero bajo los acantilados — buen sitio para una pausa.' },

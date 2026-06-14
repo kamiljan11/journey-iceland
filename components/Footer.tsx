@@ -12,8 +12,9 @@ export default function Footer({ lang, t }: { lang: string; t: T }) {
           <Link className="brand" href={`/${lang}`} aria-label="Journey Iceland — home">
             <img src={IMG.logo} alt="Journey Iceland" style={{ height: 54, width: 'auto', maxWidth: '100%' }} />
           </Link>
-          <p className="footer-about">{t('footer.tagline')}</p>
-          <p className="footer-about" style={{ marginTop: 8, opacity: 0.82, fontSize: '.82rem' }}>{SITE.address}</p>
+          <p className="footer-about" style={{ marginTop: 10, fontStyle: 'italic', opacity: 0.92 }}>{SITE.slogan}</p>
+          <p className="footer-about" style={{ marginTop: 8 }}>{t('footer.tagline')}</p>
+          <p className="footer-about" style={{ marginTop: 8, opacity: 0.82, fontSize: '.82rem' }}>{SITE.address} · kt. {SITE.kennitala}</p>
           <div className="footer-social">
             <a href={SITE.facebook} aria-label="Facebook"><svg><use href="#i-facebook" /></svg></a>
             <a href={SITE.instagram} aria-label="Instagram"><svg><use href="#i-instagram" /></svg></a>
@@ -33,8 +34,8 @@ export default function Footer({ lang, t }: { lang: string; t: T }) {
           <h5>{t('footer.tours')}</h5>
           <ul>
             <li><Link href={`/${lang}/golden-circle`}>{t('tour.gc.name')}</Link></li>
-            <li><Link href={L('#tours')}>{t('tour.sc.name')}</Link></li>
-            <li><Link href={L('#tours')}>{t('tour.jk.name')}</Link></li>
+            <li><Link href={`/${lang}/south-coast`}>{t('tour.sc.name')}</Link></li>
+            <li><Link href={`/${lang}/jokulsarlon`}>{t('tour.jk.name')}</Link></li>
             <li><Link href={L('#aurora')}>{t('aurora.eyebrow')}</Link></li>
           </ul>
         </div>
