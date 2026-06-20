@@ -95,7 +95,7 @@ en:{
   "form.p.1":"1–4 people","form.p.2":"5–8 people",
   "opt.gc":"Golden Circle — private tour","opt.sc":"South Coast — private tour","opt.jk":"Jökulsárlón Glacier Lagoon","opt.kef":"Keflavík airport transfer","opt.bl":"Blue Lagoon transfer","opt.aurora":"Northern Lights (autumn)","opt.custom":"Custom / not sure yet",
 
-  "cm.wa.l":"WhatsApp","cm.wa.v":"+354 785 0558","cm.phone.l":"Call / text","cm.phone.v":"+354 785 0558","cm.mail.l":"Email","cm.mail.v":"hello@journeyiceland.is","cm.hours.l":"Based in","cm.hours.v":"Reykjavík · 7 days a week","map.label":"map — Reykjavík pick-up area",
+  "cm.wa.l":"WhatsApp","cm.wa.v":"+354 785 0558","cm.phone.l":"Call / text","cm.phone.v":"+354 785 0558","cm.mail.l":"Email","cm.mail.v":"hello@journeyiceland.is","cm.hours.l":"Based in","cm.hours.v":"Reykjavík · 7 days a week","map.label":"map — Reykjavík pick-up area","cm.pickup.area":"Pick-up across Greater Reykjavík — Reykjavík · Kópavogur · Hafnarfjörður · Mosfellsbær. Other areas? Just ask.",
 
   "pl.offer":"",
 
@@ -224,7 +224,7 @@ pl:{
   "form.p.1":"1–4 osoby","form.p.2":"5–8 osób",
   "opt.gc":"Golden Circle — wycieczka prywatna","opt.sc":"Południowe wybrzeże — prywatnie","opt.jk":"Laguna lodowcowa Jökulsárlón","opt.kef":"Transfer z lotniska Keflavík","opt.bl":"Transfer do Blue Lagoon","opt.aurora":"Zorza polarna (jesień)","opt.custom":"Inne / jeszcze nie wiem",
 
-  "cm.wa.l":"WhatsApp","cm.wa.v":"+354 785 0558","cm.phone.l":"Telefon / SMS","cm.phone.v":"+354 785 0558","cm.mail.l":"E-mail","cm.mail.v":"hello@journeyiceland.is","cm.hours.l":"Baza","cm.hours.v":"Reykjavík · 7 dni w tygodniu","map.label":"mapa — rejon odbioru Reykjavík",
+  "cm.wa.l":"WhatsApp","cm.wa.v":"+354 785 0558","cm.phone.l":"Telefon / SMS","cm.phone.v":"+354 785 0558","cm.mail.l":"E-mail","cm.mail.v":"hello@journeyiceland.is","cm.hours.l":"Baza","cm.hours.v":"Reykjavík · 7 dni w tygodniu","map.label":"mapa — rejon odbioru Reykjavík","cm.pickup.area":"Odbiór w całej aglomeracji Reykjavíku — Reykjavík · Kópavogur · Hafnarfjörður · Mosfellsbær. Inne miejsce? Zapytaj.",
 
   "pl.offer":"🇵🇱 Dla polskich podróżnych — zapytaj o specjalną cenę i powitanie po polsku.",
 
@@ -351,7 +351,7 @@ de:{
   "form.p.1":"1–4 Personen","form.p.2":"5–8 Personen",
   "opt.gc":"Golden Circle — private Tour","opt.sc":"Südküste — private Tour","opt.jk":"Gletscherlagune Jökulsárlón","opt.kef":"Flughafentransfer Keflavík","opt.bl":"Blue-Lagoon-Transfer","opt.aurora":"Nordlichter (Herbst)","opt.custom":"Individuell / noch unklar",
 
-  "cm.wa.l":"WhatsApp","cm.wa.v":"+354 785 0558","cm.phone.l":"Anruf / SMS","cm.phone.v":"+354 785 0558","cm.mail.l":"E-Mail","cm.mail.v":"hello@journeyiceland.is","cm.hours.l":"Standort","cm.hours.v":"Reykjavík · 7 Tage die Woche","map.label":"Karte — Abholbereich Reykjavík",
+  "cm.wa.l":"WhatsApp","cm.wa.v":"+354 785 0558","cm.phone.l":"Anruf / SMS","cm.phone.v":"+354 785 0558","cm.mail.l":"E-Mail","cm.mail.v":"hello@journeyiceland.is","cm.hours.l":"Standort","cm.hours.v":"Reykjavík · 7 Tage die Woche","map.label":"Karte — Abholbereich Reykjavík","cm.pickup.area":"Abholung im Großraum Reykjavík — Reykjavík · Kópavogur · Hafnarfjörður · Mosfellsbær. Andere Orte? Frag einfach.",
 
   "pl.offer":"",
 
@@ -482,7 +482,7 @@ es:{
   "form.p.1":"1–4 personas","form.p.2":"5–8 personas",
   "opt.gc":"Círculo Dorado — tour privado","opt.sc":"Costa Sur — tour privado","opt.jk":"Laguna glaciar Jökulsárlón","opt.kef":"Traslado aeropuerto Keflavík","opt.bl":"Traslado a Blue Lagoon","opt.aurora":"Auroras boreales (otoño)","opt.custom":"Personalizado / aún no lo sé",
 
-  "cm.wa.l":"WhatsApp","cm.wa.v":"+354 785 0558","cm.phone.l":"Llamada / SMS","cm.phone.v":"+354 785 0558","cm.mail.l":"Correo","cm.mail.v":"hello@journeyiceland.is","cm.hours.l":"Base","cm.hours.v":"Reikiavik · 7 días a la semana","map.label":"mapa — zona de recogida en Reikiavik",
+  "cm.wa.l":"WhatsApp","cm.wa.v":"+354 785 0558","cm.phone.l":"Llamada / SMS","cm.phone.v":"+354 785 0558","cm.mail.l":"Correo","cm.mail.v":"hello@journeyiceland.is","cm.hours.l":"Base","cm.hours.v":"Reikiavik · 7 días a la semana","map.label":"mapa — zona de recogida en Reikiavik","cm.pickup.area":"Recogida en el área de Reikiavik — Reykjavík · Kópavogur · Hafnarfjörður · Mosfellsbær. ¿Otra zona? Pregunta.",
 
   "pl.offer":"",
 

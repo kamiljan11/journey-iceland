@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { isLang, makeT } from '@/lib/dictionary';
 import { SITE, IMG, waLink, RESTAURANTS } from '@/lib/site';
+import AreaMap from '@/components/AreaMap';
 
 export default function Home({ params }: { params: { lang: string } }) {
   const lang = isLang(params.lang) ? params.lang : 'en';
@@ -402,10 +403,10 @@ export default function Home({ params }: { params: { lang: string } }) {
                 <div className="ic"><svg><use href="#i-pin" /></svg></div>
                 <div><small>{t('cm.hours.l')}</small><b>{t('cm.hours.v')}</b></div>
               </div>
-              <div className="contact-map">
-                <div className="ph" data-label="map — Reykjavík pick-up area"></div>
-                <span className="map-pin"><svg><use href="#i-pin-fill" /></svg></span>
+              <div className="contact-map" style={{ overflow: 'hidden', minHeight: 320 }}>
+                <AreaMap label={t('map.label')} />
               </div>
+              <p style={{ marginTop: 10, fontSize: '.84rem', opacity: 0.82, lineHeight: 1.5 }}>{t('cm.pickup.area')}</p>
             </div>
           </div>
         </div>
