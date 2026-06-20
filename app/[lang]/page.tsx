@@ -145,8 +145,26 @@ export default function Home({ params }: { params: { lang: string } }) {
             <h2>{t('aurora.h2')}</h2>
             <p>{t('aurora.p')}</p>
             <div className="aurora-cta">
-              <Link className="btn btn-primary btn-lg" href={L('#contact')}><span>{t('aurora.cta1')}</span><svg><use href="#i-arrow-right" /></svg></Link>
-              <a className="btn btn-outline btn-lg" href={waLink(t('wa.aurora'))} target="_blank" rel="noopener"><svg><use href="#i-whatsapp" /></svg><span>{t('cta.wa.short')}</span></a>
+              <a className="btn btn-primary btn-lg" href={waLink(t('wa.aurora'))} target="_blank" rel="noopener"><svg><use href="#i-whatsapp" /></svg><span>{t('aurora.cta1')}</span></a>
+              <Link className="btn btn-outline btn-lg" href={L('#contact')}><span>{t('cta.check')}</span><svg><use href="#i-arrow-right" /></svg></Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ECLIPSE TEASER */}
+      <section className="aurora-band" id="eclipse" data-screen-label="Eclipse">
+        <div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="Snæfellsnes peninsula, Iceland" src="/img/g10.webp" /></div>
+        <div className="aurora-scrim"></div>
+        <div className="wrap aurora-content">
+          <span className="aurora-tag"><svg width="14" height="14"><use href="#i-leaf" /></svg><span>{t('eclipse.tag')}</span></span>
+          <div className="reveal">
+            <span className="eyebrow">{t('eclipse.eyebrow')}</span>
+            <h2>{t('eclipse.h2')}</h2>
+            <p>{t('eclipse.p')}</p>
+            <div className="aurora-cta">
+              <a className="btn btn-primary btn-lg" href={waLink(t('wa.eclipse'))} target="_blank" rel="noopener"><svg><use href="#i-whatsapp" /></svg><span>{t('eclipse.cta1')}</span></a>
+              <Link className="btn btn-outline btn-lg" href={L('#contact')}><span>{t('cta.check')}</span><svg><use href="#i-arrow-right" /></svg></Link>
             </div>
           </div>
         </div>
