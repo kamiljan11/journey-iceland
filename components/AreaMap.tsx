@@ -22,6 +22,7 @@ export default function AreaMap({
       if (cancelled || !ref.current) return;
 
       map = L.map(ref.current, { scrollWheelZoom: false });
+      map.setView(center, 10); // set a view first so projection exists before getBounds/fitBounds
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors',
         maxZoom: 19,

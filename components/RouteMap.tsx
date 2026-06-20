@@ -23,6 +23,7 @@ export default function RouteMap({ points }: { points: RoutePoint[] }) {
       if (cancelled || !ref.current) return;
 
       map = L.map(ref.current, { scrollWheelZoom: false });
+      map.setView([points[0].lat, points[0].lng], 7); // set a view first so projection exists before fitBounds
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors',
         maxZoom: 19,
