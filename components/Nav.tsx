@@ -63,6 +63,7 @@ export default function Nav({ lang, t }: { lang: string; t: T }) {
               <a href={SITE.phoneHref}><svg><use href="#i-phone" /></svg><span>{SITE.phoneDisplay}</span></a>
               <a href={`mailto:${SITE.email}`}><svg><use href="#i-mail" /></svg><span>{SITE.email}</span></a>
             </div>
+            <div className="drawer-lang"><LangSwitch lang={lang} /></div>
             <Link className="btn btn-primary btn-block" href={L('#contact')}>{t('cta.check')}</Link>
           </div>
         </div>
