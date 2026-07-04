@@ -7,7 +7,7 @@ export const SITE = {
   phoneHref: 'tel:+3547850558',
   wa: '3547850558',
   waHref: 'https://wa.me/3547850558',
-  facebook: '#', // TODO: exact Facebook page URL ("Journey Iceland")
+  facebook: 'https://www.facebook.com/share/1LBPfDmRN4/',
   instagram: 'https://instagram.com/journeyiceland1',
   google: '#', // TODO: Google Business profile URL ("Journey Iceland")
   company: 'Journey Iceland',
