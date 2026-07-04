@@ -24,7 +24,7 @@ async function notify(data: Lead) {
     rows.map(([k, v]) => `<tr><td style="color:#6F6052"><b>${k}</b></td><td>${String(v).replace(/</g, '&lt;')}</td></tr>`).join('') +
     `</table><p style="color:#6F6052">Sent from journeyiceland.is</p>`;
   try {
-    await fetch('https://api.resend.com/emails', {
+    const res = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -33,6 +33,9 @@ async function notify(data: Lead) {
         html,
       }),
     });
+    if (!res.ok) {
+      console.error('[lead] resend responded non-ok:', res.status, await res.text().catch(() => ''));
+    }
   } catch (e) {
     console.error('[lead] email notify failed:', e);
   }
@@ -44,19 +47,22 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: false, error: 'invalid' }, { status: 400 });
   }
 
-  const db = supabaseAdmin();
+  // Store the lead (best-effort). A database outage must NEVER block the
+  // notification email — that is the part the guide actually relies on.
   let stored = false;
+  const db = supabaseAdmin();
   if (db) {
-    const { error } = await db.from('leads').insert({
-      tour: data.tour || null, date: data.date || null, people: data.people || null,
-      name: data.name, email: data.email, phone: data.phone || null,
-      message: data.msg || null, lang: data.lang || null, source: data.source || 'website',
-    });
-    if (error) {
-      console.error('[lead] insert error:', error.message);
-      return NextResponse.json({ ok: false }, { status: 500 });
+    try {
+      const { error } = await db.from('leads').insert({
+        tour: data.tour || null, date: data.date || null, people: data.people || null,
+        name: data.name, email: data.email, phone: data.phone || null,
+        message: data.msg || null, lang: data.lang || null, source: data.source || 'website',
+      });
+      if (error) console.error('[lead] insert error:', error.message);
+      else stored = true;
+    } catch (e) {
+      console.error('[lead] insert threw (DB unreachable / paused?):', e);
     }
-    stored = true;
   } else {
     console.warn('[lead] Supabase not configured; lead not stored:', data);
   }
