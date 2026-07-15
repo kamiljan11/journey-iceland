@@ -62,7 +62,7 @@ export default function Footer({ lang, t }: { lang: string; t: T }) {
           src={IMG.license}
           alt="Ferðamálastofa — Authorized Day Tour Provider, license 2026-078"
           title="Ferðamálastofa — Authorized Day Tour Provider (2026-078)"
-          style={{ height: 72, width: 'auto' }}
+          style={{ height: 144, width: 'auto' }}
         />
       </div>
     </footer>
