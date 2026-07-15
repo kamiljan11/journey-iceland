@@ -57,6 +57,14 @@ export default function Footer({ lang, t }: { lang: string; t: T }) {
           <a href="https://reykjawwwik.is" target="_blank" rel="noopener" style={{ fontWeight: 600 }}>reykjawwwik.is</a>
         </span>
       </div>
+      <div className="wrap footer-license">
+        <img
+          src={IMG.license}
+          alt="Ferðamálastofa — Authorized Day Tour Provider, license 2026-078"
+          title="Ferðamálastofa — Authorized Day Tour Provider (2026-078)"
+          style={{ height: 72, width: 'auto' }}
+        />
+      </div>
     </footer>
   );
 }

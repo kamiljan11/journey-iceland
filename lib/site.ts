@@ -34,6 +34,7 @@ export const IMG = {
   gcHero: '/img/gc-hero.webp',
   logo: '/img/logo.webp',
   badge: '/img/badge.webp',
+  license: '/img/license-badge.webp',
   gallery: [
     '/img/tour-gc.webp', '/img/tour-sc.webp', '/img/tour-jk.webp',
     '/img/g1.webp', '/img/g2.webp', '/img/g3.webp', '/img/g4.webp',
