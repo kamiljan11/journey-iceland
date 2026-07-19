@@ -41,8 +41,13 @@ jobs:
             wzgledem review -> dopisz zwiezly wpis do docs/REVIEW-LEARNINGS.md, format:
             - [RRRR-MM-DD] regula (zrodlo: PR #n). Nie duplikuj istniejacych wpisow.
             KROK 3 — ANALIZA REPO: znajdz realne problemy: bezpieczenstwo, bugi, duplikacja logiki, martwy kod,
-            brakujace testy krytycznych sciezek, podatne zaleznosci (npm audit). Wybierz MAKS 3 najbardziej
-            wartosciowe i BEZPIECZNE poprawki — male, atomowe, bez zmiany zachowania produktu.
+            brakujace testy krytycznych sciezek, podatne zaleznosci (npm audit). Uzyj twardych metryk:
+            `npx --yes jscpd src --min-lines 10` (duplikacja) i `npx --yes knip --no-exit-code` (martwy kod,
+            nieuzywane exporty/zaleznosci). Wybierz MAKS 3 najbardziej wartosciowe i BEZPIECZNE poprawki —
+            male, atomowe, bez zmiany zachowania produktu.
+            ZASADA NET-NEGATIVE: kod ma MALEC albo stac w miejscu przy tej samej funkcjonalnosci. Preferuj
+            poprawki USUWAJACE (martwy kod, duplikaty scalone do wspolnej funkcji, nieuzywane zaleznosci
+            z package.json) nad dodajacymi. W opisie PR podaj bilans linii (+X/-Y) i wynik jscpd przed/po.
             KROK 4 — WYKONANIE: branch chore/auto-improve-<data>. Poprawki + testy w tej samej zmianie.
             Uruchom testy i typecheck — dowod (exit 0) wklej do opisu PR. Czerwone = nie otwieraj PR z ta zmiana.
             KROK 5 — PR: jeden PR: co, dlaczego, dowod, ryzyko. Jesli nie znalazles nic wartosciowego —
