@@ -153,7 +153,9 @@ export default function Home({ params }: { params: { lang: string } }) {
         </div>
       </section>
 
-      {/* ECLIPSE TEASER */}
+      {/* ECLIPSE TEASER — ukryte 2026-08-18 (wydarzenie 12.08.2026 minelo, nieaktualne).
+          Tresc zostaje w dictionary.ts (klucze eclipse i wa.eclipse) — odkomentowac by przywrocic. */}
+      {/*
       <section className="aurora-band" id="eclipse" data-screen-label="Eclipse">
         <div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="Snæfellsnes peninsula, Iceland" src="/img/g10.webp" /></div>
         <div className="aurora-scrim"></div>
@@ -170,6 +172,7 @@ export default function Home({ params }: { params: { lang: string } }) {
           </div>
         </div>
       </section>
+      */}
 
       {/* WHY ME */}
       <section className="sec" id="why" data-screen-label="Why me">
