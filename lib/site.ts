@@ -40,7 +40,6 @@ export const IMG = {
     '/img/g1.webp', '/img/g2.webp', '/img/g3.webp', '/img/g4.webp',
     '/img/g5.webp', '/img/g6.webp', '/img/g7.webp', '/img/g8.webp',
     '/img/g-people.webp', '/img/g9.webp', '/img/g10.webp',
-    '/img/g12.webp', '/img/g13.webp',
   ],
 };
 

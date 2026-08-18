@@ -245,7 +245,7 @@ export default async function Home({ params }: { params: { lang: string } }) {
           </div>
           <div className="exp-grid">
             <article className="exp-card reveal">
-              <div className="ph" data-label="Home-cooked welcome set — skyr, fruit, baked goods on dashboard"></div>
+              <div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="Home-cooked welcome set" src="/img/exp-welcome.webp" /></div>
               <div className="exp-body"><div className="why-ic"><svg><use href="#i-gift" /></svg></div><h3>{t('exp.1.t')}</h3><p>{t('exp.1.d')}</p></div>
             </article>
             <article className="exp-card reveal d1">
