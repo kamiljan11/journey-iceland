@@ -1,12 +1,14 @@
 import Link from 'next/link';
 import { isLang, makeT } from '@/lib/dictionary';
 import { SITE, IMG, waLink, RESTAURANTS } from '@/lib/site';
+import { getGoogleReviews } from '@/lib/reviews';
 import AreaMap from '@/components/AreaMap';
 
-export default function Home({ params }: { params: { lang: string } }) {
+export default async function Home({ params }: { params: { lang: string } }) {
   const lang = isLang(params.lang) ? params.lang : 'en';
   const t = makeT(lang);
   const L = (h: string) => `/${lang}${h}`;
+  const google = await getGoogleReviews();
 
   return (
     <main>
@@ -298,25 +300,46 @@ export default function Home({ params }: { params: { lang: string } }) {
             <p className="lead">{t('reviews.lead')}</p>
           </div>
           <div className="reviews-grid">
-            {[
-              { n: 1, av: 'S', flag: '🇺🇸', d: '' },
-              { n: 2, av: 'T', flag: '🇵🇱', d: 'd1' },
-              { n: 3, av: 'E', flag: '🇬🇧', d: 'd2' },
-              { n: 4, av: 'B', flag: '🇩🇪', d: '' },
-              { n: 5, av: 'D', flag: '🇨🇦', d: 'd1' },
-              { n: 6, av: 'P', flag: '🇬🇧', d: 'd2' },
-            ].map((r) => (
-              <figure className={`review reveal ${r.d}`.trim()} key={r.n}>
-                <div className="stars">★★★★★</div>
-                <blockquote>{t(`rev.${r.n}.q`)}</blockquote>
-                <figcaption className="review-by">
-                  <span className="review-av">{r.av}</span>
-                  <span><b>{t(`rev.${r.n}.name`)}</b><span>{t(`rev.${r.n}.loc`)}</span></span>
-                  <span className="flag">{r.flag}</span>
-                </figcaption>
-              </figure>
-            ))}
+            {google?.reviews?.length ? (
+              google.reviews.map((r, i) => (
+                <figure className={`review reveal ${['', 'd1', 'd2'][i % 3]}`.trim()} key={i}>
+                  <div className="stars" aria-label={`${r.rating} / 5`}>{'★'.repeat(Math.round(r.rating))}</div>
+                  <blockquote>{r.text}</blockquote>
+                  <figcaption className="review-by">
+                    <span className="review-av">{r.author.charAt(0).toUpperCase()}</span>
+                    <span><b>{r.author}</b><span>{r.relativeTime}</span></span>
+                    <svg className="flag" width="18" height="18" aria-label="Google review"><use href="#i-google" /></svg>
+                  </figcaption>
+                </figure>
+              ))
+            ) : (
+              [
+                { n: 1, av: 'S', flag: '🇺🇸', d: '' },
+                { n: 2, av: 'T', flag: '🇵🇱', d: 'd1' },
+                { n: 3, av: 'E', flag: '🇬🇧', d: 'd2' },
+                { n: 4, av: 'B', flag: '🇩🇪', d: '' },
+                { n: 5, av: 'D', flag: '🇨🇦', d: 'd1' },
+                { n: 6, av: 'P', flag: '🇬🇧', d: 'd2' },
+              ].map((r) => (
+                <figure className={`review reveal ${r.d}`.trim()} key={r.n}>
+                  <div className="stars">★★★★★</div>
+                  <blockquote>{t(`rev.${r.n}.q`)}</blockquote>
+                  <figcaption className="review-by">
+                    <span className="review-av">{r.av}</span>
+                    <span><b>{t(`rev.${r.n}.name`)}</b><span>{t(`rev.${r.n}.loc`)}</span></span>
+                    <span className="flag">{r.flag}</span>
+                  </figcaption>
+                </figure>
+              ))
+            )}
           </div>
+          {google?.mapsUri && (
+            <p className="reveal" style={{ textAlign: 'center', marginTop: '18px', fontSize: '.9rem' }}>
+              <a href={google.mapsUri} target="_blank" rel="noopener" style={{ color: 'var(--muted)' }}>
+                {google.rating?.toFixed(1)} ★ · {t('reviews.google')} ({google.total})
+              </a>
+            </p>
+          )}
         </div>
       </section>
 
