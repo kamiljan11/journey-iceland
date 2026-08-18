@@ -938,6 +938,8 @@ section{position:relative}
 .review{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px 26px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column}
 .review .stars{color:var(--gold);font-size:1.05rem;letter-spacing:2px;margin-bottom:14px}
 .review blockquote{font-family:var(--serif);font-size:1.16rem;line-height:1.45;color:var(--espresso);font-weight:500}
+.review-more{display:inline;margin-left:2px;padding:0;border:0;background:none;cursor:pointer;font:inherit;font-size:.92rem;font-weight:700;color:var(--gold);text-decoration:underline;text-underline-offset:2px}
+.review-more:hover{color:var(--espresso)}
 .review-by{margin-top:auto;padding-top:20px;display:flex;align-items:center;gap:13px}
 .review-av{width:46px;height:46px;border-radius:50%;flex:none;display:grid;place-items:center;font-family:var(--serif);font-weight:700;color:#fff;font-size:1.1rem;
   background:radial-gradient(circle at 35% 30%,var(--gold),var(--terracotta))}

@@ -69,7 +69,7 @@ en:{
 
   "gallery.eyebrow":"Gallery","gallery.h2":"Moments from the road.","gallery.lead":"Golden light, quiet roads, warm food, and the odd green sky. Swipe through.",
 
-  "reviews.eyebrow":"Reviews","reviews.h2":"They came as guests, left as friends.","reviews.lead":"A few words from recent travellers. More on Google.","reviews.google":"Reviews on Google",
+  "reviews.eyebrow":"Reviews","reviews.h2":"They came as guests, left as friends.","reviews.lead":"A few words from recent travellers. More on Google.","reviews.google":"Reviews on Google","reviews.more":"Read more","reviews.less":"Show less",
   "rev.1.q":"Syl found us a waterfall with not one other person there. Best day of our whole Iceland trip — and we never felt rushed.","rev.1.name":"Sarah & Mike","rev.1.loc":"Austin, USA",
   "rev.2.q":"Profesjonalnie, ciepło i po polsku. Czuliśmy się zaopiekowani od lotniska po ostatni przystanek.","rev.2.name":"Tomasz K.","rev.2.loc":"Warszawa, PL",
   "rev.3.q":"Honest about the weather, flexible with the plan, and Kate's snacks were unreal. Booked him twice in one week.","rev.3.name":"Emma L.","rev.3.loc":"London, UK",
@@ -198,7 +198,7 @@ pl:{
 
   "gallery.eyebrow":"Galeria","gallery.h2":"Chwile z trasy.","gallery.lead":"Złote światło, ciche drogi, ciepłe jedzenie i czasem zielone niebo. Przesuwaj.",
 
-  "reviews.eyebrow":"Opinie","reviews.h2":"Przyjechali jako goście, wyjechali jak znajomi.","reviews.lead":"Kilka słów od ostatnich podróżnych. Więcej w Google.","reviews.google":"Opinie w Google",
+  "reviews.eyebrow":"Opinie","reviews.h2":"Przyjechali jako goście, wyjechali jak znajomi.","reviews.lead":"Kilka słów od ostatnich podróżnych. Więcej w Google.","reviews.google":"Opinie w Google","reviews.more":"Czytaj więcej","reviews.less":"Zwiń",
   "rev.1.q":"Sylwiusz znalazł nam wodospad, przy którym nie było nikogo innego. Najlepszy dzień całej wyprawy — i nigdzie się nie spieszyliśmy.","rev.1.name":"Sarah i Mike","rev.1.loc":"Austin, USA",
   "rev.2.q":"Profesjonalnie, ciepło i po polsku. Czuliśmy się zaopiekowani od lotniska po ostatni przystanek.","rev.2.name":"Tomasz K.","rev.2.loc":"Warszawa, PL",
   "rev.3.q":"Szczerze o pogodzie, elastycznie z planem, a przekąski Kasi były nierealne. Zarezerwowaliśmy go dwa razy w tydzień.","rev.3.name":"Emma L.","rev.3.loc":"Londyn, UK",
@@ -325,7 +325,7 @@ de:{
 
   "gallery.eyebrow":"Galerie","gallery.h2":"Momente von unterwegs.","gallery.lead":"Goldenes Licht, stille Straßen, warmes Essen und ab und zu ein grüner Himmel. Wischen.",
 
-  "reviews.eyebrow":"Bewertungen","reviews.h2":"Sie kamen als Gäste und gingen als Freunde.","reviews.lead":"Ein paar Worte von Reisenden der letzten Zeit. Mehr auf Google.","reviews.google":"Bewertungen auf Google",
+  "reviews.eyebrow":"Bewertungen","reviews.h2":"Sie kamen als Gäste und gingen als Freunde.","reviews.lead":"Ein paar Worte von Reisenden der letzten Zeit. Mehr auf Google.","reviews.google":"Bewertungen auf Google","reviews.more":"Mehr lesen","reviews.less":"Weniger",
   "rev.1.q":"Syl fand uns einen Wasserfall, an dem kein einziger anderer Mensch war. Bester Tag unserer ganzen Islandreise — und nie gehetzt.","rev.1.name":"Sarah & Mike","rev.1.loc":"Austin, USA",
   "rev.2.q":"Professionell, herzlich und auf Polnisch. Vom Flughafen bis zum letzten Stopp fühlten wir uns umsorgt.","rev.2.name":"Tomasz K.","rev.2.loc":"Warschau, PL",
   "rev.3.q":"Ehrlich beim Wetter, flexibel beim Plan, und Kates Snacks waren unglaublich. Wir haben ihn zweimal in einer Woche gebucht.","rev.3.name":"Emma L.","rev.3.loc":"London, UK",
@@ -456,7 +456,7 @@ es:{
 
   "gallery.eyebrow":"Galería","gallery.h2":"Momentos de la carretera.","gallery.lead":"Luz dorada, carreteras tranquilas, comida caliente y algún cielo verde. Desliza.",
 
-  "reviews.eyebrow":"Opiniones","reviews.h2":"Llegaron como huéspedes, se fueron como amigos.","reviews.lead":"Unas palabras de viajeros recientes. Más en Google.","reviews.google":"Opiniones en Google",
+  "reviews.eyebrow":"Opiniones","reviews.h2":"Llegaron como huéspedes, se fueron como amigos.","reviews.lead":"Unas palabras de viajeros recientes. Más en Google.","reviews.google":"Opiniones en Google","reviews.more":"Leer más","reviews.less":"Menos",
   "rev.1.q":"Syl nos encontró una cascada sin nadie más alrededor. El mejor día de todo nuestro viaje por Islandia — y nunca nos sentimos apurados.","rev.1.name":"Sarah & Mike","rev.1.loc":"Austin, EE. UU.",
   "rev.2.q":"Profesional, cercano y en polaco. Nos sentimos cuidados desde el aeropuerto hasta la última parada.","rev.2.name":"Tomasz K.","rev.2.loc":"Varsovia, PL",
   "rev.3.q":"Sincero con el tiempo, flexible con el plan, y los aperitivos de Kate eran increíbles. Lo reservamos dos veces en una semana.","rev.3.name":"Emma L.","rev.3.loc":"Londres, UK",

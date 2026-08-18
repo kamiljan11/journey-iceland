@@ -3,6 +3,7 @@ import { isLang, makeT } from '@/lib/dictionary';
 import { SITE, IMG, waLink, RESTAURANTS } from '@/lib/site';
 import { getGoogleReviews } from '@/lib/reviews';
 import AreaMap from '@/components/AreaMap';
+import ReviewCard from '@/components/ReviewCard';
 
 export default async function Home({ params }: { params: { lang: string } }) {
   const lang = isLang(params.lang) ? params.lang : 'en';
@@ -302,15 +303,16 @@ export default async function Home({ params }: { params: { lang: string } }) {
           <div className="reviews-grid">
             {google?.reviews?.length ? (
               google.reviews.map((r, i) => (
-                <figure className={`review reveal ${['', 'd1', 'd2'][i % 3]}`.trim()} key={i}>
-                  <div className="stars" aria-label={`${r.rating} / 5`}>{'★'.repeat(Math.round(r.rating))}</div>
-                  <blockquote>{r.text}</blockquote>
-                  <figcaption className="review-by">
-                    <span className="review-av">{r.author.charAt(0).toUpperCase()}</span>
-                    <span><b>{r.author}</b><span>{r.relativeTime}</span></span>
-                    <svg className="flag" width="18" height="18" aria-label="Google review"><use href="#i-google" /></svg>
-                  </figcaption>
-                </figure>
+                <ReviewCard
+                  key={i}
+                  author={r.author}
+                  rating={r.rating}
+                  text={r.text}
+                  relativeTime={r.relativeTime}
+                  delay={['', 'd1', 'd2'][i % 3]}
+                  moreLabel={t('reviews.more')}
+                  lessLabel={t('reviews.less')}
+                />
               ))
             ) : (
               [
