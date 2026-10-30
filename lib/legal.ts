@@ -41,7 +41,7 @@ const EN: { privacy: LegalDoc; terms: LegalDoc } = {
         '• Vercel — website hosting and delivery;',
         '• Resend — delivery of the email notification about your enquiry to our team;',
         '• Google Workspace — our business email;',
-        '• where used: Cal.com — date/availability scheduling, myPOS — secure card payments arranged after a booking is confirmed, and Bókun (bokun.io) — online bookings, and any payment taken with them, made through the Bókun booking calendars and “Book online” buttons on this website (Golden Circle, South Coast, Jökulsárlón and Northern Lights).',
+        '• where used: Cal.com — date/availability scheduling, myPOS — secure card payments arranged after a booking is confirmed, and Bókun (bokun.io) — online bookings, and any payment taken with them, made through the Bókun booking calendars on this website (Golden Circle, South Coast, Jökulsárlón and Northern Lights).',
         'We never sell your personal data.',
       ]},
       { h: '6. International transfers', p: [
@@ -51,7 +51,7 @@ const EN: { privacy: LegalDoc; terms: LegalDoc } = {
         'Except for bookings made in the Bókun booking calendar (handled by Bókun and its payment provider), this website does not take payments. If you proceed with a booking, payment is arranged separately through a secure payment link or a card terminal (myPOS). Your card details are handled by the payment provider and are never stored by us.',
       ]},
       { h: '8. Cookies', p: [
-        'This website uses only the strictly necessary technologies required for it to function (for example, remembering your chosen language). We do not use advertising or tracking cookies. The booking calendars and “Book online” buttons are provided by Bókun (bokun.io); when they load, Bókun may store its own cookies or similar data needed to run your booking session (for example, the booking cart), under Bókun’s privacy policy. If this changes, we will update this policy and ask for consent where required.',
+        'This website uses only the strictly necessary technologies required for it to function (for example, remembering your chosen language). We do not use advertising or tracking cookies. The booking calendars are provided by Bókun (bokun.io); when they load, Bókun may store its own cookies or similar data needed to run your booking session (for example, the booking cart), under Bókun’s privacy policy. If this changes, we will update this policy and ask for consent where required.',
       ]},
       { h: '9. Your rights', p: [
         'Under the GDPR and Act No. 90/2018 you have the right to access your data, to rectification, erasure, restriction of processing, data portability, and to object to processing. Where processing is based on consent, you may withdraw it at any time.',
@@ -150,7 +150,7 @@ const PL: { privacy: LegalDoc; terms: LegalDoc } = {
         '• Vercel — hosting i dostarczanie strony;',
         '• Resend — wysyłka powiadomienia e-mail o Twoim zapytaniu do naszego zespołu;',
         '• Google Workspace — firmowa poczta e-mail;',
-        '• w razie użycia: Cal.com — kalendarz dostępności, myPOS — bezpieczne płatności kartą ustalane po potwierdzeniu rezerwacji, oraz Bókun (bokun.io) — rezerwacje online (wraz z ewentualną płatnością) składane w kalendarzach rezerwacji Bókun i przyciskach „Zarezerwuj online” na tej stronie (Golden Circle, Południowe wybrzeże, Jökulsárlón, zorza polarna).',
+        '• w razie użycia: Cal.com — kalendarz dostępności, myPOS — bezpieczne płatności kartą ustalane po potwierdzeniu rezerwacji, oraz Bókun (bokun.io) — rezerwacje online (wraz z ewentualną płatnością) składane w kalendarzach rezerwacji Bókun na tej stronie (Golden Circle, Południowe wybrzeże, Jökulsárlón, zorza polarna).',
         'Nigdy nie sprzedajemy Twoich danych.',
       ]},
       { h: '6. Przekazywanie poza EOG', p: [
@@ -160,7 +160,7 @@ const PL: { privacy: LegalDoc; terms: LegalDoc } = {
         'Poza rezerwacjami składanymi w kalendarzu Bókun (obsługuje je Bókun i jego dostawca płatności) ta strona nie przyjmuje płatności. Jeśli dojdzie do rezerwacji, płatność ustalana jest osobno przez bezpieczny link do płatności lub terminal kartowy (myPOS). Dane Twojej karty obsługuje dostawca płatności i nigdy nie są przez nas przechowywane.',
       ]},
       { h: '8. Pliki cookie', p: [
-        'Strona używa wyłącznie technologii niezbędnych do jej działania (np. zapamiętania wybranego języka). Nie używamy reklamowych ani śledzących plików cookie. Kalendarze rezerwacji i przyciski „Zarezerwuj online” dostarcza Bókun (bokun.io); po ich załadowaniu Bókun może zapisać własne pliki cookie lub podobne dane potrzebne do obsługi rezerwacji (np. koszyk), zgodnie z polityką prywatności Bókun. Jeśli to się zmieni, zaktualizujemy politykę i poprosimy o zgodę, gdy będzie wymagana.',
+        'Strona używa wyłącznie technologii niezbędnych do jej działania (np. zapamiętania wybranego języka). Nie używamy reklamowych ani śledzących plików cookie. Kalendarze rezerwacji dostarcza Bókun (bokun.io); po ich załadowaniu Bókun może zapisać własne pliki cookie lub podobne dane potrzebne do obsługi rezerwacji (np. koszyk), zgodnie z polityką prywatności Bókun. Jeśli to się zmieni, zaktualizujemy politykę i poprosimy o zgodę, gdy będzie wymagana.',
       ]},
       { h: '9. Twoje prawa', p: [
         'Na mocy RODO i ustawy nr 90/2018 masz prawo do dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia oraz do sprzeciwu. Gdy podstawą jest zgoda, możesz ją wycofać w każdej chwili.',

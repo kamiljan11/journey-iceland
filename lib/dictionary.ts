@@ -39,6 +39,7 @@ en:{
   "tour.gc.name":"Golden Circle","tour.gc.dur":"6 hrs","tour.gc.price":"from 95,000 ISK","tour.gc.alt":"≈ $750 / €700 · per group",
   "tour.sc.name":"South Coast","tour.sc.dur":"8–10 hrs","tour.sc.price":"from 120,000 ISK","tour.sc.alt":"≈ $950 / €880 · per group",
   "tour.jk.name":"Jökulsárlón Glacier Lagoon","tour.jk.dur":"12–14 hrs","tour.jk.price":"from 180,000 ISK","tour.jk.alt":"≈ $1,420 / €1,330 · per group",
+  "tour.nl.name":"Northern Lights","tour.nl.price":"from 55,000 ISK",
 
   "transfer.kef.name":"Keflavík Airport ⇄ Reykjavík","transfer.kef.meta":"≈ 50 min · up to 4 guests","transfer.kef.price":"from 23,000 ISK",
   "transfer.bl.name":"Blue Lagoon transfer","transfer.bl.meta":"Airport or city · ticket not included","transfer.bl.price":"from 22,000 ISK",
@@ -46,7 +47,7 @@ en:{
 
   "tours.cta.h3":"We drive everywhere — custom route on request.","tours.cta.p":"Volcanoes, hot springs, a wedding photo run, a multi-day loop. Tell me the idea and I'll build the day around it.",
 
-  "aurora.tag":"This autumn · pre-booking now","aurora.eyebrow":"Northern Lights","aurora.h2":"Chasing the Northern Lights — this autumn.","aurora.p":"From September the skies go dark again. I watch the forecast for you, drive away from the city glow, and Kate sends a thermos of hot chocolate. Pick a night and book online — or ask me first. From 55,000 ISK per group (2–6) · about 4 h, from 21:00.","aurora.cta1":"Ask about it","aurora.book":"Book online",
+  "aurora.tag":"This autumn · pre-booking now","aurora.eyebrow":"Northern Lights","aurora.h2":"Chasing the Northern Lights — this autumn.","aurora.p":"From September the skies go dark again. I watch the forecast for you, drive away from the city glow, and Kate sends a thermos of hot chocolate. Pick a night and book online — or ask me first. From 55,000 ISK per group (2–6) · about 4 h, from 21:00.","aurora.cta1":"Ask about it",
   "eclipse.tag":"12 August 2026 · limited spots","eclipse.eyebrow":"Total Solar Eclipse","eclipse.h2":"The total solar eclipse — 12 August 2026.","eclipse.p":"On 12 August 2026 Iceland sits right in the path of a total solar eclipse, and the Snæfellsnes peninsula is one of the best places to watch the sky go dark. I can take you there — a private tour of the peninsula with a spot to watch the eclipse, or just the transfer. Hotels are already filling up, so ask early. Tell me what you have in mind and I'll plan it around you.","eclipse.cta1":"Ask about the eclipse","wa.eclipse":"Hi! I'm interested in the total solar eclipse on 12 August 2026 (Snæfellsnes). Could you tell me more?",
 
   "why.eyebrow":"Why travel with us","why.h2":"We're not just guides — we're a family.","why.lead":"We live here — we raise our kids, work and spend our free time here, and we show you the Iceland we love.",
@@ -168,6 +169,7 @@ pl:{
   "tour.gc.name":"Golden Circle","tour.gc.dur":"6 godz.","tour.gc.price":"od 95 000 ISK","tour.gc.alt":"≈ 3 200 zł · za grupę",
   "tour.sc.name":"Południowe wybrzeże","tour.sc.dur":"8–10 godz.","tour.sc.price":"od 120 000 ISK","tour.sc.alt":"≈ 4 000 zł · za grupę",
   "tour.jk.name":"Laguna lodowcowa Jökulsárlón","tour.jk.dur":"12–14 godz.","tour.jk.price":"od 180 000 ISK","tour.jk.alt":"≈ 6 100 zł · za grupę",
+  "tour.nl.name":"Zorza polarna","tour.nl.price":"od 55 000 ISK",
 
   "transfer.kef.name":"Lotnisko Keflavík ⇄ Reykjavík","transfer.kef.meta":"≈ 50 min · do 4 osób","transfer.kef.price":"od 23 000 ISK",
   "transfer.bl.name":"Transfer do Blue Lagoon","transfer.bl.meta":"Z lotniska lub miasta · bilet nieuwzględniony","transfer.bl.price":"od 22 000 ISK",
@@ -175,7 +177,7 @@ pl:{
 
   "tours.cta.h3":"Dowiozę wszędzie — trasa na życzenie.","tours.cta.p":"Wulkany, gorące źródła, sesja ślubna, kilkudniowa pętla. Powiedz, co chodzi Ci po głowie, a ułożę pod to cały dzień.",
 
-  "aurora.tag":"Tej jesieni · zapisy już teraz","aurora.eyebrow":"Zorza polarna","aurora.h2":"Pogoń za zorzą — już tej jesieni.","aurora.p":"Od września niebo znów robi się ciemne. Śledzę dla Ciebie prognozę, wywożę poza łunę miasta, a Kasia dorzuca termos gorącej czekolady. Wybierz noc i zarezerwuj online — albo najpierw zapytaj. Od 55 000 ISK za grupę (2–6 osób) · ok. 4 h, start o 21:00.","aurora.cta1":"Zapytaj o termin","aurora.book":"Zarezerwuj online",
+  "aurora.tag":"Tej jesieni · zapisy już teraz","aurora.eyebrow":"Zorza polarna","aurora.h2":"Pogoń za zorzą — już tej jesieni.","aurora.p":"Od września niebo znów robi się ciemne. Śledzę dla Ciebie prognozę, wywożę poza łunę miasta, a Kasia dorzuca termos gorącej czekolady. Wybierz noc i zarezerwuj online — albo najpierw zapytaj. Od 55 000 ISK za grupę (2–6 osób) · ok. 4 h, start o 21:00.","aurora.cta1":"Zapytaj o termin",
   "eclipse.tag":"12 sierpnia 2026 · ograniczona liczba miejsc","eclipse.eyebrow":"Całkowite zaćmienie Słońca","eclipse.h2":"Całkowite zaćmienie Słońca — 12 sierpnia 2026.","eclipse.p":"12 sierpnia 2026 Islandia znajdzie się dokładnie na ścieżce całkowitego zaćmienia Słońca, a półwysep Snæfellsnes to jedno z najlepszych miejsc, by zobaczyć, jak niebo robi się ciemne. Mogę Cię tam zabrać — prywatna wycieczka po półwyspie z miejscem do obserwacji zaćmienia albo sam transfer. Hotele już się zapełniają, więc pytaj wcześniej. Napisz, co masz w głowie, a ułożę to pod Ciebie.","eclipse.cta1":"Zapytaj o zaćmienie","wa.eclipse":"Cześć! Interesuje mnie całkowite zaćmienie Słońca 12 sierpnia 2026 (Snæfellsnes). Możesz powiedzieć coś więcej?",
 
   "why.eyebrow":"Dlaczego z nami","why.h2":"Nie jesteśmy tylko przewodnikami — jesteśmy rodziną.","why.lead":"Mieszkamy tutaj od lat. To tu wychowujemy dzieci, pracujemy i spędzamy wolny czas. Pokazujemy Islandię, którą sami kochamy.",
@@ -295,6 +297,7 @@ de:{
   "tour.gc.name":"Golden Circle","tour.gc.dur":"6 Std.","tour.gc.price":"ab 95.000 ISK","tour.gc.alt":"≈ 700 € / 750 $ · pro Gruppe",
   "tour.sc.name":"Südküste","tour.sc.dur":"8–10 Std.","tour.sc.price":"ab 120.000 ISK","tour.sc.alt":"≈ 880 € / 950 $ · pro Gruppe",
   "tour.jk.name":"Gletscherlagune Jökulsárlón","tour.jk.dur":"12–14 Std.","tour.jk.price":"ab 180.000 ISK","tour.jk.alt":"≈ 1.330 € / 1.420 $ · pro Gruppe",
+  "tour.nl.name":"Nordlichter","tour.nl.price":"ab 55.000 ISK",
 
   "transfer.kef.name":"Flughafen Keflavík ⇄ Reykjavík","transfer.kef.meta":"≈ 50 Min · bis zu 4 Gäste","transfer.kef.price":"ab 23.000 ISK",
   "transfer.bl.name":"Blue-Lagoon-Transfer","transfer.bl.meta":"Flughafen oder Stadt · Ticket nicht inkl.","transfer.bl.price":"ab 22.000 ISK",
@@ -302,7 +305,7 @@ de:{
 
   "tours.cta.h3":"Ich fahre überallhin — Wunschroute auf Anfrage.","tours.cta.p":"Vulkane, heiße Quellen, ein Hochzeitsshooting, eine mehrtägige Runde. Sag mir die Idee und ich baue den Tag darum herum.",
 
-  "aurora.tag":"Diesen Herbst · jetzt vormerken","aurora.eyebrow":"Nordlichter","aurora.h2":"Den Nordlichtern hinterher — diesen Herbst.","aurora.p":"Ab September wird der Himmel wieder dunkel. Ich beobachte für dich die Vorhersage, fahre weg vom Stadtlicht, und Kate gibt eine Thermoskanne heiße Schokolade dazu. Wähle eine Nacht und buche online — oder frag mich vorher. Ab 55.000 ISK pro Gruppe (2–6) · ca. 4 Std., ab 21:00 Uhr.","aurora.cta1":"Frag nach","aurora.book":"Online buchen",
+  "aurora.tag":"Diesen Herbst · jetzt vormerken","aurora.eyebrow":"Nordlichter","aurora.h2":"Den Nordlichtern hinterher — diesen Herbst.","aurora.p":"Ab September wird der Himmel wieder dunkel. Ich beobachte für dich die Vorhersage, fahre weg vom Stadtlicht, und Kate gibt eine Thermoskanne heiße Schokolade dazu. Wähle eine Nacht und buche online — oder frag mich vorher. Ab 55.000 ISK pro Gruppe (2–6) · ca. 4 Std., ab 21:00 Uhr.","aurora.cta1":"Frag nach",
   "eclipse.tag":"12. August 2026 · begrenzte Plätze","eclipse.eyebrow":"Totale Sonnenfinsternis","eclipse.h2":"Die totale Sonnenfinsternis — 12. August 2026.","eclipse.p":"Am 12. August 2026 liegt Island genau im Pfad einer totalen Sonnenfinsternis, und die Halbinsel Snæfellsnes gehört zu den besten Orten, um zuzusehen, wie der Himmel dunkel wird. Ich bringe dich hin — eine private Tour über die Halbinsel mit einem Platz zur Beobachtung der Finsternis oder nur der Transfer. Die Hotels füllen sich bereits, frag also früh. Sag mir, was dir vorschwebt, und ich plane es um dich herum.","eclipse.cta1":"Nach der Finsternis fragen","wa.eclipse":"Hallo! Ich interessiere mich für die totale Sonnenfinsternis am 12. August 2026 (Snæfellsnes). Kannst du mir mehr sagen?",
 
   "why.eyebrow":"Warum mit uns","why.h2":"Wir sind nicht nur Guides — wir sind eine Familie.","why.lead":"Wir leben hier — ziehen unsere Kinder groß, arbeiten und verbringen unsere Freizeit hier. Wir zeigen dir das Island, das wir lieben.",
@@ -426,6 +429,7 @@ es:{
   "tour.gc.name":"Círculo Dorado","tour.gc.dur":"6 h","tour.gc.price":"desde 95.000 ISK","tour.gc.alt":"≈ 700 € / 750 $ · por grupo",
   "tour.sc.name":"Costa Sur","tour.sc.dur":"8–10 h","tour.sc.price":"desde 120.000 ISK","tour.sc.alt":"≈ 880 € / 950 $ · por grupo",
   "tour.jk.name":"Laguna glaciar Jökulsárlón","tour.jk.dur":"12–14 h","tour.jk.price":"desde 180.000 ISK","tour.jk.alt":"≈ 1.330 € / 1.420 $ · por grupo",
+  "tour.nl.name":"Auroras boreales","tour.nl.price":"desde 55.000 ISK",
 
   "transfer.kef.name":"Aeropuerto de Keflavík ⇄ Reikiavik","transfer.kef.meta":"≈ 50 min · hasta 4 pasajeros","transfer.kef.price":"desde 23.000 ISK",
   "transfer.bl.name":"Traslado a Blue Lagoon","transfer.bl.meta":"Aeropuerto o ciudad · entrada no incluida","transfer.bl.price":"desde 22.000 ISK",
@@ -433,7 +437,7 @@ es:{
 
   "tours.cta.h3":"Vamos a todas partes — ruta personalizada bajo petición.","tours.cta.p":"Volcanes, fuentes termales, una sesión de fotos de boda, una vuelta de varios días. Cuéntame la idea y construyo el día a su alrededor.",
 
-  "aurora.tag":"Este otoño · reservas abiertas","aurora.eyebrow":"Auroras boreales","aurora.h2":"Tras las auroras boreales — este otoño.","aurora.p":"Desde septiembre los cielos vuelven a oscurecerse. Vigilo la previsión por ti, te alejo del resplandor de la ciudad y Kate prepara un termo de chocolate caliente. Elige una noche y reserva online — o pregúntame antes. Desde 55.000 ISK por grupo (2–6) · unas 4 h, desde las 21:00.","aurora.cta1":"Pregúntame","aurora.book":"Reservar online",
+  "aurora.tag":"Este otoño · reservas abiertas","aurora.eyebrow":"Auroras boreales","aurora.h2":"Tras las auroras boreales — este otoño.","aurora.p":"Desde septiembre los cielos vuelven a oscurecerse. Vigilo la previsión por ti, te alejo del resplandor de la ciudad y Kate prepara un termo de chocolate caliente. Elige una noche y reserva online — o pregúntame antes. Desde 55.000 ISK por grupo (2–6) · unas 4 h, desde las 21:00.","aurora.cta1":"Pregúntame",
   "eclipse.tag":"12 de agosto de 2026 · plazas limitadas","eclipse.eyebrow":"Eclipse solar total","eclipse.h2":"El eclipse solar total — 12 de agosto de 2026.","eclipse.p":"El 12 de agosto de 2026 Islandia queda justo en la trayectoria de un eclipse solar total, y la península de Snæfellsnes es uno de los mejores lugares para ver cómo el cielo se oscurece. Puedo llevarte allí — un tour privado por la península con un sitio para observar el eclipse, o solo el traslado. Los hoteles ya se están llenando, así que pregunta pronto. Dime qué tienes en mente y lo planifico a tu medida.","eclipse.cta1":"Pregunta por el eclipse","wa.eclipse":"¡Hola! Me interesa el eclipse solar total del 12 de agosto de 2026 (Snæfellsnes). ¿Me cuentas más?",
 
   "why.eyebrow":"Por qué viajar con nosotros","why.h2":"No somos solo guías — somos una familia.","why.lead":"Vivimos aquí — criamos a nuestras hijas, trabajamos y pasamos nuestro tiempo libre aquí, y te enseñamos la Islandia que amamos.",
