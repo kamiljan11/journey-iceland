@@ -40,14 +40,14 @@ const EN: { privacy: LegalDoc; terms: LegalDoc } = {
         '• Supabase — secure database storage of form submissions (servers within the EU / Frankfurt);',
         '• Vercel — website hosting and delivery;',
         '• Google Workspace — our business email;',
-        '• where used: Cal.com — date/availability scheduling, and myPOS — secure card payments arranged after a booking is confirmed.',
+        '• where used: Cal.com — date/availability scheduling, myPOS — secure card payments arranged after a booking is confirmed, and Bókun (bokun.io) — online bookings, and any payment taken with them, made through the booking calendar on the Golden Circle page.',
         'We never sell your personal data.',
       ]},
       { h: '6. International transfers', p: [
         'Our database is hosted within the European Economic Area (EEA). Where a provider necessarily processes data outside the EEA (for example in the United States), the transfer is protected by appropriate safeguards such as the European Commission’s Standard Contractual Clauses.',
       ]},
       { h: '7. Payments', p: [
-        'This website does not take payments. If you proceed with a booking, payment is arranged separately through a secure payment link or a card terminal (myPOS). Your card details are handled by the payment provider and are never stored by us.',
+        'Except for bookings made in the Bókun booking calendar (handled by Bókun and its payment provider), this website does not take payments. If you proceed with a booking, payment is arranged separately through a secure payment link or a card terminal (myPOS). Your card details are handled by the payment provider and are never stored by us.',
       ]},
       { h: '8. Cookies', p: [
         'This website uses only the strictly necessary technologies required for it to function (for example, remembering your chosen language). We do not use advertising or third-party tracking cookies. If this changes, we will update this policy and ask for consent where required.',
@@ -79,14 +79,14 @@ const EN: { privacy: LegalDoc; terms: LegalDoc } = {
         'Journey Iceland is a private driver and guide service offering private tours and airport / spa transfers in Iceland. Tours are always private — only your own group travels in the car.',
       ]},
       { h: '2. Availability requests, not online bookings', p: [
-        'This website does not take online bookings or payments. When you submit an "Check availability" request, you are making an enquiry. A booking exists only once we have personally agreed the date, details and price with you by email, phone or WhatsApp.',
+        'Except for the Golden Circle tour, which can be booked online through our booking partner Bókun under the terms shown at checkout, this website does not take online bookings or payments. When you submit an "Check availability" request, you are making an enquiry. A booking exists only once we have personally agreed the date, details and price with you by email, phone or WhatsApp.',
       ]},
       { h: '3. Prices', p: [
         'Prices are shown in Icelandic króna (ISK) and are per group, not per person, unless stated otherwise. Amounts shown in other currencies are approximate and for guidance only.',
         'Any value-added tax (VSK), where applicable, is included in the quoted price. Entrance fees, meals, spa tickets and optional extras are not included unless we state otherwise.',
       ]},
       { h: '4. Payment', p: [
-        'Once a booking is confirmed, payment is made through a secure payment link or by card on the day via myPOS. No deposit is taken simply for asking about a date.',
+        'Once a booking is confirmed, payment is made through a secure payment link or by card on the day via myPOS. No deposit is taken simply for asking about a date. Bookings made online through Bókun follow the payment terms shown at checkout.',
       ]},
       { h: '5. Weather, changes and cancellations', p: [
         'Iceland’s weather and road conditions can change quickly. Your safety always comes first, so we may re-route, shorten, postpone or cancel a tour when conditions require it.',
@@ -148,14 +148,14 @@ const PL: { privacy: LegalDoc; terms: LegalDoc } = {
         '• Supabase — bezpieczne przechowywanie zgłoszeń z formularza (serwery w UE / Frankfurt);',
         '• Vercel — hosting i dostarczanie strony;',
         '• Google Workspace — firmowa poczta e-mail;',
-        '• w razie użycia: Cal.com — kalendarz dostępności oraz myPOS — bezpieczne płatności kartą ustalane po potwierdzeniu rezerwacji.',
+        '• w razie użycia: Cal.com — kalendarz dostępności, myPOS — bezpieczne płatności kartą ustalane po potwierdzeniu rezerwacji, oraz Bókun (bokun.io) — rezerwacje online (wraz z ewentualną płatnością) składane w kalendarzu rezerwacji na stronie Golden Circle.',
         'Nigdy nie sprzedajemy Twoich danych.',
       ]},
       { h: '6. Przekazywanie poza EOG', p: [
         'Nasza baza danych jest hostowana w Europejskim Obszarze Gospodarczym (EOG). Jeśli dostawca z konieczności przetwarza dane poza EOG (np. w USA), przekazanie jest zabezpieczone odpowiednimi mechanizmami, takimi jak standardowe klauzule umowne Komisji Europejskiej.',
       ]},
       { h: '7. Płatności', p: [
-        'Ta strona nie przyjmuje płatności. Jeśli dojdzie do rezerwacji, płatność ustalana jest osobno przez bezpieczny link do płatności lub terminal kartowy (myPOS). Dane Twojej karty obsługuje dostawca płatności i nigdy nie są przez nas przechowywane.',
+        'Poza rezerwacjami składanymi w kalendarzu Bókun (obsługuje je Bókun i jego dostawca płatności) ta strona nie przyjmuje płatności. Jeśli dojdzie do rezerwacji, płatność ustalana jest osobno przez bezpieczny link do płatności lub terminal kartowy (myPOS). Dane Twojej karty obsługuje dostawca płatności i nigdy nie są przez nas przechowywane.',
       ]},
       { h: '8. Pliki cookie', p: [
         'Strona używa wyłącznie technologii niezbędnych do jej działania (np. zapamiętania wybranego języka). Nie używamy reklamowych ani zewnętrznych plików śledzących. Jeśli to się zmieni, zaktualizujemy politykę i poprosimy o zgodę, gdy będzie wymagana.',
@@ -187,14 +187,14 @@ const PL: { privacy: LegalDoc; terms: LegalDoc } = {
         'Journey Iceland to usługa prywatnego kierowcy i przewodnika — prywatne wycieczki oraz transfery z lotniska / do term na Islandii. Wycieczki są zawsze prywatne — w aucie podróżuje tylko Twoja grupa.',
       ]},
       { h: '2. Zapytania o dostępność, nie rezerwacja online', p: [
-        'Ta strona nie przyjmuje rezerwacji ani płatności online. Wysyłając zapytanie „Sprawdź dostępność", składasz zapytanie. Rezerwacja istnieje dopiero wtedy, gdy osobiście ustalimy z Tobą datę, szczegóły i cenę — przez e-mail, telefon lub WhatsApp.',
+        'Poza wycieczką Golden Circle, którą można zarezerwować online przez naszego partnera rezerwacyjnego Bókun na warunkach podanych przy płatności, ta strona nie przyjmuje rezerwacji ani płatności online. Wysyłając zapytanie „Sprawdź dostępność", składasz zapytanie. Rezerwacja istnieje dopiero wtedy, gdy osobiście ustalimy z Tobą datę, szczegóły i cenę — przez e-mail, telefon lub WhatsApp.',
       ]},
       { h: '3. Ceny', p: [
         'Ceny podawane są w koronach islandzkich (ISK) i dotyczą grupy, nie osoby, o ile nie zaznaczono inaczej. Kwoty w innych walutach są orientacyjne.',
         'Podatek VSK, jeśli ma zastosowanie, jest wliczony w podaną cenę. Bilety wstępu, posiłki, wejścia do term i dodatki opcjonalne nie są wliczone, chyba że zaznaczono inaczej.',
       ]},
       { h: '4. Płatność', p: [
-        'Po potwierdzeniu rezerwacji płatność następuje przez bezpieczny link do płatności lub kartą na miejscu (myPOS). Za samo zapytanie o termin nie pobieramy zaliczki.',
+        'Po potwierdzeniu rezerwacji płatność następuje przez bezpieczny link do płatności lub kartą na miejscu (myPOS). Za samo zapytanie o termin nie pobieramy zaliczki. Rezerwacje online przez Bókun podlegają warunkom płatności podanym przy jej składaniu.',
       ]},
       { h: '5. Pogoda, zmiany i odwołania', p: [
         'Pogoda i stan dróg na Islandii potrafią zmienić się szybko. Twoje bezpieczeństwo jest najważniejsze, dlatego możemy zmienić trasę, skrócić, przełożyć lub odwołać wycieczkę, gdy wymagają tego warunki.',

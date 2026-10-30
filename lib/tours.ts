@@ -14,11 +14,16 @@ export type TourText = {
 type TourMeta = {
   priceKey: string; nameKey: string; waKey: string; preselect: string;
   heroImg: string; ftImg?: string; ftLabel?: string; route?: { lat: number; lng: number; label: string }[]; gallery: GalleryItem[];
+  // Bókun experience id: when set, the availability section shows the Bókun booking calendar instead of the enquiry form.
+  bokunProductId?: number;
+  // Dictionary key for the group-size quick fact (defaults to 'tp.qf.priv').
+  privKey?: string;
 };
 
 export const META: Record<string, TourMeta> = {
   'golden-circle': {
     priceKey: 'tour.gc.price', nameKey: 'tour.gc.name', waKey: 'wa.gc', preselect: 'gc',
+    bokunProductId: 1256722, privKey: 'tp.qf.priv.gc',
     heroImg: '/img/gc-hero.webp', ftImg: '/img/exp-lunchbox.webp',
     route: [{ lat: 64.1466, lng: -21.9426, label: 'Reykjavík' }, { lat: 64.2559, lng: -21.1295, label: 'Þingvellir' }, { lat: 64.3104, lng: -20.3024, label: 'Geysir & Strokkur' }, { lat: 64.3271, lng: -20.1199, label: 'Gullfoss' }, { lat: 64.0411, lng: -20.8857, label: 'Kerið' }, { lat: 64.1466, lng: -21.9426, label: 'Reykjavík' }],
     gallery: [{ src: '/img/tour-gc.webp' }, { src: '/img/gc-strokkur.webp' }, { src: '/img/g9.webp' }, { src: '/img/g5.webp' }, { src: '/img/g6.webp' }, { src: '/img/g3.webp' }],

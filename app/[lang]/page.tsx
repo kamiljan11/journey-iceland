@@ -64,7 +64,7 @@ export default async function Home({ params }: { params: { lang: string } }) {
                 <h3>{t('tour.gc.name')}</h3>
                 <div className="tour-meta">
                   <span><svg><use href="#i-clock" /></svg><span>{t('tour.gc.dur')}</span></span>
-                  <span><svg><use href="#i-users" /></svg><span>{t('tp.qf.priv')}</span></span>
+                  <span><svg><use href="#i-users" /></svg><span>{t('tp.qf.priv.gc')}</span></span>
                 </div>
                 <div className="tour-price"><span className="from">{t('tour.tbc')}</span><span className="amt">{t('tour.gc.price')}</span></div>
                 <div className="tour-price"><span className="alt">{t('tour.gc.alt')}</span></div>

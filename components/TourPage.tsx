@@ -3,6 +3,7 @@ import { makeT } from '@/lib/dictionary';
 import { SITE, waLink } from '@/lib/site';
 import { getTour, TOUR_CARDS } from '@/lib/tours';
 import RouteMap from '@/components/RouteMap';
+import BokunCalendar from '@/components/BokunCalendar';
 
 const BRING_ICONS = ['#i-snow', '#i-boot', '#i-camera', '#i-waves'];
 const SUBNAV: [string, string][] = [
@@ -23,7 +24,7 @@ export default function TourPage({ lang, slug }: { lang: string; slug: string })
   const quickFacts: [string, string][] = [
     ['#i-clock', x.qfDur],
     ['#i-wallet', t(x.priceKey)],
-    ['#i-users', t('tp.qf.priv')],
+    ['#i-users', t(x.privKey ?? 'tp.qf.priv')],
     ['#i-bed', t('tp.qf.pickup')],
     ['#i-globe', t('tp.qf.lang')],
   ];
@@ -240,8 +241,13 @@ export default function TourPage({ lang, slug }: { lang: string; slug: string })
       {/* AVAILABILITY */}
       <section className="sec bg-cream2" id="avail" data-screen-label="Availability">
         <div className="wrap">
-          <div className="sec-head reveal"><span className="eyebrow">{t('tp.avail.eyebrow')}</span><h2>{x.availH2}</h2><p className="lead">{t('tp.avail.lead')}</p></div>
+          <div className="sec-head reveal"><span className="eyebrow">{t('tp.avail.eyebrow')}</span><h2>{x.availH2}</h2><p className="lead">{t(x.bokunProductId ? 'tp.avail.lead.book' : 'tp.avail.lead')}</p></div>
           <div className="contact-grid">
+            {x.bokunProductId ? (
+              <div className="form-card bokun-card reveal">
+                <BokunCalendar productId={x.bokunProductId} />
+              </div>
+            ) : (
             <div className="form-card reveal">
               <form className="ji-form" data-preselect={x.preselect} noValidate>
                 <div className="form-fields">
@@ -284,6 +290,7 @@ export default function TourPage({ lang, slug }: { lang: string; slug: string })
                 </div>
               </form>
             </div>
+            )}
             <div className="contact-side reveal d1">
               <a className="contact-method cm-wa" href={waLink(t(x.waKey))} target="_blank" rel="noopener">
                 <div className="ic"><svg><use href="#i-whatsapp" /></svg></div>
