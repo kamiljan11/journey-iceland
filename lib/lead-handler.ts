@@ -53,6 +53,7 @@ export async function handleLead(req: Request, deps: LeadDeps): Promise<LeadRepl
   if (!(req.headers.get('content-type') ?? '').toLowerCase().startsWith('application/json')) {
     return reject(415, 'unsupported_media_type', log);
   }
+  // Counted before the body is read on purpose: a flood is cut off cheaply; real traffic is far below the cap.
   if (!deps.allowGlobal()) return reject(429, 'rate_limited_global', log);
 
   let body: string | null;
