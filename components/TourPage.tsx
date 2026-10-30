@@ -78,7 +78,7 @@ export default function TourPage({ lang, slug }: { lang: string; slug: string })
       <section className="sec bg-cream2">
         <div className="wrap narrow">
           <div className="sec-head reveal"><span className="eyebrow">{t('tp.ov.eyebrow')}</span><h2>{x.ovH2}</h2></div>
-          <div className="reveal">{x.overview.map((p, i) => (<p key={i} className={i === 0 ? 'lead' : ''} style={i === 0 ? undefined : { marginTop: '16px' }}>{p}</p>))}</div>
+          <div className="tp-overview reveal">{x.overview.map((p, i) => (<p key={i} className={i === 0 ? 'lead' : ''} style={i === 0 ? undefined : { marginTop: '16px' }}>{p}</p>))}</div>
         </div>
       </section>
 
