@@ -1,6 +1,6 @@
 # ADR-0001 — Bókun booking calendar widget for online bookings
 
-Data: 2026-10-30 | Status: przyjete (pilot: Golden Circle)
+Data: 2026-10-30 | Status: przyjete (pilot: Golden Circle; 2026-10-30: + South Coast, Jökulsárlón — kalendarz; zorza — przycisk „Book online” otwierający kalendarz Bókun w oknie)
 
 **Kontekst:** Strona przyjmowała tylko zapytania (formularz -> /api/lead, potwierdzenie osobiste, płatność myPOS). Produkty, ceny i dostępność żyją w Bókun (vendor 143543, kanał „journeyiceland.is").
 

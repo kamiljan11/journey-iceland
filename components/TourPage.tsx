@@ -24,7 +24,7 @@ export default function TourPage({ lang, slug }: { lang: string; slug: string })
   const quickFacts: [string, string][] = [
     ['#i-clock', x.qfDur],
     ['#i-wallet', t(x.priceKey)],
-    ['#i-users', t(x.privKey ?? 'tp.qf.priv')],
+    ['#i-users', t('tp.qf.priv')],
     ['#i-bed', t('tp.qf.pickup')],
     ['#i-globe', t('tp.qf.lang')],
   ];

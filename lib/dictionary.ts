@@ -37,16 +37,16 @@ en:{
   "tour.see":"See tour","tour.tbc":"","tour.perGroup":"per group",
 
   "tour.gc.name":"Golden Circle","tour.gc.dur":"6 hrs","tour.gc.price":"from 95,000 ISK","tour.gc.alt":"≈ $750 / €700 · per group",
-  "tour.sc.name":"South Coast","tour.sc.dur":"8–10 hrs","tour.sc.price":"from 110,000 ISK","tour.sc.alt":"≈ $790 / €730 · per group",
-  "tour.jk.name":"Jökulsárlón Glacier Lagoon","tour.jk.dur":"12–14 hrs","tour.jk.price":"from 179,000 ISK","tour.jk.alt":"≈ $1,280 / €1,190 · per group",
+  "tour.sc.name":"South Coast","tour.sc.dur":"8–10 hrs","tour.sc.price":"from 120,000 ISK","tour.sc.alt":"≈ $950 / €880 · per group",
+  "tour.jk.name":"Jökulsárlón Glacier Lagoon","tour.jk.dur":"12–14 hrs","tour.jk.price":"from 180,000 ISK","tour.jk.alt":"≈ $1,420 / €1,330 · per group",
 
-  "transfer.kef.name":"Keflavík Airport ⇄ Reykjavík","transfer.kef.meta":"≈ 50 min · up to 4 guests","transfer.kef.price":"from 22,000 ISK",
+  "transfer.kef.name":"Keflavík Airport ⇄ Reykjavík","transfer.kef.meta":"≈ 50 min · up to 4 guests","transfer.kef.price":"from 23,000 ISK",
   "transfer.bl.name":"Blue Lagoon transfer","transfer.bl.meta":"Airport or city · ticket not included","transfer.bl.price":"from 22,000 ISK",
   "transfer.check":"Check availability",
 
   "tours.cta.h3":"We drive everywhere — custom route on request.","tours.cta.p":"Volcanoes, hot springs, a wedding photo run, a multi-day loop. Tell me the idea and I'll build the day around it.",
 
-  "aurora.tag":"This autumn · pre-booking now","aurora.eyebrow":"Northern Lights","aurora.h2":"Chasing the Northern Lights — this autumn.","aurora.p":"From September the skies go dark again. I watch the forecast for you, drive away from the city glow, and Kate sends a thermos of hot chocolate. Seats are limited — ask to pre-book now. From 50,000 ISK per group (1–4) · 2–3 h.","aurora.cta1":"Ask about it",
+  "aurora.tag":"This autumn · pre-booking now","aurora.eyebrow":"Northern Lights","aurora.h2":"Chasing the Northern Lights — this autumn.","aurora.p":"From September the skies go dark again. I watch the forecast for you, drive away from the city glow, and Kate sends a thermos of hot chocolate. Pick a night and book online — or ask me first. From 55,000 ISK per group (2–6) · about 4 h, from 21:00.","aurora.cta1":"Ask about it","aurora.book":"Book online",
   "eclipse.tag":"12 August 2026 · limited spots","eclipse.eyebrow":"Total Solar Eclipse","eclipse.h2":"The total solar eclipse — 12 August 2026.","eclipse.p":"On 12 August 2026 Iceland sits right in the path of a total solar eclipse, and the Snæfellsnes peninsula is one of the best places to watch the sky go dark. I can take you there — a private tour of the peninsula with a spot to watch the eclipse, or just the transfer. Hotels are already filling up, so ask early. Tell me what you have in mind and I'll plan it around you.","eclipse.cta1":"Ask about the eclipse","wa.eclipse":"Hi! I'm interested in the total solar eclipse on 12 August 2026 (Snæfellsnes). Could you tell me more?",
 
   "why.eyebrow":"Why travel with us","why.h2":"We're not just guides — we're a family.","why.lead":"We live here — we raise our kids, work and spend our free time here, and we show you the Iceland we love.",
@@ -55,7 +55,7 @@ en:{
   "why.3.t":"We travel the way we'd want to","why.3.d":"We stop where the view takes your breath away — and sometimes take the longer road, because it turns out to be the most beautiful.",
   "why.4.t":"Memories, not a checklist","why.4.d":"You'll go home with more than photos — with emotions, stories and the feeling that you met the real Iceland.",
   "compare.mine.title":"Private with me","compare.mine.tag":"You","compare.bus.title":"Big bus tour","compare.bus.tag":"Them",
-  "compare.mine.1":"Your group only — up to 4 in comfort","compare.mine.2":"Leave when you're ready, stop on a whim","compare.mine.3":"Hidden spots the buses can't reach","compare.mine.4":"Home-cooked snacks from Kate","compare.mine.5":"One guide who knows your name",
+  "compare.mine.1":"Your group only — up to 6 in comfort","compare.mine.2":"Leave when you're ready, stop on a whim","compare.mine.3":"Hidden spots the buses can't reach","compare.mine.4":"Home-cooked snacks from Kate","compare.mine.5":"One guide who knows your name",
   "compare.bus.1":"40+ strangers on a fixed schedule","compare.bus.2":"15 minutes per photo stop, then go","compare.bus.3":"Only the crowded headline sights","compare.bus.4":"A petrol-station sandwich","compare.bus.5":"A microphone and a headcount",
 
   "about.eyebrow":"About","about.h2":"Hi, I'm John.","about.lead":"Our Iceland story began years ago. Like many, we started from scratch and, step by step, built a life here — until this island became home. It's where our twin daughters were born and where our greatest adventure truly began.","about.p1":"For as long as I can remember I've explored Iceland — discovering hidden roads, chasing breathtaking viewpoints and finding the stories that make each place unique. My passion goes far beyond the famous landmarks; I'm always looking for the quiet corners most people drive straight past.","about.p2":"As a family we keep that adventure alive. With our daughters beside us we hike, take the scenic route and often set off with no strict plan — stopping by a waterfall for a picnic, gathering wild herbs and watching the weather change by the minute. My wife is a Head Chef who loves welcoming people; every year we still make homemade syrups and tinctures, just as our grandmothers did.","about.p3":"We don't see our guests as tourists — we welcome them as friends, and invite you to discover Iceland the way we do: with curiosity, authenticity and heart. Discover Iceland the old-fashioned way.","about.sign":"— Kate & John","about.badge.num":"600+","about.badge.t":"happy guests since 2016",
@@ -80,7 +80,7 @@ en:{
   "faq.eyebrow":"Good to know","faq.h2":"Questions, answered.",
   "faq.1.q":"Is it safe to drive Iceland's roads with you?","faq.1.a":"Yes. I'm an experienced, fully insured local driver in a well-maintained 4×4. I read the weather and road service daily and will happily change a plan rather than take a risk. Your safety always comes before any itinerary.",
   "faq.2.q":"Can you guarantee we'll see the Northern Lights?","faq.2.a":"No one honestly can — the aurora depends on darkness, clear skies and solar activity. What I can promise is that I track the forecast, drive you away from city light to the best chance, and keep you warm while we wait. If the sky simply won't cooperate, I'll tell you straight.",
-  "faq.3.q":"How does payment work if I can't book online?","faq.3.a":"By design. You send an availability request, we confirm the details together personally, and then I send a secure payment link or take card on the day. No deposit is taken just to ask about a date. The Golden Circle can also be booked directly online in the calendar on its page.",
+  "faq.3.q":"How does payment work if I can't book online?","faq.3.a":"By design. You send an availability request, we confirm the details together personally, and then I send a secure payment link or take card on the day. No deposit is taken just to ask about a date. The Golden Circle, South Coast, Jökulsárlón and Northern Lights tours can also be booked directly online.",
   "faq.4.q":"Which languages do you speak?","faq.4.a":"I guide in English, Polish, German and Spanish. Just tell me which you're most comfortable in and that's the language for the day.",
   "faq.5.q":"Is the tour really private?","faq.5.a":"Always. It's only ever your group in the car — never shared with strangers. The pace, the stops and the music are yours.",
   "faq.6.q":"Do you pick up from my hotel?","faq.6.a":"Yes — free hotel, apartment or campsite pick-up across the Reykjavík area, and from Keflavík Airport for transfers. I'll confirm the exact time when we talk.",
@@ -99,13 +99,13 @@ en:{
 
   "pl.offer":"",
 
-  "footer.tagline":"Private tours and airport transfers across Iceland — a local driver who treats you like family.","footer.explore":"Explore","footer.tours":"Tours","footer.contact":"Contact","footer.disclaimer":"Journey Iceland is a private driver & guide service. The Golden Circle tour can be booked online through our booking partner Bókun; all other tours and transfers are availability requests confirmed personally.","footer.privacy":"Privacy","footer.terms":"Terms","footer.rights":"© 2026 Journey Iceland. Made with warmth in Reykjavík.",
+  "footer.tagline":"Private tours and airport transfers across Iceland — a local driver who treats you like family.","footer.explore":"Explore","footer.tours":"Tours","footer.contact":"Contact","footer.disclaimer":"Journey Iceland is a private driver & guide service. The Golden Circle, South Coast, Jökulsárlón and Northern Lights tours can be booked online through our booking partner Bókun; transfers and custom trips are availability requests confirmed personally.","footer.privacy":"Privacy","footer.terms":"Terms","footer.rights":"© 2026 Journey Iceland. Made with warmth in Reykjavík.",
 
   /* ---------------- TOUR PAGE: Golden Circle ---------------- */
   "tp.bc.tours":"Tours","tp.bc.cur":"Golden Circle",
   "tp.eyebrow":"Private day tour · from Reykjavík",
   "tp.h1":"Golden Circle — private tour from Reykjavík.","tp.sub":"Iceland's three icons — a thundering waterfall, an erupting geyser and a continental rift — at your own pace, with no crowds and no clock.",
-  "tp.qf.dur":"6 hours","tp.qf.price":"from 95,000 ISK","tp.qf.priv":"Private · max 4","tp.qf.priv.gc":"Private · max 6","tp.qf.pickup":"Hotel pick-up","tp.qf.lang":"EN · PL · DE · ES",
+  "tp.qf.dur":"6 hours","tp.qf.price":"from 95,000 ISK","tp.qf.priv":"Private · max 6","tp.qf.pickup":"Hotel pick-up","tp.qf.lang":"EN · PL · DE · ES",
   "tp.sn.overview":"Overview","tp.sn.route":"Route","tp.sn.map":"Map","tp.sn.gallery":"Gallery","tp.sn.reviews":"Reviews","tp.sn.faq":"FAQ","tp.sn.avail":"Availability",
 
   "tp.hl.eyebrow":"In short","tp.hl.h2":"What the day looks like.",
@@ -166,16 +166,16 @@ pl:{
   "tour.see":"Zobacz wycieczkę","tour.tbc":"","tour.perGroup":"za grupę",
 
   "tour.gc.name":"Golden Circle","tour.gc.dur":"6 godz.","tour.gc.price":"od 95 000 ISK","tour.gc.alt":"≈ 3 200 zł · za grupę",
-  "tour.sc.name":"Południowe wybrzeże","tour.sc.dur":"8–10 godz.","tour.sc.price":"od 110 000 ISK","tour.sc.alt":"≈ 3 300 zł · za grupę",
-  "tour.jk.name":"Laguna lodowcowa Jökulsárlón","tour.jk.dur":"12–14 godz.","tour.jk.price":"od 179 000 ISK","tour.jk.alt":"≈ 5 400 zł · za grupę",
+  "tour.sc.name":"Południowe wybrzeże","tour.sc.dur":"8–10 godz.","tour.sc.price":"od 120 000 ISK","tour.sc.alt":"≈ 4 000 zł · za grupę",
+  "tour.jk.name":"Laguna lodowcowa Jökulsárlón","tour.jk.dur":"12–14 godz.","tour.jk.price":"od 180 000 ISK","tour.jk.alt":"≈ 6 100 zł · za grupę",
 
-  "transfer.kef.name":"Lotnisko Keflavík ⇄ Reykjavík","transfer.kef.meta":"≈ 50 min · do 4 osób","transfer.kef.price":"od 22 000 ISK",
+  "transfer.kef.name":"Lotnisko Keflavík ⇄ Reykjavík","transfer.kef.meta":"≈ 50 min · do 4 osób","transfer.kef.price":"od 23 000 ISK",
   "transfer.bl.name":"Transfer do Blue Lagoon","transfer.bl.meta":"Z lotniska lub miasta · bilet nieuwzględniony","transfer.bl.price":"od 22 000 ISK",
   "transfer.check":"Sprawdź dostępność",
 
   "tours.cta.h3":"Dowiozę wszędzie — trasa na życzenie.","tours.cta.p":"Wulkany, gorące źródła, sesja ślubna, kilkudniowa pętla. Powiedz, co chodzi Ci po głowie, a ułożę pod to cały dzień.",
 
-  "aurora.tag":"Tej jesieni · zapisy już teraz","aurora.eyebrow":"Zorza polarna","aurora.h2":"Pogoń za zorzą — już tej jesieni.","aurora.p":"Od września niebo znów robi się ciemne. Śledzę dla Ciebie prognozę, wywożę poza łunę miasta, a Kasia dorzuca termos gorącej czekolady. Miejsc jest mało — zapytaj o wcześniejszą rezerwację. Od 50 000 ISK za grupę (1–4) · 2–3 h.","aurora.cta1":"Zapytaj o termin",
+  "aurora.tag":"Tej jesieni · zapisy już teraz","aurora.eyebrow":"Zorza polarna","aurora.h2":"Pogoń za zorzą — już tej jesieni.","aurora.p":"Od września niebo znów robi się ciemne. Śledzę dla Ciebie prognozę, wywożę poza łunę miasta, a Kasia dorzuca termos gorącej czekolady. Wybierz noc i zarezerwuj online — albo najpierw zapytaj. Od 55 000 ISK za grupę (2–6 osób) · ok. 4 h, start o 21:00.","aurora.cta1":"Zapytaj o termin","aurora.book":"Zarezerwuj online",
   "eclipse.tag":"12 sierpnia 2026 · ograniczona liczba miejsc","eclipse.eyebrow":"Całkowite zaćmienie Słońca","eclipse.h2":"Całkowite zaćmienie Słońca — 12 sierpnia 2026.","eclipse.p":"12 sierpnia 2026 Islandia znajdzie się dokładnie na ścieżce całkowitego zaćmienia Słońca, a półwysep Snæfellsnes to jedno z najlepszych miejsc, by zobaczyć, jak niebo robi się ciemne. Mogę Cię tam zabrać — prywatna wycieczka po półwyspie z miejscem do obserwacji zaćmienia albo sam transfer. Hotele już się zapełniają, więc pytaj wcześniej. Napisz, co masz w głowie, a ułożę to pod Ciebie.","eclipse.cta1":"Zapytaj o zaćmienie","wa.eclipse":"Cześć! Interesuje mnie całkowite zaćmienie Słońca 12 sierpnia 2026 (Snæfellsnes). Możesz powiedzieć coś więcej?",
 
   "why.eyebrow":"Dlaczego z nami","why.h2":"Nie jesteśmy tylko przewodnikami — jesteśmy rodziną.","why.lead":"Mieszkamy tutaj od lat. To tu wychowujemy dzieci, pracujemy i spędzamy wolny czas. Pokazujemy Islandię, którą sami kochamy.",
@@ -184,7 +184,7 @@ pl:{
   "why.3.t":"Podróżujemy tak, jak sami chcielibyśmy","why.3.d":"Zatrzymujemy się tam, gdzie widok zapiera dech. Czasem wybieramy dłuższą drogę, bo to właśnie ona okazuje się najpiękniejsza.",
   "why.4.t":"Wspomnienia, nie lista atrakcji","why.4.d":"Zostają z Wami nie tylko zdjęcia, ale emocje, historie i poczucie, że poznaliście prawdziwą Islandię.",
   "compare.mine.title":"Prywatnie ze mną","compare.mine.tag":"Ty","compare.bus.title":"Duży autokar","compare.bus.tag":"Oni",
-  "compare.mine.1":"Tylko Twoja grupa — do 4 osób w komforcie","compare.mine.2":"Wyjazd, gdy jesteś gotowy, postój pod wpływem chwili","compare.mine.3":"Ukryte miejsca, do których autokar nie dojedzie","compare.mine.4":"Domowy poczęstunek od Kasi","compare.mine.5":"Jeden przewodnik, który zna Twoje imię",
+  "compare.mine.1":"Tylko Twoja grupa — do 6 osób w komforcie","compare.mine.2":"Wyjazd, gdy jesteś gotowy, postój pod wpływem chwili","compare.mine.3":"Ukryte miejsca, do których autokar nie dojedzie","compare.mine.4":"Domowy poczęstunek od Kasi","compare.mine.5":"Jeden przewodnik, który zna Twoje imię",
   "compare.bus.1":"40+ obcych osób i sztywny harmonogram","compare.bus.2":"15 minut na zdjęcie i jedziemy dalej","compare.bus.3":"Tylko zatłoczone, najbardziej znane punkty","compare.bus.4":"Kanapka ze stacji benzynowej","compare.bus.5":"Mikrofon i liczenie głów",
 
   "about.eyebrow":"O nas","about.h2":"Cześć, jestem Sylwiusz Jan.","about.lead":"Nasza islandzka historia zaczęła się lata temu. Jak wielu, zaczynaliśmy od zera i krok po kroku budowaliśmy tu życie — aż ta wyspa stała się naszym domem. To tu urodziły się nasze bliźniaczki i tu naprawdę zaczęła się nasza największa przygoda.","about.p1":"Odkąd pamiętam, zwiedzam Islandię — szukając ukrytych dróg, zapierających dech widoków i historii, które sprawiają, że każde miejsce jest wyjątkowe. Moja pasja sięga daleko poza znane atrakcje; zawsze szukam cichych zakątków, które większość po prostu mija.","about.p2":"Jako rodzina wciąż przeżywamy tę przygodę. Z córkami u boku wędrujemy, wybieramy malowniczą trasę i często ruszamy bez sztywnego planu — zatrzymując się na piknik przy wodospadzie, zbierając dzikie zioła i patrząc, jak pogoda zmienia się z minuty na minutę. Moja żona jest szefową kuchni i uwielbia gościć ludzi; co roku robimy domowe syropy i nalewki, tak jak kiedyś nasze babcie.","about.p3":"Naszych gości nie traktujemy jak turystów — witamy ich jak przyjaciół i zapraszamy, byś odkrył Islandię tak jak my: z ciekawością, autentycznością i sercem. Odkryj Islandię w starym, dobrym stylu.","about.sign":"— Kasia i Sylwiusz Jan","about.badge.num":"600+","about.badge.t":"zadowolonych gości od 2016",
@@ -209,7 +209,7 @@ pl:{
   "faq.eyebrow":"Warto wiedzieć","faq.h2":"Odpowiadam na pytania.",
   "faq.1.q":"Czy jazda islandzkimi drogami z Tobą jest bezpieczna?","faq.1.a":"Tak. Jestem doświadczonym, w pełni ubezpieczonym lokalnym kierowcą, jeżdżę zadbanym autem 4×4. Codziennie sprawdzam pogodę i stan dróg i chętnie zmienię plan, zamiast ryzykować. Twoje bezpieczeństwo zawsze jest ważniejsze niż plan dnia.",
   "faq.2.q":"Czy gwarantujesz, że zobaczymy zorzę?","faq.2.a":"Uczciwie — nikt nie może. Zorza zależy od ciemności, czystego nieba i aktywności słońca. Mogę za to obiecać, że śledzę prognozę, wywożę Cię poza światła miasta tam, gdzie szanse są największe, i dbam o ciepło podczas czekania. A jeśli niebo nie da rady, powiem wprost.",
-  "faq.3.q":"Jak działa płatność, skoro nie ma rezerwacji online?","faq.3.a":"Tak to działa celowo. Wysyłasz zapytanie o termin, ustalamy szczegóły osobiście, a potem wysyłam bezpieczny link do płatności albo przyjmuję kartę na miejscu. Samo zapytanie o termin nie wiąże się z żadną zaliczką. Golden Circle możesz też zarezerwować od razu online w kalendarzu na jego stronie.",
+  "faq.3.q":"Jak działa płatność, skoro nie ma rezerwacji online?","faq.3.a":"Tak to działa celowo. Wysyłasz zapytanie o termin, ustalamy szczegóły osobiście, a potem wysyłam bezpieczny link do płatności albo przyjmuję kartę na miejscu. Samo zapytanie o termin nie wiąże się z żadną zaliczką. Golden Circle, Południowe wybrzeże, Jökulsárlón i zorzę polarną możesz też zarezerwować od razu online.",
   "faq.4.q":"Jakimi językami mówisz?","faq.4.a":"Oprowadzam po polsku, angielsku, niemiecku i hiszpańsku. Powiedz tylko, w którym czujesz się najlepiej, i taki będzie język całego dnia.",
   "faq.5.q":"Czy wycieczka jest naprawdę prywatna?","faq.5.a":"Zawsze. W aucie jest wyłącznie Twoja grupa — nigdy z obcymi. Tempo, przystanki i muzyka należą do Ciebie.",
   "faq.6.q":"Czy odbierasz z hotelu?","faq.6.a":"Tak — bezpłatny odbiór z hotelu, mieszkania lub kempingu w rejonie Reykjavíku, a przy transferach także z lotniska Keflavík. Dokładną godzinę ustalimy w rozmowie.",
@@ -228,11 +228,11 @@ pl:{
 
   "pl.offer":"🇵🇱 Dla polskich podróżnych — zapytaj o specjalną cenę i powitanie po polsku.",
 
-  "footer.tagline":"Prywatne wycieczki i transfery z lotniska po całej Islandii — lokalny kierowca, który zadba o Ciebie jak o rodzinę.","footer.explore":"Odkryj","footer.tours":"Wycieczki","footer.contact":"Kontakt","footer.disclaimer":"Journey Iceland to usługa prywatnego kierowcy i przewodnika. Golden Circle można zarezerwować online przez naszego partnera rezerwacyjnego Bókun; pozostałe wycieczki i transfery to zapytania o termin potwierdzane osobiście.","footer.privacy":"Prywatność","footer.terms":"Regulamin","footer.rights":"© 2026 Journey Iceland. Tworzone z ciepłem w Reykjavíku.",
+  "footer.tagline":"Prywatne wycieczki i transfery z lotniska po całej Islandii — lokalny kierowca, który zadba o Ciebie jak o rodzinę.","footer.explore":"Odkryj","footer.tours":"Wycieczki","footer.contact":"Kontakt","footer.disclaimer":"Journey Iceland to usługa prywatnego kierowcy i przewodnika. Golden Circle, Południowe wybrzeże, Jökulsárlón i zorzę polarną można zarezerwować online przez naszego partnera rezerwacyjnego Bókun; transfery i wycieczki na zamówienie to zapytania o termin potwierdzane osobiście.","footer.privacy":"Prywatność","footer.terms":"Regulamin","footer.rights":"© 2026 Journey Iceland. Tworzone z ciepłem w Reykjavíku.",
 
   "tp.bc.tours":"Wycieczki","tp.bc.cur":"Golden Circle",
   "tp.eyebrow":"Prywatna wycieczka jednodniowa · z Reykjavíku","tp.h1":"Golden Circle — prywatna wycieczka z Reykjavíku.","tp.sub":"Trzy ikony Islandii — huczący wodospad, wybuchający gejzer i ryft kontynentalny — w Twoim tempie, bez tłumów i bez zegarka.",
-  "tp.qf.dur":"6 godzin","tp.qf.price":"od 95 000 ISK","tp.qf.priv":"Prywatnie · maks. 4","tp.qf.priv.gc":"Prywatnie · maks. 6","tp.qf.pickup":"Odbiór z hotelu","tp.qf.lang":"EN · PL · DE · ES",
+  "tp.qf.dur":"6 godzin","tp.qf.price":"od 95 000 ISK","tp.qf.priv":"Prywatnie · maks. 6","tp.qf.pickup":"Odbiór z hotelu","tp.qf.lang":"EN · PL · DE · ES",
   "tp.sn.overview":"Opis","tp.sn.route":"Trasa","tp.sn.map":"Mapa","tp.sn.gallery":"Galeria","tp.sn.reviews":"Opinie","tp.sn.faq":"FAQ","tp.sn.avail":"Dostępność",
 
   "tp.hl.eyebrow":"W skrócie","tp.hl.h2":"Jak wygląda ten dzień.",
@@ -293,16 +293,16 @@ de:{
   "tour.see":"Tour ansehen","tour.tbc":"","tour.perGroup":"pro Gruppe",
 
   "tour.gc.name":"Golden Circle","tour.gc.dur":"6 Std.","tour.gc.price":"ab 95.000 ISK","tour.gc.alt":"≈ 700 € / 750 $ · pro Gruppe",
-  "tour.sc.name":"Südküste","tour.sc.dur":"8–10 Std.","tour.sc.price":"ab 110.000 ISK","tour.sc.alt":"≈ 730 € / 790 $ · pro Gruppe",
-  "tour.jk.name":"Gletscherlagune Jökulsárlón","tour.jk.dur":"12–14 Std.","tour.jk.price":"ab 179.000 ISK","tour.jk.alt":"≈ 1.190 € / 1.280 $ · pro Gruppe",
+  "tour.sc.name":"Südküste","tour.sc.dur":"8–10 Std.","tour.sc.price":"ab 120.000 ISK","tour.sc.alt":"≈ 880 € / 950 $ · pro Gruppe",
+  "tour.jk.name":"Gletscherlagune Jökulsárlón","tour.jk.dur":"12–14 Std.","tour.jk.price":"ab 180.000 ISK","tour.jk.alt":"≈ 1.330 € / 1.420 $ · pro Gruppe",
 
-  "transfer.kef.name":"Flughafen Keflavík ⇄ Reykjavík","transfer.kef.meta":"≈ 50 Min · bis zu 4 Gäste","transfer.kef.price":"ab 22.000 ISK",
+  "transfer.kef.name":"Flughafen Keflavík ⇄ Reykjavík","transfer.kef.meta":"≈ 50 Min · bis zu 4 Gäste","transfer.kef.price":"ab 23.000 ISK",
   "transfer.bl.name":"Blue-Lagoon-Transfer","transfer.bl.meta":"Flughafen oder Stadt · Ticket nicht inkl.","transfer.bl.price":"ab 22.000 ISK",
   "transfer.check":"Verfügbarkeit prüfen",
 
   "tours.cta.h3":"Ich fahre überallhin — Wunschroute auf Anfrage.","tours.cta.p":"Vulkane, heiße Quellen, ein Hochzeitsshooting, eine mehrtägige Runde. Sag mir die Idee und ich baue den Tag darum herum.",
 
-  "aurora.tag":"Diesen Herbst · jetzt vormerken","aurora.eyebrow":"Nordlichter","aurora.h2":"Den Nordlichtern hinterher — diesen Herbst.","aurora.p":"Ab September wird der Himmel wieder dunkel. Ich beobachte für dich die Vorhersage, fahre weg vom Stadtlicht, und Kate gibt eine Thermoskanne heiße Schokolade dazu. Die Plätze sind begrenzt — frag jetzt nach einer Vormerkung. Ab 50.000 ISK pro Gruppe (1–4) · 2–3 Std.","aurora.cta1":"Frag nach",
+  "aurora.tag":"Diesen Herbst · jetzt vormerken","aurora.eyebrow":"Nordlichter","aurora.h2":"Den Nordlichtern hinterher — diesen Herbst.","aurora.p":"Ab September wird der Himmel wieder dunkel. Ich beobachte für dich die Vorhersage, fahre weg vom Stadtlicht, und Kate gibt eine Thermoskanne heiße Schokolade dazu. Wähle eine Nacht und buche online — oder frag mich vorher. Ab 55.000 ISK pro Gruppe (2–6) · ca. 4 Std., ab 21:00 Uhr.","aurora.cta1":"Frag nach","aurora.book":"Online buchen",
   "eclipse.tag":"12. August 2026 · begrenzte Plätze","eclipse.eyebrow":"Totale Sonnenfinsternis","eclipse.h2":"Die totale Sonnenfinsternis — 12. August 2026.","eclipse.p":"Am 12. August 2026 liegt Island genau im Pfad einer totalen Sonnenfinsternis, und die Halbinsel Snæfellsnes gehört zu den besten Orten, um zuzusehen, wie der Himmel dunkel wird. Ich bringe dich hin — eine private Tour über die Halbinsel mit einem Platz zur Beobachtung der Finsternis oder nur der Transfer. Die Hotels füllen sich bereits, frag also früh. Sag mir, was dir vorschwebt, und ich plane es um dich herum.","eclipse.cta1":"Nach der Finsternis fragen","wa.eclipse":"Hallo! Ich interessiere mich für die totale Sonnenfinsternis am 12. August 2026 (Snæfellsnes). Kannst du mir mehr sagen?",
 
   "why.eyebrow":"Warum mit uns","why.h2":"Wir sind nicht nur Guides — wir sind eine Familie.","why.lead":"Wir leben hier — ziehen unsere Kinder groß, arbeiten und verbringen unsere Freizeit hier. Wir zeigen dir das Island, das wir lieben.",
@@ -311,7 +311,7 @@ de:{
   "why.3.t":"Wir reisen, wie wir es selbst wollen","why.3.d":"Wir halten, wo die Aussicht den Atem raubt — und nehmen manchmal den längeren Weg, weil er der schönste ist.",
   "why.4.t":"Erinnerungen statt Programm","why.4.d":"Du fährst mit mehr als Fotos nach Hause — mit Emotionen, Geschichten und dem Gefühl, das echte Island erlebt zu haben.",
   "compare.mine.title":"Privat mit mir","compare.mine.tag":"Du","compare.bus.title":"Großer Reisebus","compare.bus.tag":"Die",
-  "compare.mine.1":"Nur deine Gruppe — bis zu 4 bequem","compare.mine.2":"Losfahren, wenn du bereit bist, spontan halten","compare.mine.3":"Versteckte Orte, die Busse nicht erreichen","compare.mine.4":"Hausgemachte Snacks von Kate","compare.mine.5":"Ein Guide, der deinen Namen kennt",
+  "compare.mine.1":"Nur deine Gruppe — bis zu 6 bequem","compare.mine.2":"Losfahren, wenn du bereit bist, spontan halten","compare.mine.3":"Versteckte Orte, die Busse nicht erreichen","compare.mine.4":"Hausgemachte Snacks von Kate","compare.mine.5":"Ein Guide, der deinen Namen kennt",
   "compare.bus.1":"40+ Fremde nach festem Fahrplan","compare.bus.2":"15 Minuten pro Fotostopp, dann weiter","compare.bus.3":"Nur die überfüllten Hauptsehenswürdigkeiten","compare.bus.4":"Ein Sandwich von der Tankstelle","compare.bus.5":"Ein Mikrofon und das Durchzählen",
 
   "about.eyebrow":"Über uns","about.h2":"Hallo, ich bin John.","about.lead":"Unsere Island-Geschichte begann vor vielen Jahren. Wie viele fingen wir bei null an und bauten uns Schritt für Schritt ein Leben auf — bis diese Insel zu unserem Zuhause wurde. Hier kamen unsere Zwillingstöchter zur Welt, und hier begann unser größtes Abenteuer.","about.p1":"Solange ich denken kann, erkunde ich Island — versteckte Straßen, atemberaubende Aussichtspunkte und die Geschichten, die jeden Ort einzigartig machen. Meine Leidenschaft reicht weit über die berühmten Sehenswürdigkeiten hinaus; ich suche immer die stillen Ecken, an denen die meisten vorbeifahren.","about.p2":"Als Familie halten wir dieses Abenteuer lebendig. Mit unseren Töchtern wandern wir, nehmen die schöne Route und brechen oft ohne festen Plan auf — ein Picknick am Wasserfall, wilde Kräuter sammeln, dem Wetter zusehen, das sich im Minutentakt ändert. Meine Frau ist Head Chef und liebt es, Menschen zu empfangen; jedes Jahr machen wir hausgemachte Sirupe und Tinkturen, wie einst unsere Großmütter.","about.p3":"Wir sehen unsere Gäste nicht als Touristen — wir empfangen sie als Freunde und laden dich ein, Island so zu entdecken wie wir: mit Neugier, Authentizität und Herz. Entdecke Island auf die altmodische Art.","about.sign":"— Kate & John","about.badge.num":"600+","about.badge.t":"zufriedene Gäste seit 2016",
@@ -336,7 +336,7 @@ de:{
   "faq.eyebrow":"Gut zu wissen","faq.h2":"Fragen, beantwortet.",
   "faq.1.q":"Ist es sicher, mit dir über Islands Straßen zu fahren?","faq.1.a":"Ja. Ich bin ein erfahrener, voll versicherter einheimischer Fahrer in einem gepflegten 4×4. Ich prüfe täglich Wetter und Straßenzustand und ändere lieber einen Plan, als ein Risiko einzugehen. Deine Sicherheit geht immer vor jeden Reiseplan.",
   "faq.2.q":"Kannst du garantieren, dass wir die Nordlichter sehen?","faq.2.a":"Ehrlich gesagt kann das niemand — die Aurora hängt von Dunkelheit, klarem Himmel und Sonnenaktivität ab. Versprechen kann ich, dass ich die Vorhersage verfolge, dich weg vom Stadtlicht zur besten Chance fahre und dich beim Warten warmhalte. Spielt der Himmel nicht mit, sage ich es dir geradeheraus.",
-  "faq.3.q":"Wie funktioniert die Zahlung, wenn ich nicht online buchen kann?","faq.3.a":"Das ist Absicht. Du sendest eine Verfügbarkeitsanfrage, wir klären die Details persönlich, und dann schicke ich dir einen sicheren Zahlungslink oder nehme die Karte am Tag selbst. Für eine reine Terminanfrage wird keine Anzahlung fällig. Den Golden Circle kannst du auch direkt online im Kalender auf seiner Seite buchen.",
+  "faq.3.q":"Wie funktioniert die Zahlung, wenn ich nicht online buchen kann?","faq.3.a":"Das ist Absicht. Du sendest eine Verfügbarkeitsanfrage, wir klären die Details persönlich, und dann schicke ich dir einen sicheren Zahlungslink oder nehme die Karte am Tag selbst. Für eine reine Terminanfrage wird keine Anzahlung fällig. Golden Circle, Südküste, Jökulsárlón und Nordlichter kannst du auch direkt online buchen.",
   "faq.4.q":"Welche Sprachen sprichst du?","faq.4.a":"Ich führe auf Deutsch, Englisch, Polnisch und Spanisch. Sag mir einfach, in welcher du dich am wohlsten fühlst, und das ist die Sprache des Tages.",
   "faq.5.q":"Ist die Tour wirklich privat?","faq.5.a":"Immer. Es ist nur deine Gruppe im Auto — nie mit Fremden geteilt. Tempo, Stopps und Musik gehören dir.",
   "faq.6.q":"Holst du mich am Hotel ab?","faq.6.a":"Ja — kostenlose Abholung an Hotel, Apartment oder Campingplatz im Raum Reykjavík und bei Transfers auch am Flughafen Keflavík. Die genaue Zeit bestätige ich im Gespräch.",
@@ -355,11 +355,11 @@ de:{
 
   "pl.offer":"",
 
-  "footer.tagline":"Private Touren und Flughafentransfers in ganz Island — ein einheimischer Fahrer, der dich wie Familie behandelt.","footer.explore":"Entdecken","footer.tours":"Touren","footer.contact":"Kontakt","footer.disclaimer":"Journey Iceland ist ein privater Fahr- & Guide-Service. Den Golden Circle kannst du online über unseren Buchungspartner Bókun buchen; alle anderen Touren und Transfers sind Verfügbarkeitsanfragen, die persönlich bestätigt werden.","footer.privacy":"Datenschutz","footer.terms":"AGB","footer.rights":"© 2026 Journey Iceland. Mit Wärme in Reykjavík gemacht.",
+  "footer.tagline":"Private Touren und Flughafentransfers in ganz Island — ein einheimischer Fahrer, der dich wie Familie behandelt.","footer.explore":"Entdecken","footer.tours":"Touren","footer.contact":"Kontakt","footer.disclaimer":"Journey Iceland ist ein privater Fahr- & Guide-Service. Golden Circle, Südküste, Jökulsárlón und Nordlichter kannst du online über unseren Buchungspartner Bókun buchen; Transfers und Wunschtouren sind Verfügbarkeitsanfragen, die persönlich bestätigt werden.","footer.privacy":"Datenschutz","footer.terms":"AGB","footer.rights":"© 2026 Journey Iceland. Mit Wärme in Reykjavík gemacht.",
 
   "tp.bc.tours":"Touren","tp.bc.cur":"Golden Circle",
   "tp.eyebrow":"Private Tagestour · ab Reykjavík","tp.h1":"Golden Circle — private Tour ab Reykjavík.","tp.sub":"Islands drei Ikonen — ein donnernder Wasserfall, ein ausbrechender Geysir und ein Kontinentalgraben — in deinem Tempo, ohne Menschenmassen und ohne Uhr.",
-  "tp.qf.dur":"6 Stunden","tp.qf.price":"ab 95.000 ISK","tp.qf.priv":"Privat · max. 4","tp.qf.priv.gc":"Privat · max. 6","tp.qf.pickup":"Hotelabholung","tp.qf.lang":"EN · PL · DE · ES",
+  "tp.qf.dur":"6 Stunden","tp.qf.price":"ab 95.000 ISK","tp.qf.priv":"Privat · max. 6","tp.qf.pickup":"Hotelabholung","tp.qf.lang":"EN · PL · DE · ES",
   "tp.sn.overview":"Überblick","tp.sn.route":"Route","tp.sn.map":"Karte","tp.sn.gallery":"Galerie","tp.sn.reviews":"Bewertungen","tp.sn.faq":"FAQ","tp.sn.avail":"Verfügbarkeit",
 
   "tp.hl.eyebrow":"Kurz gesagt","tp.hl.h2":"So sieht der Tag aus.",
@@ -424,16 +424,16 @@ es:{
   "tour.see":"Ver tour","tour.tbc":"","tour.perGroup":"por grupo",
 
   "tour.gc.name":"Círculo Dorado","tour.gc.dur":"6 h","tour.gc.price":"desde 95.000 ISK","tour.gc.alt":"≈ 700 € / 750 $ · por grupo",
-  "tour.sc.name":"Costa Sur","tour.sc.dur":"8–10 h","tour.sc.price":"desde 110.000 ISK","tour.sc.alt":"≈ 730 € / 790 $ · por grupo",
-  "tour.jk.name":"Laguna glaciar Jökulsárlón","tour.jk.dur":"12–14 h","tour.jk.price":"desde 179.000 ISK","tour.jk.alt":"≈ 1.190 € / 1.280 $ · por grupo",
+  "tour.sc.name":"Costa Sur","tour.sc.dur":"8–10 h","tour.sc.price":"desde 120.000 ISK","tour.sc.alt":"≈ 880 € / 950 $ · por grupo",
+  "tour.jk.name":"Laguna glaciar Jökulsárlón","tour.jk.dur":"12–14 h","tour.jk.price":"desde 180.000 ISK","tour.jk.alt":"≈ 1.330 € / 1.420 $ · por grupo",
 
-  "transfer.kef.name":"Aeropuerto de Keflavík ⇄ Reikiavik","transfer.kef.meta":"≈ 50 min · hasta 4 pasajeros","transfer.kef.price":"desde 22.000 ISK",
+  "transfer.kef.name":"Aeropuerto de Keflavík ⇄ Reikiavik","transfer.kef.meta":"≈ 50 min · hasta 4 pasajeros","transfer.kef.price":"desde 23.000 ISK",
   "transfer.bl.name":"Traslado a Blue Lagoon","transfer.bl.meta":"Aeropuerto o ciudad · entrada no incluida","transfer.bl.price":"desde 22.000 ISK",
   "transfer.check":"Comprobar disponibilidad",
 
   "tours.cta.h3":"Vamos a todas partes — ruta personalizada bajo petición.","tours.cta.p":"Volcanes, fuentes termales, una sesión de fotos de boda, una vuelta de varios días. Cuéntame la idea y construyo el día a su alrededor.",
 
-  "aurora.tag":"Este otoño · reservas abiertas","aurora.eyebrow":"Auroras boreales","aurora.h2":"Tras las auroras boreales — este otoño.","aurora.p":"Desde septiembre los cielos vuelven a oscurecerse. Vigilo la previsión por ti, te alejo del resplandor de la ciudad y Kate prepara un termo de chocolate caliente. Las plazas son limitadas — pregunta para reservar con antelación. Desde 50.000 ISK por grupo (1–4) · 2–3 h.","aurora.cta1":"Pregúntame",
+  "aurora.tag":"Este otoño · reservas abiertas","aurora.eyebrow":"Auroras boreales","aurora.h2":"Tras las auroras boreales — este otoño.","aurora.p":"Desde septiembre los cielos vuelven a oscurecerse. Vigilo la previsión por ti, te alejo del resplandor de la ciudad y Kate prepara un termo de chocolate caliente. Elige una noche y reserva online — o pregúntame antes. Desde 55.000 ISK por grupo (2–6) · unas 4 h, desde las 21:00.","aurora.cta1":"Pregúntame","aurora.book":"Reservar online",
   "eclipse.tag":"12 de agosto de 2026 · plazas limitadas","eclipse.eyebrow":"Eclipse solar total","eclipse.h2":"El eclipse solar total — 12 de agosto de 2026.","eclipse.p":"El 12 de agosto de 2026 Islandia queda justo en la trayectoria de un eclipse solar total, y la península de Snæfellsnes es uno de los mejores lugares para ver cómo el cielo se oscurece. Puedo llevarte allí — un tour privado por la península con un sitio para observar el eclipse, o solo el traslado. Los hoteles ya se están llenando, así que pregunta pronto. Dime qué tienes en mente y lo planifico a tu medida.","eclipse.cta1":"Pregunta por el eclipse","wa.eclipse":"¡Hola! Me interesa el eclipse solar total del 12 de agosto de 2026 (Snæfellsnes). ¿Me cuentas más?",
 
   "why.eyebrow":"Por qué viajar con nosotros","why.h2":"No somos solo guías — somos una familia.","why.lead":"Vivimos aquí — criamos a nuestras hijas, trabajamos y pasamos nuestro tiempo libre aquí, y te enseñamos la Islandia que amamos.",
@@ -442,7 +442,7 @@ es:{
   "why.3.t":"Viajamos como nos gustaría a nosotros","why.3.d":"Paramos donde la vista te corta la respiración — y a veces tomamos el camino más largo, porque resulta ser el más bonito.",
   "why.4.t":"Recuerdos, no una lista","why.4.d":"Volverás a casa con algo más que fotos: con emociones, historias y la sensación de haber conocido la Islandia auténtica.",
   "compare.mine.title":"Privado conmigo","compare.mine.tag":"Tú","compare.bus.title":"Autobús grande","compare.bus.tag":"Ellos",
-  "compare.mine.1":"Solo tu grupo — hasta 4 con comodidad","compare.mine.2":"Sales cuando estás listo, paras por capricho","compare.mine.3":"Rincones escondidos a los que el autobús no llega","compare.mine.4":"Aperitivos caseros de Kate","compare.mine.5":"Un guía que sabe tu nombre",
+  "compare.mine.1":"Solo tu grupo — hasta 6 con comodidad","compare.mine.2":"Sales cuando estás listo, paras por capricho","compare.mine.3":"Rincones escondidos a los que el autobús no llega","compare.mine.4":"Aperitivos caseros de Kate","compare.mine.5":"Un guía que sabe tu nombre",
   "compare.bus.1":"Más de 40 desconocidos con horario fijo","compare.bus.2":"15 minutos por parada de fotos y a seguir","compare.bus.3":"Solo los lugares famosos y abarrotados","compare.bus.4":"Un sándwich de gasolinera","compare.bus.5":"Un micrófono y un recuento de cabezas",
 
   "about.eyebrow":"Nosotros","about.h2":"Hola, soy John.","about.lead":"Nuestra historia islandesa empezó hace años. Como muchos, empezamos de cero y, paso a paso, construimos una vida aquí — hasta que esta isla se convirtió en nuestro hogar. Aquí nacieron nuestras hijas gemelas y aquí empezó de verdad nuestra mayor aventura.","about.p1":"Desde que tengo memoria exploro Islandia — descubriendo caminos escondidos, persiguiendo miradores impresionantes y encontrando las historias que hacen único cada lugar. Mi pasión va mucho más allá de los sitios famosos; siempre busco los rincones tranquilos por los que la mayoría pasa de largo.","about.p2":"Como familia mantenemos viva esa aventura. Con nuestras hijas al lado caminamos, tomamos la ruta panorámica y a menudo salimos sin un plan estricto — parando junto a una cascada para un picnic, recogiendo hierbas silvestres y viendo cómo el tiempo cambia minuto a minuto. Mi mujer es Head Chef y le encanta recibir a la gente; cada año seguimos haciendo siropes y tinturas caseras, como hacían nuestras abuelas.","about.p3":"No vemos a nuestros huéspedes como turistas — los recibimos como amigos y te invitamos a descubrir Islandia como lo hacemos nosotros: con curiosidad, autenticidad y corazón. Descubre Islandia a la antigua usanza.","about.sign":"— Kate y John","about.badge.num":"600+","about.badge.t":"huéspedes felices desde 2016",
@@ -467,7 +467,7 @@ es:{
   "faq.eyebrow":"Bueno saberlo","faq.h2":"Preguntas, respondidas.",
   "faq.1.q":"¿Es seguro recorrer las carreteras de Islandia contigo?","faq.1.a":"Sí. Soy un conductor local experimentado y totalmente asegurado, con un 4×4 bien mantenido. Consulto a diario el tiempo y el estado de las carreteras, y cambio el plan encantado antes que arriesgar. Tu seguridad va siempre por delante de cualquier itinerario.",
   "faq.2.q":"¿Puedes garantizar que veremos las auroras boreales?","faq.2.a":"Sinceramente, nadie puede — la aurora depende de la oscuridad, el cielo despejado y la actividad solar. Lo que sí prometo es seguir la previsión, alejarte de las luces de la ciudad hacia la mejor opción y mantenerte caliente mientras esperamos. Si el cielo no acompaña, te lo diré claramente.",
-  "faq.3.q":"¿Cómo funciona el pago si no puedo reservar online?","faq.3.a":"Es a propósito. Envías una solicitud de disponibilidad, confirmamos los detalles juntos en persona, y luego te envío un enlace de pago seguro o cobro con tarjeta el mismo día. No se cobra ningún depósito solo por preguntar por una fecha. El Círculo Dorado también se puede reservar directamente online en el calendario de su página.",
+  "faq.3.q":"¿Cómo funciona el pago si no puedo reservar online?","faq.3.a":"Es a propósito. Envías una solicitud de disponibilidad, confirmamos los detalles juntos en persona, y luego te envío un enlace de pago seguro o cobro con tarjeta el mismo día. No se cobra ningún depósito solo por preguntar por una fecha. El Círculo Dorado, la Costa Sur, Jökulsárlón y las auroras boreales también se pueden reservar directamente online.",
   "faq.4.q":"¿Qué idiomas hablas?","faq.4.a":"Guío en inglés, polaco, alemán y español. Solo dime en cuál te sientes más cómodo y ese será el idioma del día.",
   "faq.5.q":"¿El tour es realmente privado?","faq.5.a":"Siempre. En el coche va únicamente tu grupo — nunca se comparte con desconocidos. El ritmo, las paradas y la música son tuyos.",
   "faq.6.q":"¿Recoges en mi hotel?","faq.6.a":"Sí — recogida gratuita en hotel, apartamento o camping en la zona de Reikiavik, y en el aeropuerto de Keflavík para los traslados. Confirmo la hora exacta cuando hablemos.",
@@ -486,13 +486,13 @@ es:{
 
   "pl.offer":"",
 
-  "footer.tagline":"Tours privados y traslados al aeropuerto por toda Islandia — un conductor local que te trata como a la familia.","footer.explore":"Explora","footer.tours":"Tours","footer.contact":"Contacto","footer.disclaimer":"Journey Iceland es un servicio privado de conductor y guía. El Círculo Dorado se puede reservar online a través de nuestro socio de reservas Bókun; el resto de tours y traslados son solicitudes de disponibilidad confirmadas personalmente.","footer.privacy":"Privacidad","footer.terms":"Términos","footer.rights":"© 2026 Journey Iceland. Hecho con cariño en Reikiavik.",
+  "footer.tagline":"Tours privados y traslados al aeropuerto por toda Islandia — un conductor local que te trata como a la familia.","footer.explore":"Explora","footer.tours":"Tours","footer.contact":"Contacto","footer.disclaimer":"Journey Iceland es un servicio privado de conductor y guía. El Círculo Dorado, la Costa Sur, Jökulsárlón y las auroras boreales se pueden reservar online a través de nuestro socio de reservas Bókun; los traslados y las rutas personalizadas son solicitudes de disponibilidad confirmadas personalmente.","footer.privacy":"Privacidad","footer.terms":"Términos","footer.rights":"© 2026 Journey Iceland. Hecho con cariño en Reikiavik.",
 
   /* ---------------- PÁGINA DE TOUR: Círculo Dorado ---------------- */
   "tp.bc.tours":"Tours","tp.bc.cur":"Círculo Dorado",
   "tp.eyebrow":"Tour privado de un día · desde Reikiavik",
   "tp.h1":"Círculo Dorado — tour privado desde Reikiavik.","tp.sub":"Los tres iconos de Islandia — una cascada atronadora, un géiser en erupción y una grieta continental — a tu ritmo, sin multitudes y sin reloj.",
-  "tp.qf.dur":"6 horas","tp.qf.price":"desde 95.000 ISK","tp.qf.priv":"Privado · máx. 4","tp.qf.priv.gc":"Privado · máx. 6","tp.qf.pickup":"Recogida en el hotel","tp.qf.lang":"EN · PL · DE · ES",
+  "tp.qf.dur":"6 horas","tp.qf.price":"desde 95.000 ISK","tp.qf.priv":"Privado · máx. 6","tp.qf.pickup":"Recogida en el hotel","tp.qf.lang":"EN · PL · DE · ES",
   "tp.sn.overview":"Resumen","tp.sn.route":"Ruta","tp.sn.map":"Mapa","tp.sn.gallery":"Galería","tp.sn.reviews":"Opiniones","tp.sn.faq":"FAQ","tp.sn.avail":"Disponibilidad",
 
   "tp.hl.eyebrow":"En resumen","tp.hl.h2":"Cómo es el día.",

@@ -4,6 +4,8 @@ import { SITE, IMG, waLink, RESTAURANTS } from '@/lib/site';
 import { getGoogleReviews } from '@/lib/reviews';
 import AreaMap from '@/components/AreaMap';
 import ReviewCard from '@/components/ReviewCard';
+import BokunButton from '@/components/BokunButton';
+import { BOKUN_PRODUCT } from '@/lib/bokun';
 
 export default async function Home({ params }: { params: { lang: string } }) {
   const lang = isLang(params.lang) ? params.lang : 'en';
@@ -64,7 +66,7 @@ export default async function Home({ params }: { params: { lang: string } }) {
                 <h3>{t('tour.gc.name')}</h3>
                 <div className="tour-meta">
                   <span><svg><use href="#i-clock" /></svg><span>{t('tour.gc.dur')}</span></span>
-                  <span><svg><use href="#i-users" /></svg><span>{t('tp.qf.priv.gc')}</span></span>
+                  <span><svg><use href="#i-users" /></svg><span>{t('tp.qf.priv')}</span></span>
                 </div>
                 <div className="tour-price"><span className="from">{t('tour.tbc')}</span><span className="amt">{t('tour.gc.price')}</span></div>
                 <div className="tour-price"><span className="alt">{t('tour.gc.alt')}</span></div>
@@ -150,7 +152,7 @@ export default async function Home({ params }: { params: { lang: string } }) {
             <p>{t('aurora.p')}</p>
             <div className="aurora-cta">
               <a className="btn btn-primary btn-lg" href={waLink(t('wa.aurora'))} target="_blank" rel="noopener"><svg><use href="#i-whatsapp" /></svg><span>{t('aurora.cta1')}</span></a>
-              <Link className="btn btn-outline btn-lg" href={L('#contact')}><span>{t('cta.check')}</span><svg><use href="#i-arrow-right" /></svg></Link>
+              <BokunButton productId={BOKUN_PRODUCT.northernLights} label={t('aurora.book')} className="btn btn-outline btn-lg" />
             </div>
           </div>
         </div>
