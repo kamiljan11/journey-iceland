@@ -3,7 +3,7 @@
 <!-- Jednozdaniowy opis: co to robi i dla kogo. UZUPELNIJ przy starcie projektu. -->
 
 ## Stack
-- Frontend: React 18 + TypeScript + Vite + Tailwind
+- Frontend: Next.js 15 (App Router) + React 19 + TypeScript
 - Backend/API:
 - Baza:
 - Hosting/deploy:

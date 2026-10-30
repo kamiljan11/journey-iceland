@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { LANGS, isLang } from '@/lib/dictionary';
+import { LANGS, langFromParams } from '@/lib/dictionary';
 import { getLegal } from '@/lib/legal';
 import LegalDocView from '@/components/LegalDoc';
 
@@ -7,13 +7,13 @@ export function generateStaticParams() {
   return LANGS.map((lang) => ({ lang }));
 }
 
-export function generateMetadata({ params }: { params: { lang: string } }): Metadata {
-  const lang = isLang(params.lang) ? params.lang : 'en';
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const lang = await langFromParams(params);
   const doc = getLegal(lang).privacy;
   return { title: `${doc.title} — Journey Iceland`, alternates: { canonical: `/${lang}/privacy` } };
 }
 
-export default function PrivacyPage({ params }: { params: { lang: string } }) {
-  const lang = isLang(params.lang) ? params.lang : 'en';
+export default async function PrivacyPage({ params }: { params: Promise<{ lang: string }> }) {
+  const lang = await langFromParams(params);
   return <LegalDocView doc={getLegal(lang).privacy} lang={lang} backLabel="Journey Iceland" />;
 }

@@ -21,7 +21,7 @@ const MOUNT_TIMEOUT_MS = 15000;
 export default function BokunCalendar({ productId, noJsText, failText, waHref, waLabel }: Props) {
   const [failed, setFailed] = useState(false);
   const boxRef = useRef<HTMLDivElement>(null);
-  const timerRef = useRef<ReturnType<typeof setTimeout>>();
+  const timerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
   useEffect(() => () => clearTimeout(timerRef.current), []);
 

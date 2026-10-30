@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
-import { isLang } from '@/lib/dictionary';
+import { langFromParams } from '@/lib/dictionary';
 import { getTour } from '@/lib/tours';
 import TourPage from '@/components/TourPage';
 
 const SLUG = 'south-coast';
 
-export function generateMetadata({ params }: { params: { lang: string } }): Metadata {
-  const lang = isLang(params.lang) ? params.lang : 'en';
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const lang = await langFromParams(params);
   const x = getTour(SLUG, lang);
   return {
     title: `${x.h1} | Journey Iceland`,
@@ -18,7 +18,7 @@ export function generateMetadata({ params }: { params: { lang: string } }): Meta
   };
 }
 
-export default function Page({ params }: { params: { lang: string } }) {
-  const lang = isLang(params.lang) ? params.lang : 'en';
+export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
+  const lang = await langFromParams(params);
   return <TourPage lang={lang} slug={SLUG} />;
 }

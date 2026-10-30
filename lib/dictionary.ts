@@ -539,6 +539,11 @@ es:{
 export type Lang = 'en' | 'pl' | 'de' | 'es';
 export const LANGS: Lang[] = ['en', 'pl', 'de', 'es'];
 export function isLang(x: string): x is Lang { return (LANGS as string[]).includes(x); }
+// Next 15 passes route params as a Promise; unknown segments fall back to English.
+export async function langFromParams(params: Promise<{ lang: string }>): Promise<Lang> {
+  const { lang } = await params;
+  return isLang(lang) ? lang : 'en';
+}
 export function getDict(lang: string) { return I18N[lang] || I18N.en; }
 export function makeT(lang: string) {
   const d = getDict(lang);

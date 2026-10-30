@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import '../globals.css';
-import { LANGS, isLang, makeT } from '@/lib/dictionary';
+import { LANGS, makeT, langFromParams } from '@/lib/dictionary';
 import { SITE, waLink } from '@/lib/site';
 import Sprite from '@/components/Sprite';
 import Nav from '@/components/Nav';
@@ -11,8 +11,8 @@ export function generateStaticParams() {
   return LANGS.map((lang) => ({ lang }));
 }
 
-export function generateMetadata({ params }: { params: { lang: string } }): Metadata {
-  const lang = isLang(params.lang) ? params.lang : 'en';
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const lang = await langFromParams(params);
   const t = makeT(lang);
   const base = `https://${SITE.domain}`;
   return {
@@ -35,14 +35,14 @@ export function generateMetadata({ params }: { params: { lang: string } }): Meta
   };
 }
 
-export default function LangLayout({
+export default async function LangLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }) {
-  const lang = isLang(params.lang) ? params.lang : 'en';
+  const lang = await langFromParams(params);
   const t = makeT(lang);
 
   return (
