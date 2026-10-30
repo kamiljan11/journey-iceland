@@ -4,7 +4,7 @@ import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { loadTs } from './load-ts.mjs';
 
-const { I18N } = await loadTs('../lib/dictionary.ts');
+const { I18N, langFromParams } = await loadTs('../lib/dictionary.ts');
 const LANGS = ['en', 'pl', 'de', 'es'];
 
 test('every language has exactly the same keys as en', () => {
@@ -33,4 +33,10 @@ test('every literal t(\'key\') used in app/components/lib exists in the dictiona
     }
   }
   assert.deepEqual(missing, []);
+});
+
+test('langFromParams resolves a known language and falls back to en', async () => {
+  assert.equal(await langFromParams(Promise.resolve({ lang: 'pl' })), 'pl');
+  assert.equal(await langFromParams(Promise.resolve({ lang: 'fr' })), 'en');
+  assert.equal(await langFromParams(Promise.resolve({ lang: '' })), 'en');
 });

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { isLang, makeT } from '@/lib/dictionary';
+import { makeT, langFromParams } from '@/lib/dictionary';
 import { SITE, IMG, waLink, RESTAURANTS } from '@/lib/site';
 import { getGoogleReviews } from '@/lib/reviews';
 import AreaMap from '@/components/AreaMap';
@@ -7,8 +7,8 @@ import ReviewCard from '@/components/ReviewCard';
 import BokunButton from '@/components/BokunButton';
 import { BOKUN_PRODUCT } from '@/lib/bokun';
 
-export default async function Home({ params }: { params: { lang: string } }) {
-  const lang = isLang(params.lang) ? params.lang : 'en';
+export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
+  const lang = await langFromParams(params);
   const t = makeT(lang);
   const L = (h: string) => `/${lang}${h}`;
   const google = await getGoogleReviews();
