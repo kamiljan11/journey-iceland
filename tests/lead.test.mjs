@@ -194,3 +194,70 @@ test('handler: logs never contain guest data', async () => {
   const all = h.lines.join('\n');
   for (const v of [valid.name, valid.email, valid.phone, valid.msg]) assert.ok(!all.includes(v), v);
 });
+
+// --- delivery (lib/lead-delivery.ts) and browser client (lib/lead-client.ts) ---
+
+const { createStore, createNotify } = await loadTs('../lib/lead-delivery.ts', { './lead': '../lib/lead.ts' });
+const { sendLead } = await loadTs('../lib/lead-client.ts');
+const lead = parseLead(valid).lead;
+const quietLog = () => { const lines = []; return { lines, log: { warn: (m) => lines.push(m), error: (m) => lines.push(m) } }; };
+
+function fakeDb(result) {
+  const seen = {};
+  return {
+    seen,
+    db: { from: (table) => ({ insert: (row) => { seen.table = table; seen.row = row; return { abortSignal: (s) => { seen.signal = s; return Promise.resolve(result); } }; } }) },
+  };
+}
+
+test('store: inserts the lead under the request id with a timeout signal', async () => {
+  const f = fakeDb({ error: null });
+  const { log } = quietLog();
+  assert.equal(await createStore(() => f.db, log)(lead, 'id-1'), 'stored');
+  assert.equal(f.seen.table, 'leads');
+  assert.equal(f.seen.row.id, 'id-1');
+  assert.equal(f.seen.row.message, lead.msg);
+  assert.ok(f.seen.signal instanceof AbortSignal);
+});
+
+test('store: no database -> skipped; error with empty code (timeout) -> failed with a readable log', async () => {
+  const q = quietLog();
+  assert.equal(await createStore(() => null, q.log)(lead, 'id-1'), 'skipped');
+  assert.equal(await createStore(() => fakeDb({ error: { code: '' } }).db, q.log)(lead, 'id-2'), 'failed');
+  assert.ok(q.lines.some((l) => l.includes('[lead id-2]') && l.includes('timeout')));
+  const throwing = { from: () => { throw new TypeError('boom'); } };
+  assert.equal(await createStore(() => throwing, q.log)(lead, 'id-3'), 'failed');
+  assert.ok(q.lines.some((l) => l === '[lead id-3] insert threw: TypeError'));
+});
+
+test('notify: sends escaped HTML with a timeout and reports provider failures', async () => {
+  let call;
+  const ok = async (url, init) => { call = { url, init }; return new Response('{}', { status: 200 }); };
+  const env = { key: 'k', to: 'guide@x.is' };
+  const q = quietLog();
+  const evil = { ...lead, msg: '<script>x</script>' };
+  assert.equal(await createNotify(env, ok, q.log)(evil, 'id-1'), true);
+  const body = JSON.parse(call.init.body);
+  assert.deepEqual(body.to, ['guide@x.is']);
+  assert.ok(body.html.includes('&lt;script&gt;') && !body.html.includes('<script>'));
+  assert.ok(body.html.includes('ref id-1'));
+  assert.ok(call.init.signal instanceof AbortSignal);
+
+  assert.equal(await createNotify(env, async () => new Response('', { status: 503 }), q.log)(lead, 'id-2'), false);
+  assert.equal(await createNotify(env, async () => { throw new DOMException('t', 'TimeoutError'); }, q.log)(lead, 'id-3'), false);
+  assert.equal(await createNotify({}, ok, q.log)(lead, 'id-4'), false);
+  assert.ok(q.lines.includes('[lead id-2] resend responded 503'));
+  assert.ok(q.lines.includes('[lead id-3] email notify failed: TimeoutError'));
+  assert.ok(!q.lines.join('\n').includes(lead.email));
+});
+
+test('sendLead (form): true only on a 2xx reply; errors and offline -> false; keepalive set', async () => {
+  let init;
+  assert.equal(await sendLead({ a: '1' }, async (_u, i) => { init = i; return new Response('{}', { status: 200 }); }), true);
+  assert.equal(init.keepalive, true);
+  assert.equal(JSON.parse(init.body).a, '1');
+  for (const status of [400, 413, 429, 503]) {
+    assert.equal(await sendLead({}, async () => new Response('{}', { status })), false, String(status));
+  }
+  assert.equal(await sendLead({}, async () => { throw new TypeError('Failed to fetch'); }), false);
+});

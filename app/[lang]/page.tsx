@@ -408,7 +408,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                   <div className="hp-field" aria-hidden="true"><label htmlFor="f-hp">Leave this field empty</label><input id="f-hp" name="ji_hp_check" type="text" tabIndex={-1} autoComplete="off" /></div>
                   <div className="field"><label htmlFor="f-msg"><span>{t('form.msg')}</span> <span className="opt">{t('form.msg.opt')}</span></label><textarea id="f-msg" name="msg" maxLength={2000} placeholder={t('form.msg.ph')}></textarea></div>
                   <button className="btn btn-primary btn-lg btn-block" type="submit"><span>{t('form.send')}</span><svg><use href="#i-send" /></svg></button>
-                  <p className="form-error" role="alert" hidden>{t('form.err')} <a href={`tel:${t('cm.phone.v').replace(/\s/g, '')}`}>{t('cm.phone.v')}</a>.</p>
+                  <p className="form-error" role="alert" hidden>{t('form.err')} <a href={`tel:${t('cm.phone.v').replace(/\s/g, '')}`}>{t('cm.phone.v')}</a> · <a href={waLink(t('wa.generic'))} target="_blank" rel="noopener">{t('cta.wa.short')}</a></p>
                   <div className="form-legal"><svg><use href="#i-shield" /></svg><span>{t('form.legal')}</span></div>
                 </div>
                 <div className="form-sent">

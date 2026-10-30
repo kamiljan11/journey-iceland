@@ -28,6 +28,7 @@ git revert <sha-zlego-commita> && git push   # -> redeploy automatyczny
 |---|---|
 | Strona nie wstaje po deploy | rollback (wyzej), potem debug na branchu |
 | Blad 500 na akcji X | Sentry -> stack trace -> `systematic-debugging` |
+| Gość wysłał formularz, nic nie przyszło | Vercel -> Logs, filtr `[lead`: `LOST` / `emailed but not stored` / `rejected:` / `honeypot hit` — znaczenie i kroki: ADR-0003 › Triage; `ref` z maila = `id` wiersza w `leads` |
 | Wygasly sekret/API key | Infisical -> zrotuj -> redeploy |
 | Domena/DNS | panel ISNIC / rejestratora |
 

@@ -48,7 +48,8 @@ export async function handleLead(req: Request, deps: LeadDeps): Promise<LeadRepl
   const ip = clientIp(req.headers);
   if (ip !== 'unknown' && !deps.allow(ip)) return reject(429, 'rate_limited', log);
 
-  const body = await readCapped(req, MAX_BODY_BYTES).catch(() => '');
+  let body: string | null;
+  try { body = await readCapped(req, MAX_BODY_BYTES); } catch { return reject(400, 'body_unreadable', log); }
   if (body === null) return reject(413, 'too_large', log);
 
   let raw: unknown = null;
@@ -63,8 +64,7 @@ export async function handleLead(req: Request, deps: LeadDeps): Promise<LeadRepl
 
   const id = deps.newId();
   // Store and notify independently: a database outage must never block the email the guide relies on.
-  const stored = await deps.store(parsed.lead, id);
-  const emailed = await deps.notify(parsed.lead, id);
+  const [stored, emailed] = await Promise.all([deps.store(parsed.lead, id), deps.notify(parsed.lead, id)]);
   if (stored !== 'stored' && !emailed) {
     log.error(`[lead ${id}] LOST: not stored (${stored}) and not emailed`);
     return { status: 503, body: { ok: false, error: 'not_delivered' } };

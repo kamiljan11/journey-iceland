@@ -1,6 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
+import { sendLead } from '@/lib/lead-client';
 
 /**
  * Client-side interactions, ported 1:1 from the Claude Design `app.js`
@@ -161,20 +162,22 @@ export default function Enhancements() {
           source: form.dataset.preselect || 'website',
         };
         fd.forEach((v, k) => { payload[k] = String(v); });
-        // optimistic UX: show success immediately; if the request is not delivered, go back to the
-        // filled-in form and point the guest to WhatsApp / phone instead of losing the enquiry silently.
-        fields?.classList.add('hide');
-        sent?.classList.add('show');
-        const fail = () => {
-          fields?.classList.remove('hide');
-          sent?.classList.remove('show');
-          if (err) { err.hidden = false; err.scrollIntoView({ block: 'center' }); }
-        };
-        fetch('/api/lead', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload),
-        }).then((res) => { if (!res.ok) fail(); }, fail);
+        // Success is shown only once the server confirms delivery; otherwise the filled-in form stays
+        // and points the guest to WhatsApp / phone instead of losing the enquiry silently.
+        const btn = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+        if (btn) { btn.disabled = true; btn.setAttribute('aria-busy', 'true'); }
+        sendLead(payload).then((ok) => {
+          if (btn) { btn.disabled = false; btn.removeAttribute('aria-busy'); }
+          if (ok) {
+            fields?.classList.add('hide');
+            sent?.classList.add('show');
+          } else if (err) {
+            err.hidden = false;
+            err.tabIndex = -1;
+            err.focus();
+            err.scrollIntoView({ block: 'center' });
+          }
+        });
       }, sig);
       const sel = form.querySelector<HTMLSelectElement>('select[name="tour"]');
       if (sel) {
