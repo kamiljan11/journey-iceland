@@ -149,20 +149,32 @@ export default function Enhancements() {
     document.querySelectorAll<HTMLFormElement>('form.ji-form').forEach((form) => {
       form.addEventListener('submit', (e) => {
         e.preventDefault();
+        // The form is noValidate (custom look), so run the browser checks here: the API rejects the same cases.
+        if (!form.checkValidity()) { form.reportValidity(); return; }
+        const fields = form.querySelector('.form-fields');
+        const sent = form.querySelector('.form-sent');
+        const err = form.querySelector<HTMLElement>('.form-error');
+        if (err) err.hidden = true;
         const fd = new FormData(form);
         const payload: Record<string, string> = {
           lang: document.documentElement.lang || 'en',
           source: form.dataset.preselect || 'website',
         };
         fd.forEach((v, k) => { payload[k] = String(v); });
-        // optimistic UX: show success immediately; send in the background
-        form.querySelector('.form-fields')?.classList.add('hide');
-        form.querySelector('.form-sent')?.classList.add('show');
+        // optimistic UX: show success immediately; if the request is not delivered, go back to the
+        // filled-in form and point the guest to WhatsApp / phone instead of losing the enquiry silently.
+        fields?.classList.add('hide');
+        sent?.classList.add('show');
+        const fail = () => {
+          fields?.classList.remove('hide');
+          sent?.classList.remove('show');
+          if (err) { err.hidden = false; err.scrollIntoView({ block: 'center' }); }
+        };
         fetch('/api/lead', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload),
-        }).catch(() => { /* ignore — request still reaches host via WhatsApp/phone */ });
+        }).then((res) => { if (!res.ok) fail(); }, fail);
       }, sig);
       const sel = form.querySelector<HTMLSelectElement>('select[name="tour"]');
       if (sel) {

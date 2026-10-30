@@ -1,23 +1,49 @@
 import { randomUUID } from 'node:crypto';
 import { NextResponse } from 'next/server';
 import { supabaseAdmin } from '@/lib/supabase';
-import { type Lead, MAX_BODY_BYTES, escapeHtml, parseLead } from '@/lib/lead';
-import { clientIp, createRateLimiter } from '@/lib/rate-limit';
+import { type Lead, escapeHtml } from '@/lib/lead';
+import { type StoreResult, handleLead } from '@/lib/lead-handler';
+import { createRateLimiter } from '@/lib/rate-limit';
 
 export const runtime = 'nodejs';
 
+const DB_TIMEOUT_MS = 5000;
 const RESEND_TIMEOUT_MS = 8000;
-// 5 requests per IP per 10 minutes — a real guest sends one, maybe two.
-const allow = createRateLimiter(5, 10 * 60 * 1000);
+// 10 requests per IP per 10 minutes — a real guest sends one or two; leaves room for a shared hotel Wi-Fi.
+const allow = createRateLimiter(10, 10 * 60 * 1000);
 
 function errClass(e: unknown): string {
   return e instanceof Error ? e.name : typeof e;
 }
 
-/** Fire a notification email via Resend (no-op if not configured). */
-async function notify(data: Lead, id: string) {
+/** Insert into Supabase `leads` (skipped when Supabase is not configured). */
+async function store(data: Lead, id: string): Promise<StoreResult> {
+  const db = supabaseAdmin();
+  if (!db) {
+    console.warn(`[lead ${id}] Supabase not configured`);
+    return 'skipped';
+  }
+  try {
+    const { error } = await db.from('leads').insert({
+      tour: data.tour, date: data.date, people: data.people,
+      name: data.name, email: data.email, phone: data.phone,
+      message: data.msg, lang: data.lang, source: data.source,
+    }).abortSignal(AbortSignal.timeout(DB_TIMEOUT_MS));
+    if (!error) return 'stored';
+    console.error(`[lead ${id}] insert error: ${error.code ?? 'unknown'}`);
+  } catch (e) {
+    console.error(`[lead ${id}] insert threw (DB unreachable / paused?): ${errClass(e)}`);
+  }
+  return 'failed';
+}
+
+/** Notification email via Resend; false when not configured or not accepted. */
+async function notify(data: Lead, id: string): Promise<boolean> {
   const key = process.env.RESEND_API_KEY;
-  if (!key) return;
+  if (!key) {
+    console.warn(`[lead ${id}] RESEND_API_KEY not set; no email`);
+    return false;
+  }
   const to = process.env.LEAD_NOTIFY_EMAIL || 'hello@journeyiceland.is';
   const from = process.env.LEAD_FROM_EMAIL || 'Journey Iceland <onboarding@resend.dev>';
   const rows = [
@@ -28,7 +54,7 @@ async function notify(data: Lead, id: string) {
   const html =
     `<h2>New availability request</h2><table cellpadding="6" style="border-collapse:collapse">` +
     rows.map(([k, v]) => `<tr><td style="color:#6F6052"><b>${k}</b></td><td>${escapeHtml(String(v))}</td></tr>`).join('') +
-    `</table><p style="color:#6F6052">Sent from journeyiceland.is</p>`;
+    `</table><p style="color:#6F6052">Sent from journeyiceland.is · ref ${id}</p>`;
   try {
     const res = await fetch('https://api.resend.com/emails', {
       method: 'POST',
@@ -40,51 +66,15 @@ async function notify(data: Lead, id: string) {
       }),
       signal: AbortSignal.timeout(RESEND_TIMEOUT_MS),
     });
-    if (!res.ok) console.error(`[lead ${id}] resend responded ${res.status}`);
+    if (res.ok) return true;
+    console.error(`[lead ${id}] resend responded ${res.status}`);
   } catch (e) {
     console.error(`[lead ${id}] email notify failed: ${errClass(e)}`);
   }
+  return false;
 }
 
 export async function POST(req: Request) {
-  if (!allow(clientIp(req.headers))) {
-    return NextResponse.json({ ok: false, error: 'rate_limited' }, { status: 429 });
-  }
-  const declared = Number(req.headers.get('content-length') ?? 0);
-  const body = declared > MAX_BODY_BYTES ? '' : await req.text().catch(() => '');
-  if (declared > MAX_BODY_BYTES || Buffer.byteLength(body) > MAX_BODY_BYTES) {
-    return NextResponse.json({ ok: false, error: 'too_large' }, { status: 413 });
-  }
-  let raw: unknown = null;
-  try { raw = JSON.parse(body); } catch { /* raw stays null -> invalid */ }
-
-  const parsed = parseLead(raw);
-  // Honeypot hit: answer like a success so the bot does not learn, but store and send nothing.
-  if (!parsed.ok && parsed.error === 'spam') return NextResponse.json({ ok: true, stored: false });
-  if (!parsed.ok) return NextResponse.json({ ok: false, error: 'invalid' }, { status: 400 });
-  const data = parsed.lead;
-  const id = randomUUID();
-
-  // Store the lead (best-effort). A database outage must NEVER block the
-  // notification email — that is the part the guide actually relies on.
-  let stored = false;
-  const db = supabaseAdmin();
-  if (db) {
-    try {
-      const { error } = await db.from('leads').insert({
-        tour: data.tour, date: data.date, people: data.people,
-        name: data.name, email: data.email, phone: data.phone,
-        message: data.msg, lang: data.lang, source: data.source,
-      });
-      if (error) console.error(`[lead ${id}] insert error: ${error.code ?? 'unknown'}`);
-      else stored = true;
-    } catch (e) {
-      console.error(`[lead ${id}] insert threw (DB unreachable / paused?): ${errClass(e)}`);
-    }
-  } else {
-    console.warn(`[lead ${id}] Supabase not configured; lead not stored`);
-  }
-
-  await notify(data, id);
-  return NextResponse.json({ ok: true, stored });
+  const { status, body } = await handleLead(req, { allow, store, notify, newId: randomUUID, log: console });
+  return NextResponse.json(body, { status });
 }
