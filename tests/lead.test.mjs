@@ -1,4 +1,4 @@
-import { test } from 'node:test';
+import { mock, test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { loadTs } from './load-ts.mjs';
@@ -292,8 +292,11 @@ test('timeoutSignal works without AbortSignal.timeout (Safari < 16)', async () =
     assert.equal(signal.aborted, false);
     await new Promise((r) => setTimeout(r, 20));
     assert.equal(signal.aborted, true);
+    // sendLead arms a 15 s fallback timer; mocked timers keep it from holding the test process open.
+    mock.timers.enable({ apis: ['setTimeout'] });
     assert.equal(await sendLead({}, async () => new Response('{}', { status: 200 })), true, 'form still sends');
   } finally {
+    mock.timers.reset();
     AbortSignal.timeout = original;
   }
 });
