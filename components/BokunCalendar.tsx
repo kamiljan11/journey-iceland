@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Script from 'next/script';
 import { BOKUN_LOADER_SRC, bokunCalendarSrc } from '@/lib/bokun';
 
@@ -15,8 +15,25 @@ type Props = {
 
 // Bókun booking calendar. The loader script scans the page for `.bokunWidget`
 // elements and mounts the booking iframe into them.
+// If the loader loads but no iframe appears within this time, show the WhatsApp fallback.
+const MOUNT_TIMEOUT_MS = 15000;
+
 export default function BokunCalendar({ productId, noJsText, failText, waHref, waLabel }: Props) {
   const [failed, setFailed] = useState(false);
+  const boxRef = useRef<HTMLDivElement>(null);
+  const timerRef = useRef<ReturnType<typeof setTimeout>>();
+
+  useEffect(() => () => clearTimeout(timerRef.current), []);
+
+  const watchMount = () => {
+    clearTimeout(timerRef.current);
+    timerRef.current = setTimeout(() => {
+      if (boxRef.current && !boxRef.current.querySelector('iframe')) {
+        console.error('[bokun] calendar iframe did not mount', { productId, timeoutMs: MOUNT_TIMEOUT_MS });
+        setFailed(true);
+      }
+    }, MOUNT_TIMEOUT_MS);
+  };
 
   if (failed) {
     return (
@@ -29,10 +46,11 @@ export default function BokunCalendar({ productId, noJsText, failText, waHref, w
 
   return (
     <>
-      <div className="bokunWidget" data-src={bokunCalendarSrc(productId)} />
+      <div ref={boxRef} className="bokunWidget" data-src={bokunCalendarSrc(productId)} />
       <Script
         src={BOKUN_LOADER_SRC}
         strategy="afterInteractive"
+        onReady={watchMount}
         onError={() => {
           console.error('[bokun] widget loader failed to load', { productId, src: BOKUN_LOADER_SRC });
           setFailed(true);
