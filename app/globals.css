@@ -965,6 +965,9 @@ section{position:relative}
    ============================================================ */
 .contact-grid{display:grid;grid-template-columns:1fr;gap:30px;margin-top:42px}
 .form-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:clamp(24px,4vw,40px);box-shadow:var(--shadow)}
+/* Bókun booking calendar: the iframe brings its own padding, keep the card tight so the calendar gets the width on phones */
+.form-card.bokun-card{padding:clamp(8px,2vw,24px)}
+.bokun-fallback{display:flex;flex-direction:column;gap:16px;align-items:flex-start;padding:16px}
 .form-row{display:grid;grid-template-columns:1fr;gap:16px}
 .field{display:flex;flex-direction:column;gap:7px;margin-bottom:16px}
 .field label{font-size:.82rem;font-weight:700;color:var(--espresso);letter-spacing:.01em}

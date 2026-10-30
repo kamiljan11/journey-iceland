@@ -36,7 +36,7 @@ en:{
   "tours.toursLabel":"Day tours","tours.transfersLabel":"Airport & spa transfers",
   "tour.see":"See tour","tour.tbc":"","tour.perGroup":"per group",
 
-  "tour.gc.name":"Golden Circle","tour.gc.dur":"6–8 hrs","tour.gc.price":"from 85,000 ISK","tour.gc.alt":"≈ $610 / €570 · per group",
+  "tour.gc.name":"Golden Circle","tour.gc.dur":"6 hrs","tour.gc.price":"from 95,000 ISK","tour.gc.alt":"≈ $750 / €700 · per group",
   "tour.sc.name":"South Coast","tour.sc.dur":"8–10 hrs","tour.sc.price":"from 110,000 ISK","tour.sc.alt":"≈ $790 / €730 · per group",
   "tour.jk.name":"Jökulsárlón Glacier Lagoon","tour.jk.dur":"12–14 hrs","tour.jk.price":"from 179,000 ISK","tour.jk.alt":"≈ $1,280 / €1,190 · per group",
 
@@ -80,7 +80,7 @@ en:{
   "faq.eyebrow":"Good to know","faq.h2":"Questions, answered.",
   "faq.1.q":"Is it safe to drive Iceland's roads with you?","faq.1.a":"Yes. I'm an experienced, fully insured local driver in a well-maintained 4×4. I read the weather and road service daily and will happily change a plan rather than take a risk. Your safety always comes before any itinerary.",
   "faq.2.q":"Can you guarantee we'll see the Northern Lights?","faq.2.a":"No one honestly can — the aurora depends on darkness, clear skies and solar activity. What I can promise is that I track the forecast, drive you away from city light to the best chance, and keep you warm while we wait. If the sky simply won't cooperate, I'll tell you straight.",
-  "faq.3.q":"How does payment work if I can't book online?","faq.3.a":"By design. You send an availability request, we confirm the details together personally, and then I send a secure payment link or take card on the day. No deposit is taken just to ask about a date.",
+  "faq.3.q":"How does payment work if I can't book online?","faq.3.a":"By design. You send an availability request, we confirm the details together personally, and then I send a secure payment link or take card on the day. No deposit is taken just to ask about a date. The Golden Circle can also be booked directly online in the calendar on its page.",
   "faq.4.q":"Which languages do you speak?","faq.4.a":"I guide in English, Polish, German and Spanish. Just tell me which you're most comfortable in and that's the language for the day.",
   "faq.5.q":"Is the tour really private?","faq.5.a":"Always. It's only ever your group in the car — never shared with strangers. The pace, the stops and the music are yours.",
   "faq.6.q":"Do you pick up from my hotel?","faq.6.a":"Yes — free hotel, apartment or campsite pick-up across the Reykjavík area, and from Keflavík Airport for transfers. I'll confirm the exact time when we talk.",
@@ -99,13 +99,13 @@ en:{
 
   "pl.offer":"",
 
-  "footer.tagline":"Private tours and airport transfers across Iceland — a local driver who treats you like family.","footer.explore":"Explore","footer.tours":"Tours","footer.contact":"Contact","footer.disclaimer":"Journey Iceland is a private driver & guide service. Availability requests are confirmed personally; this site does not take online bookings or payments.","footer.privacy":"Privacy","footer.terms":"Terms","footer.rights":"© 2026 Journey Iceland. Made with warmth in Reykjavík.",
+  "footer.tagline":"Private tours and airport transfers across Iceland — a local driver who treats you like family.","footer.explore":"Explore","footer.tours":"Tours","footer.contact":"Contact","footer.disclaimer":"Journey Iceland is a private driver & guide service. The Golden Circle tour can be booked online through our booking partner Bókun; all other tours and transfers are availability requests confirmed personally.","footer.privacy":"Privacy","footer.terms":"Terms","footer.rights":"© 2026 Journey Iceland. Made with warmth in Reykjavík.",
 
   /* ---------------- TOUR PAGE: Golden Circle ---------------- */
   "tp.bc.tours":"Tours","tp.bc.cur":"Golden Circle",
   "tp.eyebrow":"Private day tour · from Reykjavík",
   "tp.h1":"Golden Circle — private tour from Reykjavík.","tp.sub":"Iceland's three icons — a thundering waterfall, an erupting geyser and a continental rift — at your own pace, with no crowds and no clock.",
-  "tp.qf.dur":"6–8 hours","tp.qf.price":"from 85,000 ISK","tp.qf.priv":"Private · max 4","tp.qf.pickup":"Hotel pick-up","tp.qf.lang":"EN · PL · DE · ES",
+  "tp.qf.dur":"6 hours","tp.qf.price":"from 95,000 ISK","tp.qf.priv":"Private · max 4","tp.qf.priv.gc":"Private · max 6","tp.qf.pickup":"Hotel pick-up","tp.qf.lang":"EN · PL · DE · ES",
   "tp.sn.overview":"Overview","tp.sn.route":"Route","tp.sn.map":"Map","tp.sn.gallery":"Gallery","tp.sn.reviews":"Reviews","tp.sn.faq":"FAQ","tp.sn.avail":"Availability",
 
   "tp.hl.eyebrow":"In short","tp.hl.h2":"What the day looks like.",
@@ -139,13 +139,13 @@ en:{
   "tp.gal.eyebrow":"Gallery","tp.gal.h2":"From this route.",
   "tp.rev.eyebrow":"Reviews","tp.rev.h2":"What guests say about this tour.",
   "tp.faq.eyebrow":"Golden Circle FAQ","tp.faq.h2":"Questions about this tour.",
-  "tp.faq.1.q":"How long is the Golden Circle tour?","tp.faq.1.a":"Usually 6–8 hours door to door, depending on how long you want to linger and whether we add a hidden stop or a hot-spring soak. It's your day — we're never watching a coach timetable.",
-  "tp.faq.2.q":"How many people can come?","tp.faq.2.a":"Up to 4 guests travel in comfort in the car. Have a group of 5–8? Message me and I'll arrange the right vehicle.",
+  "tp.faq.1.q":"How long is the Golden Circle tour?","tp.faq.1.a":"Usually about 6 hours door to door, depending on how long you want to linger and whether we add a hidden stop or a hot-spring soak. It's your day — we're never watching a coach timetable.",
+  "tp.faq.2.q":"How many people can come?","tp.faq.2.a":"Up to 6 guests travel in comfort in the car. A bigger group? Message me and I'll arrange the right vehicle.",
   "tp.faq.3.q":"Can we do the Golden Circle in winter?","tp.faq.3.a":"Yes — it's beautiful under snow, and the shorter days even give a chance of aurora on the drive home. I adjust the route and timing to the conditions and daylight.",
-  "tp.faq.4.q":"What does 'from 85,000 ISK' mean?","tp.faq.4.a":"That's a per-group starting price, not per person — so it's the same whether one or four of you travel. The final quote depends on season, pick-up point and any extras.",
+  "tp.faq.4.q":"What does 'from 95,000 ISK' mean?","tp.faq.4.a":"It's the price for your whole group of up to 6, not per person — the same whether one or six of you travel. The exact price for your date is shown in the booking calendar.",
 
   "tp.also.eyebrow":"You may also like","tp.also.h2":"Other ways to see Iceland.",
-  "tp.avail.eyebrow":"Check availability","tp.avail.h2":"Check dates for the Golden Circle.","tp.avail.lead":"Send a quick request with your dates and I'll reply personally to confirm everything.",
+  "tp.avail.eyebrow":"Check availability","tp.avail.h2":"Check dates for the Golden Circle.","tp.avail.lead":"Send a quick request with your dates and I'll reply personally to confirm everything.","tp.avail.lead.book":"Pick a date and book online in a minute — or message me first if you have questions.","tp.book.nojs":"Please enable JavaScript to book online — or message me on WhatsApp.","tp.book.fail":"The booking calendar didn't load. Message me on WhatsApp and I'll book your date personally.",
 },
 
 /* =========================== POLSKI =========================== */
@@ -165,7 +165,7 @@ pl:{
   "tours.toursLabel":"Wycieczki jednodniowe","tours.transfersLabel":"Transfery z lotniska i do term",
   "tour.see":"Zobacz wycieczkę","tour.tbc":"","tour.perGroup":"za grupę",
 
-  "tour.gc.name":"Golden Circle","tour.gc.dur":"6–8 godz.","tour.gc.price":"od 85 000 ISK","tour.gc.alt":"≈ 2 600 zł · za grupę",
+  "tour.gc.name":"Golden Circle","tour.gc.dur":"6 godz.","tour.gc.price":"od 95 000 ISK","tour.gc.alt":"≈ 3 200 zł · za grupę",
   "tour.sc.name":"Południowe wybrzeże","tour.sc.dur":"8–10 godz.","tour.sc.price":"od 110 000 ISK","tour.sc.alt":"≈ 3 300 zł · za grupę",
   "tour.jk.name":"Laguna lodowcowa Jökulsárlón","tour.jk.dur":"12–14 godz.","tour.jk.price":"od 179 000 ISK","tour.jk.alt":"≈ 5 400 zł · za grupę",
 
@@ -209,7 +209,7 @@ pl:{
   "faq.eyebrow":"Warto wiedzieć","faq.h2":"Odpowiadam na pytania.",
   "faq.1.q":"Czy jazda islandzkimi drogami z Tobą jest bezpieczna?","faq.1.a":"Tak. Jestem doświadczonym, w pełni ubezpieczonym lokalnym kierowcą, jeżdżę zadbanym autem 4×4. Codziennie sprawdzam pogodę i stan dróg i chętnie zmienię plan, zamiast ryzykować. Twoje bezpieczeństwo zawsze jest ważniejsze niż plan dnia.",
   "faq.2.q":"Czy gwarantujesz, że zobaczymy zorzę?","faq.2.a":"Uczciwie — nikt nie może. Zorza zależy od ciemności, czystego nieba i aktywności słońca. Mogę za to obiecać, że śledzę prognozę, wywożę Cię poza światła miasta tam, gdzie szanse są największe, i dbam o ciepło podczas czekania. A jeśli niebo nie da rady, powiem wprost.",
-  "faq.3.q":"Jak działa płatność, skoro nie ma rezerwacji online?","faq.3.a":"Tak to działa celowo. Wysyłasz zapytanie o termin, ustalamy szczegóły osobiście, a potem wysyłam bezpieczny link do płatności albo przyjmuję kartę na miejscu. Samo zapytanie o termin nie wiąże się z żadną zaliczką.",
+  "faq.3.q":"Jak działa płatność, skoro nie ma rezerwacji online?","faq.3.a":"Tak to działa celowo. Wysyłasz zapytanie o termin, ustalamy szczegóły osobiście, a potem wysyłam bezpieczny link do płatności albo przyjmuję kartę na miejscu. Samo zapytanie o termin nie wiąże się z żadną zaliczką. Golden Circle możesz też zarezerwować od razu online w kalendarzu na jego stronie.",
   "faq.4.q":"Jakimi językami mówisz?","faq.4.a":"Oprowadzam po polsku, angielsku, niemiecku i hiszpańsku. Powiedz tylko, w którym czujesz się najlepiej, i taki będzie język całego dnia.",
   "faq.5.q":"Czy wycieczka jest naprawdę prywatna?","faq.5.a":"Zawsze. W aucie jest wyłącznie Twoja grupa — nigdy z obcymi. Tempo, przystanki i muzyka należą do Ciebie.",
   "faq.6.q":"Czy odbierasz z hotelu?","faq.6.a":"Tak — bezpłatny odbiór z hotelu, mieszkania lub kempingu w rejonie Reykjavíku, a przy transferach także z lotniska Keflavík. Dokładną godzinę ustalimy w rozmowie.",
@@ -228,11 +228,11 @@ pl:{
 
   "pl.offer":"🇵🇱 Dla polskich podróżnych — zapytaj o specjalną cenę i powitanie po polsku.",
 
-  "footer.tagline":"Prywatne wycieczki i transfery z lotniska po całej Islandii — lokalny kierowca, który zadba o Ciebie jak o rodzinę.","footer.explore":"Odkryj","footer.tours":"Wycieczki","footer.contact":"Kontakt","footer.disclaimer":"Journey Iceland to usługa prywatnego kierowcy i przewodnika. Zapytania o termin potwierdzam osobiście; strona nie przyjmuje rezerwacji ani płatności online.","footer.privacy":"Prywatność","footer.terms":"Regulamin","footer.rights":"© 2026 Journey Iceland. Tworzone z ciepłem w Reykjavíku.",
+  "footer.tagline":"Prywatne wycieczki i transfery z lotniska po całej Islandii — lokalny kierowca, który zadba o Ciebie jak o rodzinę.","footer.explore":"Odkryj","footer.tours":"Wycieczki","footer.contact":"Kontakt","footer.disclaimer":"Journey Iceland to usługa prywatnego kierowcy i przewodnika. Golden Circle można zarezerwować online przez naszego partnera rezerwacyjnego Bókun; pozostałe wycieczki i transfery to zapytania o termin potwierdzane osobiście.","footer.privacy":"Prywatność","footer.terms":"Regulamin","footer.rights":"© 2026 Journey Iceland. Tworzone z ciepłem w Reykjavíku.",
 
   "tp.bc.tours":"Wycieczki","tp.bc.cur":"Golden Circle",
   "tp.eyebrow":"Prywatna wycieczka jednodniowa · z Reykjavíku","tp.h1":"Golden Circle — prywatna wycieczka z Reykjavíku.","tp.sub":"Trzy ikony Islandii — huczący wodospad, wybuchający gejzer i ryft kontynentalny — w Twoim tempie, bez tłumów i bez zegarka.",
-  "tp.qf.dur":"6–8 godzin","tp.qf.price":"od 85 000 ISK","tp.qf.priv":"Prywatnie · maks. 4","tp.qf.pickup":"Odbiór z hotelu","tp.qf.lang":"EN · PL · DE · ES",
+  "tp.qf.dur":"6 godzin","tp.qf.price":"od 95 000 ISK","tp.qf.priv":"Prywatnie · maks. 4","tp.qf.priv.gc":"Prywatnie · maks. 6","tp.qf.pickup":"Odbiór z hotelu","tp.qf.lang":"EN · PL · DE · ES",
   "tp.sn.overview":"Opis","tp.sn.route":"Trasa","tp.sn.map":"Mapa","tp.sn.gallery":"Galeria","tp.sn.reviews":"Opinie","tp.sn.faq":"FAQ","tp.sn.avail":"Dostępność",
 
   "tp.hl.eyebrow":"W skrócie","tp.hl.h2":"Jak wygląda ten dzień.",
@@ -266,13 +266,13 @@ pl:{
   "tp.gal.eyebrow":"Galeria","tp.gal.h2":"Z tej trasy.",
   "tp.rev.eyebrow":"Opinie","tp.rev.h2":"Co goście mówią o tej wycieczce.",
   "tp.faq.eyebrow":"FAQ Golden Circle","tp.faq.h2":"Pytania o tę wycieczkę.",
-  "tp.faq.1.q":"Ile trwa wycieczka Golden Circle?","tp.faq.1.a":"Zwykle 6–8 godzin od drzwi do drzwi, zależnie od tego, jak długo chcesz się zatrzymywać i czy dorzucimy ukryty przystanek albo kąpiel w gorącym źródle. To Twój dzień — nie patrzymy na rozkład autokaru.",
-  "tp.faq.2.q":"Ile osób może jechać?","tp.faq.2.a":"W komforcie podróżuje do 4 gości. Macie grupę 5–8 osób? Napisz, a zorganizuję odpowiedni pojazd.",
+  "tp.faq.1.q":"Ile trwa wycieczka Golden Circle?","tp.faq.1.a":"Zwykle około 6 godzin od drzwi do drzwi, zależnie od tego, jak długo chcesz się zatrzymywać i czy dorzucimy ukryty przystanek albo kąpiel w gorącym źródle. To Twój dzień — nie patrzymy na rozkład autokaru.",
+  "tp.faq.2.q":"Ile osób może jechać?","tp.faq.2.a":"W komforcie podróżuje do 6 gości. Większa grupa? Napisz, a zorganizuję odpowiedni pojazd.",
   "tp.faq.3.q":"Czy Golden Circle da się zrobić zimą?","tp.faq.3.a":"Tak — pod śniegiem jest przepięknie, a krótsze dni dają nawet szansę na zorzę w drodze powrotnej. Dopasowuję trasę i godziny do warunków i długości dnia.",
-  "tp.faq.4.q":"Co znaczy „od 85 000 ISK”?","tp.faq.4.a":"To cena wyjściowa za grupę, nie od osoby — więc jest taka sama, czy jedzie jedna osoba, czy cztery. Ostateczna wycena zależy od sezonu, miejsca odbioru i dodatków.",
+  "tp.faq.4.q":"Co znaczy „od 95 000 ISK”?","tp.faq.4.a":"To cena za całą grupę do 6 osób, nie od osoby — taka sama, czy jedzie jedna osoba, czy sześć. Dokładną cenę na wybrany dzień zobaczysz w kalendarzu rezerwacji.",
 
   "tp.also.eyebrow":"Może Cię zainteresować","tp.also.h2":"Inne sposoby na Islandię.",
-  "tp.avail.eyebrow":"Sprawdź dostępność","tp.avail.h2":"Sprawdź terminy dla Golden Circle.","tp.avail.lead":"Wyślij krótkie zapytanie z terminami, a odpiszę osobiście, żeby wszystko potwierdzić.",
+  "tp.avail.eyebrow":"Sprawdź dostępność","tp.avail.h2":"Sprawdź terminy dla Golden Circle.","tp.avail.lead":"Wyślij krótkie zapytanie z terminami, a odpiszę osobiście, żeby wszystko potwierdzić.","tp.avail.lead.book":"Wybierz termin i zarezerwuj online w minutę — albo najpierw napisz, jeśli masz pytania.","tp.book.nojs":"Włącz JavaScript, aby zarezerwować online — albo napisz do mnie na WhatsAppie.","tp.book.fail":"Kalendarz rezerwacji się nie załadował. Napisz do mnie na WhatsAppie, a zarezerwuję termin osobiście.",
 },
 
 /* =========================== DEUTSCH =========================== */
@@ -292,7 +292,7 @@ de:{
   "tours.toursLabel":"Tagestouren","tours.transfersLabel":"Flughafen- & Spa-Transfers",
   "tour.see":"Tour ansehen","tour.tbc":"","tour.perGroup":"pro Gruppe",
 
-  "tour.gc.name":"Golden Circle","tour.gc.dur":"6–8 Std.","tour.gc.price":"ab 85.000 ISK","tour.gc.alt":"≈ 570 € / 610 $ · pro Gruppe",
+  "tour.gc.name":"Golden Circle","tour.gc.dur":"6 Std.","tour.gc.price":"ab 95.000 ISK","tour.gc.alt":"≈ 700 € / 750 $ · pro Gruppe",
   "tour.sc.name":"Südküste","tour.sc.dur":"8–10 Std.","tour.sc.price":"ab 110.000 ISK","tour.sc.alt":"≈ 730 € / 790 $ · pro Gruppe",
   "tour.jk.name":"Gletscherlagune Jökulsárlón","tour.jk.dur":"12–14 Std.","tour.jk.price":"ab 179.000 ISK","tour.jk.alt":"≈ 1.190 € / 1.280 $ · pro Gruppe",
 
@@ -336,7 +336,7 @@ de:{
   "faq.eyebrow":"Gut zu wissen","faq.h2":"Fragen, beantwortet.",
   "faq.1.q":"Ist es sicher, mit dir über Islands Straßen zu fahren?","faq.1.a":"Ja. Ich bin ein erfahrener, voll versicherter einheimischer Fahrer in einem gepflegten 4×4. Ich prüfe täglich Wetter und Straßenzustand und ändere lieber einen Plan, als ein Risiko einzugehen. Deine Sicherheit geht immer vor jeden Reiseplan.",
   "faq.2.q":"Kannst du garantieren, dass wir die Nordlichter sehen?","faq.2.a":"Ehrlich gesagt kann das niemand — die Aurora hängt von Dunkelheit, klarem Himmel und Sonnenaktivität ab. Versprechen kann ich, dass ich die Vorhersage verfolge, dich weg vom Stadtlicht zur besten Chance fahre und dich beim Warten warmhalte. Spielt der Himmel nicht mit, sage ich es dir geradeheraus.",
-  "faq.3.q":"Wie funktioniert die Zahlung, wenn ich nicht online buchen kann?","faq.3.a":"Das ist Absicht. Du sendest eine Verfügbarkeitsanfrage, wir klären die Details persönlich, und dann schicke ich dir einen sicheren Zahlungslink oder nehme die Karte am Tag selbst. Für eine reine Terminanfrage wird keine Anzahlung fällig.",
+  "faq.3.q":"Wie funktioniert die Zahlung, wenn ich nicht online buchen kann?","faq.3.a":"Das ist Absicht. Du sendest eine Verfügbarkeitsanfrage, wir klären die Details persönlich, und dann schicke ich dir einen sicheren Zahlungslink oder nehme die Karte am Tag selbst. Für eine reine Terminanfrage wird keine Anzahlung fällig. Den Golden Circle kannst du auch direkt online im Kalender auf seiner Seite buchen.",
   "faq.4.q":"Welche Sprachen sprichst du?","faq.4.a":"Ich führe auf Deutsch, Englisch, Polnisch und Spanisch. Sag mir einfach, in welcher du dich am wohlsten fühlst, und das ist die Sprache des Tages.",
   "faq.5.q":"Ist die Tour wirklich privat?","faq.5.a":"Immer. Es ist nur deine Gruppe im Auto — nie mit Fremden geteilt. Tempo, Stopps und Musik gehören dir.",
   "faq.6.q":"Holst du mich am Hotel ab?","faq.6.a":"Ja — kostenlose Abholung an Hotel, Apartment oder Campingplatz im Raum Reykjavík und bei Transfers auch am Flughafen Keflavík. Die genaue Zeit bestätige ich im Gespräch.",
@@ -355,11 +355,11 @@ de:{
 
   "pl.offer":"",
 
-  "footer.tagline":"Private Touren und Flughafentransfers in ganz Island — ein einheimischer Fahrer, der dich wie Familie behandelt.","footer.explore":"Entdecken","footer.tours":"Touren","footer.contact":"Kontakt","footer.disclaimer":"Journey Iceland ist ein privater Fahr- & Guide-Service. Verfügbarkeitsanfragen werden persönlich bestätigt; diese Seite nimmt keine Online-Buchungen oder Zahlungen an.","footer.privacy":"Datenschutz","footer.terms":"AGB","footer.rights":"© 2026 Journey Iceland. Mit Wärme in Reykjavík gemacht.",
+  "footer.tagline":"Private Touren und Flughafentransfers in ganz Island — ein einheimischer Fahrer, der dich wie Familie behandelt.","footer.explore":"Entdecken","footer.tours":"Touren","footer.contact":"Kontakt","footer.disclaimer":"Journey Iceland ist ein privater Fahr- & Guide-Service. Den Golden Circle kannst du online über unseren Buchungspartner Bókun buchen; alle anderen Touren und Transfers sind Verfügbarkeitsanfragen, die persönlich bestätigt werden.","footer.privacy":"Datenschutz","footer.terms":"AGB","footer.rights":"© 2026 Journey Iceland. Mit Wärme in Reykjavík gemacht.",
 
   "tp.bc.tours":"Touren","tp.bc.cur":"Golden Circle",
   "tp.eyebrow":"Private Tagestour · ab Reykjavík","tp.h1":"Golden Circle — private Tour ab Reykjavík.","tp.sub":"Islands drei Ikonen — ein donnernder Wasserfall, ein ausbrechender Geysir und ein Kontinentalgraben — in deinem Tempo, ohne Menschenmassen und ohne Uhr.",
-  "tp.qf.dur":"6–8 Stunden","tp.qf.price":"ab 85.000 ISK","tp.qf.priv":"Privat · max. 4","tp.qf.pickup":"Hotelabholung","tp.qf.lang":"EN · PL · DE · ES",
+  "tp.qf.dur":"6 Stunden","tp.qf.price":"ab 95.000 ISK","tp.qf.priv":"Privat · max. 4","tp.qf.priv.gc":"Privat · max. 6","tp.qf.pickup":"Hotelabholung","tp.qf.lang":"EN · PL · DE · ES",
   "tp.sn.overview":"Überblick","tp.sn.route":"Route","tp.sn.map":"Karte","tp.sn.gallery":"Galerie","tp.sn.reviews":"Bewertungen","tp.sn.faq":"FAQ","tp.sn.avail":"Verfügbarkeit",
 
   "tp.hl.eyebrow":"Kurz gesagt","tp.hl.h2":"So sieht der Tag aus.",
@@ -393,13 +393,13 @@ de:{
   "tp.gal.eyebrow":"Galerie","tp.gal.h2":"Von dieser Route.",
   "tp.rev.eyebrow":"Bewertungen","tp.rev.h2":"Was Gäste über diese Tour sagen.",
   "tp.faq.eyebrow":"Golden-Circle-FAQ","tp.faq.h2":"Fragen zu dieser Tour.",
-  "tp.faq.1.q":"Wie lange dauert die Golden-Circle-Tour?","tp.faq.1.a":"Meist 6–8 Stunden von Tür zu Tür, je nachdem, wie lange du verweilen möchtest und ob wir einen versteckten Stopp oder ein Bad in einer heißen Quelle einbauen. Es ist dein Tag — wir schauen nie auf einen Busfahrplan.",
-  "tp.faq.2.q":"Wie viele Personen können mit?","tp.faq.2.a":"Bis zu 4 Gäste reisen bequem im Auto. Ihr seid 5–8? Schreib mir und ich organisiere das passende Fahrzeug.",
+  "tp.faq.1.q":"Wie lange dauert die Golden-Circle-Tour?","tp.faq.1.a":"Meist etwa 6 Stunden von Tür zu Tür, je nachdem, wie lange du verweilen möchtest und ob wir einen versteckten Stopp oder ein Bad in einer heißen Quelle einbauen. Es ist dein Tag — wir schauen nie auf einen Busfahrplan.",
+  "tp.faq.2.q":"Wie viele Personen können mit?","tp.faq.2.a":"Bis zu 6 Gäste reisen bequem im Auto. Ihr seid mehr? Schreib mir und ich organisiere das passende Fahrzeug.",
   "tp.faq.3.q":"Kann man den Golden Circle im Winter machen?","tp.faq.3.a":"Ja — unter Schnee ist er wunderschön, und die kürzeren Tage bieten sogar die Chance auf Nordlichter auf der Heimfahrt. Ich passe Route und Zeiten an Bedingungen und Tageslicht an.",
-  "tp.faq.4.q":"Was bedeutet „ab 85.000 ISK“?","tp.faq.4.a":"Das ist ein Startpreis pro Gruppe, nicht pro Person — also gleich, ob einer oder vier mitfahren. Der Endpreis hängt von Saison, Abholort und Extras ab.",
+  "tp.faq.4.q":"Was bedeutet „ab 95.000 ISK“?","tp.faq.4.a":"Das ist der Preis für deine ganze Gruppe bis 6 Personen, nicht pro Person — gleich, ob einer oder sechs mitfahren. Den genauen Preis für dein Datum siehst du im Buchungskalender.",
 
   "tp.also.eyebrow":"Das könnte dir gefallen","tp.also.h2":"Weitere Wege, Island zu sehen.",
-  "tp.avail.eyebrow":"Verfügbarkeit prüfen","tp.avail.h2":"Termine für den Golden Circle prüfen.","tp.avail.lead":"Sende eine kurze Anfrage mit deinen Daten und ich antworte persönlich, um alles zu bestätigen.",
+  "tp.avail.eyebrow":"Verfügbarkeit prüfen","tp.avail.h2":"Termine für den Golden Circle prüfen.","tp.avail.lead":"Sende eine kurze Anfrage mit deinen Daten und ich antworte persönlich, um alles zu bestätigen.","tp.avail.lead.book":"Wähle ein Datum und buche in einer Minute online — oder schreib mir vorher, wenn du Fragen hast.","tp.book.nojs":"Bitte aktiviere JavaScript, um online zu buchen — oder schreib mir auf WhatsApp.","tp.book.fail":"Der Buchungskalender wurde nicht geladen. Schreib mir auf WhatsApp und ich buche deinen Termin persönlich.",
 },
 
 /* =========================== ESPAÑOL =========================== */
@@ -423,7 +423,7 @@ es:{
   "tours.toursLabel":"Tours de un día","tours.transfersLabel":"Traslados al aeropuerto y al spa",
   "tour.see":"Ver tour","tour.tbc":"","tour.perGroup":"por grupo",
 
-  "tour.gc.name":"Círculo Dorado","tour.gc.dur":"6–8 h","tour.gc.price":"desde 85.000 ISK","tour.gc.alt":"≈ 570 € / 610 $ · por grupo",
+  "tour.gc.name":"Círculo Dorado","tour.gc.dur":"6 h","tour.gc.price":"desde 95.000 ISK","tour.gc.alt":"≈ 700 € / 750 $ · por grupo",
   "tour.sc.name":"Costa Sur","tour.sc.dur":"8–10 h","tour.sc.price":"desde 110.000 ISK","tour.sc.alt":"≈ 730 € / 790 $ · por grupo",
   "tour.jk.name":"Laguna glaciar Jökulsárlón","tour.jk.dur":"12–14 h","tour.jk.price":"desde 179.000 ISK","tour.jk.alt":"≈ 1.190 € / 1.280 $ · por grupo",
 
@@ -467,7 +467,7 @@ es:{
   "faq.eyebrow":"Bueno saberlo","faq.h2":"Preguntas, respondidas.",
   "faq.1.q":"¿Es seguro recorrer las carreteras de Islandia contigo?","faq.1.a":"Sí. Soy un conductor local experimentado y totalmente asegurado, con un 4×4 bien mantenido. Consulto a diario el tiempo y el estado de las carreteras, y cambio el plan encantado antes que arriesgar. Tu seguridad va siempre por delante de cualquier itinerario.",
   "faq.2.q":"¿Puedes garantizar que veremos las auroras boreales?","faq.2.a":"Sinceramente, nadie puede — la aurora depende de la oscuridad, el cielo despejado y la actividad solar. Lo que sí prometo es seguir la previsión, alejarte de las luces de la ciudad hacia la mejor opción y mantenerte caliente mientras esperamos. Si el cielo no acompaña, te lo diré claramente.",
-  "faq.3.q":"¿Cómo funciona el pago si no puedo reservar online?","faq.3.a":"Es a propósito. Envías una solicitud de disponibilidad, confirmamos los detalles juntos en persona, y luego te envío un enlace de pago seguro o cobro con tarjeta el mismo día. No se cobra ningún depósito solo por preguntar por una fecha.",
+  "faq.3.q":"¿Cómo funciona el pago si no puedo reservar online?","faq.3.a":"Es a propósito. Envías una solicitud de disponibilidad, confirmamos los detalles juntos en persona, y luego te envío un enlace de pago seguro o cobro con tarjeta el mismo día. No se cobra ningún depósito solo por preguntar por una fecha. El Círculo Dorado también se puede reservar directamente online en el calendario de su página.",
   "faq.4.q":"¿Qué idiomas hablas?","faq.4.a":"Guío en inglés, polaco, alemán y español. Solo dime en cuál te sientes más cómodo y ese será el idioma del día.",
   "faq.5.q":"¿El tour es realmente privado?","faq.5.a":"Siempre. En el coche va únicamente tu grupo — nunca se comparte con desconocidos. El ritmo, las paradas y la música son tuyos.",
   "faq.6.q":"¿Recoges en mi hotel?","faq.6.a":"Sí — recogida gratuita en hotel, apartamento o camping en la zona de Reikiavik, y en el aeropuerto de Keflavík para los traslados. Confirmo la hora exacta cuando hablemos.",
@@ -486,13 +486,13 @@ es:{
 
   "pl.offer":"",
 
-  "footer.tagline":"Tours privados y traslados al aeropuerto por toda Islandia — un conductor local que te trata como a la familia.","footer.explore":"Explora","footer.tours":"Tours","footer.contact":"Contacto","footer.disclaimer":"Journey Iceland es un servicio privado de conductor y guía. Las solicitudes de disponibilidad se confirman personalmente; este sitio no acepta reservas ni pagos online.","footer.privacy":"Privacidad","footer.terms":"Términos","footer.rights":"© 2026 Journey Iceland. Hecho con cariño en Reikiavik.",
+  "footer.tagline":"Tours privados y traslados al aeropuerto por toda Islandia — un conductor local que te trata como a la familia.","footer.explore":"Explora","footer.tours":"Tours","footer.contact":"Contacto","footer.disclaimer":"Journey Iceland es un servicio privado de conductor y guía. El Círculo Dorado se puede reservar online a través de nuestro socio de reservas Bókun; el resto de tours y traslados son solicitudes de disponibilidad confirmadas personalmente.","footer.privacy":"Privacidad","footer.terms":"Términos","footer.rights":"© 2026 Journey Iceland. Hecho con cariño en Reikiavik.",
 
   /* ---------------- PÁGINA DE TOUR: Círculo Dorado ---------------- */
   "tp.bc.tours":"Tours","tp.bc.cur":"Círculo Dorado",
   "tp.eyebrow":"Tour privado de un día · desde Reikiavik",
   "tp.h1":"Círculo Dorado — tour privado desde Reikiavik.","tp.sub":"Los tres iconos de Islandia — una cascada atronadora, un géiser en erupción y una grieta continental — a tu ritmo, sin multitudes y sin reloj.",
-  "tp.qf.dur":"6–8 horas","tp.qf.price":"desde 85.000 ISK","tp.qf.priv":"Privado · máx. 4","tp.qf.pickup":"Recogida en el hotel","tp.qf.lang":"EN · PL · DE · ES",
+  "tp.qf.dur":"6 horas","tp.qf.price":"desde 95.000 ISK","tp.qf.priv":"Privado · máx. 4","tp.qf.priv.gc":"Privado · máx. 6","tp.qf.pickup":"Recogida en el hotel","tp.qf.lang":"EN · PL · DE · ES",
   "tp.sn.overview":"Resumen","tp.sn.route":"Ruta","tp.sn.map":"Mapa","tp.sn.gallery":"Galería","tp.sn.reviews":"Opiniones","tp.sn.faq":"FAQ","tp.sn.avail":"Disponibilidad",
 
   "tp.hl.eyebrow":"En resumen","tp.hl.h2":"Cómo es el día.",
@@ -526,13 +526,13 @@ es:{
   "tp.gal.eyebrow":"Galería","tp.gal.h2":"De esta ruta.",
   "tp.rev.eyebrow":"Opiniones","tp.rev.h2":"Lo que dicen los huéspedes de este tour.",
   "tp.faq.eyebrow":"FAQ Círculo Dorado","tp.faq.h2":"Preguntas sobre este tour.",
-  "tp.faq.1.q":"¿Cuánto dura el tour del Círculo Dorado?","tp.faq.1.a":"Normalmente 6–8 horas puerta a puerta, según cuánto quieras demorarte y si añadimos una parada escondida o un baño termal. Es tu día — nunca miramos el horario de un autocar.",
-  "tp.faq.2.q":"¿Cuántas personas pueden ir?","tp.faq.2.a":"Hasta 4 huéspedes viajan con comodidad en el coche. ¿Sois un grupo de 5–8? Escríbeme y organizo el vehículo adecuado.",
+  "tp.faq.1.q":"¿Cuánto dura el tour del Círculo Dorado?","tp.faq.1.a":"Normalmente unas 6 horas puerta a puerta, según cuánto quieras demorarte y si añadimos una parada escondida o un baño termal. Es tu día — nunca miramos el horario de un autocar.",
+  "tp.faq.2.q":"¿Cuántas personas pueden ir?","tp.faq.2.a":"Hasta 6 huéspedes viajan con comodidad en el coche. ¿Sois más? Escríbeme y organizo el vehículo adecuado.",
   "tp.faq.3.q":"¿Se puede hacer el Círculo Dorado en invierno?","tp.faq.3.a":"Sí — es precioso bajo la nieve, y los días más cortos hasta dan opción a ver auroras en el viaje de vuelta. Ajusto la ruta y los horarios a las condiciones y a la luz.",
-  "tp.faq.4.q":"¿Qué significa «desde 85.000 ISK»?","tp.faq.4.a":"Es un precio de salida por grupo, no por persona — así que es lo mismo si viaja uno o cuatro. El precio final depende de la temporada, el punto de recogida y los extras.",
+  "tp.faq.4.q":"¿Qué significa «desde 95.000 ISK»?","tp.faq.4.a":"Es el precio para todo tu grupo de hasta 6 personas, no por persona — lo mismo si viaja uno o seis. El precio exacto para tu fecha aparece en el calendario de reservas.",
 
   "tp.also.eyebrow":"También te puede gustar","tp.also.h2":"Otras formas de ver Islandia.",
-  "tp.avail.eyebrow":"Comprobar disponibilidad","tp.avail.h2":"Consulta fechas para el Círculo Dorado.","tp.avail.lead":"Envía una solicitud rápida con tus fechas y te responderé personalmente para confirmarlo todo.",
+  "tp.avail.eyebrow":"Comprobar disponibilidad","tp.avail.h2":"Consulta fechas para el Círculo Dorado.","tp.avail.lead":"Envía una solicitud rápida con tus fechas y te responderé personalmente para confirmarlo todo.","tp.avail.lead.book":"Elige una fecha y reserva online en un minuto — o escríbeme antes si tienes preguntas.","tp.book.nojs":"Activa JavaScript para reservar online — o escríbeme por WhatsApp.","tp.book.fail":"El calendario de reservas no se ha cargado. Escríbeme por WhatsApp y reservo tu fecha personalmente.",
 },
 };
 
