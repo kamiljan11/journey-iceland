@@ -21,6 +21,8 @@ type TourMeta = {
   heroImg: string; ftImg?: string; ftLabel?: string; route?: { lat: number; lng: number; label: string }[]; gallery: GalleryItem[];
   // Bókun experience id: when set, the availability section shows the Bókun booking calendar instead of the enquiry form.
   bokunProductId?: number;
+  // Which shared guest reviews (rev.N) to show; defaults to 1, 3, 4 (day-tour reviews).
+  reviews?: number[];
 };
 
 export const META: Record<string, TourMeta> = {
@@ -49,6 +51,8 @@ export const META: Record<string, TourMeta> = {
   'northern-lights': {
     priceKey: 'tour.nl.price', nameKey: 'tour.nl.name', waKey: 'wa.aurora', preselect: 'aurora',
     bokunProductId: BOKUN_PRODUCT.northernLights,
+    // rev.1 is about a waterfall day; these are about weather honesty, photo stops and a night-time pick-up.
+    reviews: [3, 6, 5],
     heroImg: '/img/nl-hero.webp', ftImg: '/img/nl-thermos.webp',
     // nl-own*: the client's own photos from the Bókun product (1283216); nl-g* and nl-hero/thermos: Pexels (free licence).
     gallery: [{ src: '/img/nl-own3.webp' }, { src: '/img/nl-g1.webp' }, { src: '/img/nl-own1.webp' }, { src: '/img/nl-g2.webp' }, { src: '/img/nl-own2.webp' }, { src: '/img/nl-g3.webp' }],

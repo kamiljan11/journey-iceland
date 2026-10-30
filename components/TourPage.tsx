@@ -11,11 +11,11 @@ const SUBNAV: [string, string][] = [
   ['#ov', 'tp.sn.overview'], ['#route', 'tp.sn.route'], ['#map', 'tp.sn.map'],
   ['#gallery', 'tp.sn.gallery'], ['#reviews', 'tp.sn.reviews'], ['#faq', 'tp.sn.faq'], ['#avail', 'tp.sn.avail'],
 ];
-const REVIEWS = [
-  { n: 1, av: 'S', flag: '🇺🇸', d: '' },
-  { n: 3, av: 'E', flag: '🇬🇧', d: 'd1' },
-  { n: 4, av: 'B', flag: '🇩🇪', d: 'd2' },
-];
+const REVIEWERS: Record<number, { av: string; flag: string }> = {
+  1: { av: 'S', flag: '🇺🇸' }, 2: { av: 'T', flag: '🇵🇱' }, 3: { av: 'E', flag: '🇬🇧' },
+  4: { av: 'B', flag: '🇩🇪' }, 5: { av: 'D', flag: '🇨🇦' }, 6: { av: 'P', flag: '🇬🇧' },
+};
+const DEFAULT_REVIEWS = [1, 3, 4];
 
 export default function TourPage({ lang, slug }: { lang: string; slug: string }) {
   const t = makeT(lang);
@@ -182,7 +182,7 @@ export default function TourPage({ lang, slug }: { lang: string; slug: string })
         <div className="wrap">
           <div className="sec-head reveal"><span className="eyebrow">{t('tp.rev.eyebrow')}</span><h2>{x.revH2 ?? t('tp.rev.h2')}</h2></div>
           <div className="reviews-grid">
-            {REVIEWS.map((r) => (
+            {(x.reviews ?? DEFAULT_REVIEWS).map((n, i) => ({ n, ...REVIEWERS[n], d: ['', 'd1', 'd2'][i] ?? '' })).map((r) => (
               <figure className={`review reveal ${r.d}`.trim()} key={r.n}>
                 <div className="stars">★★★★★</div>
                 <blockquote>{t(`rev.${r.n}.q`)}</blockquote>

@@ -49,6 +49,15 @@ test('Northern Lights page: Bókun calendar, no route map, own copy instead of d
   }
 });
 
+test('selected reviews exist in every language', () => {
+  const dict = readFileSync(new URL('lib/dictionary.ts', root), 'utf8');
+  for (const slug of Object.keys(META)) {
+    for (const n of META[slug].reviews ?? []) {
+      assert.equal(dict.split(`"rev.${n}.q"`).length - 1, LANGS.length, `rev.${n} missing in a language`);
+    }
+  }
+});
+
 test('day tours keep their route map', () => {
   for (const slug of ['golden-circle', 'south-coast', 'jokulsarlon']) {
     const x = getTour(slug, 'en');
