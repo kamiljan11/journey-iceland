@@ -4,12 +4,16 @@ import { BOKUN_PRODUCT } from './bokun';
 export type Stop = { time: string; t: string; d: string };
 export type QA = { q: string; a: string };
 export type GalleryItem = { src?: string; label?: string };
+export type BringItem = { icon: string; t: string; d: string };
 
 export type TourText = {
   bcCur: string; eyebrow: string; h1: string; sub: string; qfDur: string;
   highlights: string[]; ovH2: string; overview: string[];
-  stops: Stop[]; mapH2: string; mapLabel: string;
+  stops: Stop[]; mapH2?: string; mapLabel?: string;
   ftH2: string; ftP: string; faqEyebrow: string; faq: QA[]; availH2: string;
+  // Optional per-tour overrides of the shared day-tour copy (tp.* keys); the evening Northern Lights tour needs its own.
+  groupFact?: string; langFact?: string; hlH2?: string; rtH2?: string; galH2?: string; revH2?: string;
+  incl?: { yes: string[]; no: string[] }; bring?: BringItem[];
 };
 
 type TourMeta = {
@@ -41,12 +45,21 @@ export const META: Record<string, TourMeta> = {
     route: [{ lat: 64.1466, lng: -21.9426, label: 'Reykjavík' }, { lat: 63.6156, lng: -19.9886, label: 'Seljalandsfoss' }, { lat: 63.5320, lng: -19.5113, label: 'Skógafoss' }, { lat: 63.4186, lng: -19.0060, label: 'Vík í Mýrdal' }, { lat: 64.0784, lng: -16.2306, label: 'Jökulsárlón' }, { lat: 64.0438, lng: -16.1790, label: 'Diamond Beach' }],
     gallery: [{ src: '/img/tour-jk.webp' }, { src: '/img/g6.webp' }, { src: '/img/g5.webp' }, { src: '/img/g1.webp' }, { src: '/img/g7.webp' }, { src: '/img/tour-sc.webp' }],
   },
+  // No fixed route: the night's direction follows the aurora and cloud forecast, so there is no map.
+  'northern-lights': {
+    priceKey: 'tour.nl.price', nameKey: 'tour.nl.name', waKey: 'wa.aurora', preselect: 'aurora',
+    bokunProductId: BOKUN_PRODUCT.northernLights,
+    heroImg: '/img/nl-hero.webp', ftImg: '/img/nl-thermos.webp',
+    // nl-own*: the client's own photos from the Bókun product (1283216); nl-g* and nl-hero/thermos: Pexels (free licence).
+    gallery: [{ src: '/img/nl-own3.webp' }, { src: '/img/nl-g1.webp' }, { src: '/img/nl-own1.webp' }, { src: '/img/nl-g2.webp' }, { src: '/img/nl-own2.webp' }, { src: '/img/nl-g3.webp' }],
+  },
 };
 
 export const TOUR_CARDS = [
   { slug: 'golden-circle', nameKey: 'tour.gc.name', priceKey: 'tour.gc.price', img: '/img/tour-gc.webp' },
   { slug: 'south-coast', nameKey: 'tour.sc.name', priceKey: 'tour.sc.price', img: '/img/tour-sc.webp' },
   { slug: 'jokulsarlon', nameKey: 'tour.jk.name', priceKey: 'tour.jk.price', img: '/img/tour-jk.webp' },
+  { slug: 'northern-lights', nameKey: 'tour.nl.name', priceKey: 'tour.nl.price', img: '/img/tour-nl.webp' },
 ];
 
 /* Golden Circle FAQ — client-supplied questions, answered in Sylwek's voice. */
@@ -92,7 +105,7 @@ function gcText(lang: string): TourText {
   };
 }
 
-/* ===== South Coast & Jökulsárlón text ===== */
+/* ===== South Coast, Jökulsárlón & Northern Lights text ===== */
 const CONTENT: Record<string, Record<string, TourText>> = {
   'south-coast': {
     en: {
@@ -300,6 +313,156 @@ const CONTENT: Record<string, Record<string, TourText>> = {
         { q: '¿Merece la pena el largo viaje?', a: 'La mayoría de los huéspedes dice que es lo mejor de su viaje. Con coche privado, lunchbox y paradas por el camino, el trayecto es parte de la experiencia.' },
       ],
       availH2: 'Consulta fechas para Jökulsárlón.',
+    },
+  },
+  'northern-lights': {
+    en: {
+      bcCur: 'Northern Lights', eyebrow: 'Private evening tour · from Reykjavík', h1: 'Northern Lights — private aurora hunt from Reykjavík.',
+      sub: 'I watch the forecast, drive you away from the city glow and keep you warm while we wait — just your group under the Icelandic night sky.',
+      qfDur: 'about 4 hours', groupFact: 'Private · 2–6', langFact: 'EN · PL', hlH2: 'What the night looks like.',
+      highlights: ['Hotel pick-up in the Reykjavík area, start at 21:00', 'Just your group — 2 to 6 people', 'I follow the aurora and cloud forecasts for you', 'Away from the city glow to the clearest sky I can find', "Kate's thermos of hot chocolate", 'Time to watch and take photos at your own pace', 'A warm car to come back to between sightings', 'Back at your hotel after about 4 hours'],
+      ovH2: 'Chasing the light, not a timetable.',
+      overview: ['The northern lights need three things at once: darkness, a clear sky and some solar activity. From September the nights in Iceland are dark again — the rest is about reading the forecast and being in the right place when the sky opens up.', "With me it's just your group. I check the aurora and cloud forecasts before we set off, then drive away from Reykjavík's lights to wherever the sky looks clearest that night. We wait together, warm in the car with Kate's hot chocolate, and step out when the aurora starts to dance."],
+      rtH2: 'How the night goes.',
+      stops: [
+        { time: 'from 21:00', t: 'Hotel pick-up', d: 'I collect you door-to-door in the Reykjavík area — your exact pick-up time comes with the booking confirmation. Dress warm; the rest is in the car.' },
+        { time: 'on the way', t: 'Reading the sky', d: 'I check the latest aurora and cloud forecasts and choose the direction with the best chance of a clear sky that night.' },
+        { time: 'out of town', t: 'Away from the city glow', d: 'We leave the lights of Reykjavík behind for a dark spot in the countryside, where even a faint aurora is easy to see.' },
+        { time: 'under the sky', t: 'Watching & waiting', d: "The aurora comes and goes, so we take our time. Between sightings you warm up in the car with Kate's thermos of hot chocolate." },
+        { time: 'about 4 h later', t: 'Back to your hotel', d: 'A relaxed drive back to your door — hopefully with a camera full of green sky.' },
+      ],
+      incl: {
+        yes: ['Private car with fuel & all road costs', 'Hotel pick-up & drop-off (Reykjavík area)', 'Local English / Polish-speaking guide', 'Aurora & cloud forecast tracking', 'Parking & national park fees', "Kate's thermos of hot chocolate"],
+        no: ['A guaranteed sighting — no one can promise the aurora', 'Dinner or other meals', 'Gratuities (never expected)'],
+      },
+      bring: [
+        { icon: '#i-flame', t: 'Warm layers', d: 'Nights get cold fast when you stand still. A thermal base layer, a warm mid-layer and a windproof jacket.' },
+        { icon: '#i-snow', t: 'Hat & gloves', d: 'The two things everyone wishes they had brought. A scarf or buff helps too.' },
+        { icon: '#i-boot', t: 'Warm, sturdy boots', d: 'We may stand on frozen or uneven ground. Waterproof boots and thick socks are ideal.' },
+        { icon: '#i-camera', t: 'A camera', d: 'Most recent phones have a night mode that catches the aurora well. Bring a charged spare battery — the cold drains it fast.' },
+      ],
+      ftH2: 'Hot chocolate under the aurora.', ftP: "Kate fills a thermos with hot chocolate for every aurora night. Waiting for the sky to light up is part of the experience — and it's much nicer with a warm cup in your hands.",
+      galH2: 'Under the Icelandic aurora.', revH2: 'What guests say.',
+      faqEyebrow: 'Northern Lights FAQ',
+      faq: [
+        { q: "Can you guarantee we'll see the Northern Lights?", a: "No one honestly can — the aurora depends on darkness, clear skies and solar activity. What I can promise is that I track the forecast, drive you away from city light to the best chance, and keep you warm while we wait. If the sky simply won't cooperate, I'll tell you straight." },
+        { q: 'When is the season?', a: 'The aurora needs real darkness, so I run this tour from September to March. In the bright summer nights it simply cannot be seen.' },
+        { q: 'Which night should I book?', a: "Message me before you book and I'll tell you honestly how the aurora and cloud forecasts look for your dates. Forecasts are most reliable a day or two ahead." },
+        { q: 'How cold will it be?', a: "Colder than you'd think — standing still at night, even a mild day feels freezing. Dress in layers with a hat and gloves; the car stays warm and there's hot chocolate between sightings." },
+        { q: 'Can I photograph the aurora with my phone?', a: "Usually yes — most recent phones have a night mode that does a good job. Hold the phone steady or rest it on something, and I'll gladly share the tips I know." },
+      ],
+      availH2: 'Pick your aurora night.',
+    },
+    pl: {
+      bcCur: 'Zorza polarna', eyebrow: 'Prywatna wycieczka wieczorna · z Reykjavíku', h1: 'Zorza polarna — prywatne polowanie na zorzę z Reykjavíku.',
+      sub: 'Śledzę prognozę, wywożę Cię poza łunę miasta i dbam, żeby było Ci ciepło podczas czekania — tylko Twoja grupa pod islandzkim nocnym niebem.',
+      qfDur: 'ok. 4 godziny', groupFact: 'Prywatnie · 2–6', langFact: 'EN · PL', hlH2: 'Jak wygląda ta noc.',
+      highlights: ['Odbiór z hotelu w rejonie Reykjavíku, start o 21:00', 'Tylko Twoja grupa — od 2 do 6 osób', 'Śledzę za Ciebie prognozę zorzy i zachmurzenia', 'Z dala od łuny miasta, pod najczystsze niebo, jakie znajdę', 'Termos gorącej czekolady od Kasi', 'Czas na oglądanie i zdjęcia w Twoim tempie', 'Ciepłe auto, do którego wracasz między pokazami', 'Powrót pod hotel po ok. 4 godzinach'],
+      ovH2: 'Gonimy światło, nie rozkład jazdy.',
+      overview: ['Zorza potrzebuje trzech rzeczy naraz: ciemności, czystego nieba i odrobiny aktywności słońca. Od września noce na Islandii znów są ciemne — reszta to czytanie prognozy i bycie we właściwym miejscu, gdy niebo się otworzy.', 'Ze mną jedzie tylko Twoja grupa. Przed wyjazdem sprawdzam prognozę zorzy i zachmurzenia, a potem wywożę Was z dala od świateł Reykjavíku tam, gdzie tej nocy niebo wygląda najczyściej. Czekamy razem, w ciepłym aucie z czekoladą od Kasi, i wychodzimy, gdy zorza zaczyna tańczyć.'],
+      rtH2: 'Jak mija ta noc.',
+      stops: [
+        { time: 'od 21:00', t: 'Odbiór z hotelu', d: 'Odbieram Cię pod drzwi w rejonie Reykjavíku — dokładną godzinę odbioru dostaniesz w potwierdzeniu rezerwacji. Ubierz się ciepło, resztę mam w aucie.' },
+        { time: 'w drodze', t: 'Czytanie nieba', d: 'Sprawdzam najnowszą prognozę zorzy i zachmurzenia i wybieram kierunek z największą szansą na czyste niebo tej nocy.' },
+        { time: 'za miastem', t: 'Z dala od łuny miasta', d: 'Zostawiamy światła Reykjavíku za sobą i jedziemy w ciemne miejsce za miastem, gdzie nawet słaba zorza jest dobrze widoczna.' },
+        { time: 'pod niebem', t: 'Oglądanie i czekanie', d: 'Zorza przychodzi i odchodzi, więc się nie spieszymy. Między pokazami rozgrzewasz się w aucie przy termosie gorącej czekolady od Kasi.' },
+        { time: 'ok. 4 h później', t: 'Powrót pod hotel', d: 'Spokojny powrót pod drzwi — miejmy nadzieję z aparatem pełnym zielonego nieba.' },
+      ],
+      incl: {
+        yes: ['Prywatne auto z paliwem i opłatami drogowymi', 'Odbiór i odwóz do hotelu (rejon Reykjavíku)', 'Lokalny przewodnik EN / PL', 'Śledzenie prognozy zorzy i zachmurzenia', 'Opłaty za parking i parki narodowe', 'Termos gorącej czekolady od Kasi'],
+        no: ['Gwarancja zorzy — nikt nie może jej obiecać', 'Kolacja i inne posiłki', 'Napiwki (nigdy nieoczekiwane)'],
+      },
+      bring: [
+        { icon: '#i-flame', t: 'Ciepłe warstwy', d: 'Gdy stoisz w miejscu, noc szybko robi się zimna. Bielizna termiczna, ciepła warstwa środkowa i kurtka przeciwwiatrowa.' },
+        { icon: '#i-snow', t: 'Czapka i rękawiczki', d: 'Dwie rzeczy, których wszyscy żałują, że nie wzięli. Szalik albo komin też się przyda.' },
+        { icon: '#i-boot', t: 'Ciepłe, solidne buty', d: 'Możemy stać na zamarzniętym lub nierównym terenie. Najlepsze będą wodoodporne buty i grube skarpety.' },
+        { icon: '#i-camera', t: 'Aparat', d: 'Większość nowych telefonów ma tryb nocny, który dobrze łapie zorzę. Weź naładowaną zapasową baterię — mróz szybko ją wyczerpuje.' },
+      ],
+      ftH2: 'Gorąca czekolada pod zorzą.', ftP: 'Na każdą noc z zorzą Kasia napełnia termos gorącą czekoladą. Czekanie, aż niebo się rozświetli, to część przeżycia — a z ciepłym kubkiem w dłoniach jest o wiele przyjemniej.',
+      galH2: 'Pod islandzką zorzą.', revH2: 'Co mówią goście.',
+      faqEyebrow: 'FAQ — zorza polarna',
+      faq: [
+        { q: 'Czy gwarantujesz, że zobaczymy zorzę?', a: 'Uczciwie — nikt nie może. Zorza zależy od ciemności, czystego nieba i aktywności słońca. Mogę za to obiecać, że śledzę prognozę, wywożę Cię poza światła miasta tam, gdzie szanse są największe, i dbam o ciepło podczas czekania. A jeśli niebo nie da rady, powiem wprost.' },
+        { q: 'Kiedy jest sezon?', a: 'Zorza potrzebuje prawdziwej ciemności, dlatego tę wycieczkę prowadzę od września do marca. W jasne letnie noce po prostu jej nie widać.' },
+        { q: 'Którą noc zarezerwować?', a: 'Napisz do mnie przed rezerwacją, a powiem Ci szczerze, jak wygląda prognoza zorzy i zachmurzenia na Twoje terminy. Prognozy są najbardziej wiarygodne na dzień–dwa do przodu.' },
+        { q: 'Jak zimno będzie?', a: 'Zimniej, niż myślisz — gdy stoisz nocą w miejscu, nawet łagodny dzień wydaje się mroźny. Ubierz się na cebulkę, weź czapkę i rękawiczki; w aucie jest ciepło, a między pokazami czeka gorąca czekolada.' },
+        { q: 'Czy zrobię zdjęcie zorzy telefonem?', a: 'Zwykle tak — większość nowych telefonów ma tryb nocny, który świetnie sobie radzi. Trzymaj telefon nieruchomo albo oprzyj go o coś, a ja chętnie podzielę się sprawdzonymi trikami.' },
+      ],
+      availH2: 'Wybierz swoją noc z zorzą.',
+    },
+    de: {
+      bcCur: 'Nordlichter', eyebrow: 'Private Abendtour · ab Reykjavík', h1: 'Nordlichter — private Polarlichtjagd ab Reykjavík.',
+      sub: 'Ich beobachte die Vorhersage, fahre dich weg vom Stadtlicht und halte dich warm, während wir warten — nur deine Gruppe unter dem isländischen Nachthimmel.',
+      qfDur: 'ca. 4 Stunden', groupFact: 'Privat · 2–6', langFact: 'EN · PL', hlH2: 'So sieht die Nacht aus.',
+      highlights: ['Abholung am Hotel im Raum Reykjavík, Start um 21:00 Uhr', 'Nur deine Gruppe — 2 bis 6 Personen', 'Ich verfolge für dich die Polarlicht- und Wolkenvorhersage', 'Weg vom Stadtlicht, unter den klarsten Himmel, den ich finde', 'Kates Thermoskanne mit heißer Schokolade', 'Zeit zum Schauen und Fotografieren in deinem Tempo', 'Ein warmes Auto zwischen den Sichtungen', 'Nach etwa 4 Stunden zurück am Hotel'],
+      ovH2: 'Wir jagen das Licht, keinen Fahrplan.',
+      overview: ['Nordlichter brauchen drei Dinge zugleich: Dunkelheit, einen klaren Himmel und etwas Sonnenaktivität. Ab September sind die Nächte in Island wieder dunkel — der Rest heißt, die Vorhersage zu lesen und am richtigen Ort zu sein, wenn der Himmel aufreißt.', 'Bei mir ist nur deine Gruppe dabei. Vor der Abfahrt prüfe ich die Polarlicht- und Wolkenvorhersage und fahre dann weg von den Lichtern Reykjavíks, dorthin, wo der Himmel in dieser Nacht am klarsten aussieht. Wir warten gemeinsam im warmen Auto mit Kates heißer Schokolade und steigen aus, sobald das Nordlicht zu tanzen beginnt.'],
+      rtH2: 'So verläuft die Nacht.',
+      stops: [
+        { time: 'ab 21:00 Uhr', t: 'Abholung am Hotel', d: 'Ich hole dich direkt an der Tür im Raum Reykjavík ab — die genaue Abholzeit steht in der Buchungsbestätigung. Zieh dich warm an; den Rest habe ich im Auto.' },
+        { time: 'unterwegs', t: 'Den Himmel lesen', d: 'Ich prüfe die neueste Polarlicht- und Wolkenvorhersage und wähle die Richtung mit der besten Chance auf klaren Himmel in dieser Nacht.' },
+        { time: 'außerhalb der Stadt', t: 'Weg vom Stadtlicht', d: 'Wir lassen die Lichter Reykjavíks hinter uns und fahren an einen dunklen Ort auf dem Land, wo selbst schwaches Nordlicht gut zu sehen ist.' },
+        { time: 'unter dem Himmel', t: 'Schauen & warten', d: 'Das Nordlicht kommt und geht, also lassen wir uns Zeit. Zwischendurch wärmst du dich im Auto mit Kates heißer Schokolade auf.' },
+        { time: 'ca. 4 Std. später', t: 'Zurück zum Hotel', d: 'Eine entspannte Fahrt zurück bis vor die Tür — hoffentlich mit einer Kamera voller grünem Himmel.' },
+      ],
+      incl: {
+        yes: ['Privates Auto inkl. Benzin & aller Straßenkosten', 'Abholung & Rückfahrt zum Hotel (Raum Reykjavík)', 'Lokaler Guide auf Englisch / Polnisch', 'Polarlicht- & Wolkenvorhersage', 'Park- & Nationalparkgebühren', 'Kates Thermoskanne mit heißer Schokolade'],
+        no: ['Eine Sichtungsgarantie — niemand kann Nordlichter versprechen', 'Abendessen oder andere Mahlzeiten', 'Trinkgeld (nie erwartet)'],
+      },
+      bring: [
+        { icon: '#i-flame', t: 'Warme Schichten', d: 'Wer still steht, friert nachts schnell. Thermo-Unterwäsche, eine warme Zwischenschicht und eine winddichte Jacke.' },
+        { icon: '#i-snow', t: 'Mütze & Handschuhe', d: 'Die zwei Dinge, die alle gern dabeigehabt hätten. Ein Schal oder Buff hilft auch.' },
+        { icon: '#i-boot', t: 'Warme, feste Schuhe', d: 'Wir stehen eventuell auf gefrorenem oder unebenem Boden. Wasserdichte Stiefel und dicke Socken sind ideal.' },
+        { icon: '#i-camera', t: 'Eine Kamera', d: 'Die meisten neueren Handys haben einen Nachtmodus, der Nordlichter gut einfängt. Nimm einen geladenen Ersatzakku mit — Kälte leert ihn schnell.' },
+      ],
+      ftH2: 'Heiße Schokolade unter dem Nordlicht.', ftP: 'Für jede Nordlichtnacht füllt Kate eine Thermoskanne mit heißer Schokolade. Das Warten, bis der Himmel aufleuchtet, gehört zum Erlebnis — und mit einem warmen Becher in der Hand ist es viel schöner.',
+      galH2: 'Unter dem isländischen Nordlicht.', revH2: 'Was Gäste sagen.',
+      faqEyebrow: 'Nordlichter — FAQ',
+      faq: [
+        { q: 'Kannst du garantieren, dass wir Nordlichter sehen?', a: 'Ehrlich gesagt kann das niemand — Nordlichter hängen von Dunkelheit, klarem Himmel und Sonnenaktivität ab. Versprechen kann ich, dass ich die Vorhersage verfolge, dich weg vom Stadtlicht zur besten Chance fahre und dich beim Warten warm halte. Spielt der Himmel einfach nicht mit, sage ich es dir offen.' },
+        { q: 'Wann ist Saison?', a: 'Nordlichter brauchen echte Dunkelheit, deshalb biete ich diese Tour von September bis März an. In den hellen Sommernächten sind sie schlicht nicht zu sehen.' },
+        { q: 'Welche Nacht soll ich buchen?', a: 'Schreib mir vor der Buchung, und ich sage dir ehrlich, wie die Polarlicht- und Wolkenvorhersage für deine Daten aussieht. Am zuverlässigsten sind Vorhersagen ein bis zwei Tage im Voraus.' },
+        { q: 'Wie kalt wird es?', a: 'Kälter, als du denkst — nachts im Stehen fühlt sich selbst ein milder Tag eisig an. Zieh Schichten an, dazu Mütze und Handschuhe; das Auto bleibt warm und zwischendurch gibt es heiße Schokolade.' },
+        { q: 'Kann ich Nordlichter mit dem Handy fotografieren?', a: 'Meistens ja — die meisten neueren Handys haben einen guten Nachtmodus. Halte das Handy ruhig oder lege es irgendwo auf, und ich teile gern meine Tipps.' },
+      ],
+      availH2: 'Wähle deine Nordlichtnacht.',
+    },
+    es: {
+      bcCur: 'Auroras boreales', eyebrow: 'Tour nocturno privado · desde Reikiavik', h1: 'Auroras boreales — caza privada de auroras desde Reikiavik.',
+      sub: 'Vigilo la previsión, te alejo del resplandor de la ciudad y te mantengo calentito mientras esperamos — solo tu grupo bajo el cielo nocturno de Islandia.',
+      qfDur: 'unas 4 horas', groupFact: 'Privado · 2–6', langFact: 'EN · PL', hlH2: 'Así es la noche.',
+      highlights: ['Recogida en tu hotel en la zona de Reikiavik, salida a las 21:00', 'Solo tu grupo — de 2 a 6 personas', 'Sigo por ti la previsión de auroras y de nubes', 'Lejos del resplandor de la ciudad, bajo el cielo más despejado que encuentre', 'El termo de chocolate caliente de Kate', 'Tiempo para mirar y hacer fotos a tu ritmo', 'Un coche calentito al que volver entre avistamientos', 'De vuelta en tu hotel tras unas 4 horas'],
+      ovH2: 'Perseguimos la luz, no un horario.',
+      overview: ['La aurora necesita tres cosas a la vez: oscuridad, cielo despejado y algo de actividad solar. Desde septiembre las noches en Islandia vuelven a ser oscuras — el resto consiste en leer la previsión y estar en el lugar adecuado cuando el cielo se abre.', 'Conmigo va solo tu grupo. Antes de salir reviso la previsión de auroras y de nubes, y luego nos alejamos de las luces de Reikiavik hacia donde el cielo se vea más despejado esa noche. Esperamos juntos, calentitos en el coche con el chocolate de Kate, y salimos cuando la aurora empieza a bailar.'],
+      rtH2: 'Así transcurre la noche.',
+      stops: [
+        { time: 'desde las 21:00', t: 'Recogida en el hotel', d: 'Te recojo en la puerta en la zona de Reikiavik — la hora exacta de recogida llega con la confirmación de la reserva. Abrígate bien; el resto lo llevo en el coche.' },
+        { time: 'en camino', t: 'Leer el cielo', d: 'Reviso la última previsión de auroras y de nubes y elijo la dirección con más posibilidades de cielo despejado esa noche.' },
+        { time: 'fuera de la ciudad', t: 'Lejos del resplandor urbano', d: 'Dejamos atrás las luces de Reikiavik y vamos a un lugar oscuro en el campo, donde incluso una aurora débil se ve bien.' },
+        { time: 'bajo el cielo', t: 'Mirar y esperar', d: 'La aurora va y viene, así que nos tomamos nuestro tiempo. Entre avistamientos te calientas en el coche con el termo de chocolate caliente de Kate.' },
+        { time: 'unas 4 h después', t: 'Vuelta al hotel', d: 'Un regreso tranquilo hasta tu puerta — con suerte, con la cámara llena de cielo verde.' },
+      ],
+      incl: {
+        yes: ['Coche privado con combustible y todos los gastos de carretera', 'Recogida y regreso al hotel (zona de Reikiavik)', 'Guía local en inglés / polaco', 'Seguimiento de la previsión de auroras y nubes', 'Aparcamiento y tasas de parques nacionales', 'El termo de chocolate caliente de Kate'],
+        no: ['Un avistamiento garantizado — nadie puede prometer la aurora', 'Cena u otras comidas', 'Propinas (nunca esperadas)'],
+      },
+      bring: [
+        { icon: '#i-flame', t: 'Capas de abrigo', d: 'De noche, quieto, se enfría uno rápido. Ropa térmica, una capa intermedia de abrigo y una chaqueta cortavientos.' },
+        { icon: '#i-snow', t: 'Gorro y guantes', d: 'Las dos cosas que todo el mundo desearía haber traído. Una bufanda o braga de cuello también ayuda.' },
+        { icon: '#i-boot', t: 'Calzado cálido y resistente', d: 'Puede que pisemos suelo helado o irregular. Botas impermeables y calcetines gruesos son ideales.' },
+        { icon: '#i-camera', t: 'Una cámara', d: 'La mayoría de los móviles recientes tiene un modo noche que capta bien la aurora. Trae una batería de repuesto cargada — el frío la agota rápido.' },
+      ],
+      ftH2: 'Chocolate caliente bajo la aurora.', ftP: 'Para cada noche de auroras, Kate llena un termo de chocolate caliente. Esperar a que el cielo se ilumine forma parte de la experiencia — y con una taza caliente en las manos es mucho más agradable.',
+      galH2: 'Bajo la aurora islandesa.', revH2: 'Lo que dicen nuestros huéspedes.',
+      faqEyebrow: 'FAQ auroras boreales',
+      faq: [
+        { q: '¿Puedes garantizar que veremos la aurora boreal?', a: 'Sinceramente, nadie puede — la aurora depende de la oscuridad, el cielo despejado y la actividad solar. Lo que sí prometo es seguir la previsión, llevarte lejos de las luces de la ciudad a la mejor oportunidad y mantenerte calentito mientras esperamos. Si el cielo no colabora, te lo diré claramente.' },
+        { q: '¿Cuándo es la temporada?', a: 'La aurora necesita oscuridad de verdad, así que hago este tour de septiembre a marzo. En las noches claras del verano simplemente no se ve.' },
+        { q: '¿Qué noche debería reservar?', a: 'Escríbeme antes de reservar y te diré con sinceridad cómo pinta la previsión de auroras y nubes para tus fechas. Las previsiones son más fiables con uno o dos días de antelación.' },
+        { q: '¿Cuánto frío hará?', a: 'Más del que crees — de noche y sin moverte, incluso un día suave se siente helado. Vístete por capas con gorro y guantes; el coche se mantiene caliente y hay chocolate caliente entre avistamientos.' },
+        { q: '¿Puedo fotografiar la aurora con el móvil?', a: 'Normalmente sí — la mayoría de los móviles recientes tiene un buen modo noche. Mantén el móvil quieto o apóyalo en algo, y con gusto te paso los trucos que conozco.' },
+      ],
+      availH2: 'Elige tu noche de auroras.',
     },
   },
 };

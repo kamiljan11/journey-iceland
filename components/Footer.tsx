@@ -36,7 +36,7 @@ export default function Footer({ lang, t }: { lang: string; t: T }) {
             <li><Link href={`/${lang}/golden-circle`}>{t('tour.gc.name')}</Link></li>
             <li><Link href={`/${lang}/south-coast`}>{t('tour.sc.name')}</Link></li>
             <li><Link href={`/${lang}/jokulsarlon`}>{t('tour.jk.name')}</Link></li>
-            <li><Link href={L('#aurora')}>{t('aurora.eyebrow')}</Link></li>
+            <li><Link href={L('/northern-lights')}>{t('aurora.eyebrow')}</Link></li>
           </ul>
         </div>
         <div className="footer-col">

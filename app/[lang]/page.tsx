@@ -4,8 +4,6 @@ import { SITE, IMG, waLink, RESTAURANTS } from '@/lib/site';
 import { getGoogleReviews } from '@/lib/reviews';
 import AreaMap from '@/components/AreaMap';
 import ReviewCard from '@/components/ReviewCard';
-import BokunButton from '@/components/BokunButton';
-import { BOKUN_PRODUCT } from '@/lib/bokun';
 
 export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
   const lang = await langFromParams(params);
@@ -152,7 +150,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
             <p>{t('aurora.p')}</p>
             <div className="aurora-cta">
               <a className="btn btn-primary btn-lg" href={waLink(t('wa.aurora'))} target="_blank" rel="noopener"><svg><use href="#i-whatsapp" /></svg><span>{t('aurora.cta1')}</span></a>
-              <BokunButton productId={BOKUN_PRODUCT.northernLights} label={t('aurora.book')} className="btn btn-outline btn-lg" />
+              <Link className="btn btn-outline btn-lg" href={L('/northern-lights')}><span>{t('tour.see')}</span><svg><use href="#i-arrow-right" /></svg></Link>
             </div>
           </div>
         </div>

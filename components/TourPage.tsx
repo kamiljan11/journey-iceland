@@ -6,6 +6,7 @@ import RouteMap from '@/components/RouteMap';
 import BokunCalendar from '@/components/BokunCalendar';
 
 const BRING_ICONS = ['#i-snow', '#i-boot', '#i-camera', '#i-waves'];
+const BRING_KEYS = [1, 2, 3, 4];
 const SUBNAV: [string, string][] = [
   ['#ov', 'tp.sn.overview'], ['#route', 'tp.sn.route'], ['#map', 'tp.sn.map'],
   ['#gallery', 'tp.sn.gallery'], ['#reviews', 'tp.sn.reviews'], ['#faq', 'tp.sn.faq'], ['#avail', 'tp.sn.avail'],
@@ -24,11 +25,16 @@ export default function TourPage({ lang, slug }: { lang: string; slug: string })
   const quickFacts: [string, string][] = [
     ['#i-clock', x.qfDur],
     ['#i-wallet', t(x.priceKey)],
-    ['#i-users', t('tp.qf.priv')],
+    ['#i-users', x.groupFact ?? t('tp.qf.priv')],
     ['#i-bed', t('tp.qf.pickup')],
-    ['#i-globe', t('tp.qf.lang')],
+    ['#i-globe', x.langFact ?? t('tp.qf.lang')],
   ];
   const others = TOUR_CARDS.filter((c) => c.slug !== slug);
+  // Tours without a fixed route (Northern Lights) have no map section.
+  const subnav = x.mapH2 ? SUBNAV : SUBNAV.filter(([h]) => h !== '#map');
+  const inclYes = x.incl?.yes ?? [1, 2, 3, 4, 5, 6].map((n) => t(`tp.incl.yes.${n}`));
+  const inclNo = x.incl?.no ?? [1, 2, 3].map((n) => t(`tp.incl.no.${n}`));
+  const bring = x.bring ?? BRING_KEYS.map((n) => ({ icon: BRING_ICONS[n - 1], t: t(`tp.bring.${n}.t`), d: t(`tp.bring.${n}.d`) }));
 
   return (
     <main>
@@ -58,12 +64,12 @@ export default function TourPage({ lang, slug }: { lang: string; slug: string })
       </section>
 
       {/* SUB-NAV */}
-      <div className="subnav"><div className="subnav-inner">{SUBNAV.map(([h, k]) => (<a href={h} key={k}>{t(k)}</a>))}</div></div>
+      <div className="subnav"><div className="subnav-inner">{subnav.map(([h, k]) => (<a href={h} key={k}>{t(k)}</a>))}</div></div>
 
       {/* HIGHLIGHTS */}
       <section className="sec" id="ov" data-screen-label="Overview">
         <div className="wrap">
-          <div className="sec-head reveal"><span className="eyebrow">{t('tp.hl.eyebrow')}</span><h2>{t('tp.hl.h2')}</h2></div>
+          <div className="sec-head reveal"><span className="eyebrow">{t('tp.hl.eyebrow')}</span><h2>{x.hlH2 ?? t('tp.hl.h2')}</h2></div>
           <ul className="highlights reveal">{x.highlights.map((h, i) => (<li key={i}><svg><use href="#i-check" /></svg><span>{h}</span></li>))}</ul>
         </div>
       </section>
@@ -79,7 +85,7 @@ export default function TourPage({ lang, slug }: { lang: string; slug: string })
       {/* ROUTE */}
       <section className="sec" id="route" data-screen-label="Route">
         <div className="wrap narrow">
-          <div className="sec-head reveal"><span className="eyebrow">{t('tp.rt.eyebrow')}</span><h2>{t('tp.rt.h2')}</h2></div>
+          <div className="sec-head reveal"><span className="eyebrow">{t('tp.rt.eyebrow')}</span><h2>{x.rtH2 ?? t('tp.rt.h2')}</h2></div>
           <div className="timeline">
             {x.stops.map((s, i) => (
               <div className="tl-item reveal" key={i}>
@@ -92,6 +98,7 @@ export default function TourPage({ lang, slug }: { lang: string; slug: string })
       </section>
 
       {/* MAP */}
+      {x.mapH2 && (
       <section className="sec bg-cream2" id="map" data-screen-label="Map">
         <div className="wrap">
           <div className="sec-head reveal"><span className="eyebrow">{t('tp.map.eyebrow')}</span><h2>{x.mapH2}</h2></div>
@@ -107,6 +114,7 @@ export default function TourPage({ lang, slug }: { lang: string; slug: string })
           </div>
         </div>
       </section>
+      )}
 
       {/* INCLUDED */}
       <section className="sec">
@@ -115,11 +123,11 @@ export default function TourPage({ lang, slug }: { lang: string; slug: string })
           <div className="incl-grid">
             <div className="incl-col incl-yes reveal">
               <h4><svg><use href="#i-check" /></svg>{t('tp.incl.yes.t')}</h4>
-              <ul>{[1, 2, 3, 4, 5, 6].map((n) => (<li key={n}><svg><use href="#i-check" /></svg><span>{t(`tp.incl.yes.${n}`)}</span></li>))}</ul>
+              <ul>{inclYes.map((item, i) => (<li key={i}><svg><use href="#i-check" /></svg><span>{item}</span></li>))}</ul>
             </div>
             <div className="incl-col incl-no reveal d1">
               <h4><svg><use href="#i-x-circle" /></svg>{t('tp.incl.no.t')}</h4>
-              <ul>{[1, 2, 3].map((n) => (<li key={n}><svg><use href="#i-x-circle" /></svg><span>{t(`tp.incl.no.${n}`)}</span></li>))}</ul>
+              <ul>{inclNo.map((item, i) => (<li key={i}><svg><use href="#i-x-circle" /></svg><span>{item}</span></li>))}</ul>
             </div>
           </div>
         </div>
@@ -130,10 +138,10 @@ export default function TourPage({ lang, slug }: { lang: string; slug: string })
         <div className="wrap narrow">
           <div className="sec-head reveal"><span className="eyebrow">{t('tp.bring.eyebrow')}</span><h2>{t('tp.bring.h2')}</h2></div>
           <div className="bring">
-            {[1, 2, 3, 4].map((n) => (
-              <div className="bring-item reveal" key={n}>
-                <div className="ic"><svg><use href={BRING_ICONS[n - 1]} /></svg></div>
-                <div><h4>{t(`tp.bring.${n}.t`)}</h4><p>{t(`tp.bring.${n}.d`)}</p></div>
+            {bring.map((b, i) => (
+              <div className="bring-item reveal" key={i}>
+                <div className="ic"><svg><use href={b.icon} /></svg></div>
+                <div><h4>{b.t}</h4><p>{b.d}</p></div>
               </div>
             ))}
           </div>
@@ -157,7 +165,7 @@ export default function TourPage({ lang, slug }: { lang: string; slug: string })
       {/* GALLERY */}
       <section className="sec bg-dark" id="gallery" data-screen-label="Gallery">
         <div className="wrap">
-          <div className="sec-head reveal"><span className="eyebrow">{t('tp.gal.eyebrow')}</span><h2>{t('tp.gal.h2')}</h2></div>
+          <div className="sec-head reveal"><span className="eyebrow">{t('tp.gal.eyebrow')}</span><h2>{x.galH2 ?? t('tp.gal.h2')}</h2></div>
           <div className="gallery">
             {x.gallery.map((g, i) => (
               <div className="g-item" key={i}>
@@ -172,7 +180,7 @@ export default function TourPage({ lang, slug }: { lang: string; slug: string })
       {/* REVIEWS */}
       <section className="sec" id="reviews" data-screen-label="Reviews">
         <div className="wrap">
-          <div className="sec-head reveal"><span className="eyebrow">{t('tp.rev.eyebrow')}</span><h2>{t('tp.rev.h2')}</h2></div>
+          <div className="sec-head reveal"><span className="eyebrow">{t('tp.rev.eyebrow')}</span><h2>{x.revH2 ?? t('tp.rev.h2')}</h2></div>
           <div className="reviews-grid">
             {REVIEWS.map((r) => (
               <figure className={`review reveal ${r.d}`.trim()} key={r.n}>
@@ -213,7 +221,7 @@ export default function TourPage({ lang, slug }: { lang: string; slug: string })
           <div className="sec-head reveal"><span className="eyebrow">{t('tp.also.eyebrow')}</span><h2>{t('tp.also.h2')}</h2></div>
           <div className="also-grid">
             {others.map((c, i) => (
-              <article className={`tour-card reveal ${i === 1 ? 'd1' : ''}`.trim()} key={c.slug}>
+              <article className={`tour-card reveal ${['', 'd1', 'd2'][i] ?? ''}`.trim()} key={c.slug}>
                 <div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="" src={c.img} /></div>
                 <div className="tour-card-scrim"></div>
                 <div className="tour-card-body">
@@ -224,16 +232,6 @@ export default function TourPage({ lang, slug }: { lang: string; slug: string })
                 <Link className="tour-card-link" href={`/${lang}/${c.slug}`} aria-label={t(c.nameKey)}></Link>
               </article>
             ))}
-            <article className="tour-card reveal d2">
-              <div className="ph ph-wash has-photo"><img className="ph-img loaded" alt="" src="/img/aurora.webp" /></div>
-              <div className="tour-card-scrim"></div>
-              <div className="tour-card-body">
-                <h3>{t('aurora.eyebrow')}</h3>
-                <div className="tour-price"><span className="amt">{t('aurora.tag')}</span></div>
-                <Link className="btn btn-primary btn-sm" href={L('#aurora')}><span>{t('cta.ask')}</span><svg><use href="#i-arrow-right" /></svg></Link>
-              </div>
-              <Link className="tour-card-link" href={L('#aurora')} aria-label="Northern Lights"></Link>
-            </article>
           </div>
         </div>
       </section>
