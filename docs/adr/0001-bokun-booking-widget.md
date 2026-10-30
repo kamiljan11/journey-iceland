@@ -17,3 +17,5 @@ Data: 2026-10-30 | Status: przyjete (pilot: Golden Circle; 2026-10-30: + South C
 **Wyjście:** usunięcie `bokunProductId` z `META` przywraca formularz zapytania (rollback = revert PR).
 
 **Pułapki:** Jedna strona = jeden booking channel (loader rzuca `alert` przy dwóch UUID). Ceny/limity osób w słowniku muszą zgadzać się z Bókun — źródłem prawdy jest Bókun.
+
+**Rozszerzenie 2026-10-30:** South Coast i Jökulsárlón — ten sam kalendarz w sekcji Availability. Zorza nie ma własnej podstrony, więc na stronie głównej jest przycisk Bókun (`.bokunButton`), który otwiera kalendarz w oknie modalnym; przycisk WhatsApp zostaje obok jako druga droga. Pominięte (dane w Bókun niekompletne): transfer KEF, Small Group South Coast; Blue Lagoon nie ma produktu w Bókun.
