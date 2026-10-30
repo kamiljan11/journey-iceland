@@ -31,6 +31,11 @@ git revert <sha-zlego-commita> && git push   # -> redeploy automatyczny
 | Wygasly sekret/API key | Infisical -> zrotuj -> redeploy |
 | Domena/DNS | panel ISNIC / rejestratora |
 
+## Bókun — rezerwacje online (Golden Circle)
+- Panel: https://journey-iceland.bokun.io (vendor 143543), kanał „journeyiceland.is”; ceny, terminy i limity zmienia się w Bókun, nie w kodzie.
+- Włączenie kolejnej wycieczki: `bokunProductId` w `lib/tours.ts` (`META`) + teksty z nazwą wycieczki (ADR-0001).
+- Kalendarz się nie ładuje: konsola przeglądarki `[bokun] widget loader failed to load`; klient widzi wtedy komunikat z linkiem do WhatsApp. Sprawdź status Bókun i blokery reklam; szybki rollback = usuń `bokunProductId` (wraca formularz).
+
 ## Kontakty
 - Wlasciciel: Kamil Jan, mountainallservice@gmail.com
 - Klient: [imie, kontakt, SLA jesli jest]

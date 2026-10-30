@@ -245,7 +245,13 @@ export default function TourPage({ lang, slug }: { lang: string; slug: string })
           <div className="contact-grid">
             {x.bokunProductId ? (
               <div className="form-card bokun-card reveal">
-                <BokunCalendar productId={x.bokunProductId} />
+                <BokunCalendar
+                  productId={x.bokunProductId}
+                  noJsText={t('tp.book.nojs')}
+                  failText={t('tp.book.fail')}
+                  waHref={waLink(t(x.waKey))}
+                  waLabel={t('cta.wa')}
+                />
               </div>
             ) : (
             <div className="form-card reveal">

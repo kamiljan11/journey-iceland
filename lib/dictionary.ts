@@ -36,7 +36,7 @@ en:{
   "tours.toursLabel":"Day tours","tours.transfersLabel":"Airport & spa transfers",
   "tour.see":"See tour","tour.tbc":"","tour.perGroup":"per group",
 
-  "tour.gc.name":"Golden Circle","tour.gc.dur":"6 hrs","tour.gc.price":"from 95,000 ISK","tour.gc.alt":"≈ $610 / €570 · per group",
+  "tour.gc.name":"Golden Circle","tour.gc.dur":"6 hrs","tour.gc.price":"from 95,000 ISK","tour.gc.alt":"≈ $750 / €700 · per group",
   "tour.sc.name":"South Coast","tour.sc.dur":"8–10 hrs","tour.sc.price":"from 110,000 ISK","tour.sc.alt":"≈ $790 / €730 · per group",
   "tour.jk.name":"Jökulsárlón Glacier Lagoon","tour.jk.dur":"12–14 hrs","tour.jk.price":"from 179,000 ISK","tour.jk.alt":"≈ $1,280 / €1,190 · per group",
 
@@ -139,13 +139,13 @@ en:{
   "tp.gal.eyebrow":"Gallery","tp.gal.h2":"From this route.",
   "tp.rev.eyebrow":"Reviews","tp.rev.h2":"What guests say about this tour.",
   "tp.faq.eyebrow":"Golden Circle FAQ","tp.faq.h2":"Questions about this tour.",
-  "tp.faq.1.q":"How long is the Golden Circle tour?","tp.faq.1.a":"Usually 6–8 hours door to door, depending on how long you want to linger and whether we add a hidden stop or a hot-spring soak. It's your day — we're never watching a coach timetable.",
+  "tp.faq.1.q":"How long is the Golden Circle tour?","tp.faq.1.a":"Usually about 6 hours door to door, depending on how long you want to linger and whether we add a hidden stop or a hot-spring soak. It's your day — we're never watching a coach timetable.",
   "tp.faq.2.q":"How many people can come?","tp.faq.2.a":"Up to 6 guests travel in comfort in the car. A bigger group? Message me and I'll arrange the right vehicle.",
   "tp.faq.3.q":"Can we do the Golden Circle in winter?","tp.faq.3.a":"Yes — it's beautiful under snow, and the shorter days even give a chance of aurora on the drive home. I adjust the route and timing to the conditions and daylight.",
   "tp.faq.4.q":"What does 'from 95,000 ISK' mean?","tp.faq.4.a":"It's the price for your whole group of up to 6, not per person — the same whether one or six of you travel. The exact price for your date is shown in the booking calendar.",
 
   "tp.also.eyebrow":"You may also like","tp.also.h2":"Other ways to see Iceland.",
-  "tp.avail.eyebrow":"Check availability","tp.avail.h2":"Check dates for the Golden Circle.","tp.avail.lead":"Send a quick request with your dates and I'll reply personally to confirm everything.","tp.avail.lead.book":"Pick a date and book online in a minute — or message me first if you have questions.",
+  "tp.avail.eyebrow":"Check availability","tp.avail.h2":"Check dates for the Golden Circle.","tp.avail.lead":"Send a quick request with your dates and I'll reply personally to confirm everything.","tp.avail.lead.book":"Pick a date and book online in a minute — or message me first if you have questions.","tp.book.nojs":"Please enable JavaScript to book online — or message me on WhatsApp.","tp.book.fail":"The booking calendar didn't load. Message me on WhatsApp and I'll book your date personally.",
 },
 
 /* =========================== POLSKI =========================== */
@@ -165,7 +165,7 @@ pl:{
   "tours.toursLabel":"Wycieczki jednodniowe","tours.transfersLabel":"Transfery z lotniska i do term",
   "tour.see":"Zobacz wycieczkę","tour.tbc":"","tour.perGroup":"za grupę",
 
-  "tour.gc.name":"Golden Circle","tour.gc.dur":"6 godz.","tour.gc.price":"od 95 000 ISK","tour.gc.alt":"≈ 2 600 zł · za grupę",
+  "tour.gc.name":"Golden Circle","tour.gc.dur":"6 godz.","tour.gc.price":"od 95 000 ISK","tour.gc.alt":"≈ 3 200 zł · za grupę",
   "tour.sc.name":"Południowe wybrzeże","tour.sc.dur":"8–10 godz.","tour.sc.price":"od 110 000 ISK","tour.sc.alt":"≈ 3 300 zł · za grupę",
   "tour.jk.name":"Laguna lodowcowa Jökulsárlón","tour.jk.dur":"12–14 godz.","tour.jk.price":"od 179 000 ISK","tour.jk.alt":"≈ 5 400 zł · za grupę",
 
@@ -266,13 +266,13 @@ pl:{
   "tp.gal.eyebrow":"Galeria","tp.gal.h2":"Z tej trasy.",
   "tp.rev.eyebrow":"Opinie","tp.rev.h2":"Co goście mówią o tej wycieczce.",
   "tp.faq.eyebrow":"FAQ Golden Circle","tp.faq.h2":"Pytania o tę wycieczkę.",
-  "tp.faq.1.q":"Ile trwa wycieczka Golden Circle?","tp.faq.1.a":"Zwykle 6–8 godzin od drzwi do drzwi, zależnie od tego, jak długo chcesz się zatrzymywać i czy dorzucimy ukryty przystanek albo kąpiel w gorącym źródle. To Twój dzień — nie patrzymy na rozkład autokaru.",
+  "tp.faq.1.q":"Ile trwa wycieczka Golden Circle?","tp.faq.1.a":"Zwykle około 6 godzin od drzwi do drzwi, zależnie od tego, jak długo chcesz się zatrzymywać i czy dorzucimy ukryty przystanek albo kąpiel w gorącym źródle. To Twój dzień — nie patrzymy na rozkład autokaru.",
   "tp.faq.2.q":"Ile osób może jechać?","tp.faq.2.a":"W komforcie podróżuje do 6 gości. Większa grupa? Napisz, a zorganizuję odpowiedni pojazd.",
   "tp.faq.3.q":"Czy Golden Circle da się zrobić zimą?","tp.faq.3.a":"Tak — pod śniegiem jest przepięknie, a krótsze dni dają nawet szansę na zorzę w drodze powrotnej. Dopasowuję trasę i godziny do warunków i długości dnia.",
   "tp.faq.4.q":"Co znaczy „od 95 000 ISK”?","tp.faq.4.a":"To cena za całą grupę do 6 osób, nie od osoby — taka sama, czy jedzie jedna osoba, czy sześć. Dokładną cenę na wybrany dzień zobaczysz w kalendarzu rezerwacji.",
 
   "tp.also.eyebrow":"Może Cię zainteresować","tp.also.h2":"Inne sposoby na Islandię.",
-  "tp.avail.eyebrow":"Sprawdź dostępność","tp.avail.h2":"Sprawdź terminy dla Golden Circle.","tp.avail.lead":"Wyślij krótkie zapytanie z terminami, a odpiszę osobiście, żeby wszystko potwierdzić.","tp.avail.lead.book":"Wybierz termin i zarezerwuj online w minutę — albo najpierw napisz, jeśli masz pytania.",
+  "tp.avail.eyebrow":"Sprawdź dostępność","tp.avail.h2":"Sprawdź terminy dla Golden Circle.","tp.avail.lead":"Wyślij krótkie zapytanie z terminami, a odpiszę osobiście, żeby wszystko potwierdzić.","tp.avail.lead.book":"Wybierz termin i zarezerwuj online w minutę — albo najpierw napisz, jeśli masz pytania.","tp.book.nojs":"Włącz JavaScript, aby zarezerwować online — albo napisz do mnie na WhatsAppie.","tp.book.fail":"Kalendarz rezerwacji się nie załadował. Napisz do mnie na WhatsAppie, a zarezerwuję termin osobiście.",
 },
 
 /* =========================== DEUTSCH =========================== */
@@ -292,7 +292,7 @@ de:{
   "tours.toursLabel":"Tagestouren","tours.transfersLabel":"Flughafen- & Spa-Transfers",
   "tour.see":"Tour ansehen","tour.tbc":"","tour.perGroup":"pro Gruppe",
 
-  "tour.gc.name":"Golden Circle","tour.gc.dur":"6 Std.","tour.gc.price":"ab 95.000 ISK","tour.gc.alt":"≈ 570 € / 610 $ · pro Gruppe",
+  "tour.gc.name":"Golden Circle","tour.gc.dur":"6 Std.","tour.gc.price":"ab 95.000 ISK","tour.gc.alt":"≈ 700 € / 750 $ · pro Gruppe",
   "tour.sc.name":"Südküste","tour.sc.dur":"8–10 Std.","tour.sc.price":"ab 110.000 ISK","tour.sc.alt":"≈ 730 € / 790 $ · pro Gruppe",
   "tour.jk.name":"Gletscherlagune Jökulsárlón","tour.jk.dur":"12–14 Std.","tour.jk.price":"ab 179.000 ISK","tour.jk.alt":"≈ 1.190 € / 1.280 $ · pro Gruppe",
 
@@ -393,13 +393,13 @@ de:{
   "tp.gal.eyebrow":"Galerie","tp.gal.h2":"Von dieser Route.",
   "tp.rev.eyebrow":"Bewertungen","tp.rev.h2":"Was Gäste über diese Tour sagen.",
   "tp.faq.eyebrow":"Golden-Circle-FAQ","tp.faq.h2":"Fragen zu dieser Tour.",
-  "tp.faq.1.q":"Wie lange dauert die Golden-Circle-Tour?","tp.faq.1.a":"Meist 6–8 Stunden von Tür zu Tür, je nachdem, wie lange du verweilen möchtest und ob wir einen versteckten Stopp oder ein Bad in einer heißen Quelle einbauen. Es ist dein Tag — wir schauen nie auf einen Busfahrplan.",
+  "tp.faq.1.q":"Wie lange dauert die Golden-Circle-Tour?","tp.faq.1.a":"Meist etwa 6 Stunden von Tür zu Tür, je nachdem, wie lange du verweilen möchtest und ob wir einen versteckten Stopp oder ein Bad in einer heißen Quelle einbauen. Es ist dein Tag — wir schauen nie auf einen Busfahrplan.",
   "tp.faq.2.q":"Wie viele Personen können mit?","tp.faq.2.a":"Bis zu 6 Gäste reisen bequem im Auto. Ihr seid mehr? Schreib mir und ich organisiere das passende Fahrzeug.",
   "tp.faq.3.q":"Kann man den Golden Circle im Winter machen?","tp.faq.3.a":"Ja — unter Schnee ist er wunderschön, und die kürzeren Tage bieten sogar die Chance auf Nordlichter auf der Heimfahrt. Ich passe Route und Zeiten an Bedingungen und Tageslicht an.",
   "tp.faq.4.q":"Was bedeutet „ab 95.000 ISK“?","tp.faq.4.a":"Das ist der Preis für deine ganze Gruppe bis 6 Personen, nicht pro Person — gleich, ob einer oder sechs mitfahren. Den genauen Preis für dein Datum siehst du im Buchungskalender.",
 
   "tp.also.eyebrow":"Das könnte dir gefallen","tp.also.h2":"Weitere Wege, Island zu sehen.",
-  "tp.avail.eyebrow":"Verfügbarkeit prüfen","tp.avail.h2":"Termine für den Golden Circle prüfen.","tp.avail.lead":"Sende eine kurze Anfrage mit deinen Daten und ich antworte persönlich, um alles zu bestätigen.","tp.avail.lead.book":"Wähle ein Datum und buche in einer Minute online — oder schreib mir vorher, wenn du Fragen hast.",
+  "tp.avail.eyebrow":"Verfügbarkeit prüfen","tp.avail.h2":"Termine für den Golden Circle prüfen.","tp.avail.lead":"Sende eine kurze Anfrage mit deinen Daten und ich antworte persönlich, um alles zu bestätigen.","tp.avail.lead.book":"Wähle ein Datum und buche in einer Minute online — oder schreib mir vorher, wenn du Fragen hast.","tp.book.nojs":"Bitte aktiviere JavaScript, um online zu buchen — oder schreib mir auf WhatsApp.","tp.book.fail":"Der Buchungskalender wurde nicht geladen. Schreib mir auf WhatsApp und ich buche deinen Termin persönlich.",
 },
 
 /* =========================== ESPAÑOL =========================== */
@@ -423,7 +423,7 @@ es:{
   "tours.toursLabel":"Tours de un día","tours.transfersLabel":"Traslados al aeropuerto y al spa",
   "tour.see":"Ver tour","tour.tbc":"","tour.perGroup":"por grupo",
 
-  "tour.gc.name":"Círculo Dorado","tour.gc.dur":"6 h","tour.gc.price":"desde 95.000 ISK","tour.gc.alt":"≈ 570 € / 610 $ · por grupo",
+  "tour.gc.name":"Círculo Dorado","tour.gc.dur":"6 h","tour.gc.price":"desde 95.000 ISK","tour.gc.alt":"≈ 700 € / 750 $ · por grupo",
   "tour.sc.name":"Costa Sur","tour.sc.dur":"8–10 h","tour.sc.price":"desde 110.000 ISK","tour.sc.alt":"≈ 730 € / 790 $ · por grupo",
   "tour.jk.name":"Laguna glaciar Jökulsárlón","tour.jk.dur":"12–14 h","tour.jk.price":"desde 179.000 ISK","tour.jk.alt":"≈ 1.190 € / 1.280 $ · por grupo",
 
@@ -526,13 +526,13 @@ es:{
   "tp.gal.eyebrow":"Galería","tp.gal.h2":"De esta ruta.",
   "tp.rev.eyebrow":"Opiniones","tp.rev.h2":"Lo que dicen los huéspedes de este tour.",
   "tp.faq.eyebrow":"FAQ Círculo Dorado","tp.faq.h2":"Preguntas sobre este tour.",
-  "tp.faq.1.q":"¿Cuánto dura el tour del Círculo Dorado?","tp.faq.1.a":"Normalmente 6–8 horas puerta a puerta, según cuánto quieras demorarte y si añadimos una parada escondida o un baño termal. Es tu día — nunca miramos el horario de un autocar.",
+  "tp.faq.1.q":"¿Cuánto dura el tour del Círculo Dorado?","tp.faq.1.a":"Normalmente unas 6 horas puerta a puerta, según cuánto quieras demorarte y si añadimos una parada escondida o un baño termal. Es tu día — nunca miramos el horario de un autocar.",
   "tp.faq.2.q":"¿Cuántas personas pueden ir?","tp.faq.2.a":"Hasta 6 huéspedes viajan con comodidad en el coche. ¿Sois más? Escríbeme y organizo el vehículo adecuado.",
   "tp.faq.3.q":"¿Se puede hacer el Círculo Dorado en invierno?","tp.faq.3.a":"Sí — es precioso bajo la nieve, y los días más cortos hasta dan opción a ver auroras en el viaje de vuelta. Ajusto la ruta y los horarios a las condiciones y a la luz.",
   "tp.faq.4.q":"¿Qué significa «desde 95.000 ISK»?","tp.faq.4.a":"Es el precio para todo tu grupo de hasta 6 personas, no por persona — lo mismo si viaja uno o seis. El precio exacto para tu fecha aparece en el calendario de reservas.",
 
   "tp.also.eyebrow":"También te puede gustar","tp.also.h2":"Otras formas de ver Islandia.",
-  "tp.avail.eyebrow":"Comprobar disponibilidad","tp.avail.h2":"Consulta fechas para el Círculo Dorado.","tp.avail.lead":"Envía una solicitud rápida con tus fechas y te responderé personalmente para confirmarlo todo.","tp.avail.lead.book":"Elige una fecha y reserva online en un minuto — o escríbeme antes si tienes preguntas.",
+  "tp.avail.eyebrow":"Comprobar disponibilidad","tp.avail.h2":"Consulta fechas para el Círculo Dorado.","tp.avail.lead":"Envía una solicitud rápida con tus fechas y te responderé personalmente para confirmarlo todo.","tp.avail.lead.book":"Elige una fecha y reserva online en un minuto — o escríbeme antes si tienes preguntas.","tp.book.nojs":"Activa JavaScript para reservar online — o escríbeme por WhatsApp.","tp.book.fail":"El calendario de reservas no se ha cargado. Escríbeme por WhatsApp y reservo tu fecha personalmente.",
 },
 };
 

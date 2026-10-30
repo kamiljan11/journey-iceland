@@ -8,6 +8,12 @@ Data: 2026-10-30 | Status: przyjete (pilot: Golden Circle)
 
 **Rozważone alternatywy:** własny kalendarz z REST API (availabilities) + formularz — brak płatności, więcej kodu; pełny checkout przez REST (`RESERVE_FOR_EXTERNAL_PAYMENT`) — 10–16 h, trzymanie kluczy HMAC na serwerze. Widget = najmniej kodu, Bókun jest źródłem prawdy cen.
 
-**Konsekwencje:** Kolejna wycieczka = dopisanie ID w `META`. Wygląd kalendarza konfiguruje się w panelu Bókun, nie w CSS strony. Teksty prawne/FAQ wymieniają Bókun jako wyjątek od „tylko zapytania".
+**Konsekwencje:** Kolejna wycieczka = dopisanie ID w `META` + aktualizacja tekstów, które dziś wymieniają wprost Golden Circle (`lib/legal.ts`, `footer.disclaimer`, `faq.3.a`). Wygląd kalendarza konfiguruje się w panelu Bókun, nie w CSS strony. Teksty prawne/FAQ wymieniają Bókun jako wyjątek od „tylko zapytania".
+
+**Dane handlowe:** Cena, czas i limit osób GC (95 000 ISK / 6 h / max 6) przepisane z Bókun na decyzję Kamila (2026-10-30: „Bókun ma prawidłową cenę i detale”).
+
+**Koszt cykliczny:** brak kosztu hostingu po naszej stronie; prowizje/opłaty wg planu Bókun właściciela konta (Journey Iceland, vendor 143543).
+
+**Wyjście:** usunięcie `bokunProductId` z `META` przywraca formularz zapytania (rollback = revert PR).
 
 **Pułapki:** Jedna strona = jeden booking channel (loader rzuca `alert` przy dwóch UUID). Ceny/limity osób w słowniku muszą zgadzać się z Bókun — źródłem prawdy jest Bókun.
