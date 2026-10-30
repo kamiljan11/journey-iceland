@@ -281,11 +281,12 @@ export default function TourPage({ lang, slug }: { lang: string; slug: string })
                     </div>
                   </div>
                   <div className="form-row">
-                    <div className="field"><label htmlFor="g-name">{t('form.name')}</label><input id="g-name" name="name" type="text" required /></div>
-                    <div className="field"><label htmlFor="g-email">{t('form.email')}</label><input id="g-email" name="email" type="email" required /></div>
+                    <div className="field"><label htmlFor="g-name">{t('form.name')}</label><input id="g-name" name="name" type="text" required maxLength={100} /></div>
+                    <div className="field"><label htmlFor="g-email">{t('form.email')}</label><input id="g-email" name="email" type="email" required maxLength={254} /></div>
                   </div>
-                  <div className="field"><label htmlFor="g-phone"><span>{t('form.phone')}</span> <span className="opt">{t('form.phone.opt')}</span></label><input id="g-phone" name="phone" type="tel" /></div>
-                  <div className="field"><label htmlFor="g-msg"><span>{t('form.msg')}</span> <span className="opt">{t('form.msg.opt')}</span></label><textarea id="g-msg" name="msg" placeholder={t('form.msg.ph')}></textarea></div>
+                  <div className="field"><label htmlFor="g-phone"><span>{t('form.phone')}</span> <span className="opt">{t('form.phone.opt')}</span></label><input id="g-phone" name="phone" type="tel" maxLength={40} /></div>
+                  <div className="hp-field" aria-hidden="true"><label htmlFor="g-company">Company</label><input id="g-company" name="company" type="text" tabIndex={-1} autoComplete="off" /></div>
+                  <div className="field"><label htmlFor="g-msg"><span>{t('form.msg')}</span> <span className="opt">{t('form.msg.opt')}</span></label><textarea id="g-msg" name="msg" maxLength={2000} placeholder={t('form.msg.ph')}></textarea></div>
                   <button className="btn btn-primary btn-lg btn-block" type="submit"><span>{t('form.send')}</span><svg><use href="#i-send" /></svg></button>
                   <div className="form-legal"><svg><use href="#i-shield" /></svg><span>{t('form.legal')}</span></div>
                 </div>
