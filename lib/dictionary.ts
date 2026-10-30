@@ -91,7 +91,7 @@ en:{
   "contact.eyebrow":"Check availability","contact.h2":"Let's plan your day in Iceland.","contact.lead":"Send a quick request and I'll reply personally — usually within a few hours — to confirm the details with you.",
   "form.tour":"Which tour or transfer?","form.tour.opt":"Choose one…","form.date":"Preferred date","form.people":"How many of you?","form.name":"Your name","form.email":"Email","form.phone":"Phone / WhatsApp","form.phone.opt":"(optional)","form.msg":"Anything else?","form.msg.opt":"(optional)","form.msg.ph":"Flight times, ideas, must-see places…",
   "form.send":"Send request","form.legal":"This is an availability request, not a booking — I'll confirm details with you personally.",
-  "form.sent.title":"Thank you — request sent!","form.sent.body":"I'll get back to you personally, usually within a few hours, to confirm the details.",
+  "form.sent.title":"Thank you — request sent!","form.sent.body":"I'll get back to you personally, usually within a few hours, to confirm the details.","form.err":"Sorry — your request didn't go through. Please message me on WhatsApp or call",
   "form.p.1":"1–4 people","form.p.2":"5–8 people",
   "opt.gc":"Golden Circle — private tour","opt.sc":"South Coast — private tour","opt.jk":"Jökulsárlón Glacier Lagoon","opt.kef":"Keflavík airport transfer","opt.bl":"Blue Lagoon transfer","opt.aurora":"Northern Lights (autumn)","opt.custom":"Custom / not sure yet",
 
@@ -220,7 +220,7 @@ pl:{
   "contact.eyebrow":"Sprawdź dostępność","contact.h2":"Zaplanujmy Twój dzień na Islandii.","contact.lead":"Wyślij krótkie zapytanie, a odpiszę osobiście — zwykle w ciągu kilku godzin — żeby ustalić szczegóły.",
   "form.tour":"Która wycieczka lub transfer?","form.tour.opt":"Wybierz…","form.date":"Preferowana data","form.people":"Ile Was jest?","form.name":"Imię","form.email":"E-mail","form.phone":"Telefon / WhatsApp","form.phone.opt":"(opcjonalnie)","form.msg":"Coś jeszcze?","form.msg.opt":"(opcjonalnie)","form.msg.ph":"Godziny lotów, pomysły, miejsca obowiązkowe…",
   "form.send":"Wyślij zapytanie","form.legal":"To zapytanie o dostępność, nie rezerwacja — szczegóły potwierdzę z Tobą osobiście.",
-  "form.sent.title":"Dziękuję — zapytanie wysłane!","form.sent.body":"Odezwę się osobiście, zwykle w ciągu kilku godzin, żeby potwierdzić szczegóły.",
+  "form.sent.title":"Dziękuję — zapytanie wysłane!","form.sent.body":"Odezwę się osobiście, zwykle w ciągu kilku godzin, żeby potwierdzić szczegóły.","form.err":"Niestety zapytanie nie dotarło. Napisz do mnie na WhatsApp albo zadzwoń",
   "form.p.1":"1–4 osoby","form.p.2":"5–8 osób",
   "opt.gc":"Golden Circle — wycieczka prywatna","opt.sc":"Południowe wybrzeże — prywatnie","opt.jk":"Laguna lodowcowa Jökulsárlón","opt.kef":"Transfer z lotniska Keflavík","opt.bl":"Transfer do Blue Lagoon","opt.aurora":"Zorza polarna (jesień)","opt.custom":"Inne / jeszcze nie wiem",
 
@@ -347,7 +347,7 @@ de:{
   "contact.eyebrow":"Verfügbarkeit prüfen","contact.h2":"Planen wir deinen Tag in Island.","contact.lead":"Sende eine kurze Anfrage und ich antworte persönlich — meist innerhalb weniger Stunden — um die Details mit dir abzustimmen.",
   "form.tour":"Welche Tour oder welcher Transfer?","form.tour.opt":"Auswählen…","form.date":"Wunschdatum","form.people":"Wie viele seid ihr?","form.name":"Dein Name","form.email":"E-Mail","form.phone":"Telefon / WhatsApp","form.phone.opt":"(optional)","form.msg":"Sonst noch etwas?","form.msg.opt":"(optional)","form.msg.ph":"Flugzeiten, Ideen, Lieblingsorte…",
   "form.send":"Anfrage senden","form.legal":"Dies ist eine Verfügbarkeitsanfrage, keine Buchung — ich bestätige die Details persönlich mit dir.",
-  "form.sent.title":"Danke — Anfrage gesendet!","form.sent.body":"Ich melde mich persönlich, meist innerhalb weniger Stunden, um die Details zu bestätigen.",
+  "form.sent.title":"Danke — Anfrage gesendet!","form.sent.body":"Ich melde mich persönlich, meist innerhalb weniger Stunden, um die Details zu bestätigen.","form.err":"Leider ist deine Anfrage nicht angekommen. Schreib mir bitte auf WhatsApp oder ruf an",
   "form.p.1":"1–4 Personen","form.p.2":"5–8 Personen",
   "opt.gc":"Golden Circle — private Tour","opt.sc":"Südküste — private Tour","opt.jk":"Gletscherlagune Jökulsárlón","opt.kef":"Flughafentransfer Keflavík","opt.bl":"Blue-Lagoon-Transfer","opt.aurora":"Nordlichter (Herbst)","opt.custom":"Individuell / noch unklar",
 
@@ -478,7 +478,7 @@ es:{
   "contact.eyebrow":"Comprobar disponibilidad","contact.h2":"Planifiquemos tu día en Islandia.","contact.lead":"Envía una solicitud rápida y te responderé personalmente — normalmente en unas horas — para confirmar los detalles contigo.",
   "form.tour":"¿Qué tour o traslado?","form.tour.opt":"Elige una opción…","form.date":"Fecha preferida","form.people":"¿Cuántos sois?","form.name":"Tu nombre","form.email":"Correo","form.phone":"Teléfono / WhatsApp","form.phone.opt":"(opcional)","form.msg":"¿Algo más?","form.msg.opt":"(opcional)","form.msg.ph":"Horarios de vuelo, ideas, lugares imprescindibles…",
   "form.send":"Enviar solicitud","form.legal":"Esto es una solicitud de disponibilidad, no una reserva — confirmaré los detalles contigo personalmente.",
-  "form.sent.title":"¡Gracias — solicitud enviada!","form.sent.body":"Te responderé personalmente, normalmente en unas horas, para confirmar los detalles.",
+  "form.sent.title":"¡Gracias — solicitud enviada!","form.sent.body":"Te responderé personalmente, normalmente en unas horas, para confirmar los detalles.","form.err":"Lo siento, tu solicitud no se ha enviado. Escríbeme por WhatsApp o llama al",
   "form.p.1":"1–4 personas","form.p.2":"5–8 personas",
   "opt.gc":"Círculo Dorado — tour privado","opt.sc":"Costa Sur — tour privado","opt.jk":"Laguna glaciar Jökulsárlón","opt.kef":"Traslado aeropuerto Keflavík","opt.bl":"Traslado a Blue Lagoon","opt.aurora":"Auroras boreales (otoño)","opt.custom":"Personalizado / aún no lo sé",
 

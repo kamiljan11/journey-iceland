@@ -1,16 +1,18 @@
 # RUNBOOK — operacje i awarie
 
-<!-- Uzupelnij pola [..] przy wdrozeniu projektu. Ten plik czyta czlowiek o 3 w nocy — zero prozy, same komendy. -->
+<!-- Ten plik czyta czlowiek o 3 w nocy — zero prozy, same komendy. -->
 
 ## Podstawy
-- Produkcja: [URL]
-- Hosting: [gdzie stoi + link do panelu]
-- Repo: github.com/mountainallservice/[repo]
-- Sekrety: Infisical "MAS Group" (localhost:8222) — NIE w repo
+- Produkcja: https://journeyiceland.is
+- Hosting: Vercel, projekt `journey-iceland` (panel: vercel.com -> journey-iceland); preview dla kazdego PR (bez env Supabase/Resend — formularz pokazuje tam komunikat WhatsApp, to normalne)
+- Baza: Supabase, tabela `leads` (schemat `supabase/schema.sql`, RLS wlaczone, zapis tylko kluczem service-role z serwera)
+- Mail o leadzie: Resend (`RESEND_API_KEY`, `LEAD_NOTIFY_EMAIL`, `LEAD_FROM_EMAIL` w Vercel, srodowisko Production) — bez niego formularz odpowiada bledem (ADR-0003)
+- Repo: github.com/kamiljan11/journey-iceland
+- Sekrety: Infisical "MAS Group" (localhost:8222) + zmienne w Vercel — NIE w repo
 
 ## Deploy
-- Standard: merge do main -> [auto-deploy przez ... / komenda]
-- Reczny: `npm run build` -> [gdzie wrzucic dist]
+- Standard: merge do main -> auto-deploy Vercel (produkcja); PR -> preview URL w komentarzu Vercela
+- Reczny: brak (tylko przez Vercel)
 
 ## Rollback (cel: <5 min)
 ```bash
@@ -19,8 +21,8 @@ git revert <sha-zlego-commita> && git push   # -> redeploy automatyczny
 ```
 
 ## Monitoring
-- Bledy runtime: Sentry [link do projektu] — alerty ida na mountainallservice@gmail.com
-- Healthcheck: [URL/status] — sprawdz najpierw to
+- Bledy runtime: Vercel -> journey-iceland -> Logs (brak Sentry); leady: filtr `[lead`
+- Healthcheck: https://journeyiceland.is/en (200) — sprawdz najpierw to
 - CI: zakladka Actions w repo (Quality Gate musi byc zielony)
 
 ## Typowe awarie
@@ -28,6 +30,7 @@ git revert <sha-zlego-commita> && git push   # -> redeploy automatyczny
 |---|---|
 | Strona nie wstaje po deploy | rollback (wyzej), potem debug na branchu |
 | Blad 500 na akcji X | Sentry -> stack trace -> `systematic-debugging` |
+| Gość wysłał formularz, nic nie przyszło | Vercel -> Logs, filtr `[lead`: `LOST` / `emailed but not stored` / `rejected:` / `honeypot hit` — znaczenie i kroki: ADR-0003 › Triage; `ref` z maila = `id` wiersza w `leads` |
 | Wygasly sekret/API key | Infisical -> zrotuj -> redeploy |
 | Domena/DNS | panel ISNIC / rejestratora |
 

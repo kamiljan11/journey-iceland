@@ -1,6 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
+import { sendLead } from '@/lib/lead-client';
 
 /**
  * Client-side interactions, ported 1:1 from the Claude Design `app.js`
@@ -149,20 +150,34 @@ export default function Enhancements() {
     document.querySelectorAll<HTMLFormElement>('form.ji-form').forEach((form) => {
       form.addEventListener('submit', (e) => {
         e.preventDefault();
+        // The form is noValidate (custom look), so run the browser checks here: the API rejects the same cases.
+        if (!form.checkValidity()) { form.reportValidity(); return; }
+        const fields = form.querySelector('.form-fields');
+        const sent = form.querySelector('.form-sent');
+        const err = form.querySelector<HTMLElement>('.form-error');
+        if (err) err.hidden = true;
         const fd = new FormData(form);
         const payload: Record<string, string> = {
           lang: document.documentElement.lang || 'en',
           source: form.dataset.preselect || 'website',
         };
         fd.forEach((v, k) => { payload[k] = String(v); });
-        // optimistic UX: show success immediately; send in the background
-        form.querySelector('.form-fields')?.classList.add('hide');
-        form.querySelector('.form-sent')?.classList.add('show');
-        fetch('/api/lead', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload),
-        }).catch(() => { /* ignore — request still reaches host via WhatsApp/phone */ });
+        // Success is shown only once the server confirms delivery; otherwise the filled-in form stays
+        // and points the guest to WhatsApp / phone instead of losing the enquiry silently.
+        const btn = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+        if (btn) { btn.disabled = true; btn.setAttribute('aria-busy', 'true'); }
+        sendLead(payload).then((ok) => {
+          if (btn) { btn.disabled = false; btn.removeAttribute('aria-busy'); }
+          if (ok) {
+            fields?.classList.add('hide');
+            sent?.classList.add('show');
+          } else if (err) {
+            err.hidden = false;
+            err.tabIndex = -1;
+            err.focus();
+            err.scrollIntoView({ block: 'center' });
+          }
+        });
       }, sig);
       const sel = form.querySelector<HTMLSelectElement>('select[name="tour"]');
       if (sel) {

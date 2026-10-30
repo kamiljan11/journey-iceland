@@ -3,10 +3,19 @@
 import { readFileSync } from 'node:fs';
 import ts from 'typescript';
 
-export async function loadTs(path) {
-  const src = readFileSync(new URL(path, import.meta.url), 'utf8');
+// `deps` maps a relative import specifier used inside the module (e.g. './bokun') to its .ts path
+// relative to this file; data: URL modules cannot resolve relative imports on their own.
+export async function loadTs(path, deps = {}) {
+  let src = readFileSync(new URL(path, import.meta.url), 'utf8');
+  for (const [spec, depPath] of Object.entries(deps)) {
+    src = src.replaceAll(`from '${spec}'`, `from '${toDataUrl(readFileSync(new URL(depPath, import.meta.url), 'utf8'))}'`);
+  }
+  return import(toDataUrl(src));
+}
+
+function toDataUrl(src) {
   const { outputText } = ts.transpileModule(src, {
     compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2020 },
   });
-  return import(`data:text/javascript;base64,${Buffer.from(outputText).toString('base64')}`);
+  return `data:text/javascript;base64,${Buffer.from(outputText).toString('base64')}`;
 }
