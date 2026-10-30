@@ -3,7 +3,7 @@
 <!-- Ten plik czyta czlowiek o 3 w nocy — zero prozy, same komendy. -->
 
 ## Podstawy
-- Produkcja: https://journeyiceland.is
+- Produkcja: https://www.journeyiceland.is (apex journeyiceland.is -> 308 na www; curl POST bez -L musi isc na www)
 - Hosting: Vercel, projekt `journey-iceland` (panel: vercel.com -> journey-iceland); preview dla kazdego PR (bez env Supabase/Resend — formularz pokazuje tam komunikat WhatsApp, to normalne)
 - Baza: Supabase, tabela `leads` (schemat `supabase/schema.sql`, RLS wlaczone, zapis tylko kluczem service-role z serwera)
 - Mail o leadzie: Resend (`RESEND_API_KEY`, `LEAD_NOTIFY_EMAIL`, `LEAD_FROM_EMAIL` w Vercel, srodowisko Production) — bez niego formularz odpowiada bledem (ADR-0003)
@@ -22,14 +22,15 @@ git revert <sha-zlego-commita> && git push   # -> redeploy automatyczny
 
 ## Monitoring
 - Bledy runtime: Vercel -> journey-iceland -> Logs (brak Sentry); leady: filtr `[lead`
-- Healthcheck: https://journeyiceland.is/en (200) — sprawdz najpierw to
+- Healthcheck: https://www.journeyiceland.is/en (200) — sprawdz najpierw to
+- Formularz po deployu (bez maila): `curl -s -H 'content-type: application/json' -d '{"name":"t","email":"t@x.is","ji_hp_check":"x"}' https://www.journeyiceland.is/api/lead` -> `{"ok":true}`; pelna sciezka z mailem = jedno prawdziwe zapytanie z formularza
 - CI: zakladka Actions w repo (Quality Gate musi byc zielony)
 
 ## Typowe awarie
 | Objaw | Pierwszy krok |
 |---|---|
 | Strona nie wstaje po deploy | rollback (wyzej), potem debug na branchu |
-| Blad 500 na akcji X | Sentry -> stack trace -> `systematic-debugging` |
+| Blad 500 na akcji X | Vercel -> Logs (stack trace) -> `systematic-debugging` |
 | Gość wysłał formularz, nic nie przyszło | Vercel -> Logs, filtr `[lead`: `LOST` / `emailed but not stored` / `rejected:` / `honeypot hit` — znaczenie i kroki: ADR-0003 › Triage; `ref` z maila = `id` wiersza w `leads` |
 | Wygasly sekret/API key | Infisical -> zrotuj -> redeploy |
 | Domena/DNS | panel ISNIC / rejestratora |

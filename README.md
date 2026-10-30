@@ -38,7 +38,7 @@ Wartości: Vercel (projekt `journey-iceland`) / Infisical; w repo tylko nazwy (`
 |---|---|---|
 | `NEXT_PUBLIC_SUPABASE_URL` | tak (formularz) | URL projektu Supabase |
 | `SUPABASE_SERVICE_ROLE_KEY` | tak (formularz) | klucz serwerowy do zapisu leadów — tylko po stronie serwera |
-| `RESEND_API_KEY` | nie | bez niego powiadomienie e-mail o leadzie jest pomijane |
+| `RESEND_API_KEY` | tak (formularz) | mail o leadzie do przewodnika; bez niego formularz odpowiada błędem i odsyła gościa na WhatsApp (ADR-0003) |
 | `LEAD_NOTIFY_EMAIL` | nie | adres, na który idą powiadomienia o leadach |
 | `LEAD_FROM_EMAIL` | nie | nadawca powiadomień (domyślnie onboarding@resend.dev) |
 | `GOOGLE_PLACES_KEY` | nie | opinie Google na stronie; bez klucza nie są pobierane (`lib/reviews.ts` zwraca null) |

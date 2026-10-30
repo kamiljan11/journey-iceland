@@ -1,4 +1,4 @@
-import { test } from 'node:test';
+import { mock, test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { loadTs } from './load-ts.mjs';
@@ -219,7 +219,7 @@ test('handler: logs never contain guest data', async () => {
 // --- delivery (lib/lead-delivery.ts) and browser client (lib/lead-client.ts) ---
 
 const { createStore, createNotify } = await loadTs('../lib/lead-delivery.ts', { './lead': '../lib/lead.ts' });
-const { sendLead } = await loadTs('../lib/lead-client.ts');
+const { sendLead, timeoutSignal } = await loadTs('../lib/lead-client.ts');
 const lead = parseLead(valid).lead;
 const quietLog = () => { const lines = []; return { lines, log: { warn: (m) => lines.push(m), error: (m) => lines.push(m) } }; };
 
@@ -282,4 +282,28 @@ test('sendLead (form): true only on a 2xx reply; errors and offline -> false; ke
     assert.equal(await sendLead({}, async () => new Response('{}', { status })), false, String(status));
   }
   assert.equal(await sendLead({}, async () => { throw new TypeError('Failed to fetch'); }), false);
+});
+
+test('timeoutSignal works without AbortSignal.timeout (Safari < 16)', async () => {
+  const original = AbortSignal.timeout;
+  try {
+    AbortSignal.timeout = undefined;
+    const signal = timeoutSignal(5);
+    assert.equal(signal.aborted, false);
+    await new Promise((r) => setTimeout(r, 20));
+    assert.equal(signal.aborted, true);
+    // sendLead arms a 15 s fallback timer; mocked timers keep it from holding the test process open.
+    mock.timers.enable({ apis: ['setTimeout'] });
+    assert.equal(await sendLead({}, async () => new Response('{}', { status: 200 })), true, 'form still sends');
+  } finally {
+    mock.timers.reset();
+    AbortSignal.timeout = original;
+  }
+});
+
+test('handler: application/json with charset is accepted; missing content type is refused', async () => {
+  const h = harness();
+  assert.equal((await handleLead(req(valid, { 'content-type': 'application/json; charset=utf-8' }), h.deps)).status, 200);
+  const noType = new Request('http://x/api/lead', { method: 'POST', headers: { 'x-forwarded-for': '1.2.3.4' }, body: new Blob([JSON.stringify(valid)]) });
+  assert.equal((await handleLead(noType, h.deps)).status, 415);
 });
