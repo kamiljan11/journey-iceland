@@ -114,11 +114,12 @@ test('clientIp takes the first x-forwarded-for hop, then x-real-ip', () => {
 
 // --- request flow (lib/lead-handler.ts) with fake Supabase / Resend ---
 
-function harness({ allow = () => true, store = 'stored', emailed = true } = {}) {
+function harness({ allow = () => true, allowGlobal = () => true, store = 'stored', emailed = true } = {}) {
   const calls = { store: 0, notify: 0 };
   const lines = [];
   const deps = {
     allow,
+    allowGlobal,
     store: async () => { calls.store += 1; if (store instanceof Error) throw store; return store; },
     notify: async () => { calls.notify += 1; return emailed; },
     newId: () => 'lead-1',
@@ -155,6 +156,26 @@ test('handler: neither stored nor emailed -> 503 so the form can point the guest
   assert.ok(h.lines.some((l) => l.includes('LOST')));
 });
 
+test('handler: stored but not emailed -> 503 too (the guide would never see a stored-only lead)', async () => {
+  const h = harness({ store: 'stored', emailed: false });
+  const r = await handleLead(req(valid), h.deps);
+  assert.deepEqual(r, { status: 503, body: { ok: false, error: 'not_delivered' } });
+  assert.ok(h.lines.some((l) => l.includes('NOT EMAILED (stored in leads)')));
+});
+
+test('handler: non-JSON content type is refused (no cross-site text/plain form posts)', async () => {
+  const h = harness();
+  const r = await handleLead(req(valid, { 'content-type': 'text/plain' }), h.deps);
+  assert.equal(r.status, 415);
+  assert.equal(h.calls.store + h.calls.notify, 0);
+});
+
+test('handler: instance-wide cap applies even when the per-IP limit passes', async () => {
+  const h = harness({ allowGlobal: () => false });
+  assert.equal((await handleLead(req(valid), h.deps)).status, 429);
+  assert.ok(h.lines.some((l) => l.includes('rate_limited_global')));
+});
+
 test('handler: honeypot answers like a success but stores and sends nothing', async () => {
   const h = harness();
   const r = await handleLead(req({ ...valid, [HONEYPOT_FIELD]: 'x' }), h.deps);
@@ -177,7 +198,7 @@ test('handler: body cap holds without Content-Length (streamed body)', async () 
   const h = harness();
   const big = new TextEncoder().encode(JSON.stringify({ ...valid, msg: 'a'.repeat(MAX_BODY_BYTES) }));
   const stream = new ReadableStream({ start(c) { c.enqueue(big.slice(0, 6000)); c.enqueue(big.slice(6000)); c.close(); } });
-  const r = await handleLead(new Request('http://x/api/lead', { method: 'POST', body: stream, duplex: 'half', headers: { 'x-forwarded-for': '1.2.3.4' } }), h.deps);
+  const r = await handleLead(new Request('http://x/api/lead', { method: 'POST', body: stream, duplex: 'half', headers: { 'content-type': 'application/json', 'x-forwarded-for': '1.2.3.4' } }), h.deps);
   assert.equal(r.status, 413);
 });
 
@@ -255,6 +276,7 @@ test('sendLead (form): true only on a 2xx reply; errors and offline -> false; ke
   let init;
   assert.equal(await sendLead({ a: '1' }, async (_u, i) => { init = i; return new Response('{}', { status: 200 }); }), true);
   assert.equal(init.keepalive, true);
+  assert.ok(init.signal instanceof AbortSignal, 'client-side timeout');
   assert.equal(JSON.parse(init.body).a, '1');
   for (const status of [400, 413, 429, 503]) {
     assert.equal(await sendLead({}, async () => new Response('{}', { status })), false, String(status));

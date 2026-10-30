@@ -7,6 +7,8 @@ export type StoreResult = 'stored' | 'failed' | 'skipped';
 
 export type LeadDeps = {
   allow: (ip: string) => boolean;
+  /** instance-wide cap, independent of the client address (IP rotation, cross-site submissions) */
+  allowGlobal: () => boolean;
   store: (lead: Lead, id: string) => Promise<StoreResult>;
   /** true when the notification email was accepted by the provider */
   notify: (lead: Lead, id: string) => Promise<boolean>;
@@ -47,6 +49,11 @@ export async function handleLead(req: Request, deps: LeadDeps): Promise<LeadRepl
   // Without a client address (not behind Vercel) one shared bucket would block everyone; skip the limit then.
   const ip = clientIp(req.headers);
   if (ip !== 'unknown' && !deps.allow(ip)) return reject(429, 'rate_limited', log);
+  // JSON content type forces a CORS preflight, so other sites cannot post leads from visitors' browsers.
+  if (!(req.headers.get('content-type') ?? '').toLowerCase().startsWith('application/json')) {
+    return reject(415, 'unsupported_media_type', log);
+  }
+  if (!deps.allowGlobal()) return reject(429, 'rate_limited_global', log);
 
   let body: string | null;
   try { body = await readCapped(req, MAX_BODY_BYTES); } catch { return reject(400, 'body_unreadable', log); }
@@ -65,8 +72,10 @@ export async function handleLead(req: Request, deps: LeadDeps): Promise<LeadRepl
   const id = deps.newId();
   // Store and notify independently: a database outage must never block the email the guide relies on.
   const [stored, emailed] = await Promise.all([deps.store(parsed.lead, id), deps.notify(parsed.lead, id)]);
-  if (stored !== 'stored' && !emailed) {
-    log.error(`[lead ${id}] LOST: not stored (${stored}) and not emailed`);
+  // The email is how the guide learns about a lead; a stored-only lead would sit unseen in the table,
+  // so without the email the guest is sent to WhatsApp / phone instead.
+  if (!emailed) {
+    log.error(`[lead ${id}] NOT EMAILED (${stored === 'stored' ? 'stored in leads' : 'LOST: not stored'})`);
     return { status: 503, body: { ok: false, error: 'not_delivered' } };
   }
   if (stored !== 'stored') log.warn(`[lead ${id}] emailed but not stored (${stored})`);

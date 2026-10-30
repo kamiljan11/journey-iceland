@@ -1166,3 +1166,4 @@ body[data-lang="pl"] .pl-offer{display:block}
 .hp-field { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
 .form-error { margin: 12px 0 0; padding: 10px 12px; border-radius: 10px; background: var(--terracotta-soft); color: var(--espresso); font-size: .95rem; }
 .form-error a { color: inherit; font-weight: 600; }
+.ji-form button[aria-busy="true"] { opacity: .65; cursor: progress; }
